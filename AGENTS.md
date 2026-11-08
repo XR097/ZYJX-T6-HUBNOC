@@ -4,13 +4,14 @@
 
 This repository is currently a specification package:
 
-- `docs/HUB_NOC.pdf` defines HUB-DN, HUB-UP, HUB-ATT, and HUB-SYNC.
-- `docs/HUB_RHUB.pdf` defines cross-core K-split reduction.
-- `docs/SPEC_TRANSFER_PROTOCOL_V1.5.pdf` is authoritative for protocol A/B, VC, flit, and credit semantics.
-- `docs/DATA_LAYOUT_V1.5.pdf` defines L2/L1/pod storage formats.
-- `docs/hub_spec/` contains the M0-M4 trace, contracts, timing, open issues, and verification plan.
+- `docs/specs/` contains the current November 8, 2026 Markdown specifications and referenced SVG figures.
+- `docs/specs/ONCHIP_DATAPATH_ARCH.md` is the authority for port counts, widths, and directions; `DATA_TRANSFER_PROTOCOL.md` defines address, ready, and write-acknowledgment semantics.
+- `docs/specs/HUB_NOC.md` defines the L2-side H2C/C2H links and control fabric; `HUB_IDN.md` defines the NI-side 32-byte multicast distributor.
+- `docs/specs/MAE_CRU.md` defines L2-to-L2 reduction within MAE, replacing the retired standalone RHUB architecture.
+- `docs/hub_spec/` contains derived requirements, contracts, timing, interfaces, and verification plans; `docs/reviews/` contains current conclusions and open issues.
+- Historical versions are available through Git, not duplicate baseline directories. Record source conflicts in the current issue ledger rather than silently resolving them in derived contracts.
 
-RTL, testbench, and scripts are not present yet. When implementation begins, use `rtl/`, `tb/` (or `dv/`), `scripts/`, and `build/` or `out/`. Keep specifications in `docs/`.
+RTL and testbenches are not present yet. Figure-generation and document-checking utilities live in `docs/specs/_build/`. When RTL implementation begins, use `rtl/`, `tb/` (or `dv/`), `scripts/`, and `build/` or `out/`. Keep specifications in `docs/`.
 
 ## Build, Test, and Development Commands
 
@@ -26,11 +27,11 @@ When RTL is added, provide reproducible commands such as `make sim`, `make lint`
 
 ## Coding Style & Naming Conventions
 
-Use SystemVerilog with four-space indentation, explicit widths, one declaration per line, and documented synchronous resets. Name modules and files in `snake_case` (`hub_dn.sv`, `hub_att.sv`); use `*_tb.sv` for testbenches and `*_pkg.sv` for packages. Preserve V1.5 field names such as `vld`, `last`, `nw8`, `vc`, and credit signals.
+Use SystemVerilog with four-space indentation, explicit widths, one declaration per line, and documented synchronous resets. Name modules and files in `snake_case` (`hub_noc.sv`, `hub_idn.sv`); use `*_tb.sv` for testbenches and `*_pkg.sv` for packages. Preserve current field names such as `en`, `din`, `be`, `addr`, `seg`, `src`, and `ready`; distinguish read-return `vld` from write-acknowledgment `valid`. Do not reintroduce retired VC, credit, flit, `last`, or `nw8` interfaces.
 
 ## Testing Guidelines
 
-Add module tests for VC isolation, credit return, multicast completion, FIFO backpressure, barrier timeout, and fixed-order R-hub reduction. Name tests by behavior, for example `hub_dn_credit_stall_tb.sv`. Record simulator, seed, parameters, and results in the change description. Add coverage targets when the verification framework is selected.
+Add module tests for multicast delivery, full-throughput back-to-back transfers, FIFO/skid backpressure, write-acknowledgment attribution, reset, and fixed-order MAE_CRU reduction. C2H acknowledgment is an untagged valid pulse; H2C and IDN acknowledgments carry `src`. Barrier scheduling belongs to LIC. Name tests by behavior, for example `hub_idn_backpressure_tb.sv`. Record simulator, seed, parameters, and results in the change description. Add coverage targets when the verification framework is selected; do not add hardware error checks beyond the source specifications.
 
 ## Commit & Pull Request Guidelines
 
@@ -38,4 +39,4 @@ Use concise imperative subjects with a scope, such as `docs: clarify HUB-UP writ
 
 ## Architecture and Change Discipline
 
-Treat `SPEC_TRANSFER_PROTOCOL_V1.5.pdf` as protocol authority and the HUB PDFs as module contracts. Do not silently change bandwidth, VC semantics, sideband widths, or ownership boundaries; update the relevant specification and this guide when a contract changes.
+Treat the current `docs/specs/` Markdown as the source baseline and `docs/hub_spec/` as derived analysis. Follow the architecture port table, protocol rules, and module contracts together; record inconsistencies in `docs/reviews/open_issues_current.md`. Do not silently change bandwidth, handshake semantics, sideband widths, or ownership boundaries. HUB only transports data/control, forks multicast, and returns acknowledgments; MAE_ENG/CCU count completion, MAE_CRU performs reduction through L2, and LIC schedules dependencies.

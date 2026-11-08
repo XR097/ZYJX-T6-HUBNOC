@@ -9,7 +9,7 @@ HUB_NOC 位于中央 L2 与四核之间，包含四条 H2C 道、四条 C2H 通�
 | 接口 | 宽度 | 语义 |
 |---|---:|---|
 | L2 象限 n → H2C n | 4 × 32 B | MAE_ENG 给 L2 读 `en/addr`；busy 时保持重发 |
-| H2C n → 四核 LDP | 每核 4 × 32 B | 目的 addr/be/核掩码/src 由 MAE 给；分叉点按各核 ready 取走 |
+| H2C n → 四核 LDP | 每核 4 × 32 B | 目的 addr/seg/be/核掩码/src 由 MAE 给；分叉点按各核 ready 取走 |
 | 四核集成输出端口 → C2H | 每核 1 × 32 B | CCU 在核内选择来源；HUB 只见一路 |
 | C2H → L2WP | 4 × 32 B | 核 n 只写象限 n；ready 反向传回并可门控 CCU |
 | 命令网 | 64 bit | LIC、MAE_ENG、CCU、L2 间透明转发；标量不走此网 |
@@ -24,6 +24,6 @@ HUB_NOC 不维护 VC/credit/flit/`last`/`nw8`，不维护 L2 完成计数，不�
 
 - 同一链路保序，级数只改变延迟。
 - H2C 道 n 只读象限 n；C2H 核 n 只写象限 n。
-- H2C 多播只在核掩码内复制；各目的 ready 独立。
-- 最终写入握手由 L2/LDP 回到发令方；HUB 只转交。
-- C2H ready 低时反压最终传到集成输出端口，CCU 停算由本核负责。
+- H2C 多播只在核掩码内复制；掩码为单位参数，随每拍流水，各目的 ready 独立。
+- 最终写入握手由 L2/LDP 回到发令方；C2H 不带号，H2C 带 src，回程均无 ready；HUB 只转交。
+- C2H ready 低时反压传到集成输出端口发送 FIFO，FIFO 将满的 stall_tx 门控 CCU（协议 §7.1）。

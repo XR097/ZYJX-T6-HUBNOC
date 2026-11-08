@@ -1,19 +1,13 @@
-# HUB / RHUB 规格文档索引
+# HUB / MAE_CRU 文档入口
 
-当前基线是 `Module_Docs_Redraft_20261103/` 内 2026-11-08 版本的正文模块稿和协议稿。旧 PDF、易读稿、旧审查台账和旧 Codex 草案仍保留在历史目录，仅用于追溯。
+本目录只保留 2026-11-08 当前基线。旧 PDF、旧模块稿、历史台账、退役图件和生成缓存已从工作树移除，历史通过 Git 追溯。
 
-## 当前基线
+| 目录 | 用途 |
+|---|---|
+| [specs/](specs/README.md) | 当前正文、引用配图及必要的生成/检查工具 |
+| [hub_spec/](hub_spec/README.md) | 我们维护的需求追踪、合同、时序、接口矩阵和验证计划 |
+| [reviews/](reviews/README.md) | 当前结论与待审查、待仿真、待标定事项 |
 
-- `HUB_NOC.md`：中央 L2 侧的四条 H2C 道、四条 C2H 通路和命令网转发。
-- `HUB_IDN.md`：NI 侧一路 32 B 输入、按每字核集合分发到四核的 IDN 多播网。
-- `MAE_CRU.md`：MAE 内部的 L2→CRU→L2 合并运算级；不经 HUB/HUB_IDN。
-- `DATA_TRANSFER_PROTOCOL.md`：地址、段选、握手、完成、长度表和两条 MAE_CRU 指令依赖的协议基线。
-- `MAE_ENG.md`、`L1_SRAM.md`、`L2_SRAM.md`：地址主、存储端点、紧密对象和最终写入语义。
+HUB 组由 `HUB_NOC` 和 `HUB_IDN` 构成：前者连接中央 L2 与四核，后者将 NI 的一路 32 B 输入按每字核集合分发到四核。独立 RHUB 已退役；其合并职责由 MAE 组内 `MAE_CRU` 经 L2 读写实现。
 
-## 我们维护的分析
-
-- `hub_spec/`：当前 HUB_NOC、HUB_IDN、MAE_CRU 责任范围的合同、时序、验证和接口矩阵。
-- `reviews/module_delta_20261107.md`：截至 2026-11-08 的新旧结论审查。
-- `reviews/open_issues_current.md`：当前仍需审查、仿真或标定的问题。
-
-历史资料不作为当前 RTL 合同；若与当前正文冲突，以新版模块稿、协议稿和本目录的当前分析为准。
+正文是依据，`hub_spec/` 和 `reviews/` 是派生分析。口宽/条数/方向以架构篇总表为准；协议与模块正文之间的残留冲突记录在当前台账，不能据此自行增加接口、错误状态或检查。
