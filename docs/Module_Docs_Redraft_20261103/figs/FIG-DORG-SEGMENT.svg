@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="215" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">同一段：32 个通道、保留 k_s = 20 个，keep 位图 4 B、F 标志 ⌈20/8⌉ = 3 B</tspan></text>
+<text xml:space="preserve" x="201" y="86" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 6（MXFP6 E2M3）</tspan></text>
+<rect x="215" y="70" width="16" height="32" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="223.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="223.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="600" fill="#8a94a6"><tspan dy="0.0">尺度</tspan></text>
+<rect x="231" y="70" width="64" height="32" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="263.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">keep 4 B</tspan></text>
+<rect x="295" y="70" width="48" height="32" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="319.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="319.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="600" fill="#8a94a6"><tspan dy="0.0">F</tspan></text>
+<rect x="343" y="70" width="240" height="32" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="463.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 15 B（20 × 6 bit）</tspan></text>
+<text xml:space="preserve" x="593" y="86" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">= 23 B</tspan></text>
+<text xml:space="preserve" x="201" y="148" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 8（FP8 E4M3）</tspan></text>
+<rect x="215" y="132" width="16" height="32" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="223.0" y="148.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="223.0" y="124" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="600" fill="#8a94a6"><tspan dy="0.0">尺度</tspan></text>
+<rect x="231" y="132" width="64" height="32" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="263.0" y="148.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">keep 4 B</tspan></text>
+<rect x="295" y="132" width="48" height="32" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="319.0" y="148.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="319.0" y="124" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="600" fill="#8a94a6"><tspan dy="0.0">F</tspan></text>
+<rect x="343" y="132" width="320" height="32" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="503.0" y="148.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 20 B（20 × 8 bit）</tspan></text>
+<text xml:space="preserve" x="673" y="148" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">= 28 B</tspan></text>
+<text xml:space="preserve" x="201" y="210" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 16（BF16 / FP16）</tspan></text>
+<rect x="215" y="194" width="64" height="32" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="247.0" y="210.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">keep 4 B</tspan></text>
+<rect x="279" y="194" width="48" height="32" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="303.0" y="210.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="303.0" y="186" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="600" fill="#8a94a6"><tspan dy="0.0">F</tspan></text>
+<rect x="327" y="194" width="640" height="32" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="647.0" y="210.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 40 B（20 × 16 bit）</tspan></text>
+<text xml:space="preserve" x="977" y="210" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">= 47 B</tspan></text>
+<text xml:space="preserve" x="215" y="266" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">元素位宽 w 是位点属性；16 bit 段没有尺度字段；keep / F / 长度表三种位宽同一套规则</tspan></text>
+<text xml:space="preserve" x="215" y="290" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">全保留（k_s = 32）时三者 33 / 41 / 72 B；一条记录的长度 = 各段字节之和，写进 token 长度表</tspan></text>
+</svg>

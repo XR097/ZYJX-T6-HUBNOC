@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.20"/></filter><marker id="m_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#1d4ed8"/></marker><marker id="s_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#1d4ed8"/></marker><marker id="m_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#c2410c"/></marker><marker id="s_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#c2410c"/></marker><marker id="m_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#4b5563"/></marker><marker id="s_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#4b5563"/></marker><marker id="m_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b91c1c"/></marker><marker id="s_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b91c1c"/></marker><marker id="m_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker><marker id="m_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b45309"/></marker><marker id="s_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b45309"/></marker><marker id="m_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#475569"/></marker><marker id="s_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#475569"/></marker><marker id="m_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0369a1"/></marker><marker id="s_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0369a1"/></marker><marker id="m_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#172b4d"/></marker><marker id="s_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#172b4d"/></marker><marker id="m_dim" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#a3acb9"/></marker><marker id="s_dim" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#a3acb9"/></marker><marker id="m_focal" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_focal" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker></defs>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<rect x="0" y="0" width="1920" height="86" fill="#172b4d"/>
+<rect x="300" y="200" width="1330" height="740" rx="12" fill="#fbfcfe" stroke="#172b4d" stroke-width="2.4" stroke-dasharray="none"/>
+<path d="M301,230 L301,212 Q301,201 312,201 L1618,201 Q1629,201 1629,212 L1629,230 Z" fill="#ffffff" stroke="none"/>
+<rect x="560" y="225" width="685" height="605" rx="12" fill="#f5f9ff" stroke="#334155" stroke-width="2.2" stroke-dasharray="10,5"/>
+<path d="M561,255 L561,237 Q561,226 572,226 L1233,226 Q1244,226 1244,237 L1244,255 Z" fill="#f5f9ff" stroke="none"/>
+<rect x="520" y="100" width="280" height="70" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="860" y="100" width="300" height="70" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="1220" y="100" width="280" height="70" rx="10" fill="#ffedd5" stroke="#c2410c" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="20" y="330" width="250" height="80" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="20" y="500" width="250" height="90" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="20" y="690" width="250" height="80" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="560" y="975" width="420" height="75" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="1060" y="975" width="500" height="75" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="1660" y="330" width="240" height="90" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="1660" y="560" width="240" height="90" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="20" y="800" width="244" height="124" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
+<path d="M34,821.5 L64,821.5" stroke="#1d4ed8" stroke-width="3" marker-end="url(#m_inter)"/>
+<path d="M34,848.5 L64,848.5" stroke="#c2410c" stroke-width="3" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M34,875.5 L64,875.5" stroke="#4b5563" stroke-width="3" marker-end="url(#m_axi)"/>
+<rect x="34" y="893.5" width="36" height="18" rx="4" fill="#f1f3f6" stroke="#a3acb9" stroke-width="2"/>
+<rect x="1390" y="330" width="140" height="100" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="1390" y="470" width="220" height="360" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="600" y="850" width="200" height="65" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="830" y="850" width="200" height="65" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="1060" y="850" width="200" height="65" rx="10" fill="#f1f3f6" stroke="#a3acb9" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="600" y="260" width="350" height="75" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="600" y="355" width="190" height="80" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="830" y="355" width="140" height="80" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="600" y="495" width="190" height="105" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="830" y="495" width="140" height="105" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="600" y="670" width="190" height="120" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="830" y="670" width="140" height="120" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2"/>
+<rect x="1010" y="355" width="225" height="245" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+<rect x="1010" y="670" width="225" height="120" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2"/>
+<path d="M790.0,395.0 L830.0,395.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)" marker-start="url(#s_axi)"/>
+<path d="M970.0,395.0 L984.0,395.0 A6.0,6.0 0 0 1 996.0,395.0 L1010.0,395.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)" marker-start="url(#s_axi)"/>
+<path d="M790.0,547.0 L830.0,547.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)" marker-start="url(#s_axi)"/>
+<path d="M970.0,547.0 L984.0,547.0 A6.0,6.0 0 0 1 996.0,547.0 L1010.0,547.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)" marker-start="url(#s_axi)"/>
+<path d="M790.0,730.0 L830.0,730.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M970.0,730.0 L1010.0,730.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M950.0,300.0 L990.0,300.0 L990.0,690.0 L1010.0,690.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M600.0,365.0 L270.0,365.0" stroke="#4b5563" stroke-width="3.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M270.0,400.0 L600.0,400.0" stroke="#4b5563" stroke-width="3.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M600.0,520.0 L270.0,520.0" stroke="#4b5563" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M270.0,570.0 L600.0,570.0" stroke="#4b5563" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M270.0,705.0 L600.0,705.0" stroke="#4b5563" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M600.0,755.0 L270.0,755.0" stroke="#4b5563" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M760.0,260.0 L760.0,170.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1390.0,380.0 L1235.0,380.0" stroke="#1d4ed8" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
+<path d="M1235.0,415.0 L1390.0,415.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1235.0,490.0 L1390.0,490.0" stroke="#1d4ed8" stroke-width="2.8" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
+<path d="M1390.0,540.0 L1235.0,540.0" stroke="#1d4ed8" stroke-width="2.8" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
+<path d="M1235.0,585.0 L1390.0,585.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1235.0,700.0 L1390.0,700.0" stroke="#1d4ed8" stroke-width="2.8" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
+<path d="M1390.0,760.0 L1235.0,760.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1580.0,470.0 L1580.0,188.0 L1480.0,188.0 L1480.0,170.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<rect x="358.4" y="339.0" width="153.2" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="365.4" y="350.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">AR · AW · W  256 bit</text>
+<rect x="379.3" y="406.0" width="111.4" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="386.3" y="417.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">R · B  256 bit</text>
+<rect x="348.9" y="494.0" width="172.2" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="355.9" y="505.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">M1：AR · AW · W  64 bit</text>
+<rect x="369.8" y="576.0" width="130.4" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="376.8" y="587.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">M1：R · B  64 bit</text>
+<rect x="345.4" y="679.0" width="179.1" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="352.4" y="690.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">PIN：AW · W · AR  64 bit</text>
+<rect x="362.8" y="761.0" width="144.3" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
+<text x="369.8" y="772.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">PIN：B · R / SLVERR</text>
+<rect x="768.0" y="227.0" width="62.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="775.0" y="238.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">首个违规</text>
+<rect x="1255.2" y="354.0" width="129.7" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
+<text x="1262.2" y="365.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">请求 32 B · 选口位</text>
+<rect x="1295.0" y="421.0" width="50.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="1302.0" y="432.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">写响应</text>
+<rect x="1277.6" y="464.0" width="84.8" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
+<text x="1284.6" y="475.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">读返回 32 B</text>
+<rect x="1271.6" y="514.0" width="96.8" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
+<text x="1278.6" y="525.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">写出数据 32 B</text>
+<rect x="1289.0" y="559.0" width="62.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="1296.0" y="570.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">主口错误</text>
+<rect x="1263.7" y="674.0" width="112.6" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
+<text x="1270.7" y="685.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">PIN 存储字 32 B</text>
+<rect x="1282.0" y="734.0" width="75.9" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="1289.0" y="745.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">B 响应放行</text>
+<rect x="1486.0" y="289.0" width="86.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="1493.0" y="300.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">主口错误转报</text>
+<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-MAE_NI_EXT-ARCH  NI_EXT：三个 AXI 口的协议端、地址换算、跨域、宽度适配与区间检查</text>
+<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">M0 / M1 由 MAE_ENG 发起，PIN 由片外主方发起；NI_EXT 只做协议转换、地址换算（头文件参数）、跨时钟、宽度适配与区间检查：不生成请求、不决定目的、不改数据</text>
+<text x="314.0" y="216.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d">MAE 组 · 六单元（全芯片一组）</text>
+<text x="660.0" y="124.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#b45309">CIF</text>
+<text x="660.0" y="143.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">PIN 首个违规</text>
+<text x="1010.0" y="124.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">LIC</text>
+<text x="1010.0" y="143.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1360.0" y="124.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#c2410c">命令与标量网</text>
+<text x="1360.0" y="143.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">hub 控制道 · 64 bit</text>
+<text x="145.0" y="359.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">DDR 控制器 P0</text>
+<text x="145.0" y="378.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">256 bit 独占专线</text>
+<text x="145.0" y="534.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">SoC 片上互联</text>
+<text x="145.0" y="553.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">HSRAM P2 · DDR P2 · FMC 主端</text>
+<text x="145.0" y="719.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">系统 DMA / FMC 从端</text>
+<text x="145.0" y="738.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">PIN 的写入方</text>
+<text x="770.0" y="1002.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">中央 L2</text>
+<text x="770.0" y="1021.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1310.0" y="1002.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">四核 IDN 接收桥（NWB）</text>
+<text x="1310.0" y="1021.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1780.0" y="364.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">C2H 去 MAE_CRU 的分支</text>
+<text x="1780.0" y="383.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1780.0" y="594.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">H2C 道</text>
+<text x="1780.0" y="613.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1060.0" y="241.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#334155">NI_EXT（本单元）</text>
+<text x="80.0" y="821.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">数据：握手写流 / SRAM 口</text>
+<text x="80.0" y="848.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">命令与标量网 / 控制</text>
+<text x="80.0" y="875.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">对外 AXI（M0 / M1 / PIN）</text>
+<text x="80.0" y="902.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">灰框 = 本单元不用</text>
+<text x="1460.0" y="369.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#b45309">MAE_ENG</text>
+<text x="1460.0" y="388.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">读写请求</text>
+<text x="1500.0" y="622.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#0369a1">NI_INT</text>
+<text x="1500.0" y="641.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">读返回分路</text>
+<text x="1500.0" y="658.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">NI-L2C 写客户 / 返回车道</text>
+<text x="1500.0" y="675.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">NI 控制道</text>
+<text x="700.0" y="872.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">MAE_IDN</text>
+<text x="700.0" y="891.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="930.0" y="872.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">MAE_DSU</text>
+<text x="930.0" y="891.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="1160.0" y="872.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#98a2b3">MAE_CRU</text>
+<text x="1160.0" y="891.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#98a2b3">本单元不用</text>
+<text x="775.0" y="278.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#b45309">PIN 地址换算 · 区间检查</text>
+<text x="775.0" y="297.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">A − A_PIN · 外设输入区（头文件参数，流片定死）</text>
+<text x="775.0" y="314.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">区外 / FIXED / WRAP → 整笔 SLVERR · 记首个违规</text>
+<text x="695.0" y="376.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">M0 主口</text>
+<text x="695.0" y="395.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">AXI4 主 · 256 bit</text>
+<text x="695.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">读 / 写在飞各 32 笔</text>
+<text x="900.0" y="384.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#475569">跨域</text>
+<text x="900.0" y="403.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">同步 / 异步可选</text>
+<text x="695.0" y="520.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">M1 主口</text>
+<text x="695.0" y="539.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">AXI4 主 · 64 bit · f_IO</text>
+<text x="695.0" y="556.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">32 B ↔ 4 拍 64 bit</text>
+<text x="695.0" y="573.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">非对齐：按地址放字节</text>
+<text x="900.0" y="528.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#475569">跨域</text>
+<text x="900.0" y="547.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">异步 FIFO</text>
+<text x="900.0" y="564.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">任意时钟比率</text>
+<text x="695.0" y="702.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#475569">PIN 从口</text>
+<text x="695.0" y="721.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">AXI4 从 · 64 bit · f_IO</text>
+<text x="695.0" y="738.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">只收 INCR</text>
+<text x="695.0" y="755.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">写在飞 ≥ 4 · 读 ≥ 2</text>
+<text x="900.0" y="711.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#475569">跨域</text>
+<text x="900.0" y="729.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">异步 FIFO</text>
+<text x="900.0" y="746.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">任意时钟比率</text>
+<text x="1122.5" y="424.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#0369a1">选口（M0 / M1）</text>
+<text x="1122.5" y="443.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">每笔 32 B 请求按选口位</text>
+<text x="1122.5" y="460.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">1 bit 选 M0 或 M1 · 默认 M0</text>
+<text x="1122.5" y="477.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">NPU 侧地址 → SoC 地址</text>
+<text x="1122.5" y="494.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">（按区，头文件参数）</text>
+<text x="1122.5" y="511.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">读返回交 NI_INT</text>
+<text x="1122.5" y="528.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">写响应交 MAE_ENG</text>
+<text x="1122.5" y="702.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#0369a1">拼字 · 字节使能</text>
+<text x="1122.5" y="721.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">L2 地址 = A − A_PIN（线性）</text>
+<text x="1122.5" y="738.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">64 bit 拍拼 32 B 存储字</text>
+<text x="1122.5" y="755.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">WSTRB → be · 尾字随 WLAST 交出</text>
+<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-06</text>
+</svg>

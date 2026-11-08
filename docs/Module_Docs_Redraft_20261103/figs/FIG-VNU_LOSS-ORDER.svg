@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="234" y="74.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">候选词号 组 1</tspan></text>
+<rect x="250" y="52" width="100" height="44" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="74.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="360" y="52" width="100" height="44" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="74.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">12</tspan></text>
+<rect x="470" y="52" width="100" height="44" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="74.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">40</tspan></text>
+<text xml:space="preserve" x="234" y="138.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">候选词号 组 2</tspan></text>
+<rect x="250" y="116" width="100" height="44" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="138.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">7</tspan></text>
+<rect x="360" y="116" width="100" height="44" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="138.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">12</tspan></text>
+<rect x="720" y="84" width="150" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text xml:space="preserve" x="795.0" y="106.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">词号 25</tspan></text>
+<text xml:space="preserve" x="720" y="150" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">不在任一组</tspan></text>
+<text xml:space="preserve" x="234" y="232.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">参与词号列表（升序）</tspan></text>
+<rect x="250" y="210" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="232.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="360" y="210" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="232.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">7</tspan></text>
+<rect x="470" y="210" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="232.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">12</tspan></text>
+<rect x="580" y="210" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="232.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">40</tspan></text>
+<text xml:space="preserve" x="234" y="296.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">dz（同序压紧）</tspan></text>
+<rect x="250" y="274" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="296.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">dz</tspan><tspan dy="3.8" font-size="10">3</tspan></text>
+<rect x="360" y="274" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="296.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">dz</tspan><tspan dy="3.8" font-size="10">7</tspan></text>
+<rect x="470" y="274" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="296.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">dz</tspan><tspan dy="3.8" font-size="10">12</tspan></text>
+<rect x="580" y="274" width="100" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="296.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">dz</tspan><tspan dy="3.8" font-size="10">40</tspan></text>
+<text xml:space="preserve" x="234" y="360.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">IGE 取的 W</tspan><tspan dy="3.8" font-size="10">LM</tspan><tspan dy="-3.8"> 列</tspan></text>
+<rect x="250" y="338" width="100" height="44" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="360.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 3 列</tspan></text>
+<rect x="360" y="338" width="100" height="44" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="360.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 7 列</tspan></text>
+<rect x="470" y="338" width="100" height="44" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="360.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 12 列</tspan></text>
+<rect x="580" y="338" width="100" height="44" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="360.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 40 列</tspan></text>
+<text xml:space="preserve" x="300.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">j = 0</tspan></text>
+<text xml:space="preserve" x="410.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">j = 1</tspan></text>
+<text xml:space="preserve" x="520.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">j = 2</tspan></text>
+<text xml:space="preserve" x="630.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">j = 3</tspan></text>
+<text xml:space="preserve" x="520.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">12 只出一次</tspan></text>
+<text xml:space="preserve" x="720" y="232.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">25 无 dz</tspan></text>
+</svg>

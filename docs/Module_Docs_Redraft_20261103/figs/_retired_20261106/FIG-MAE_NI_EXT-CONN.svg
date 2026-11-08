@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1110" viewBox="0 0 1520 1110">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#466b89"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+
+<rect x="560" y="210" width="896" height="644" rx="6" fill="none" stroke="#172b4d" stroke-width="2.2" stroke-dasharray="9 6"/>
+<text x="574.0" y="232" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d">MAE 组</text>
+<rect x="574" y="28" width="266" height="112" rx="5" fill="#e5edf6" stroke="#172b4d" stroke-width="2.6"/>
+<text x="644.0" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">命令与标量网</text>
+<text x="662.5" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">hub 控制道</text>
+<rect x="896" y="28" width="266" height="112" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1013.0" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">LIC</text>
+<text x="986.5" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="1218" y="28" width="266" height="112" rx="5" fill="#e5edf6" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1334.5" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">CIF</text>
+<text x="1265.0" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">PIN 窗口常量表 · 首错</text>
+<rect x="28" y="336" width="252" height="112" rx="5" fill="#f4f4f4" stroke="#172b4d" stroke-width="2.6"/>
+<text x="78.5" y="380.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">DDR 控制器 P0</text>
+<text x="105.5" y="406.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">256 bit 独占</text>
+<rect x="28" y="504" width="252" height="126" rx="5" fill="#f4f4f4" stroke="#172b4d" stroke-width="2.6"/>
+<text x="91.0" y="543.2" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">片上互联总线</text>
+<text x="38.0" y="569.8000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">HSRAM P2 · DDR P2 · FMC </text>
+<text x="137.0" y="593.6" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">主端</text>
+<rect x="28" y="672" width="252" height="112" rx="5" fill="#f4f4f4" stroke="#172b4d" stroke-width="2.6"/>
+<text x="43.5" y="716.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">系统 DMA / FMC 从端</text>
+<text x="102.0" y="742.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">PIN 的写入方</text>
+<rect x="602" y="938" width="294" height="98" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="713.0" y="975.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">中央 L2</text>
+<text x="706.5" y="1001.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="1064" y="938" width="378" height="98" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1108.5" y="975.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">四核 IDN 接收桥（每核 4 条）</text>
+<text x="1210.5" y="1001.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="602" y="336" width="238" height="420" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="684.0" y="498.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NI_EXT</text>
+<text x="640.0" y="525.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">M0 / M1 主口协议端</text>
+<text x="660.5" y="548.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">PIN 从口协议端</text>
+<text x="653.0" y="572.5999999999999" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">跨时钟 · 宽度适配</text>
+<text x="670.0" y="596.3999999999999" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">固定窗口检查</text>
+<rect x="1036" y="406" width="196" height="126" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1081.5" y="457.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">MAE_ENG</text>
+<text x="1059.0" y="483.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">发起 M0 / M1 读写</text>
+<rect x="1036" y="616" width="196" height="140" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1098.0" y="674.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NI_INT</text>
+<text x="1054.5" y="700.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">读返回分路 · NI-L2C</text>
+<rect x="1260" y="406" width="182" height="126" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1300.5" y="457.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">MAE_IDN</text>
+<text x="1308.5" y="483.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="1260" y="616" width="182" height="140" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1298.5" y="674.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">MAE_DSU</text>
+<text x="1308.5" y="700.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<path d="M840,448 L1036,448" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M852.0,448.0 L840,448" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<path d="M840,490 L1036,490" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M1024.0,490.0 L1036,490" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<path d="M840,672 L1036,672" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M1024.0,672.0 L1036,672" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,714 L1036,714" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M852.0,714.0 L840,714" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M280,378 L602,378" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M590.0,378.0 L602,378" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M280,420 L602,420" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M292.0,420.0 L280,420" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M280,546 L602,546" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M292.0,546.0 L280,546" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M280,588 L602,588" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M590.0,588.0 L602,588" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M322,658 L602,658" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M280,700 L322,700" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M322,658 L322,700" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M590.0,658.0 L602,658" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M518,700 L602,700" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M518,700 L518,742" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M280,742 L518,742" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M292.0,742.0 L280,742" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,364 L1246,364" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M1246,140 L1246,364" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M1246.0,152.0 L1246,140" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<path d="M812,252 L812,336" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M812,252 L1288,252" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M1288,140 L1288,252" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M812.0,324.0 L812,336" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<path d="M728,140 L728,336" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M728.0,152.0 L728,140" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<circle cx="1246" cy="252" r="6" fill="white"/><path d="M1246,246 A6,6 0 0 1 1246,258" stroke="#466b89" fill="none" stroke-width="3"/>
+<circle cx="840" cy="448" r="3" fill="#466b89"/>
+<circle cx="1036" cy="448" r="3" fill="#466b89"/>
+<rect x="897.0" y="413.0" width="82" height="26" rx="2" fill="white"/>
+<text x="904.0" y="426.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">读写请求</text>
+<circle cx="840" cy="490" r="3" fill="#466b89"/>
+<circle cx="1036" cy="490" r="3" fill="#466b89"/>
+<rect x="905.5" y="455.0" width="65" height="26" rx="2" fill="white"/>
+<text x="912.5" y="468.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">写响应</text>
+<circle cx="840" cy="672" r="3" fill="#1d2530"/>
+<circle cx="1036" cy="672" r="3" fill="#1d2530"/>
+<rect x="853.0" y="637.0" width="170" height="26" rx="2" fill="white"/>
+<text x="860.0" y="650.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">读返回 / PIN 存储字</text>
+<circle cx="840" cy="714" r="3" fill="#1d2530"/>
+<circle cx="1036" cy="714" r="3" fill="#1d2530"/>
+<rect x="851.0" y="679.0" width="174" height="26" rx="2" fill="white"/>
+<text x="858.0" y="692.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">写出数据 · L2 写计数</text>
+<circle cx="280" cy="378" r="3" fill="#1d2530"/>
+<circle cx="602" cy="378" r="3" fill="#1d2530"/>
+<rect x="358.0" y="343.0" width="166" height="26" rx="2" fill="white"/>
+<text x="365.0" y="356.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">M0 读数据 / B 响应</text>
+<circle cx="602" cy="420" r="3" fill="#1d2530"/>
+<circle cx="280" cy="420" r="3" fill="#1d2530"/>
+<rect x="366.5" y="385.0" width="149" height="26" rx="2" fill="white"/>
+<text x="373.5" y="398.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">M0 地址 / 写数据</text>
+<circle cx="280" cy="546" r="3" fill="#1d2530"/>
+<circle cx="602" cy="546" r="3" fill="#1d2530"/>
+<rect x="366.5" y="511.0" width="149" height="26" rx="2" fill="white"/>
+<text x="373.5" y="524.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">M1 地址 / 写数据</text>
+<circle cx="602" cy="588" r="3" fill="#1d2530"/>
+<circle cx="280" cy="588" r="3" fill="#1d2530"/>
+<rect x="358.0" y="553.0" width="166" height="26" rx="2" fill="white"/>
+<text x="365.0" y="566.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">M1 读数据 / B 响应</text>
+<circle cx="280" cy="700" r="3" fill="#1d2530"/>
+<circle cx="602" cy="658" r="3" fill="#1d2530"/>
+<rect x="394.0" y="623.0" width="136" height="26" rx="2" fill="white"/>
+<text x="401.0" y="636.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">PIN 写 / 调试读</text>
+<circle cx="602" cy="700" r="3" fill="#1d2530"/>
+<circle cx="280" cy="742" r="3" fill="#1d2530"/>
+<rect x="325.0" y="707.0" width="148" height="26" rx="2" fill="white"/>
+<text x="332.0" y="720.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">B 响应 / SLVERR</text>
+<circle cx="840" cy="364" r="3" fill="#466b89"/>
+<circle cx="1246" cy="140" r="3" fill="#466b89"/>
+<rect x="1002.0" y="329.0" width="82" height="26" rx="2" fill="white"/>
+<text x="1009.0" y="342.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">首个违规</text>
+<circle cx="1288" cy="140" r="3" fill="#466b89"/>
+<circle cx="812" cy="336" r="3" fill="#466b89"/>
+<rect x="958.0" y="261.0" width="184" height="26" rx="2" fill="white"/>
+<text x="965.0" y="274.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">窗口常量表（初始化）</text>
+<circle cx="728" cy="336" r="3" fill="#466b89"/>
+<circle cx="728" cy="140" r="3" fill="#466b89"/>
+<path d="M728,296.8 L706,296.8" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+<rect x="624.0" y="283.8" width="82" height="26" rx="2" fill="white"/>
+<text x="631.0" y="296.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">主口错误</text>
+<text x="70.0" y="1082" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d">━━ 数据　┄ 控制 / 事件　灰框 = 本单元不用的对端或同组单元</text>
+
+</svg>

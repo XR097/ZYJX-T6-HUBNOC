@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1512" height="1218"><rect width="100%" height="100%" fill="white"/>
+<text x="20" y="32" font-size="18" fill="red">DIAGNOSTIC ONLY — NOT ACCEPTED — (&#x27;blocked stub&#x27;, &#x27;o_cru&#x27;, 0, (25, 4), (39, 4))</text>
+<rect x="406" y="196" width="924" height="784" fill="none" stroke="#bbb" stroke-dasharray="5 4"/>
+<rect x="588" y="28" width="308" height="98" fill="#eee" stroke="#345"/><text x="596" y="52" font-size="18">ccu</text>
+<rect x="42" y="322" width="266" height="98" fill="#eee" stroke="#345"/><text x="50" y="346" font-size="18">exit</text>
+<rect x="42" y="28" width="266" height="98" fill="#eee" stroke="#345"/><text x="50" y="52" font-size="18">cru</text>
+<rect x="588" y="294" width="308" height="434" fill="#eee" stroke="#345"/><text x="596" y="318" font-size="18">loss</text>
+<rect x="1064" y="238" width="252" height="112" fill="#eee" stroke="#345"/><text x="1072" y="262" font-size="18">sel</text>
+<rect x="1064" y="392" width="252" height="112" fill="#eee" stroke="#345"/><text x="1072" y="416" font-size="18">smp</text>
+<rect x="1064" y="560" width="252" height="70" fill="#eee" stroke="#345"/><text x="1072" y="584" font-size="18">nlu</text>
+<rect x="1064" y="686" width="252" height="70" fill="#eee" stroke="#345"/><text x="1072" y="710" font-size="18">qnt</text>
+<rect x="588" y="840" width="308" height="84" fill="#eee" stroke="#345"/><text x="596" y="864" font-size="18">l1p</text>
+<rect x="588" y="1064" width="308" height="84" fill="#eee" stroke="#345"/><text x="596" y="1088" font-size="18">l1</text>
+<rect x="1008" y="1064" width="336" height="84" fill="#eee" stroke="#345"/><text x="1016" y="1088" font-size="18">c2h</text>
+<polyline points="896,588 1064,588" fill="none" stroke="#222" stroke-width="2"/>
+<text x="980.0" y="582.0" font-size="13" fill="#922">b_nlu</text>
+<polyline points="728,924 728,1064" fill="none" stroke="#222" stroke-width="2"/>
+<text x="728.0" y="988.0" font-size="13" fill="#922">p_req</text>
+<polyline points="308,392 588,392" fill="none" stroke="#222" stroke-width="2"/>
+<text x="448.0" y="386.0" font-size="13" fill="#922">i_exit</text>
+<polyline points="308,98 588,98" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="448.0" y="92.0" font-size="13" fill="#922">i_cru</text>
+<polyline points="896,462 1064,462" fill="none" stroke="#222" stroke-width="2"/>
+<text x="980.0" y="456.0" font-size="13" fill="#922">o_smp</text>
+<polyline points="770,840 770,728" fill="none" stroke="#222" stroke-width="2"/>
+<text x="770.0" y="778.0" font-size="13" fill="#922">m_rsp</text>
+<polyline points="770,294 770,126" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="770.0" y="204.0" font-size="13" fill="#922">o_ccu</text>
+<polyline points="1064,280 994,280 994,322 896,322" fill="none" stroke="#222" stroke-width="2"/>
+<text x="945.0" y="316.0" font-size="13" fill="#922">i_sel</text>
+<polyline points="896,364 1022,364 1022,322 1064,322" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="959.0" y="358.0" font-size="13" fill="#922">o_sel</text>
+<polyline points="728,126 728,294" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="728.0" y="204.0" font-size="13" fill="#922">c_cmd</text>
+<polyline points="896,658 938,658 938,714 1064,714" fill="none" stroke="#222" stroke-width="2"/>
+<text x="1001.0" y="708.0" font-size="13" fill="#922">o_qnt</text>
+<polyline points="728,728 728,840" fill="none" stroke="#222" stroke-width="2"/>
+<text x="728.0" y="778.0" font-size="13" fill="#922">m_req</text>
+<polyline points="896,1106 1008,1106" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="1100.0" font-size="13" fill="#922">o_up</text>
+<polyline points="1064,420 896,420" fill="none" stroke="#222" stroke-width="2"/>
+<text x="980.0" y="414.0" font-size="13" fill="#922">i_smp</text>
+<polyline points="770,1064 770,924" fill="none" stroke="#222" stroke-width="2"/>
+<text x="770.0" y="988.0" font-size="13" fill="#922">p_rsp</text>
+</svg>

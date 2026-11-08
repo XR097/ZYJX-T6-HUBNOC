@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="380.0" y="34" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 1</tspan></text>
+<text xml:space="preserve" x="760.0" y="34" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 2</tspan></text>
+<text xml:space="preserve" x="1140.0" y="34" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 3</tspan></text>
+<text xml:space="preserve" x="180" y="105" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">堆 0 的 W 组</tspan></text>
+<rect x="200" y="60" width="360" height="90" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="380.0" y="105.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">读窗口 0 → 16 条 lane</tspan></text>
+<rect x="580" y="60" width="360" height="90" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="760.0" y="105.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 写窗口 2</tspan></text>
+<rect x="960" y="60" width="360" height="90" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1140.0" y="105.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">读窗口 2 → 16 条 lane</tspan></text>
+<text xml:space="preserve" x="180" y="225" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">堆 1 的 W 组</tspan></text>
+<rect x="200" y="180" width="360" height="90" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="380.0" y="225.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 写窗口 1</tspan></text>
+<rect x="580" y="180" width="360" height="90" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="760.0" y="225.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">读窗口 1 → 16 条 lane</tspan></text>
+<rect x="960" y="180" width="360" height="90" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1140.0" y="225.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 写窗口 3</tspan></text>
+<path d="M570.0,52.0 L570.0,280.0" stroke="#b42318" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="570" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">切换地址堆位</tspan></text>
+<path d="M950.0,52.0 L950.0,280.0" stroke="#b42318" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="950" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">切换地址堆位</tspan></text>
+<text xml:space="preserve" x="180" y="390" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 1 内某一拍</tspan></text>
+<rect x="200" y="350" width="200" height="80" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="390.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">堆 0 bank 3：读</tspan></text>
+<rect x="420" y="350" width="200" height="80" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="390.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">堆 1 bank 3：写</tspan></text>
+<path d="M300.0,430.0 L300.0,454.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M520.0,430.0 L520.0,454.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<text xml:space="preserve" x="410" y="468" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">两颗宏，同拍各做一次访问</tspan></text>
+</svg>

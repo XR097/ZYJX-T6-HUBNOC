@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="500" viewBox="0 0 1240 500">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="300.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 0</tspan></text>
+<text xml:space="preserve" x="410.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 1</tspan></text>
+<text xml:space="preserve" x="520.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 2</tspan></text>
+<text xml:space="preserve" x="630.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 3</tspan></text>
+<text xml:space="preserve" x="740.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 4</tspan></text>
+<text xml:space="preserve" x="850.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 5</tspan></text>
+<text xml:space="preserve" x="960.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 6</tspan></text>
+<text xml:space="preserve" x="1070.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 7</tspan></text>
+<text xml:space="preserve" x="234" y="69.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">x</tspan></text>
+<rect x="250" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.9</tspan></text>
+<rect x="360" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">-3.7</tspan></text>
+<rect x="470" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.2</tspan></text>
+<rect x="580" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.4</tspan></text>
+<rect x="690" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="740.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">-0.05</tspan></text>
+<rect x="800" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="850.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.85</tspan></text>
+<rect x="910" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="960.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.6</tspan></text>
+<rect x="1020" y="48" width="100" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1070.0" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">-1.1</tspan></text>
+<text xml:space="preserve" x="234" y="127.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">SEL 交回的保留码</tspan></text>
+<rect x="250" y="106" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">C</tspan></text>
+<rect x="360" y="106" width="100" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">Z</tspan></text>
+<rect x="470" y="106" width="100" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">Z</tspan></text>
+<rect x="580" y="106" width="100" height="42" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">F</tspan></text>
+<rect x="690" y="106" width="100" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="740.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">Z</tspan></text>
+<rect x="800" y="106" width="100" height="42" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="850.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">F</tspan></text>
+<rect x="910" y="106" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="960.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">C</tspan></text>
+<rect x="1020" y="106" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1070.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">C</tspan></text>
+<text xml:space="preserve" x="250" y="178" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">只看保留通道：最大幅值 1.85 → 组尺度 2</tspan><tspan dy="-5.7" font-size="10">-2</tspan><tspan dy="5.7">（若把通道 1 的 3.7 算进来会是 2</tspan><tspan dy="-5.7" font-size="10">-1</tspan><tspan dy="5.7">）</tspan></text>
+<text xml:space="preserve" x="410.0" y="158" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">判 Z，不进尺度</tspan></text>
+<text xml:space="preserve" x="234" y="251.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">保留通道的 E2M3</tspan></text>
+<rect x="250" y="230" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="300.0" y="251.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">#0：3.5</tspan></text>
+<rect x="360" y="230" width="100" height="42" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="410.0" y="251.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">#3：5.5</tspan></text>
+<rect x="470" y="230" width="100" height="42" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="251.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">#5：7.5</tspan></text>
+<rect x="580" y="230" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="251.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">#6：2.5</tspan></text>
+<rect x="690" y="230" width="100" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="740.0" y="251.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">#7：-4.5</tspan></text>
+<text xml:space="preserve" x="234" y="341.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">写出的一段</tspan></text>
+<rect x="250" y="320" width="142" height="42" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="321.0" y="341.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">段尺度 E8M0</tspan></text>
+<rect x="400" y="320" width="222" height="42" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="511.0" y="341.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">keep 位图 10010111</tspan></text>
+<rect x="630" y="320" width="162" height="42" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="711.0" y="341.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">F 标志 01100</tspan></text>
+<rect x="800" y="320" width="242" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="921.0" y="341.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">值区：5 × 6 bit</tspan></text>
+<text xml:space="preserve" x="250" y="388" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">段头 = 段尺度 + keep 位图；F 标志写在值之前（每个保留通道 1 bit，F 为 1）</tspan></text>
+<text xml:space="preserve" x="250" y="420" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">实际一段 32 个通道：段长 5 + ⌈k</tspan><tspan dy="3.8" font-size="10">s</tspan><tspan dy="-3.8">/8⌉ + ⌈w·k</tspan><tspan dy="3.8" font-size="10">s</tspan><tspan dy="-3.8">/8⌉ B，k</tspan><tspan dy="3.8" font-size="10">s</tspan><tspan dy="-3.8"> = 20、w = 6 时 23 B</tspan></text>
+<text xml:space="preserve" x="250" y="452" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">位序与字段落位归数据组织篇</tspan></text>
+</svg>

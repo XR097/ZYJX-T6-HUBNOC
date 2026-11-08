@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="620" viewBox="0 0 1500 620">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-LENGTH-REPORT  变长对象：按上限分槽 → CCU 发送 → 握手数满后发出报告 → 按槽读（核 0 产出，经 L2 给核 2）</tspan></text>
+<text xml:space="preserve" x="30" y="62" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">窗口 [字 200, 字 260) = 3 槽 × 20 个存储字（离线上限）；3 条记录 [520, 403, 389] B 各占 [17, 13, 13] 个存储字，写在各自槽的开头、槽尾空着</tspan></text>
+<rect x="40" y="110" width="190" height="54" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="137.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">编译链 / 指令</tspan></text>
+<rect x="240" y="110" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="137.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">1. 位点指令：输出对象 3 个槽、每槽 20 个存储字，从 [0][A][字 200] 起；发送指令：目的 L2 窗口基址（象限 = 本核号）、目标存储 = L2</tspan></text>
+<rect x="40" y="172" width="190" height="54" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="199.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 QNT + CCU</tspan></text>
+<rect x="240" y="172" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="199.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">2. QNT 写 3 条记录，CCU 逐记录推地址：记录 i 写进第 i 槽开头，共 43 项（17 + 13 + 13）</tspan></text>
+<path d="M135.0,164.0 L135.0,172.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<rect x="40" y="234" width="190" height="54" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="261.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 CCU（C2H）</tspan></text>
+<rect x="240" y="234" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="261.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">3. CCU 读 L1、经 C2H 发 43 拍，每拍 addr 与通路选择由 CCU 给出、不标末拍；L2 每写进一项回一个写入握手，CCU 数满 43 个 = 已写进 L2</tspan></text>
+<path d="M135.0,226.0 L135.0,234.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<rect x="40" y="296" width="190" height="54" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="323.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 CCU（C2H）</tspan></text>
+<rect x="240" y="296" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="323.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">4. 握手数满 → 命令与标量网发 发出报告（只带目的起始地址 = L2 窗口基址）→ MAE；不带对象标识、项数与记录数</tspan></text>
+<path d="M135.0,288.0 L135.0,296.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<rect x="40" y="358" width="190" height="54" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">MAE</tspan></text>
+<rect x="240" y="358" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="385.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">5. 按目的起始地址找到源起始地址相同的那条 L2 → 核 2 指令，放行；该指令执行完时带它的标号通知 LIC</tspan></text>
+<path d="M135.0,350.0 L135.0,358.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<rect x="40" y="420" width="190" height="54" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">MAE（H2C）</tspan></text>
+<rect x="240" y="420" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="447.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">6. 搬运引擎按槽长整槽读 60 个存储字（3 槽 × 20）、经 H2C 写进核 2 的 L1；应写量 60 在位点指令里，不经长度转发</tspan></text>
+<path d="M135.0,412.0 L135.0,420.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<rect x="40" y="482" width="190" height="54" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="135.0" y="509.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 CCU</tspan></text>
+<rect x="240" y="482" width="1220" height="54" rx="2" fill="white" stroke="#8a94a6" stroke-width="1"/>
+<text xml:space="preserve" x="252" y="509.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">7. 核 2 写入项数达到 60、CCU 比对通过即可消费（核内）；引擎数满 60 个写入握手 = 指令执行完（核间）；消费时按记录头个数忽略槽尾</tspan></text>
+<path d="M135.0,474.0 L135.0,482.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="30" y="562" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">按槽静态分配；握手数满再报；报告按地址对应指令；读方按槽长读</tspan></text>
+<text xml:space="preserve" x="1476" y="608" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-05</tspan></text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="640" viewBox="0 0 1500 640">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-WINDOW-GATHER  权重驻留：4 个 token × 3 个窗口的产出次序，每窗口一个对象 + 长度表，MAE 按表聚集 token 1</tspan></text>
+<text xml:space="preserve" x="30" y="62" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">产出次序 = 窗口 0 的 token 0…3，再窗口 1…；每个窗口的 4 片紧挨成一个对象（QNT 一个攒字寄存器），长度表 4 × 24 bit 另存；MAE 先读 3 张表，再逐片取</tspan></text>
+<text xml:space="preserve" x="60" y="110" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">产出次序 →</tspan></text>
+<rect x="190" y="94" width="94" height="32" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="237.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗0·tok0</tspan></text>
+<rect x="290" y="94" width="94" height="32" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="337.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗0·tok1</tspan></text>
+<rect x="390" y="94" width="94" height="32" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="437.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗0·tok2</tspan></text>
+<rect x="490" y="94" width="94" height="32" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="537.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗0·tok3</tspan></text>
+<rect x="590" y="94" width="94" height="32" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="637.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗1·tok0</tspan></text>
+<rect x="690" y="94" width="94" height="32" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="737.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗1·tok1</tspan></text>
+<rect x="790" y="94" width="94" height="32" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="837.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗1·tok2</tspan></text>
+<rect x="890" y="94" width="94" height="32" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="937.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗1·tok3</tspan></text>
+<rect x="990" y="94" width="94" height="32" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1037.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗2·tok0</tspan></text>
+<rect x="1090" y="94" width="94" height="32" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1137.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗2·tok1</tspan></text>
+<rect x="1190" y="94" width="94" height="32" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1237.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗2·tok2</tspan></text>
+<rect x="1290" y="94" width="94" height="32" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1337.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">窗2·tok3</tspan></text>
+<text xml:space="preserve" x="60" y="184" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">窗口 0 对象</tspan></text>
+<text xml:space="preserve" x="60" y="206" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">起点 4096</tspan></text>
+<rect x="190.0" y="160" width="120.0" height="48" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="250.0" y="184" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok0 50 B</tspan></text>
+<rect x="310.0" y="160" width="91.2" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="355.6" y="184" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok1 38 B</tspan></text>
+<rect x="401.2" y="160" width="146.4" height="48" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="474.4" y="184" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok2 61 B</tspan></text>
+<rect x="547.5999999999999" y="160" width="105.6" height="48" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="600.4" y="184" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok3 44 B</tspan></text>
+<text xml:space="preserve" x="190" y="226" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">长度表 [50, 38, 61, 44]（另存）；各片相对起点 [0, 50, 88, 149]</tspan></text>
+<text xml:space="preserve" x="60" y="280" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">窗口 1 对象</tspan></text>
+<text xml:space="preserve" x="60" y="302" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">起点 4608</tspan></text>
+<rect x="190.0" y="256" width="112.8" height="48" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="246.4" y="280" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok0 47 B</tspan></text>
+<rect x="302.8" y="256" width="124.8" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="365.2" y="280" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok1 52 B</tspan></text>
+<rect x="427.6" y="256" width="96.0" height="48" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="475.59999999999997" y="280" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok2 40 B</tspan></text>
+<rect x="523.5999999999999" y="256" width="139.2" height="48" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="593.2" y="280" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok3 58 B</tspan></text>
+<text xml:space="preserve" x="190" y="322" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">长度表 [47, 52, 40, 58]（另存）；各片相对起点 [0, 47, 99, 139]</tspan></text>
+<text xml:space="preserve" x="60" y="376" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">窗口 2 对象</tspan></text>
+<text xml:space="preserve" x="60" y="398" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">起点 5120</tspan></text>
+<rect x="190.0" y="352" width="132.0" height="48" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="256.0" y="376" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok0 55 B</tspan></text>
+<rect x="322.0" y="352" width="86.39999999999999" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="365.2" y="376" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok1 36 B</tspan></text>
+<rect x="408.4" y="352" width="117.6" height="48" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="467.2" y="376" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok2 49 B</tspan></text>
+<rect x="526.0" y="352" width="144.0" height="48" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="598.0" y="376" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">tok3 60 B</tspan></text>
+<text xml:space="preserve" x="190" y="418" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">长度表 [55, 36, 49, 60]（另存）；各片相对起点 [0, 55, 91, 140]</tspan></text>
+<text xml:space="preserve" x="60" y="482" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">聚集 token 1 →</tspan></text>
+<rect x="190" y="458" width="91.2" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="235.6" y="474" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">窗0</tspan></text>
+<text xml:space="preserve" x="235.6" y="492" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="500" fill="#1d2530"><tspan dy="0.0">源 4146 取 38 B</tspan></text>
+<rect x="281.2" y="458" width="124.8" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="343.59999999999997" y="474" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">窗1</tspan></text>
+<text xml:space="preserve" x="343.59999999999997" y="492" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="500" fill="#1d2530"><tspan dy="0.0">源 4655 取 52 B</tspan></text>
+<rect x="406.0" y="458" width="86.39999999999999" height="48" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1"/>
+<text xml:space="preserve" x="449.2" y="474" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#1d2530"><tspan dy="0.0">窗2</tspan></text>
+<text xml:space="preserve" x="449.2" y="492" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="10" font-weight="500" fill="#1d2530"><tspan dy="0.0">源 5175 取 36 B</tspan></text>
+<text xml:space="preserve" x="504.4" y="482" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">← 消费核 L1 里 token 1 的记录，共 126 B，片片紧挨</tspan></text>
+<text xml:space="preserve" x="190" y="528" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">源地址 = 对象起点 + 表中前 t 项之和（[4146, 4655, 5175]）；目的地址在引擎内顺序累加；消费核 CCU 对三张表求和得每 token 总长</tspan></text>
+<text xml:space="preserve" x="30" y="600" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">token 驻留时产出本来就按 token 连续，一个对象一张表、不需要聚集；备选：消费方按窗口分段算、部分和停放 L1，MAE 只顺序搬（数据流篇定）</tspan></text>
+<text xml:space="preserve" x="1476" y="628" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-08</tspan></text>
+</svg>

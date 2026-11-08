@@ -1,0 +1,997 @@
+{
+  "id": "FIG-VNU_SEL-CONN",
+  "title": "",
+  "width": 1512,
+  "height": 1218,
+  "blocks": [
+    {
+      "id": "ccu",
+      "rect": [
+        588,
+        28,
+        308,
+        98
+      ],
+      "title": "本核 CCU",
+      "subtitle": "指令 / 档号 / 地址推理",
+      "kind": "control"
+    },
+    {
+      "id": "fba",
+      "rect": [
+        42,
+        322,
+        266,
+        84
+      ],
+      "title": "MXU FBA",
+      "subtitle": "粗分数直达口",
+      "kind": "compute"
+    },
+    {
+      "id": "exit",
+      "rect": [
+        42,
+        476,
+        266,
+        84
+      ],
+      "title": "MXU 出口级",
+      "subtitle": "长流评分",
+      "kind": "compute"
+    },
+    {
+      "id": "thr",
+      "rect": [
+        42,
+        630,
+        266,
+        84
+      ],
+      "title": "阈值套",
+      "subtitle": "H2C 落地 L1 后读入",
+      "kind": "control"
+    },
+    {
+      "id": "sel",
+      "rect": [
+        588,
+        294,
+        308,
+        434
+      ],
+      "title": "SEL",
+      "subtitle": "比较与排序\n阈值 / 相对阈值\n流式 TOPK / 封顶",
+      "kind": "function"
+    },
+    {
+      "id": "nlu",
+      "rect": [
+        1036,
+        266,
+        252,
+        84
+      ],
+      "title": "NLU",
+      "subtitle": "",
+      "kind": "function"
+    },
+    {
+      "id": "qnt",
+      "rect": [
+        1036,
+        406,
+        252,
+        98
+      ],
+      "title": "QNT",
+      "subtitle": "",
+      "kind": "function"
+    },
+    {
+      "id": "smp",
+      "rect": [
+        1036,
+        560,
+        252,
+        70
+      ],
+      "title": "SMP",
+      "subtitle": "",
+      "kind": "function"
+    },
+    {
+      "id": "loss",
+      "rect": [
+        1036,
+        672,
+        252,
+        70
+      ],
+      "title": "LOSS",
+      "subtitle": "",
+      "kind": "function"
+    },
+    {
+      "id": "l1p",
+      "rect": [
+        448,
+        840,
+        308,
+        84
+      ],
+      "title": "VNU 的 RRAM 口",
+      "subtitle": "激活类读口 / 写集合器 FIFO",
+      "kind": "external"
+    },
+    {
+      "id": "l1",
+      "rect": [
+        448,
+        1064,
+        308,
+        84
+      ],
+      "title": "L1 的 A 类空间",
+      "subtitle": "名次缓冲 / 暂存 / 上行对象",
+      "kind": "memory"
+    },
+    {
+      "id": "ulb",
+      "rect": [
+        1008,
+        1064,
+        294,
+        84
+      ],
+      "title": "L1 发送侧",
+      "subtitle": "MAE 发送命令 → C2H",
+      "kind": "external"
+    }
+  ],
+  "containers": [
+    {
+      "id": "vnu",
+      "rect": [
+        406,
+        196,
+        924,
+        784
+      ],
+      "title": "VNU 组",
+      "dashed": true,
+      "title_width": 121
+    }
+  ],
+  "nets": [
+    {
+      "net_id": "o_rank",
+      "src": {
+        "block": "sel",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "smp",
+          "side": "l"
+        },
+        {
+          "block": "loss",
+          "side": "l"
+        }
+      ],
+      "label": "名次项",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            896,
+            644
+          ],
+          [
+            938,
+            644
+          ],
+          [
+            938,
+            602
+          ],
+          [
+            1036,
+            602
+          ]
+        ],
+        [
+          [
+            896,
+            644
+          ],
+          [
+            938,
+            644
+          ],
+          [
+            938,
+            700
+          ],
+          [
+            1036,
+            700
+          ]
+        ]
+      ],
+      "points": [
+        [
+          896,
+          644
+        ],
+        [
+          938,
+          644
+        ],
+        [
+          938,
+          602
+        ],
+        [
+          1036,
+          602
+        ]
+      ],
+      "junctions": [
+        [
+          938,
+          644
+        ]
+      ]
+    },
+    {
+      "net_id": "m_req",
+      "src": {
+        "block": "sel",
+        "side": "b"
+      },
+      "dsts": [
+        {
+          "block": "l1p",
+          "side": "t"
+        }
+      ],
+      "label": "写 din + 长度 → FIFO",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            616,
+            728
+          ],
+          [
+            616,
+            840
+          ]
+        ]
+      ],
+      "points": [
+        [
+          616,
+          728
+        ],
+        [
+          616,
+          840
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "m_rsp",
+      "src": {
+        "block": "l1p",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "b"
+        }
+      ],
+      "label": "读出（1 拍）/ wr_stall",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            658,
+            840
+          ],
+          [
+            658,
+            728
+          ]
+        ]
+      ],
+      "points": [
+        [
+          658,
+          840
+        ],
+        [
+          658,
+          728
+        ]
+      ],
+      "junctions": [],
+      "label_box": {
+        "rect": [
+          680.0,
+          771.0,
+          191,
+          26
+        ],
+        "x": 775.5,
+        "y": 784.0,
+        "rotate": 0,
+        "segment": [
+          [
+            658,
+            840
+          ],
+          [
+            658,
+            728
+          ]
+        ],
+        "orientation": "callout",
+        "leader": [
+          [
+            658,
+            784.0
+          ],
+          [
+            680,
+            784.0
+          ]
+        ]
+      }
+    },
+    {
+      "net_id": "i_nlu",
+      "src": {
+        "block": "nlu",
+        "side": "l"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "r"
+        }
+      ],
+      "label": "评分 / 统计量",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            1036,
+            322
+          ],
+          [
+            896,
+            322
+          ]
+        ]
+      ],
+      "points": [
+        [
+          1036,
+          322
+        ],
+        [
+          896,
+          322
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "i_qnt",
+      "src": {
+        "block": "qnt",
+        "side": "l"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "r"
+        }
+      ],
+      "label": "激活通道幅值",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            1036,
+            434
+          ],
+          [
+            896,
+            434
+          ]
+        ]
+      ],
+      "points": [
+        [
+          1036,
+          434
+        ],
+        [
+          896,
+          434
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "o_qnt",
+      "src": {
+        "block": "sel",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "qnt",
+          "side": "l"
+        }
+      ],
+      "label": "判决位",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            896,
+            476
+          ],
+          [
+            1036,
+            476
+          ]
+        ]
+      ],
+      "points": [
+        [
+          896,
+          476
+        ],
+        [
+          1036,
+          476
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "p_req",
+      "src": {
+        "block": "l1p",
+        "side": "b"
+      },
+      "dsts": [
+        {
+          "block": "l1",
+          "side": "t"
+        }
+      ],
+      "label": "",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            588,
+            924
+          ],
+          [
+            588,
+            1064
+          ]
+        ]
+      ],
+      "points": [
+        [
+          588,
+          924
+        ],
+        [
+          588,
+          1064
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "p_rsp",
+      "src": {
+        "block": "l1",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "l1p",
+          "side": "b"
+        }
+      ],
+      "label": "",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            630,
+            1064
+          ],
+          [
+            630,
+            924
+          ]
+        ]
+      ],
+      "points": [
+        [
+          630,
+          1064
+        ],
+        [
+          630,
+          924
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "c_cmd",
+      "src": {
+        "block": "ccu",
+        "side": "b"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "t"
+        }
+      ],
+      "label": "模式 / 参数 / 屏蔽位 / 档号",
+      "kind": "ctrl",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            728,
+            126
+          ],
+          [
+            728,
+            294
+          ]
+        ]
+      ],
+      "points": [
+        [
+          728,
+          126
+        ],
+        [
+          728,
+          294
+        ]
+      ],
+      "junctions": [],
+      "label_box": {
+        "rect": [
+          485.0,
+          146.6,
+          221,
+          26
+        ],
+        "x": 595.5,
+        "y": 159.6,
+        "rotate": 0,
+        "segment": [
+          [
+            728,
+            126
+          ],
+          [
+            728,
+            294
+          ]
+        ],
+        "orientation": "callout",
+        "leader": [
+          [
+            728,
+            159.6
+          ],
+          [
+            706,
+            159.6
+          ]
+        ]
+      }
+    },
+    {
+      "net_id": "o_ccu",
+      "src": {
+        "block": "sel",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "ccu",
+          "side": "b"
+        }
+      ],
+      "label": "判决位 / 计数 / 最大类号 / stall_vnu",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            770,
+            294
+          ],
+          [
+            770,
+            126
+          ]
+        ]
+      ],
+      "points": [
+        [
+          770,
+          294
+        ],
+        [
+          770,
+          126
+        ]
+      ],
+      "junctions": [],
+      "label_box": {
+        "rect": [
+          792.0,
+          222.2,
+          296,
+          26
+        ],
+        "x": 940.0,
+        "y": 235.2,
+        "rotate": 0,
+        "segment": [
+          [
+            770,
+            294
+          ],
+          [
+            770,
+            126
+          ]
+        ],
+        "orientation": "callout",
+        "leader": [
+          [
+            770,
+            235.2
+          ],
+          [
+            792,
+            235.2
+          ]
+        ]
+      }
+    },
+    {
+      "net_id": "o_up",
+      "src": {
+        "block": "l1",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "ulb",
+          "side": "l"
+        }
+      ],
+      "label": "位图 / 序号列表",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            756,
+            1106
+          ],
+          [
+            1008,
+            1106
+          ]
+        ]
+      ],
+      "points": [
+        [
+          756,
+          1106
+        ],
+        [
+          1008,
+          1106
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "i_fba",
+      "src": {
+        "block": "fba",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "l"
+        }
+      ],
+      "label": "粗分数",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            308,
+            378
+          ],
+          [
+            588,
+            378
+          ]
+        ]
+      ],
+      "points": [
+        [
+          308,
+          378
+        ],
+        [
+          588,
+          378
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "i_exit",
+      "src": {
+        "block": "exit",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "l"
+        }
+      ],
+      "label": "长流评分",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            308,
+            518
+          ],
+          [
+            588,
+            518
+          ]
+        ]
+      ],
+      "points": [
+        [
+          308,
+          518
+        ],
+        [
+          588,
+          518
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "c_thr",
+      "src": {
+        "block": "thr",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "sel",
+          "side": "l"
+        }
+      ],
+      "label": "阈值套",
+      "kind": "ctrl",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            308,
+            672
+          ],
+          [
+            588,
+            672
+          ]
+        ]
+      ],
+      "points": [
+        [
+          308,
+          672
+        ],
+        [
+          588,
+          672
+        ]
+      ],
+      "junctions": []
+    }
+  ],
+  "max_crossings": 2,
+  "attempts": 24,
+  "save_diagnostic": true,
+  "side_strategy": "relative",
+  "allow_complex_visibility": true,
+  "multisink_search": true,
+  "side_selection": "automatic_geometry",
+  "side_strategy_used": "relative",
+  "automatic_side_candidates": [
+    {
+      "net": "c_cmd",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "b",
+      "destinations": [
+        "t"
+      ]
+    },
+    {
+      "net": "o_ccu",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    },
+    {
+      "net": "i_fba",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "i_exit",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "c_thr",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "i_nlu",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "l",
+      "destinations": [
+        "r"
+      ]
+    },
+    {
+      "net": "i_qnt",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "l",
+      "destinations": [
+        "r"
+      ]
+    },
+    {
+      "net": "o_qnt",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "o_rank",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "net": "m_req",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "b",
+      "destinations": [
+        "t"
+      ]
+    },
+    {
+      "net": "m_rsp",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    },
+    {
+      "net": "p_req",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "b",
+      "destinations": [
+        "t"
+      ]
+    },
+    {
+      "net": "p_rsp",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    },
+    {
+      "net": "o_up",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    }
+  ],
+  "crossings": [],
+  "status": "DIAGNOSTIC_ONLY_NOT_ACCEPTED",
+  "route_failure": "('label placement', 'm_req', 185)",
+  "route_attempt": 0,
+  "failure_counts": {
+    "('label placement', 'm_req', 185)": 24
+  }
+}

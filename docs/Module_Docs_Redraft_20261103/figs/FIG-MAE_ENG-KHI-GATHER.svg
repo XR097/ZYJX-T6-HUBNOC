@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">同一录取列表 [3, 7]，head_dim 128：每个 key 每平面 64 B；A = hi 平面基址 0x100000，B = lo 平面基址 0x200000</tspan></text>
+<rect x="30" y="60" width="700" height="400" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="44" y="84" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">驻留模式：只取 lo，直通</tspan></text>
+<text xml:space="preserve" x="50" y="110" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">项字节数 64 B，每项 1 段</tspan></text>
+<rect x="50" y="140" width="260" height="50" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="180.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 3：B + 3×64 = B + 192</tspan></text>
+<path d="M310.0,165.0 L420.0,165.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<rect x="420" y="140" width="280" height="50" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="560.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">lo 区 0–63</tspan></text>
+<rect x="50" y="210" width="260" height="50" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="180.0" y="235.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 7：B + 7×64 = B + 448</tspan></text>
+<path d="M310.0,235.0 L420.0,235.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<rect x="420" y="210" width="280" height="50" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="560.0" y="235.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">lo 区 64–127</tspan></text>
+<text xml:space="preserve" x="50" y="320" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">K hi 已驻留在核 L1（粗算落地区），精算时 hi、lo 两条列道各取一处</tspan></text>
+<text xml:space="preserve" x="50" y="350" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">目的：核 L1 lo 区，按 key 连续，共 128 B</tspan></text>
+<rect x="760" y="60" width="710" height="400" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="774" y="84" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">重读模式：hi + lo 两段，经 DSU 两平面合并</tspan></text>
+<text xml:space="preserve" x="780" y="110" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">项字节数 128 B，每项 2 段（两处不连续，展开方式【设计者定】）</tspan></text>
+<rect x="780" y="140" width="220" height="44" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="890.0" y="162.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 3 hi：A + 192</tspan></text>
+<rect x="780" y="190" width="220" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="890.0" y="212.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 3 lo：B + 192</tspan></text>
+<path d="M1000.0,162.0 L1090.0,162.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M1000.0,212.0 L1090.0,212.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<rect x="1090" y="140" width="360" height="44" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1270.0" y="162.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">全码记录 0–63：hi 4 个存储字</tspan></text>
+<rect x="1090" y="190" width="360" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1270.0" y="212.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">全码记录 64–127：lo 4 个存储字</tspan></text>
+<rect x="780" y="250" width="220" height="44" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="890.0" y="272.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 7 hi：A + 448</tspan></text>
+<rect x="780" y="300" width="220" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="890.0" y="322.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">key 7 lo：B + 448</tspan></text>
+<path d="M1000.0,272.0 L1090.0,272.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M1000.0,322.0 L1090.0,322.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<rect x="1090" y="250" width="360" height="44" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1270.0" y="272.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">全码记录 128–191：hi 4 个存储字</tspan></text>
+<rect x="1090" y="300" width="360" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1270.0" y="322.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">全码记录 192–255：lo 4 个存储字</tspan></text>
+<text xml:space="preserve" x="780" y="400" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">每 key 一条 128 B 记录，平面分开；E8M0 尺度另段落 S 类</tspan></text>
+<text xml:space="preserve" x="30" y="490" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">MAE 只看项字节数、段数与运算字段，不知道是哪种模式</tspan></text>
+<text xml:space="preserve" x="1476" y="508" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-06</tspan></text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="560" viewBox="0 0 1500 560">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-CTRL-MSG  一段 Fusion-CCU 进段 SRAM、成员逐条进"下一条"寄存器、一条可选的执行完成进 RF 队列</tspan></text>
+<text xml:space="preserve" x="30" y="62" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">命令与标量网 64 bit/拍；1,024 bit 命令字 = 16 拍；本段 = 首字 1 拍 + 3 个成员字 × 16 拍 = 49 拍；首字含长度，接收方按长度收完，无末字标记</tspan></text>
+<rect x="60" y="110" width="900" height="200" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="74" y="134" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">LIC → 核 0 CCU（Fusion-CCU 段，一次整段）</tspan></text>
+<rect x="80" y="154" width="57" height="40" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="108.5" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">首字</tspan></text>
+<rect x="143" y="154" width="252" height="40" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="269.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">成员 0（16 拍）</tspan></text>
+<rect x="401" y="154" width="252" height="40" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="527.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">成员 1（16 拍）</tspan></text>
+<rect x="659" y="154" width="252" height="40" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="785.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">成员 2（16 拍）</tspan></text>
+<text xml:space="preserve" x="80" y="220" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">→ 写进段 SRAM；ready = 段 SRAM 有空位；容量 ≤ 16 字【设计者定】</tspan></text>
+<text xml:space="preserve" x="80" y="250" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">段计数器按操作 15 的块数循环：每块把成员 0、1、2 依次搬进"下一条"寄存器，LIC 不重发</tspan></text>
+<text xml:space="preserve" x="80" y="280" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">普通指令不经段 SRAM：LIC 直接写"下一条"寄存器（ready = 它为空）</tspan></text>
+<rect x="1000" y="110" width="460" height="200" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="1014" y="134" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">CCU 指令端点</tspan></text>
+<rect x="1020" y="154" width="200" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1120.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">当前指令：成员 1（块 3）</tspan></text>
+<rect x="1240" y="154" width="200" height="40" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1340.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">下一条：成员 2（块 3）</tspan></text>
+<rect x="1020" y="210" width="420" height="40" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1230.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">Fusion-CCU 段 SRAM：首字 + 成员 0 / 1 / 2，块计数 3 / 8</tspan></text>
+<rect x="1020" y="260" width="420" height="34" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1230.0" y="277.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">RF 队列：GO、长度转发、CRU 标量</tspan></text>
+<rect x="60" y="340" width="900" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="74" y="364" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">远离 MAE 的 DMA 通道 → MAE（可选短消息）</tspan></text>
+<rect x="80" y="384" width="260" height="40" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="210.0" y="404.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">执行完成：首字（引擎号，长度 = 1 字）</tspan></text>
+<text xml:space="preserve" x="360" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">1 拍 → MAE 的 RF 队列；搬运引擎数满命令规定的拍数才发【设计者定】</tspan></text>
+<rect x="1000" y="340" width="460" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="1014" y="364" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">MAE 端点</tspan></text>
+<rect x="1020" y="384" width="420" height="40" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1230.0" y="404.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">RF 队列：执行完成 / 发出报告</tspan></text>
+<text xml:space="preserve" x="30" y="500" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">两种端点都不经 L1 / L2 SRAM；命令 SRAM 无类位、不在数据网上；每条链路单向点到点，无 addr</tspan></text>
+<text xml:space="preserve" x="1476" y="548" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-05</tspan></text>
+</svg>

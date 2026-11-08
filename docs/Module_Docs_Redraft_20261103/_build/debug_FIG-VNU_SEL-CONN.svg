@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1512" height="1218"><rect width="100%" height="100%" fill="white"/>
+<text x="20" y="32" font-size="18" fill="red">DIAGNOSTIC ONLY — NOT ACCEPTED — (&#x27;label placement&#x27;, &#x27;m_req&#x27;, 185)</text>
+<rect x="406" y="196" width="924" height="784" fill="none" stroke="#bbb" stroke-dasharray="5 4"/>
+<rect x="588" y="28" width="308" height="98" fill="#eee" stroke="#345"/><text x="596" y="52" font-size="18">ccu</text>
+<rect x="42" y="322" width="266" height="84" fill="#eee" stroke="#345"/><text x="50" y="346" font-size="18">fba</text>
+<rect x="42" y="476" width="266" height="84" fill="#eee" stroke="#345"/><text x="50" y="500" font-size="18">exit</text>
+<rect x="42" y="630" width="266" height="84" fill="#eee" stroke="#345"/><text x="50" y="654" font-size="18">thr</text>
+<rect x="588" y="294" width="308" height="434" fill="#eee" stroke="#345"/><text x="596" y="318" font-size="18">sel</text>
+<rect x="1036" y="266" width="252" height="84" fill="#eee" stroke="#345"/><text x="1044" y="290" font-size="18">nlu</text>
+<rect x="1036" y="406" width="252" height="98" fill="#eee" stroke="#345"/><text x="1044" y="430" font-size="18">qnt</text>
+<rect x="1036" y="560" width="252" height="70" fill="#eee" stroke="#345"/><text x="1044" y="584" font-size="18">smp</text>
+<rect x="1036" y="672" width="252" height="70" fill="#eee" stroke="#345"/><text x="1044" y="696" font-size="18">loss</text>
+<rect x="448" y="840" width="308" height="84" fill="#eee" stroke="#345"/><text x="456" y="864" font-size="18">l1p</text>
+<rect x="448" y="1064" width="308" height="84" fill="#eee" stroke="#345"/><text x="456" y="1088" font-size="18">l1</text>
+<rect x="1008" y="1064" width="294" height="84" fill="#eee" stroke="#345"/><text x="1016" y="1088" font-size="18">ulb</text>
+<polyline points="896,644 938,644 938,602 1036,602" fill="none" stroke="#222" stroke-width="2"/>
+<polyline points="896,644 938,644 938,700 1036,700" fill="none" stroke="#222" stroke-width="2"/>
+<text x="987.0" y="694.0" font-size="13" fill="#922">o_rank</text>
+<polyline points="616,728 616,840" fill="none" stroke="#222" stroke-width="2"/>
+<text x="616.0" y="778.0" font-size="13" fill="#922">m_req</text>
+<polyline points="658,840 658,728" fill="none" stroke="#222" stroke-width="2"/>
+<text x="658.0" y="778.0" font-size="13" fill="#922">m_rsp</text>
+<polyline points="1036,322 896,322" fill="none" stroke="#222" stroke-width="2"/>
+<text x="966.0" y="316.0" font-size="13" fill="#922">i_nlu</text>
+<polyline points="1036,434 896,434" fill="none" stroke="#222" stroke-width="2"/>
+<text x="966.0" y="428.0" font-size="13" fill="#922">i_qnt</text>
+<polyline points="896,476 1036,476" fill="none" stroke="#222" stroke-width="2"/>
+<text x="966.0" y="470.0" font-size="13" fill="#922">o_qnt</text>
+<polyline points="588,924 588,1064" fill="none" stroke="#222" stroke-width="2"/>
+<text x="588.0" y="988.0" font-size="13" fill="#922">p_req</text>
+<polyline points="630,1064 630,924" fill="none" stroke="#222" stroke-width="2"/>
+<text x="630.0" y="988.0" font-size="13" fill="#922">p_rsp</text>
+<polyline points="728,126 728,294" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="728.0" y="204.0" font-size="13" fill="#922">c_cmd</text>
+<polyline points="770,294 770,126" fill="none" stroke="#222" stroke-width="2"/>
+<text x="770.0" y="204.0" font-size="13" fill="#922">o_ccu</text>
+<polyline points="756,1106 1008,1106" fill="none" stroke="#222" stroke-width="2"/>
+<text x="882.0" y="1100.0" font-size="13" fill="#922">o_up</text>
+<polyline points="308,378 588,378" fill="none" stroke="#222" stroke-width="2"/>
+<text x="448.0" y="372.0" font-size="13" fill="#922">i_fba</text>
+<polyline points="308,518 588,518" fill="none" stroke="#222" stroke-width="2"/>
+<text x="448.0" y="512.0" font-size="13" fill="#922">i_exit</text>
+<polyline points="308,672 588,672" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="448.0" y="666.0" font-size="13" fill="#922">c_thr</text>
+</svg>

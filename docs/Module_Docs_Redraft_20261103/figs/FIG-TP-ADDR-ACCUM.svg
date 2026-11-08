@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1040" viewBox="0 0 1500 1040">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-ADDR-ACCUM  核内例：CCU 的地址累加落到 RRAM 口的信号上：写一个变长对象、再读其中一条记录</tspan></text>
+<text xml:space="preserve" x="30" y="58" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">地址以字节计；对齐使用时是 32 的倍数，图中按存储字序号写（字 j = 字节号 32j）；基址 = [堆 0][类 A][字 6]，环长 L = 6 个存储字 = 192 B</tspan></text>
+<text xml:space="preserve" x="30" y="80" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">4 条记录 [40, 24, 56, 20] B，记录级对齐：各占 [17, 13, 13] 个存储字、尾部补 0，共 6 个存储字；CCU 保有字计数 r 与各记录首字号 r_i（单位都是存储字）</tspan></text>
+<text xml:space="preserve" x="30" y="114" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">写（QNT 产出 → L1 A 类）：每拍一个存储字 32 B；addr = 基址字号 + (r mod L)，r 每拍 +1（单位：存储字）</tspan></text>
+<text xml:space="preserve" x="178" y="155.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">拍</tspan></text>
+<text xml:space="preserve" x="178" y="193.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">en</tspan></text>
+<text xml:space="preserve" x="178" y="231.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">wea</tspan></text>
+<text xml:space="preserve" x="178" y="269.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">CCU 字计数 r</tspan></text>
+<text xml:space="preserve" x="178" y="307.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">addr（给 L1）</tspan></text>
+<text xml:space="preserve" x="178" y="345.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">din（生产方攒的存储字）</tspan></text>
+<rect x="190" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="190" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="190" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="190" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="190" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 6]</tspan></text>
+<rect x="190" y="326" width="190" height="49.4" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="285.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记0 B0–31</tspan></text>
+<rect x="380" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="380" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="380" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="380" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="380" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 7]</tspan></text>
+<rect x="380" y="326" width="190" height="49.4" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="475.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记0 B32–39</tspan></text>
+<text xml:space="preserve" x="475.0" y="360" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">补 0 24 B</tspan></text>
+<rect x="570" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="570" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="570" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="570" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="570" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 8]</tspan></text>
+<rect x="570" y="326" width="190" height="49.4" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="665.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记1 B0–23</tspan></text>
+<text xml:space="preserve" x="665.0" y="360" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">补 0 8 B</tspan></text>
+<rect x="760" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="760" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="760" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="760" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="760" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 9]</tspan></text>
+<rect x="760" y="326" width="190" height="49.4" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记2 B0–31</tspan></text>
+<rect x="950" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="950" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="950" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="950" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="950" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 10]</tspan></text>
+<rect x="950" y="326" width="190" height="49.4" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1045.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记2 B32–55</tspan></text>
+<text xml:space="preserve" x="1045.0" y="360" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">补 0 8 B</tspan></text>
+<rect x="1140" y="136" width="190" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
+<rect x="1140" y="174" width="190" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="1140" y="212" width="190" height="38" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="1140" y="250" width="190" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
+<rect x="1140" y="288" width="190" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 11]</tspan></text>
+<rect x="1140" y="326" width="190" height="49.4" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1235.0" y="340" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">记3 B0–19</tspan></text>
+<text xml:space="preserve" x="1235.0" y="360" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">补 0 12 B</tspan></text>
+<text xml:space="preserve" x="30" y="401.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">第 7 拍（下一对象或续写）：r = 6 → addr = 字 6 + (6 mod 6) = 字 6，回绕由 CCU 的加法做，L1 看到的只是又一个字号</tspan></text>
+<text xml:space="preserve" x="30" y="427.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">CCU 按记录头的长度 n_i 记下每条记录的首字号 r_i = r_(i−1) + ⌈n_(i−1)/32⌉：r = [0, 2, 3, 5]；记录之间不共享存储字</tspan></text>
+<text xml:space="preserve" x="30" y="459.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">读（取记录 2：首字 r_2 = 3，长 56 B = 2 个存储字）：CCU 从字 9 起连发 2 次普通读</tspan></text>
+<text xml:space="preserve" x="178" y="500.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">拍</tspan></text>
+<text xml:space="preserve" x="178" y="538.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">en</tspan></text>
+<text xml:space="preserve" x="178" y="576.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">wea</tspan></text>
+<text xml:space="preserve" x="178" y="614.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">addr（给 L1）</tspan></text>
+<text xml:space="preserve" x="178" y="652.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">dout + vld（下一拍）</tspan></text>
+<rect x="190" y="481.4" width="260" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="320.0" y="500.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">t</tspan></text>
+<rect x="190" y="519.4" width="260" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="320.0" y="538.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="190" y="557.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="320.0" y="576.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="190" y="595.4" width="260" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="320.0" y="614.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 9]</tspan></text>
+<rect x="190" y="633.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="320.0" y="652.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
+<rect x="450" y="481.4" width="260" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="580.0" y="500.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">t+1</tspan></text>
+<rect x="450" y="519.4" width="260" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="580.0" y="538.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="450" y="557.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="580.0" y="576.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="450" y="595.4" width="260" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="580.0" y="614.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">[0][A][字 10]</tspan></text>
+<rect x="450" y="633.4" width="260" height="38" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="580.0" y="652.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 9 的 32 B</tspan></text>
+<rect x="710" y="481.4" width="260" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="840.0" y="500.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">t+2</tspan></text>
+<rect x="710" y="519.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="840.0" y="538.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="710" y="557.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="840.0" y="576.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
+<rect x="710" y="595.4" width="260" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="840.0" y="614.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
+<rect x="710" y="633.4" width="260" height="38" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="840.0" y="652.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 10 的 32 B（含补 0）</tspan></text>
+<text xml:space="preserve" x="30" y="693.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">消费方从字 9 字节 0 起按记录头解析，长度到 56 B 为止、忽略补 0；没有字内偏移，没有旁带，没有跨字</tspan></text>
+<text xml:space="preserve" x="30" y="721.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">对应关系：CCU 的字计数 → RRAM 的 addr；生产方攒字 + 补 0 → din；记录头长度 → CCU 的首字号 r_i → 读时的 addr</tspan></text>
+<text xml:space="preserve" x="1010" y="459.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">6 个存储字在 A 类 bank 里的落位</tspan></text>
+<text xml:space="preserve" x="1260" y="459.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">字 j → bank 8+(j mod 4)，深 ⌊j/4⌋</tspan></text>
+<text xml:space="preserve" x="1134.0" y="483.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">bank 8</tspan></text>
+<text xml:space="preserve" x="1242.0" y="483.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">bank 9</tspan></text>
+<text xml:space="preserve" x="1350.0" y="483.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">bank 10</tspan></text>
+<text xml:space="preserve" x="1458.0" y="483.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">bank 11</tspan></text>
+<text xml:space="preserve" x="1072" y="518.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">深 1</tspan></text>
+<rect x="1080" y="503.4" width="104" height="26" rx="2" fill="#eef0f3" stroke="#8a94a6" stroke-width="0.6"/>
+<rect x="1188" y="503.4" width="104" height="26" rx="2" fill="#eef0f3" stroke="#8a94a6" stroke-width="0.6"/>
+<rect x="1296" y="503.4" width="104" height="26" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1348.0" y="516.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 6·记0</tspan></text>
+<rect x="1404" y="503.4" width="104" height="26" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1456.0" y="516.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 7·记0</tspan></text>
+<text xml:space="preserve" x="1072" y="548.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">深 2</tspan></text>
+<rect x="1080" y="533.4" width="104" height="26" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1132.0" y="546.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 8·记1</tspan></text>
+<rect x="1188" y="533.4" width="104" height="26" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1240.0" y="546.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 9·记2</tspan></text>
+<rect x="1296" y="533.4" width="104" height="26" rx="2" fill="#dcefd2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1348.0" y="546.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 10·记2</tspan></text>
+<rect x="1404" y="533.4" width="104" height="26" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1456.0" y="546.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 11·记3</tspan></text>
+<text xml:space="preserve" x="1010" y="579.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">一个存储字 = 一个 bank 的一个存储单元（32 B 宽）</tspan></text>
+<text xml:space="preserve" x="1010" y="599.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">为什么取 32 B：矩阵计算的数据单位本来就是 32 B——</tspan></text>
+<text xml:space="preserve" x="1010" y="619.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">一个 MX 组 32 个 8 bit 码、16 个 BF16、32 个 E8M0 尺度、</tspan></text>
+<text xml:space="preserve" x="1010" y="639.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">一个列字的两倍；记录补到 32 B 就是补到一个 bank 的存储字</tspan></text>
+<text xml:space="preserve" x="30" y="761.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">口比 32 B 宽时 = 多条道：每道一个 bank、各自独立的 en / wea / addr / din；128 B 的口就是 4 道（A 类集合口 4 bank 时）</tspan></text>
+<text xml:space="preserve" x="208" y="808.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">128 B 口 = 4 道</tspan></text>
+<text xml:space="preserve" x="208" y="846.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">en[3:0]</tspan></text>
+<text xml:space="preserve" x="208" y="884.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">addr（每道一个）</tspan></text>
+<text xml:space="preserve" x="208" y="922.4" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">din / dout</tspan></text>
+<rect x="220" y="789.4" width="300" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="370.0" y="808.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">拍 u：4 道都写</tspan></text>
+<rect x="220" y="827.4" width="300" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="370.0" y="846.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1111</tspan></text>
+<rect x="220" y="865.4" width="300" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="370.0" y="884.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 12 · 13 · 14 · 15</tspan></text>
+<rect x="220" y="903.4" width="300" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="370.0" y="922.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">4 个存储字，可属不同对象</tspan></text>
+<rect x="520" y="789.4" width="300" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="670.0" y="808.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">拍 u+1：只有道 0、2 写</tspan></text>
+<rect x="520" y="827.4" width="300" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="670.0" y="846.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0101</tspan></text>
+<rect x="520" y="865.4" width="300" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="670.0" y="884.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 16 · — · 18 · —</tspan></text>
+<rect x="520" y="903.4" width="300" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="670.0" y="922.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 1 / 3 这一拍没有写者选中</tspan></text>
+<rect x="820" y="789.4" width="300" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="970.0" y="808.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">拍 u+2：4 道都读</tspan></text>
+<rect x="820" y="827.4" width="300" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="970.0" y="846.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1111</tspan></text>
+<rect x="820" y="865.4" width="300" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="970.0" y="884.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 12 · 13 · 14 · 15</tspan></text>
+<rect x="820" y="903.4" width="300" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="970.0" y="922.4" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">下一拍 dout 4 × 32 B，vld[3:0] = 1111</tspan></text>
+<text xml:space="preserve" x="30" y="961.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">权重 lane 读口 256 B 就是 8 道：各读 W 类一个 bank，各道 addr 独立；32 B 的口 = 1 道；写集合口的道由集合器按优先级分给各写者</tspan></text>
+<text xml:space="preserve" x="30" y="991.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">本图只是核内：核间链路每拍的 addr 不由 CCU 累加，由 MAE 的 DMA 搬运引擎逐拍给出（§2.4.2）；接收桥按 addr 写 L1、不经 CCU</tspan></text>
+<text xml:space="preserve" x="1476" y="1028" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-05</tspan></text>
+</svg>

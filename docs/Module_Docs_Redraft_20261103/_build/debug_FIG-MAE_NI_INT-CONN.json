@@ -1,0 +1,721 @@
+{
+  "id": "FIG-MAE_NI_INT-CONN",
+  "title": "",
+  "width": 1520,
+  "height": 1110,
+  "blocks": [
+    {
+      "id": "ctl",
+      "rect": [
+        574,
+        28,
+        266,
+        112
+      ],
+      "title": "命令与标量网",
+      "subtitle": "hub 控制道",
+      "kind": "control",
+      "dim": false
+    },
+    {
+      "id": "lic",
+      "rect": [
+        896,
+        28,
+        266,
+        112
+      ],
+      "title": "LIC",
+      "subtitle": "MAE 命令入口",
+      "kind": "control",
+      "dim": false
+    },
+    {
+      "id": "cif",
+      "rect": [
+        1218,
+        28,
+        266,
+        112
+      ],
+      "title": "CIF",
+      "subtitle": "本单元不用",
+      "kind": "control",
+      "dim": true
+    },
+    {
+      "id": "ddr",
+      "rect": [
+        28,
+        336,
+        252,
+        112
+      ],
+      "title": "DDR 控制器 P0",
+      "subtitle": "本单元不用",
+      "kind": "external",
+      "dim": true
+    },
+    {
+      "id": "noc",
+      "rect": [
+        28,
+        504,
+        252,
+        126
+      ],
+      "title": "片上互联总线",
+      "subtitle": "本单元不用",
+      "kind": "external",
+      "dim": true
+    },
+    {
+      "id": "dma",
+      "rect": [
+        28,
+        672,
+        252,
+        112
+      ],
+      "title": "系统 DMA / FMC 从端",
+      "subtitle": "本单元不用",
+      "kind": "external",
+      "dim": true
+    },
+    {
+      "id": "l2",
+      "rect": [
+        602,
+        938,
+        294,
+        98
+      ],
+      "title": "中央 L2",
+      "subtitle": "NI 写口 / NI 返回读口",
+      "kind": "memory",
+      "dim": false
+    },
+    {
+      "id": "idn",
+      "rect": [
+        1064,
+        938,
+        378,
+        98
+      ],
+      "title": "四核 IDN 接收桥（4 × 8 B 链路）",
+      "subtitle": "本单元不用",
+      "kind": "memory",
+      "dim": true
+    },
+    {
+      "id": "nii",
+      "rect": [
+        602,
+        336,
+        238,
+        420
+      ],
+      "title": "NI_INT",
+      "subtitle": "命令执行与分路\n读返回分路（五去向）\nL2 客户通道 NI-L2C\nNI 控制道端点",
+      "kind": "function"
+    },
+    {
+      "id": "ext",
+      "rect": [
+        1036,
+        406,
+        196,
+        126
+      ],
+      "title": "NI_EXT",
+      "subtitle": "M0 / M1 / PIN 协议端",
+      "kind": "function",
+      "dim": false
+    },
+    {
+      "id": "wsu",
+      "rect": [
+        1036,
+        616,
+        196,
+        140
+      ],
+      "title": "MAE_WSU",
+      "subtitle": "权重整形",
+      "kind": "function",
+      "dim": false
+    },
+    {
+      "id": "eng",
+      "rect": [
+        1302,
+        406,
+        154,
+        126
+      ],
+      "title": "MAE_ENG",
+      "subtitle": "搬运命令",
+      "kind": "function",
+      "dim": false
+    },
+    {
+      "id": "idn_u",
+      "rect": [
+        1302,
+        616,
+        154,
+        140
+      ],
+      "title": "MAE_IDN",
+      "subtitle": "4 道 → 四核",
+      "kind": "function",
+      "dim": false
+    }
+  ],
+  "containers": [
+    {
+      "id": "mae",
+      "rect": [
+        560,
+        210,
+        896,
+        644
+      ],
+      "title": "MAE 组",
+      "dashed": true,
+      "title_width": 122
+    }
+  ],
+  "nets": [
+    {
+      "net_id": "l2_w",
+      "src": {
+        "block": "nii",
+        "side": "b"
+      },
+      "dsts": [
+        {
+          "block": "l2",
+          "side": "t"
+        }
+      ],
+      "label": "NI 写口 32 B",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            728,
+            756
+          ],
+          [
+            728,
+            938
+          ]
+        ]
+      ],
+      "points": [
+        [
+          728,
+          756
+        ],
+        [
+          728,
+          938
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "l2_r",
+      "src": {
+        "block": "l2",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "nii",
+          "side": "b"
+        }
+      ],
+      "label": "NI 返回读口 32 B",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            770,
+            938
+          ],
+          [
+            770,
+            756
+          ]
+        ]
+      ],
+      "points": [
+        [
+          770,
+          938
+        ],
+        [
+          770,
+          756
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "i_rd",
+      "src": {
+        "block": "ext",
+        "side": "l"
+      },
+      "dsts": [
+        {
+          "block": "nii",
+          "side": "r"
+        }
+      ],
+      "label": "读返回 / PIN 存储字",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            1036,
+            462
+          ],
+          [
+            840,
+            462
+          ]
+        ]
+      ],
+      "points": [
+        [
+          1036,
+          462
+        ],
+        [
+          840,
+          462
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "o_wr",
+      "src": {
+        "block": "nii",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "ext",
+          "side": "l"
+        }
+      ],
+      "label": "写出数据 · PIN 落地依据",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            840,
+            504
+          ],
+          [
+            1036,
+            504
+          ]
+        ]
+      ],
+      "points": [
+        [
+          840,
+          504
+        ],
+        [
+          1036,
+          504
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "o_wsu",
+      "src": {
+        "block": "nii",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "wsu",
+          "side": "l"
+        }
+      ],
+      "label": "整形输入",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            840,
+            644
+          ],
+          [
+            1036,
+            644
+          ]
+        ]
+      ],
+      "points": [
+        [
+          840,
+          644
+        ],
+        [
+          1036,
+          644
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "i_wsu",
+      "src": {
+        "block": "wsu",
+        "side": "l"
+      },
+      "dsts": [
+        {
+          "block": "nii",
+          "side": "r"
+        }
+      ],
+      "label": "整形输出",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            1036,
+            728
+          ],
+          [
+            840,
+            728
+          ]
+        ]
+      ],
+      "points": [
+        [
+          1036,
+          728
+        ],
+        [
+          840,
+          728
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "ctl_o",
+      "src": {
+        "block": "nii",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "ctl",
+          "side": "b"
+        }
+      ],
+      "label": "长度转发 · 错误转报",
+      "kind": "ctrl",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            728,
+            336
+          ],
+          [
+            728,
+            140
+          ]
+        ]
+      ],
+      "points": [
+        [
+          728,
+          336
+        ],
+        [
+          728,
+          140
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "lic_d",
+      "src": {
+        "block": "nii",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "lic",
+          "side": "b"
+        }
+      ],
+      "label": "直连口：描述符 · 表镜像",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            812,
+            336
+          ],
+          [
+            812,
+            294
+          ],
+          [
+            924,
+            294
+          ],
+          [
+            924,
+            140
+          ]
+        ]
+      ],
+      "points": [
+        [
+          812,
+          336
+        ],
+        [
+          812,
+          294
+        ],
+        [
+          924,
+          294
+        ],
+        [
+          924,
+          140
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "c_cmd",
+      "src": {
+        "block": "eng",
+        "side": "t"
+      },
+      "dsts": [
+        {
+          "block": "nii",
+          "side": "r"
+        }
+      ],
+      "label": "搬运命令",
+      "kind": "ctrl",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            1330,
+            406
+          ],
+          [
+            1330,
+            364
+          ],
+          [
+            840,
+            364
+          ]
+        ]
+      ],
+      "points": [
+        [
+          1330,
+          406
+        ],
+        [
+          1330,
+          364
+        ],
+        [
+          840,
+          364
+        ]
+      ],
+      "junctions": []
+    },
+    {
+      "net_id": "o_idn",
+      "src": {
+        "block": "nii",
+        "side": "r"
+      },
+      "dsts": [
+        {
+          "block": "idn_u",
+          "side": "t"
+        }
+      ],
+      "label": "4 道数据 + TUSER",
+      "kind": "data",
+      "role": "hardware",
+      "paths": [
+        [
+          [
+            840,
+            574
+          ],
+          [
+            1330,
+            574
+          ],
+          [
+            1330,
+            616
+          ]
+        ]
+      ],
+      "points": [
+        [
+          840,
+          574
+        ],
+        [
+          1330,
+          574
+        ],
+        [
+          1330,
+          616
+        ]
+      ],
+      "junctions": []
+    }
+  ],
+  "max_crossings": 2,
+  "attempts": 24,
+  "save_diagnostic": true,
+  "side_strategy": "relative",
+  "allow_complex_visibility": true,
+  "multisink_search": true,
+  "side_selection": "automatic_geometry",
+  "side_strategy_used": "relative",
+  "automatic_side_candidates": [
+    {
+      "net": "c_cmd",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "r"
+      ]
+    },
+    {
+      "net": "i_rd",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "l",
+      "destinations": [
+        "r"
+      ]
+    },
+    {
+      "net": "o_wr",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "o_idn",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "t"
+      ]
+    },
+    {
+      "net": "o_wsu",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "r",
+      "destinations": [
+        "l"
+      ]
+    },
+    {
+      "net": "i_wsu",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "l",
+      "destinations": [
+        "r"
+      ]
+    },
+    {
+      "net": "l2_w",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "b",
+      "destinations": [
+        "t"
+      ]
+    },
+    {
+      "net": "l2_r",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    },
+    {
+      "net": "lic_d",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    },
+    {
+      "net": "ctl_o",
+      "strategy": "relative",
+      "refinement": "free-edge geometry search",
+      "source": "t",
+      "destinations": [
+        "b"
+      ]
+    }
+  ],
+  "crossings": [],
+  "status": "DIAGNOSTIC_ONLY_NOT_ACCEPTED",
+  "route_failure": "('label placement', 'o_wr', 203)",
+  "route_attempt": 0,
+  "failure_counts": {
+    "('label placement', 'o_wr', 203)": 24
+  }
+}

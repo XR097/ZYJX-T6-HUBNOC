@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="60" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">M = 128 列分四核：核 c 持列 32c…32c+31（一段），算全部 4 个 token 在这一段上的输出</tspan></text>
+<rect x="60" y="70" width="262" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="70" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 0：4 个 token 的第 0 段</tspan></text>
+<rect x="72" y="104" width="59.800000000000004" height="28" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="101.9" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 23</tspan></text>
+<rect x="131.8" y="104" width="46.800000000000004" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="155.20000000000002" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 18</tspan></text>
+<rect x="178.60000000000002" y="104" width="85.8" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="221.50000000000003" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 33</tspan></text>
+<rect x="264.40000000000003" y="104" width="31.200000000000003" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="280.00000000000006" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3</tspan></text>
+<text xml:space="preserve" x="72" y="154" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">长度表 [23, 18, 33, 12]</tspan></text>
+<text xml:space="preserve" x="72" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#172b4d"><tspan dy="0.0">道 0 按本表顺序搬 → 区域 0</tspan></text>
+<rect x="336" y="70" width="262" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="346" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 1：4 个 token 的第 1 段</tspan></text>
+<rect x="348" y="104" width="52.0" height="28" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="374.0" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 20</tspan></text>
+<rect x="400.0" y="104" width="65.0" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="432.5" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 25</tspan></text>
+<rect x="465.0" y="104" width="39.0" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="484.5" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="504.0" y="104" width="72.8" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="540.4" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 28</tspan></text>
+<text xml:space="preserve" x="348" y="154" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">长度表 [20, 25, 15, 28]</tspan></text>
+<text xml:space="preserve" x="348" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#172b4d"><tspan dy="0.0">道 1 按本表顺序搬 → 区域 1</tspan></text>
+<rect x="612" y="70" width="262" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="622" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 2：4 个 token 的第 2 段</tspan></text>
+<rect x="624" y="104" width="78.0" height="28" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="663.0" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 30</tspan></text>
+<rect x="702.0" y="104" width="28.6" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="716.3" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1</tspan></text>
+<rect x="730.6" y="104" width="57.2" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="759.2" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 22</tspan></text>
+<rect x="787.8000000000001" y="104" width="49.4" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="812.5000000000001" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 19</tspan></text>
+<text xml:space="preserve" x="624" y="154" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">长度表 [30, 11, 22, 19]</tspan></text>
+<text xml:space="preserve" x="624" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#172b4d"><tspan dy="0.0">道 2 按本表顺序搬 → 区域 2</tspan></text>
+<rect x="888" y="70" width="262" height="120" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="898" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 3：4 个 token 的第 3 段</tspan></text>
+<rect x="900" y="104" width="44.2" height="28" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="922.1" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0</tspan></text>
+<rect x="944.2" y="104" width="67.60000000000001" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="978.0" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 26</tspan></text>
+<rect x="1011.8000000000001" y="104" width="36.4" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1030.0" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="1048.2" y="104" width="62.400000000000006" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1079.4" y="118.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 24</tspan></text>
+<text xml:space="preserve" x="900" y="154" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">长度表 [17, 26, 14, 24]</tspan></text>
+<text xml:space="preserve" x="900" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#172b4d"><tspan dy="0.0">道 3 按本表顺序搬 → 区域 3</tspan></text>
+<text xml:space="preserve" x="60" y="220" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">消费核 L1 A 类（4 bank 配置）：四个区域，基址字号 0 / 33 / 66 / 99（模 4 = 0 / 1 / 2 / 3）→ 四道首拍落 bank 8 / 9 / 10 / 11</tspan></text>
+<path d="M191.0,192.0 L191.0,238.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="60" y="240" width="262" height="86" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="70" y="256" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">区域 0：基址字 0（bank 8）</tspan></text>
+<rect x="72" y="270" width="59.800000000000004" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="101.9" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0</tspan></text>
+<rect x="131.8" y="270" width="46.800000000000004" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="155.20000000000002" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1</tspan></text>
+<rect x="178.60000000000002" y="270" width="85.8" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="221.50000000000003" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="264.40000000000003" y="270" width="31.200000000000003" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="280.00000000000006" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3</tspan></text>
+<text xml:space="preserve" x="72" y="314" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">token 1 的片在 +23，长 18 B</tspan></text>
+<path d="M467.0,192.0 L467.0,238.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="336" y="240" width="262" height="86" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="346" y="256" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">区域 1：基址字 33（bank 9）</tspan></text>
+<rect x="348" y="270" width="52.0" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="374.0" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0</tspan></text>
+<rect x="400.0" y="270" width="65.0" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="432.5" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1</tspan></text>
+<rect x="465.0" y="270" width="39.0" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="484.5" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="504.0" y="270" width="72.8" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="540.4" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3</tspan></text>
+<text xml:space="preserve" x="348" y="314" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">token 1 的片在 +20，长 25 B</tspan></text>
+<path d="M743.0,192.0 L743.0,238.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="612" y="240" width="262" height="86" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="622" y="256" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">区域 2：基址字 66（bank 10）</tspan></text>
+<rect x="624" y="270" width="78.0" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="663.0" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0</tspan></text>
+<rect x="702.0" y="270" width="28.6" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="716.3" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1</tspan></text>
+<rect x="730.6" y="270" width="57.2" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="759.2" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="787.8000000000001" y="270" width="49.4" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="812.5000000000001" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3</tspan></text>
+<text xml:space="preserve" x="624" y="314" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">token 1 的片在 +30，长 11 B</tspan></text>
+<path d="M1019.0,192.0 L1019.0,238.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="888" y="240" width="262" height="86" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="898" y="256" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">区域 3：基址字 99（bank 11）</tspan></text>
+<rect x="900" y="270" width="44.2" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="922.1" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0</tspan></text>
+<rect x="944.2" y="270" width="67.60000000000001" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="978.0" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1</tspan></text>
+<rect x="1011.8000000000001" y="270" width="36.4" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1030.0" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2</tspan></text>
+<rect x="1048.2" y="270" width="62.400000000000006" height="28" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1079.4" y="284.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3</tspan></text>
+<text xml:space="preserve" x="900" y="314" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">token 1 的片在 +17，长 26 B</tspan></text>
+<text xml:space="preserve" x="60" y="360" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">token 1 的记录 = 四个区域各一片：18 + 25 + 11 + 26 = 80 B，CCU 按四张表依次给四段地址，段解包器按 k 顺序接着解</tspan></text>
+<text xml:space="preserve" x="60" y="386" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">基址若取字 0 / 32 / 64 / 96（模 4 都是 0），四道首拍都落 bank 8、每拍只能写一项；错开后各道各自推进、偶发撞 bank 由入口 FIFO 吸收</tspan></text>
+<text xml:space="preserve" x="60" y="408" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">实际每段 32 个输出通道、片长随 keep 变；四个象限的数据块各自独立、不同址（V18-MAE-33）</tspan></text>
+</svg>

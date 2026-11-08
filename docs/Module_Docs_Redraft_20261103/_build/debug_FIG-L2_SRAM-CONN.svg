@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1428" height="812"><rect width="100%" height="100%" fill="white"/>
+<text x="20" y="32" font-size="18" fill="red">DIAGNOSTIC ONLY — NOT ACCEPTED — (&#x27;label placement&#x27;, &#x27;w2&#x27;, 253)</text>
+<rect x="70" y="154" width="280" height="112" fill="#eee" stroke="#345"/><text x="78" y="178" font-size="18">hubup</text>
+<rect x="70" y="378" width="280" height="126" fill="#eee" stroke="#345"/><text x="78" y="402" font-size="18">niw</text>
+<rect x="546" y="154" width="308" height="546" fill="#eee" stroke="#345"/><text x="554" y="178" font-size="18">l2</text>
+<rect x="1050" y="154" width="308" height="224" fill="#eee" stroke="#345"/><text x="1058" y="178" font-size="18">hubdn</text>
+<rect x="1050" y="434" width="308" height="112" fill="#eee" stroke="#345"/><text x="1058" y="458" font-size="18">nir</text>
+<rect x="1050" y="602" width="308" height="98" fill="#eee" stroke="#345"/><text x="1058" y="626" font-size="18">lic</text>
+<polyline points="350,238 546,238" fill="none" stroke="#222" stroke-width="2"/>
+<text x="448.0" y="232.0" font-size="13" fill="#922">w1</text>
+<polyline points="350,448 546,448" fill="none" stroke="#222" stroke-width="2"/>
+<text x="448.0" y="442.0" font-size="13" fill="#922">w2</text>
+<polyline points="854,196 1050,196" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="190.0" font-size="13" fill="#922">r0</text>
+<polyline points="854,238 1050,238" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="232.0" font-size="13" fill="#922">r1</text>
+<polyline points="854,280 1050,280" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="274.0" font-size="13" fill="#922">r2</text>
+<polyline points="854,322 1050,322" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="316.0" font-size="13" fill="#922">r3</text>
+<polyline points="854,490 1050,490" fill="none" stroke="#222" stroke-width="2"/>
+<text x="952.0" y="484.0" font-size="13" fill="#922">r4</text>
+<polyline points="854,644 1050,644" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="952.0" y="638.0" font-size="13" fill="#922">e1</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="120" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">8 个 token t0…t7 分四核：核 c 算 t</tspan><tspan dy="3.2" font-size="9">2c</tspan><tspan dy="-3.2">、t</tspan><tspan dy="3.2" font-size="9">2c+1</tspan><tspan dy="-3.2"> 的全部输出通道</tspan></text>
+<rect x="120" y="70" width="230" height="150" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="130" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 象限 0（核 0 写）</tspan></text>
+<text xml:space="preserve" x="134" y="116" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 4096：</tspan></text>
+<rect x="134" y="126" width="91.0" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="179.5" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 70 B</tspan></text>
+<rect x="225.0" y="126" width="52.0" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="251.0" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 40 B</tspan></text>
+<text xml:space="preserve" x="134" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 8192：长度表 [70, 40]（6 B）</tspan></text>
+<rect x="134" y="182" width="60" height="22" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="164.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">表</tspan></text>
+<text xml:space="preserve" x="204" y="193" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">块长 110 B</tspan></text>
+<rect x="364" y="70" width="230" height="150" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="374" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 象限 1（核 1 写）</tspan></text>
+<text xml:space="preserve" x="378" y="116" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 4096：</tspan></text>
+<rect x="378" y="126" width="71.5" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="413.75" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 55 B</tspan></text>
+<rect x="449.5" y="126" width="79.3" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="489.15" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 61 B</tspan></text>
+<text xml:space="preserve" x="378" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 8192：长度表 [55, 61]（6 B）</tspan></text>
+<rect x="378" y="182" width="60" height="22" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="408.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">表</tspan></text>
+<text xml:space="preserve" x="448" y="193" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">块长 116 B</tspan></text>
+<rect x="608" y="70" width="230" height="150" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="618" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 象限 2（核 2 写）</tspan></text>
+<text xml:space="preserve" x="622" y="116" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 4096：</tspan></text>
+<rect x="622" y="126" width="62.400000000000006" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="653.2" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t4 48 B</tspan></text>
+<rect x="684.4" y="126" width="67.60000000000001" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="718.1999999999999" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t5 52 B</tspan></text>
+<text xml:space="preserve" x="622" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 8192：长度表 [48, 52]（6 B）</tspan></text>
+<rect x="622" y="182" width="60" height="22" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="652.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">表</tspan></text>
+<text xml:space="preserve" x="692" y="193" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">块长 100 B</tspan></text>
+<rect x="852" y="70" width="230" height="150" rx="6" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="862" y="88" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 象限 3（核 3 写）</tspan></text>
+<text xml:space="preserve" x="866" y="116" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 4096：</tspan></text>
+<rect x="866" y="126" width="85.8" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="908.9" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t6 66 B</tspan></text>
+<rect x="951.8" y="126" width="58.5" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="981.05" y="141.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">t7 45 B</tspan></text>
+<text xml:space="preserve" x="866" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 8192：长度表 [66, 45]（6 B）</tspan></text>
+<rect x="866" y="182" width="60" height="22" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="896.0" y="193.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">表</tspan></text>
+<text xml:space="preserve" x="936" y="193" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">块长 111 B</tspan></text>
+<text xml:space="preserve" x="120" y="270" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">下一位点仍按 T：道 c 单播回核 c，每核只收自己的 2 条记录（32 B/拍）</tspan></text>
+<path d="M235.0,224.0 L235.0,252.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="195.0" y="286" width="80" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="235.0" y="299.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0</tspan></text>
+<path d="M479.0,224.0 L479.0,252.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="439.0" y="286" width="80" height="26" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="479.0" y="299.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1</tspan></text>
+<path d="M723.0,224.0 L723.0,252.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="683.0" y="286" width="80" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="723.0" y="299.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2</tspan></text>
+<path d="M967.0,224.0 L967.0,252.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<rect x="927.0" y="286" width="80" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="967.0" y="299.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 3</tspan></text>
+<text xml:space="preserve" x="120" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">下一位点改按 M：四道各搬本象限的数据块、核集合 1111，每核收到全部 8 条记录（128 B/拍）</tspan></text>
+<text xml:space="preserve" x="120" y="370" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">产出留本核象限：一个数据块 + 一张长度表，不同址；残差与记录同驻本核 L1</tspan></text>
+<text xml:space="preserve" x="120" y="394" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">实际记录 KB 级、每核 T/4 条；地址由编译链给，长度表由生产核 CCU 写</tspan></text>
+</svg>

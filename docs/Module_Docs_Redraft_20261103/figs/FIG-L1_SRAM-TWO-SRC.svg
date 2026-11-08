@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="470" viewBox="0 0 1520 470">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<rect x="150" y="30" width="420" height="56" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="360.0" y="58.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">W0（4 个 bank）= 来源 A</tspan></text>
+<rect x="900" y="30" width="420" height="56" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1110.0" y="58.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">W1（4 个 bank）= 来源 B</tspan></text>
+<path d="M360.0,86.0 L360.0,150.0" stroke="#1d2530" stroke-width="2.4" fill="none"/>
+<path d="M1110.0,86.0 L1110.0,186.0" stroke="#7a3b6e" stroke-width="2.4" fill="none"/>
+<path d="M60.0,150.0 L1490.0,150.0" stroke="#1d2530" stroke-width="2.4" fill="none"/>
+<path d="M60.0,186.0 L1490.0,186.0" stroke="#7a3b6e" stroke-width="2.4" fill="none"/>
+<text xml:space="preserve" x="40" y="150" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#1d2530"><tspan dy="0.0">A</tspan></text>
+<text xml:space="preserve" x="40" y="186" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#7a3b6e"><tspan dy="0.0">B</tspan></text>
+<text xml:space="preserve" x="1490" y="136" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">lane 0–7</tspan></text>
+<text xml:space="preserve" x="1490" y="202" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">lane 8–15</tspan></text>
+<rect x="60" y="300" width="340" height="130" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="230.0" y="412" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 0（来源 A，掩码 0001）</tspan></text>
+<rect x="74.0" y="330" width="142.0" height="54" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="145.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 0–7</tspan></text>
+<path d="M111.0,238 L179.0,238 L167.0,270 L123.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="145.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M145.0,270.0 L145.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M125.0,150.0 L125.0,238.0" stroke="#1d2530" stroke-width="2.2" fill="none"/>
+<path d="M165.0,186.0 L165.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<rect x="244.0" y="330" width="142.0" height="54" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="315.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 8–15</tspan></text>
+<path d="M281.0,238 L349.0,238 L337.0,270 L293.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="315.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M315.0,270.0 L315.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M295.0,150.0 L295.0,238.0" stroke="#1d2530" stroke-width="2.2" fill="none"/>
+<path d="M335.0,186.0 L335.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<rect x="420" y="300" width="340" height="130" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="590.0" y="412" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 1（来源 B）</tspan></text>
+<rect x="434.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="505.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 0–7</tspan></text>
+<path d="M471.0,238 L539.0,238 L527.0,270 L483.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="505.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M505.0,270.0 L505.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M485.0,150.0 L485.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M525.0,186.0 L525.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+<rect x="604.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="675.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 8–15</tspan></text>
+<path d="M641.0,238 L709.0,238 L697.0,270 L653.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="675.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M675.0,270.0 L675.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M655.0,150.0 L655.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M695.0,186.0 L695.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+<rect x="780" y="300" width="340" height="130" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="950.0" y="412" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 2（来源 B）</tspan></text>
+<rect x="794.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="865.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 0–7</tspan></text>
+<path d="M831.0,238 L899.0,238 L887.0,270 L843.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="865.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M865.0,270.0 L865.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M845.0,150.0 L845.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M885.0,186.0 L885.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+<rect x="964.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1035.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 8–15</tspan></text>
+<path d="M1001.0,238 L1069.0,238 L1057.0,270 L1013.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1035.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M1035.0,270.0 L1035.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M1015.0,150.0 L1015.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M1055.0,186.0 L1055.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+<rect x="1140" y="300" width="340" height="130" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1310.0" y="412" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 3（来源 B）</tspan></text>
+<rect x="1154.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1225.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 0–7</tspan></text>
+<path d="M1191.0,238 L1259.0,238 L1247.0,270 L1203.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1225.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M1225.0,270.0 L1225.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M1205.0,150.0 L1205.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M1245.0,186.0 L1245.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+<rect x="1324.0" y="330" width="142.0" height="54" rx="2" fill="#f3d9ef" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1395.0" y="357.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">槽 8–15</tspan></text>
+<path d="M1361.0,238 L1429.0,238 L1417.0,270 L1373.0,270 Z" fill="white" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1395.0" y="254" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d"><tspan dy="0.0">2:1</tspan></text>
+<path d="M1395.0,270.0 L1395.0,330.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M1375.0,150.0 L1375.0,238.0" stroke="#8a94a6" stroke-width="1.0" fill="none" stroke-dasharray="3,3"/>
+<path d="M1415.0,186.0 L1415.0,238.0" stroke="#7a3b6e" stroke-width="2.2" fill="none"/>
+</svg>

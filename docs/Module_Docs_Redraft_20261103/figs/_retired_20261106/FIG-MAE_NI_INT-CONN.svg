@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1110" viewBox="0 0 1520 1110">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#466b89"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+
+<rect x="560" y="210" width="896" height="644" rx="6" fill="none" stroke="#172b4d" stroke-width="2.2" stroke-dasharray="9 6"/>
+<text x="574.0" y="232" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d">MAE 组</text>
+<rect x="574" y="28" width="266" height="112" rx="5" fill="#e5edf6" stroke="#172b4d" stroke-width="2.6"/>
+<text x="644.0" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">命令与标量网</text>
+<text x="662.5" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">hub 控制道</text>
+<rect x="896" y="28" width="266" height="112" rx="5" fill="#e5edf6" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1013.0" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">LIC</text>
+<text x="972.5" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">MAE 指令入口</text>
+<rect x="1218" y="28" width="266" height="112" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1334.5" y="72.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">CIF</text>
+<text x="1308.5" y="98.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="28" y="336" width="252" height="112" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="78.5" y="380.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">DDR 控制器 P0</text>
+<text x="111.5" y="406.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="28" y="504" width="252" height="126" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="91.0" y="555.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">片上互联总线</text>
+<text x="111.5" y="581.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="28" y="672" width="252" height="112" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="43.5" y="716.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">系统 DMA / FMC 从端</text>
+<text x="111.5" y="742.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="602" y="938" width="294" height="98" rx="5" fill="#e8eef4" stroke="#172b4d" stroke-width="2.6"/>
+<text x="713.0" y="975.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">中央 L2</text>
+<text x="664.0" y="1001.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">NI 写口 / NI 返回读口</text>
+<rect x="1064" y="938" width="378" height="98" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1108.5" y="975.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">四核 IDN 接收桥（每核 4 条）</text>
+<text x="1210.5" y="1001.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
+<rect x="602" y="336" width="238" height="420" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="685.0" y="498.4" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NI_INT</text>
+<text x="661.5" y="525.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">指令执行与分路</text>
+<text x="636.0" y="548.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">读返回分路（五去向）</text>
+<text x="644.0" y="572.5999999999999" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">L2 客户通道 NI-L2C</text>
+<text x="666.0" y="596.3999999999999" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">NI 控制道端点</text>
+<rect x="1036" y="406" width="196" height="126" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1097.0" y="445.2" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NI_EXT</text>
+<text x="1054.0" y="471.79999999999995" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">M0 / M1 / PIN 协议</text>
+<text x="1125.5" y="495.5999999999999" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">端</text>
+<rect x="1036" y="616" width="196" height="140" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1081.5" y="674.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">MAE_DSU</text>
+<text x="1100.0" y="700.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">数据整形</text>
+<rect x="1302" y="406" width="154" height="126" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1326.5" y="457.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">MAE_ENG</text>
+<text x="1345.0" y="483.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">搬运指令</text>
+<rect x="1302" y="616" width="154" height="140" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
+<text x="1328.5" y="674.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">MAE_IDN</text>
+<text x="1332.5" y="700.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">4 道 → 四核</text>
+<path d="M1330,364 L1330,406" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M840,364 L1330,364" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M852.0,364.0 L840,364" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<path d="M840,462 L1036,462" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M852.0,462.0 L840,462" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,504 L1036,504" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M1024.0,504.0 L1036,504" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,574 L1330,574" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M1330,574 L1330,616" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M1330.0,604.0 L1330,616" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,644 L1036,644" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M1024.0,644.0 L1036,644" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M840,728 L1036,728" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M852.0,728.0 L840,728" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M728,756 L728,938" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M728.0,926.0 L728,938" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M770,756 L770,938" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M770.0,768.0 L770,756" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M924,140 L924,294" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M812,294 L812,336" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M812,294 L924,294" fill="none" stroke="#1d2530" stroke-width="3"/>
+<path d="M924.0,152.0 L924,140" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
+<path d="M728,140 L728,336" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
+<path d="M728.0,152.0 L728,140" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
+<circle cx="840" cy="364" r="3" fill="#466b89"/>
+<circle cx="1330" cy="406" r="3" fill="#466b89"/>
+<rect x="1044.0" y="329.0" width="82" height="26" rx="2" fill="white"/>
+<text x="1051.0" y="342.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">搬运指令</text>
+<circle cx="840" cy="462" r="3" fill="#1d2530"/>
+<circle cx="1036" cy="462" r="3" fill="#1d2530"/>
+<rect x="853.0" y="427.0" width="170" height="26" rx="2" fill="white"/>
+<text x="860.0" y="440.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">读返回 / PIN 存储字</text>
+<circle cx="1036" cy="504" r="3" fill="#1d2530"/>
+<circle cx="840" cy="504" r="3" fill="#1d2530"/>
+<rect x="897.0" y="469.0" width="82" height="26" rx="2" fill="white"/>
+<text x="904.0" y="482.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">写出数据</text>
+<circle cx="1330" cy="616" r="3" fill="#1d2530"/>
+<circle cx="840" cy="574" r="3" fill="#1d2530"/>
+<rect x="1014.0" y="539.0" width="142" height="26" rx="2" fill="white"/>
+<text x="1021.0" y="552.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">4 道数据 + addr</text>
+<circle cx="1036" cy="644" r="3" fill="#1d2530"/>
+<circle cx="840" cy="644" r="3" fill="#1d2530"/>
+<rect x="897.0" y="609.0" width="82" height="26" rx="2" fill="white"/>
+<text x="904.0" y="622.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">整形输入</text>
+<circle cx="840" cy="728" r="3" fill="#1d2530"/>
+<circle cx="1036" cy="728" r="3" fill="#1d2530"/>
+<rect x="897.0" y="693.0" width="82" height="26" rx="2" fill="white"/>
+<text x="904.0" y="706.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">整形输出</text>
+<circle cx="728" cy="756" r="3" fill="#1d2530"/>
+<circle cx="728" cy="938" r="3" fill="#1d2530"/>
+<path d="M728,819.7 L706,819.7" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+<rect x="591.0" y="806.7" width="115" height="26" rx="2" fill="white"/>
+<text x="598.0" y="819.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">NI 写口 32 B</text>
+<circle cx="770" cy="938" r="3" fill="#1d2530"/>
+<circle cx="770" cy="756" r="3" fill="#1d2530"/>
+<path d="M770,819.7 L792,819.7" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+<rect x="792.0" y="806.7" width="149" height="26" rx="2" fill="white"/>
+<text x="799.0" y="819.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">NI 返回读口 32 B</text>
+<circle cx="812" cy="336" r="3" fill="#1d2530"/>
+<circle cx="924" cy="140" r="3" fill="#1d2530"/>
+<path d="M924,240.1 L946,240.1" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+<rect x="946.0" y="227.1" width="252" height="26" rx="2" fill="white"/>
+<text x="953.0" y="240.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">直连口：指令 · 配置表 · 描述符</text>
+<circle cx="728" cy="336" r="3" fill="#466b89"/>
+<circle cx="728" cy="140" r="3" fill="#466b89"/>
+<path d="M728,238.0 L750,238.0" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+<rect x="750.0" y="225.0" width="167" height="26" rx="2" fill="white"/>
+<text x="757.0" y="238.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">长度转发 · 错误转报</text>
+<text x="70.0" y="1082" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d">━━ 数据　┄ 控制 / 事件　灰框 = 本单元不用的对端或同组单元</text>
+
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="180.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字 0（8 B）</tspan></text>
+<text xml:space="preserve" x="330.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字 1（8 B）</tspan></text>
+<text xml:space="preserve" x="480.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字 2（8 B）</tspan></text>
+<text xml:space="preserve" x="630.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字 3（8 B）</tspan></text>
+<text xml:space="preserve" x="94" y="78" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">行 0</tspan></text>
+<rect x="110" y="56" width="140" height="44" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="180.0" y="78.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 0 · 0–7 B</tspan></text>
+<rect x="260" y="56" width="140" height="44" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="330.0" y="78.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 0 · 8–15 B</tspan></text>
+<rect x="410" y="56" width="140" height="44" rx="2" fill="#fde3c4" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="480.0" y="78.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 0 · 16 B + 补 7 B</tspan></text>
+<rect x="560" y="56" width="140" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="78.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">未用</tspan></text>
+<text xml:space="preserve" x="94" y="134" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">行 1</tspan></text>
+<rect x="110" y="112" width="140" height="44" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="180.0" y="134.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 1 · 0–7 B</tspan></text>
+<rect x="260" y="112" width="140" height="44" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="330.0" y="134.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 1 · 8–15 B</tspan></text>
+<rect x="410" y="112" width="140" height="44" rx="2" fill="#d6e6f7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="480.0" y="134.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">单位 1 · 16 B + 补 7 B</tspan></text>
+<rect x="560" y="112" width="140" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="630.0" y="134.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">未用</tspan></text>
+</svg>

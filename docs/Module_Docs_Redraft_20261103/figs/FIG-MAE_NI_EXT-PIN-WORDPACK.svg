@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1452" height="360" viewBox="0 0 1452 360">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="186" y="50" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">AXI 写数据拍</tspan></text>
+<text xml:space="preserve" x="186" y="70" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">（逻辑地址）</tspan></text>
+<rect x="200.0" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="254.6" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1352</tspan></text>
+<text xml:space="preserve" x="254.6" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 4–7</tspan></text>
+<rect x="315.2" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="369.8" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1360</tspan></text>
+<text xml:space="preserve" x="369.8" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="430.4" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="485.0" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1368</tspan></text>
+<text xml:space="preserve" x="485.0" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="545.6" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="600.2" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1376</tspan></text>
+<text xml:space="preserve" x="600.2" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="660.8" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="715.4" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1384</tspan></text>
+<text xml:space="preserve" x="715.4" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="776.0" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="830.6" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1392</tspan></text>
+<text xml:space="preserve" x="830.6" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="891.2" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="945.8000000000001" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1400</tspan></text>
+<text xml:space="preserve" x="945.8000000000001" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="1006.4" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1061.0" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1408</tspan></text>
+<text xml:space="preserve" x="1061.0" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="1121.6" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1176.1999999999998" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1416</tspan></text>
+<text xml:space="preserve" x="1176.1999999999998" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">全 8 B</tspan></text>
+<rect x="1236.8" y="28" width="109.2" height="44" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1291.3999999999999" y="50.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1424</tspan></text>
+<text xml:space="preserve" x="1291.3999999999999" y="88" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">字节 0–1</tspan></text>
+<text xml:space="preserve" x="186" y="165" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">写进 L2</tspan></text>
+<rect x="200" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="206.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="212" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="218.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="224" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="230.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="236" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="242.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="248" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="254.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="260" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="266.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="272" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="278.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="284" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="290.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="296" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="302.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="308" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="314.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="320" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="326.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="332" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="338.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="344" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="350.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="356" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="362.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="368" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="374.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="380" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="386.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="392" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="398.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="404" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="410.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="416" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="422.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="428" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="434.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="440" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="446.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="452" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="458.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="464" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="470.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="476" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="482.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="488" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="494.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="500" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="506.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="512" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="518.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="524" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="530.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="536" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="542.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="548" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="554.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="560" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="566.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="572" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="578.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="344" y="192" width="240" height="26" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="464.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节写使能：12–31</tspan></text>
+<text xml:space="preserve" x="392.0" y="242" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">逻辑地址 1344–1375</tspan></text>
+<rect x="614" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="620.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="626" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="632.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="638" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="644.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="650" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="656.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="662" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="668.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="674" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="680.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="686" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="692.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="698" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="704.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="710" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="716.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="722" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="728.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="734" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="740.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="746" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="752.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="758" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="764.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="770" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="776.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="782" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="788.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="794" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="800.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="806" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="812.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="818" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="824.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="830" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="836.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="842" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="848.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="854" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="860.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="866" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="872.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="878" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="884.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="890" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="896.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="902" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="908.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="914" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="920.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="926" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="932.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="938" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="944.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="950" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="956.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="962" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="968.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="974" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="980.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="986" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="992.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="614" y="192" width="384" height="26" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="806.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">整字</tspan></text>
+<text xml:space="preserve" x="806.0" y="242" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">逻辑地址 1376–1407</tspan></text>
+<rect x="1028" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1034.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1040" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1046.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1052" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1058.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1064" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1070.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1076" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1082.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1088" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1094.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1100" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1106.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1112" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1118.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1124" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1130.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1136" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1142.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1148" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1154.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1160" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1166.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1172" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1178.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1184" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1190.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1196" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1202.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1208" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1214.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1220" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1226.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1232" y="150" width="12" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1238.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1244" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1250.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1256" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1262.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1268" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1274.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1280" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1286.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1292" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1298.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1304" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1310.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1316" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1322.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1328" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1334.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1340" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1346.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1352" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1358.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1364" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1370.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1376" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1382.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1388" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1394.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1400" y="150" width="12" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="0.7"/>
+<text xml:space="preserve" x="1406.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="9" font-weight="600" fill="#1d2530"></text>
+<rect x="1028" y="192" width="216" height="26" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1136.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节写使能：0–17</tspan></text>
+<text xml:space="preserve" x="1220.0" y="242" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">逻辑地址 1408–1439</tspan></text>
+<path d="M254.6,98.0 L368.0,148.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<path d="M1291.4,98.0 L1232.0,148.0" stroke="#1d2530" stroke-width="1.3" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="186" y="290" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">另一笔</tspan></text>
+<rect x="200" y="274" width="560" height="32" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="480.0" y="290.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">起始逻辑地址 1540 &gt; 窗口末 1535</tspan></text>
+<text xml:space="preserve" x="780" y="295" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">整笔 SLVERR，L2 不变</tspan></text>
+<text xml:space="preserve" x="200" y="334" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">窗口 = [堆 0][象限 2] 起始逻辑地址 1280（由编译链固定）、长 256 B；L2 逻辑地址 = 1280 + (A − A_PIN)，本笔从 1356 起、长 70 B</tspan></text>
+</svg>

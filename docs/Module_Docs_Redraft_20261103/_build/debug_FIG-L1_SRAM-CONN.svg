@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="1316"><rect width="100%" height="100%" fill="white"/>
+<text x="20" y="32" font-size="18" fill="red">DIAGNOSTIC ONLY — NOT ACCEPTED — (&#x27;no route&#x27;, &#x27;n_sc&#x27;, 0)</text>
+<rect x="14" y="196" width="336" height="924" fill="none" stroke="#bbb" stroke-dasharray="5 4"/>
+<rect x="420" y="196" width="910" height="924" fill="none" stroke="#bbb" stroke-dasharray="5 4"/>
+<rect x="1400" y="196" width="406" height="924" fill="none" stroke="#bbb" stroke-dasharray="5 4"/>
+<rect x="462" y="28" width="308" height="98" fill="#eee" stroke="#345"/><text x="470" y="52" font-size="18">mae</text>
+<rect x="980" y="28" width="308" height="98" fill="#eee" stroke="#345"/><text x="988" y="52" font-size="18">ccu</text>
+<rect x="42" y="266" width="266" height="112" fill="#eee" stroke="#345"/><text x="50" y="290" font-size="18">c2h</text>
+<rect x="42" y="504" width="266" height="112" fill="#eee" stroke="#345"/><text x="50" y="528" font-size="18">idn</text>
+<rect x="42" y="770" width="266" height="112" fill="#eee" stroke="#345"/><text x="50" y="794" font-size="18">h2c</text>
+<rect x="462" y="252" width="644" height="98" fill="#eee" stroke="#345"/><text x="470" y="276" font-size="18">tx</text>
+<rect x="462" y="504" width="280" height="112" fill="#eee" stroke="#345"/><text x="470" y="528" font-size="18">nwb</text>
+<rect x="462" y="770" width="280" height="112" fill="#eee" stroke="#345"/><text x="470" y="794" font-size="18">ldp</text>
+<rect x="1008" y="980" width="280" height="98" fill="#eee" stroke="#345"/><text x="1016" y="1004" font-size="18">scale</text>
+<rect x="1008" y="434" width="280" height="420" fill="#eee" stroke="#345"/><text x="1016" y="458" font-size="18">banks</text>
+<rect x="1442" y="420" width="322" height="252" fill="#eee" stroke="#345"/><text x="1450" y="444" font-size="18">pods</text>
+<rect x="1442" y="826" width="322" height="252" fill="#eee" stroke="#345"/><text x="1450" y="850" font-size="18">act</text>
+<polyline points="742,826 1008,826" fill="none" stroke="#222" stroke-width="2"/>
+<polyline points="742,826 938,826 938,896 1036,896 1036,980" fill="none" stroke="#222" stroke-width="2"/>
+<text x="840.0" y="820.0" font-size="13" fill="#922">n_ldp</text>
+<polyline points="742,588 1008,588" fill="none" stroke="#222" stroke-width="2"/>
+<polyline points="742,588 910,588 910,1008 1008,1008" fill="none" stroke="#222" stroke-width="2"/>
+<text x="910.0" y="792.0" font-size="13" fill="#922">n_nwb</text>
+<polyline points="1036,434 1036,350" fill="none" stroke="#222" stroke-width="2"/>
+<text x="1036.0" y="386.0" font-size="13" fill="#922">n_rd</text>
+<polyline points="700,126 700,252" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="700.0" y="183.0" font-size="13" fill="#922">n_mae</text>
+<polyline points="742,252 742,126" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="742.0" y="183.0" font-size="13" fill="#922">n_done</text>
+<polyline points="1078,252 1078,126" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="1078.0" y="183.0" font-size="13" fill="#922">n_stall</text>
+<polyline points="462,322 308,322" fill="none" stroke="#222" stroke-width="2"/>
+<text x="385.0" y="316.0" font-size="13" fill="#922">n_up</text>
+<polyline points="308,560 462,560" fill="none" stroke="#222" stroke-width="2"/>
+<text x="385.0" y="554.0" font-size="13" fill="#922">n_idn</text>
+<polyline points="308,826 462,826" fill="none" stroke="#222" stroke-width="2"/>
+<text x="385.0" y="820.0" font-size="13" fill="#922">n_h2c</text>
+<polyline points="1288,546 1442,546" fill="none" stroke="#222" stroke-width="2"/>
+<text x="1365.0" y="540.0" font-size="13" fill="#922">n_lane</text>
+<polyline points="1288,784 1470,784 1470,826" fill="none" stroke="#222" stroke-width="2"/>
+<text x="1379.0" y="778.0" font-size="13" fill="#922">n_ar</text>
+<polyline points="1442,896 1260,896 1260,854" fill="none" stroke="#222" stroke-width="2"/>
+<text x="1351.0" y="890.0" font-size="13" fill="#922">n_aw</text>
+<polyline points="1176,126 1176,434" fill="none" stroke="#5784b7" stroke-width="2"/>
+<text x="1176.0" y="274.0" font-size="13" fill="#922">n_ccu</text>
+</svg>
