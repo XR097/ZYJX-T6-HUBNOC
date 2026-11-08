@@ -1,30 +1,29 @@
-# HUB NoC 当前合同
+# HUB_NOC 当前合同
 
 ## 1 边界
 
-HUB 全芯片一个，由四条 H2C 道、四路 C2H 分流和一条 64-bit 控制道组成。HUB 只传输和分路；MAE_ENG/CCU 负责发令，L2/L1/MAE_CRU 负责最终存储或运算。
+HUB_NOC 位于中央 L2 与四核之间，包含四条 H2C 道、四条 C2H 通路和命令网。HUB_NOC 只传输数据、地址、核掩码、`src` 和 ready/写入握手，不发令、不生成地址、不解析载荷、不做归约或完成判定。
 
 ## 2 数据接口
 
-| 接口 | 宽度 | 主控 | 语义 |
-|---|---:|---|---|
-| L2 象限 n → H2C n | 32 B × 4 | MAE_ENG | 引擎给读 en/addr；L2 busy 时保持重发 |
-| H2C n → 四核 LDP | 32 B × 4 目的 | MAE_ENG | 引擎给目的 addr/be/核掩码；分叉点按各核 ready 独立取走 |
-| 四核 C2H → L2WP n | 32 B/核 | 本核 CCU | 核 n 只写象限 n；分流选择随单位边界 |
-| 四核 C2H → MAE_CRU | 32 B/核 | 本核 CCU | addr 是 CRU 内地址；到齐计数由 CRU 维护 |
-| MAE_CRU → H2C MUX | 32 B/道参考 | MAE_ENG | 作为 H2C 第二源，源顺序由 MAE 给 |
-| 控制道 | 64 bit 握手 | LIC/MAE/CCU/L2 | 透明转发，独立于数据网 |
+| 接口 | 宽度 | 语义 |
+|---|---:|---|
+| L2 象限 n → H2C n | 4 × 32 B | MAE_ENG 给 L2 读 `en/addr`；busy 时保持重发 |
+| H2C n → 四核 LDP | 每核 4 × 32 B | 目的 addr/be/核掩码/src 由 MAE 给；分叉点按各核 ready 取走 |
+| 四核集成输出端口 → C2H | 每核 1 × 32 B | CCU 在核内选择来源；HUB 只见一路 |
+| C2H → L2WP | 4 × 32 B | 核 n 只写象限 n；ready 反向传回并可门控 CCU |
+| 命令网 | 64 bit | LIC、MAE_ENG、CCU、L2 间透明转发；标量不走此网 |
 
-正向信号为 `en/din/be/addr/src`，反向为 `ready`；写入完成回程为 `valid+src`，没有 ready。
+## 3 不属于 HUB_NOC
 
-## 3 明确不属于 HUB
+MAE_CRU 不连接 HUB_NOC；它通过 NI 读口读取 L2、通过 NI-L2C 写回 L2。HUB_IDN 是独立篇，连接 NI IDN 出口与四核 NWB。
 
-HUB 不生成/累加地址，不做环形回绕，不解析 payload，不做 VC/credit/flit 语义，不维护 WCNT/RCNT，不判单位完成，不执行归约、量化、合并、排序或中心仲裁。
+HUB_NOC 不维护 VC/credit/flit/`last`/`nw8`，不维护 L2 完成计数，不做 H2C 第二源 MUX，不做 C2H 目标分流。
 
 ## 4 不变量
 
-- 同一链路保序；链路级数只改变延迟。
+- 同一链路保序，级数只改变延迟。
 - H2C 道 n 只读象限 n；C2H 核 n 只写象限 n。
-- 多播只在掩码内复制，目的链路分别按 ready 成交。
-- `src` 只由发令方解释，完成计数只在发令方/CCU。
-- 控制网和数据网不保证先后；端点必须能处理先到/后到两种顺序。
+- H2C 多播只在核掩码内复制；各目的 ready 独立。
+- 最终写入握手由 L2/LDP 回到发令方；HUB 只转交。
+- C2H ready 低时反压最终传到集成输出端口，CCU 停算由本核负责。
