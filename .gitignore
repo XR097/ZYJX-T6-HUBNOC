@@ -1,0 +1,6 @@
+# Local documentation build products
+/docs/specs/_build/__pycache__/
+/docs/specs/_build/preview/
+/docs/specs/_build/debug_*
+/docs/specs/_build/fallback_*
+/node_modules/
