@@ -2,7 +2,7 @@
 <defs><filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.20"/></filter><marker id="m_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#1d4ed8"/></marker><marker id="s_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#1d4ed8"/></marker><marker id="m_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#c2410c"/></marker><marker id="s_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#c2410c"/></marker><marker id="m_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#4b5563"/></marker><marker id="s_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#4b5563"/></marker><marker id="m_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b91c1c"/></marker><marker id="s_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b91c1c"/></marker><marker id="m_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker><marker id="m_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b45309"/></marker><marker id="s_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b45309"/></marker><marker id="m_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#475569"/></marker><marker id="s_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#475569"/></marker><marker id="m_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0369a1"/></marker><marker id="s_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0369a1"/></marker><marker id="m_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#172b4d"/></marker><marker id="s_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#172b4d"/></marker></defs>
 <rect width="100%" height="100%" fill="#f8fafc"/>
 <rect x="0" y="0" width="1920" height="86" fill="#172b4d"/>
-<path d="M940,190 L1898,190 L1898,442 L1250,442 L1250,336 L940,336 Z" fill="#fffcf2" stroke="#b45309" stroke-width="2.2" stroke-dasharray="9,6"/>
+<path d="M940,190 L1898,190 L1898,442 L940,442 Z" fill="#fffcf2" stroke="#b45309" stroke-width="2.2" stroke-dasharray="9,6"/>
 <rect x="20" y="452" width="1872" height="138" rx="12" fill="white" stroke="#0369a1" stroke-width="2.0" stroke-dasharray="9,6"/>
 <path d="M21,482 L21,464 Q21,453 32,453 L1880,453 Q1891,453 1891,464 L1891,482 Z" fill="#e0f2fe" stroke="none"/>
 <rect x="30" y="660" width="450" height="360" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
@@ -27,27 +27,22 @@
 <path d="M1314,121.0 L1344,121.0" stroke="#c2410c" stroke-width="3" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1604,121.0 L1634,121.0" stroke="#4b5563" stroke-width="3" marker-end="url(#m_axi)"/>
 <rect x="30" y="486" width="1852" height="90" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="1560" y="356" width="320" height="74" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2" filter="url(#sh)"/>
 <rect x="42" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="280" y="700" width="188" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
 <rect x="52" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="52" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="52" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="320" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="512" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="750" y="700" width="188" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
 <rect x="522" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="522" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="522" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="790" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="982" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="1220" y="700" width="188" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
 <rect x="992" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="992" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="992" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="1260" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="1452" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="1690" y="700" width="188" height="62" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
 <rect x="1462" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="1462" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
 <rect x="1462" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
@@ -59,15 +54,10 @@
 <path d="M700.0,240.0 L960.0,240.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M960.0,285.0 L700.0,285.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1330.0,240.0 L1560.0,240.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1680.0,430.0 L1680.0,486.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1800.0,486.0 L1800.0,430.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1270.0,320.0 L1270.0,393.0 L1560.0,393.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)" marker-start="url(#s_ctlu)"/>
 <path d="M420.0,320.0 L420.0,486.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M620.0,486.0 L620.0,320.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1020.0,320.0 L1020.0,486.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1150.0,486.0 L1150.0,320.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M330.0,790.0 L330.0,762.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M430.0,762.0 L430.0,790.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M130.0,880.0 L130.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M130.0,932.0 L130.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M130.0,790.0 L130.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
@@ -77,8 +67,6 @@
 <path d="M308.0,826.0 L308.0,913.0 L292.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M389.0,826.0 L389.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M265.0,790.0 L265.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M800.0,790.0 L800.0,762.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M900.0,762.0 L900.0,790.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M600.0,880.0 L600.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M600.0,932.0 L600.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M600.0,790.0 L600.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
@@ -88,8 +76,6 @@
 <path d="M778.0,826.0 L778.0,913.0 L762.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M859.0,826.0 L859.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M735.0,790.0 L735.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1270.0,790.0 L1270.0,762.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1370.0,762.0 L1370.0,790.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1070.0,880.0 L1070.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1070.0,932.0 L1070.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1070.0,790.0 L1070.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
@@ -99,8 +85,6 @@
 <path d="M1248.0,826.0 L1248.0,913.0 L1232.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1329.0,826.0 L1329.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
 <path d="M1205.0,790.0 L1205.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1740.0,790.0 L1740.0,762.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1840.0,762.0 L1840.0,790.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1540.0,880.0 L1540.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1540.0,932.0 L1540.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
 <path d="M1540.0,790.0 L1540.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
@@ -138,10 +122,6 @@
 <text x="760.0" y="303.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">完成通知（指令标号）</text>
 <rect x="1378.0" y="247.0" width="134.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
 <text x="1385.0" y="258.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">长度转发内容（组内）</text>
-<rect x="1722.0" y="459.5" width="36.0" height="21" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="1729.0" y="470.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#c2410c">标量</text>
-<rect x="1317.6" y="364.0" width="194.7" height="22" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.1"/>
-<text x="1324.6" y="375.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">组内：合并参数 ↓ · 合并完成 ↑</text>
 <rect x="219.7" y="384.0" width="192.3" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
 <text x="226.7" y="395.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">位点指令 / Fusion 段 / GO ↓</text>
 <rect x="628.0" y="419.0" width="120.8" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
@@ -150,16 +130,16 @@
 <text x="882.4" y="380.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">H2C 地址 · 核掩码 ↓</text>
 <rect x="1158.0" y="419.0" width="75.9" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
 <text x="1165.0" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">发出报告 ↑</text>
-<rect x="821.0" y="1049.0" width="558.1" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="828.0" y="1060.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">NI 控制道：长度转发（IDN 变长对象：类位 · 基址 · 长度 · 记录数）→ 目的核 CCU 短消息队列</text>
-<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-TP-ARCH-CTRL  命令与标量网：端点、CCU 指令寄存器与消息方向</text>
+<rect x="855.4" y="1049.0" width="489.2" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
+<text x="862.4" y="1060.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">NI 控制道：长度转发（IDN 搬运：段选 · 基址 · 应写量）→ 目的核 CCU 短消息队列</text>
+<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-TP-ARCH-CTRL  命令网：端点、CCU 指令寄存器与消息方向</text>
 <text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">64 bit 握手消息流（en / ready / data 64 bit，消息长度在首字、无末字标记）；每条链路单向点到点、与数据网同为通用链路块实例；端点不经 L1 / L2 SRAM</text>
 <text x="115.0" y="124.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#475569">M55</text>
 <text x="115.0" y="144.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">SoC</text>
 <text x="115.0" y="253.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b45309">CIF</text>
 <text x="115.0" y="273.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">APB 寄存器 · 邮箱</text>
 <text x="115.0" y="290.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">中断</text>
-<text x="1262.0" y="424.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">MAE 组（六单元）</text>
+<text x="1262.0" y="424.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">MAE 组（五单元）</text>
 <text x="520.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#b45309">LIC</text>
 <text x="520.0" y="252.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">指令 SRAM · 顺序取指 · Fusion 段整段发一次</text>
 <text x="520.0" y="270.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">收各核位点完成 + 数 MAE 完成通知 → 发 GO</text>
@@ -173,92 +153,73 @@
 <text x="1725.0" y="269.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">长度转发内容由搬运引擎给</text>
 <text x="1725.0" y="287.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">经 NI 控制道发往目的核 CCU</text>
 <text x="244.0" y="119.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">指令先于数据：LIC 顺序取指；执行搬运的引擎先让 hub / NI 控制道发长度转发，再启动数据</text>
-<text x="244.0" y="141.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">数据到达而位点指令未装入 = 致命错误（长度转发晚到不算）；发现者经命令与标量网报 LIC，LIC 经 CIF 报 M55</text>
+<text x="244.0" y="141.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">数据到达而位点指令未装入 = 致命错误（长度转发晚到不算）；发现者经命令网报 LIC，LIC 经 CIF 报 M55；标量不走本网（经 C2H → L2 → MAE_CRU）</text>
 <text x="244.0" y="163.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">CCU：普通指令由 LIC 逐条装"下一条"；Fusion-CCU 整段进段 SRAM、本地按块循环，LIC 不重发；Fusion-L3PU 只在 LIC 执行</text>
-<text x="1360.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">命令与标量网链路（单向）</text>
-<text x="1650.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">APB / 中断 / CIF 口（非命令与标量网）</text>
+<text x="1360.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">命令网链路（单向）</text>
+<text x="1650.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">APB / 中断 / CIF 口（非命令网）</text>
 <text x="34.0" y="468.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0369a1">hub（全芯片一个；控制道与数据网物理独立）</text>
 <text x="956.0" y="511.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#0369a1">hub 控制道（另含 H2C 道旁搬运引擎，逻辑属 MAE_ENG）</text>
 <text x="956.0" y="531.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">LIC ⇄ 各核 CCU：位点指令 / Fusion 段 / GO 下行，事件 / 位点完成上行（转发）　·　CCU 发出报告 → MAE（转发）</text>
-<text x="956.0" y="549.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">H2C 道收 MAE_ENG 给的逐拍地址与核掩码（引擎可放在道旁，逻辑属 MAE_ENG）；随 H2C 搬运先发长度转发 → 目的核 CCU　·　各核 CCU ⇄ MAE_CRU：标量（转发）　·　hub 不报完成（发令方数写入握手）</text>
-<text x="1720.0" y="375.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#6d28d9">MAE_CRU</text>
-<text x="1720.0" y="393.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">归约 · 标量合并 · 读集合并</text>
-<text x="1720.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">命令与标量网独立端点（标量队列）</text>
+<text x="956.0" y="549.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">H2C 道收 MAE_ENG 给的逐拍地址与核掩码（引擎可放在道旁，逻辑属 MAE_ENG）；随 H2C 搬运先发长度转发 → 目的核 CCU　·　hub 不报完成（发令方数写入握手）</text>
 <text x="140.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 0</text>
-<text x="136.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">L1 发送侧（C2H）</text>
-<text x="136.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 发令：读 L1</text>
-<text x="136.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 addr · 通路选择</text>
-<text x="374.0" y="713.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#6d28d9">VNU 寄存器</text>
-<text x="374.0" y="730.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">合并值寄存器 ← CCU 写</text>
-<text x="374.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">结果寄存器 → CCU 读</text>
+<text x="136.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
+<text x="136.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
+<text x="136.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
 <text x="56.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
 <text x="172.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
 <text x="172.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
 <text x="172.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
 <text x="172.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
 <text x="172.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="389.0" y="879.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="389.0" y="897.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="389.0" y="914.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="389.0" y="931.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">MAE_CRU 合并值</text>
+<text x="389.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
+<text x="389.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
+<text x="389.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
 <text x="54.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="54.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE · 部分值 → MAE_CRU</text>
+<text x="54.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
 <text x="610.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 1</text>
-<text x="606.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">L1 发送侧（C2H）</text>
-<text x="606.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 发令：读 L1</text>
-<text x="606.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 addr · 通路选择</text>
-<text x="844.0" y="713.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#6d28d9">VNU 寄存器</text>
-<text x="844.0" y="730.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">合并值寄存器 ← CCU 写</text>
-<text x="844.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">结果寄存器 → CCU 读</text>
+<text x="606.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
+<text x="606.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
+<text x="606.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
 <text x="526.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
 <text x="642.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
 <text x="642.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
 <text x="642.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
 <text x="642.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
 <text x="642.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="859.0" y="879.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="859.0" y="897.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="859.0" y="914.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="859.0" y="931.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">MAE_CRU 合并值</text>
+<text x="859.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
+<text x="859.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
+<text x="859.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
 <text x="524.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="524.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE · 部分值 → MAE_CRU</text>
+<text x="524.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
 <text x="1080.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 2</text>
-<text x="1076.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">L1 发送侧（C2H）</text>
-<text x="1076.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 发令：读 L1</text>
-<text x="1076.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 addr · 通路选择</text>
-<text x="1314.0" y="713.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#6d28d9">VNU 寄存器</text>
-<text x="1314.0" y="730.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">合并值寄存器 ← CCU 写</text>
-<text x="1314.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">结果寄存器 → CCU 读</text>
+<text x="1076.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
+<text x="1076.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
+<text x="1076.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
 <text x="996.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
 <text x="1112.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
 <text x="1112.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
 <text x="1112.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
 <text x="1112.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
 <text x="1112.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="1329.0" y="879.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="1329.0" y="897.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="1329.0" y="914.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="1329.0" y="931.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">MAE_CRU 合并值</text>
+<text x="1329.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
+<text x="1329.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
+<text x="1329.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
 <text x="994.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="994.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE · 部分值 → MAE_CRU</text>
+<text x="994.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
 <text x="1550.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 3</text>
-<text x="1546.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">L1 发送侧（C2H）</text>
-<text x="1546.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 发令：读 L1</text>
-<text x="1546.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 addr · 通路选择</text>
-<text x="1784.0" y="713.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#6d28d9">VNU 寄存器</text>
-<text x="1784.0" y="730.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">合并值寄存器 ← CCU 写</text>
-<text x="1784.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">结果寄存器 → CCU 读</text>
+<text x="1546.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
+<text x="1546.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
+<text x="1546.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
 <text x="1466.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
 <text x="1582.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
 <text x="1582.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
 <text x="1582.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
 <text x="1582.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
 <text x="1582.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="1799.0" y="879.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="1799.0" y="897.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="1799.0" y="914.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="1799.0" y="931.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">MAE_CRU 合并值</text>
+<text x="1799.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
+<text x="1799.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
+<text x="1799.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
 <text x="1464.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="1464.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE · 部分值 → MAE_CRU</text>
-<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-05</text>
+<text x="1464.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
+<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-08</text>
 </svg>

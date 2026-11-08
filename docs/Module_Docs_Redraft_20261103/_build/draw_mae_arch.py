@@ -2,15 +2,17 @@
 用法（在 Module_Docs_Redraft_20261103 目录下）：python -X utf8 -I _build/draw_mae_arch.py
 输出（figs/）：
   FIG-MAE_NI_EXT-ARCH   NI_EXT：M0 / M1 主口、PIN 从口、跨域、宽度适配、窗口检查
-  FIG-MAE_NI_INT-ARCH   NI_INT：指令执行与分路、读返回分路（六个目的口）、拆拍寄存器、NI-L2C 写客户（五源）/ 返回车道、NI 控制道
-  FIG-MAE_IDN-ARCH      MAE_IDN：两源合并、分叉点（已取位）× 4、交叉、16 条链路
+  FIG-MAE_NI_INT-ARCH   NI_INT：指令执行与分路、读返回分路（六个目的口）、IDN 出口（一路 32 B）、NI-L2C 写客户（五源）/ 返回车道、NI 控制道
+  （FIG-MAE_IDN-ARCH 11-07 随 IDN 归 HUB 组移到 draw_hub_idn.py，改名 FIG-HUB_IDN-ARCH；本文件旧函数改名 _retired_fig_idn）
   FIG-MAE_DSU-ARCH      MAE_DSU：两个入口、四种整形模式（含块尺度与旁带、hi 尺度复用）、两个出口
 统一外圈（任务书 _build/MAE_CRU_MERGE_BRIEF_20261106.md §1 规则 11、§2 Agent D）：
-  MAE 组框内六单元（MAE_ENG、NI_EXT、NI_INT、MAE_IDN、MAE_DSU、MAE_CRU）：本单元展开画内部结构，
-  其余五个画小框，与本单元直接往来的点亮、否则画灰；
-  框外对端四张图位置相同（PEERS）：上 CIF / LIC / 命令与标量网，左 DDR 控制器 P0 / SoC 片上互联 / 系统 DMA·FMC 从端，
-  下 中央 L2 / 四核 IDN 接收桥，右 C2H 去 MAE_CRU 的分支 / H2C 道；本单元不用的画灰、不连线。
+  MAE 组框内五单元（MAE_ENG、NI_EXT、NI_INT、MAE_DSU、MAE_CRU；11-07 IDN 归 HUB 组，V18-HUB-01）：本单元展开画内部结构，
+  其余四个画小框，与本单元直接往来的点亮、否则画灰；
+  框外对端四张图位置相同（PEERS）：上 CIF / LIC / 命令网，左 DDR 控制器 P0 / SoC 片上互联 / 系统 DMA·FMC 从端，
+  下 中央 L2 / HUB_IDN（到四核 NWB），右 H2C 道（11-07 晚撤 C2H 去 MAE_CRU 的分支，V18-CRU-07）；本单元不用的画灰、不连线。
   只画与本单元相连的线；线上只标名与位宽，说明在 _build/MAE_ARCH_CAPTIONS_20261106.md。
+2026-11-08 晚（V18-HUB-04）：IDN 改为每核一条 32 B 链路；HUB_IDN 对端框改"一路 32 B → 按核集合分发 → 四核 NWB"，
+  DSU 出口 → L1 改"经 HUB_IDN · 32 B"（撤"4 道 × 8 B"）；_retired_fig_idn 不改。
 链路清单（每条线的依据节号）：_build/MAE_ARCH_LINKS_20261106.md。
 图元与自检沿用 draw_tp_arch.py 的 Fig 类（复制一份，不 import，避免与协议篇脚本互相牵动）：
   文字不出画布、互不重叠、不压线、不跨色块边框；连线不穿色块；不同连线不共线；横竖交叉自动跳线弧。
@@ -31,7 +33,7 @@ GREY = '#8a94a6'
 P = {
     'incore': ('#0f766e', '#ccfbf1'),   # 核内 RRAM 口：青
     'inter':  ('#1d4ed8', '#dbeafe'),   # 核间数据网：蓝
-    'ctrl':   ('#c2410c', '#ffedd5'),   # 命令与标量网：橙
+    'ctrl':   ('#c2410c', '#ffedd5'),   # 命令网：橙
     'axi':    ('#4b5563', '#f3f4f6'),   # 对外 AXI / APB：灰
     'stall':  ('#b91c1c', '#fee2e2'),   # stall：红
     'push':   ('#6d28d9', '#ede9fe'),   # 推送段：紫
@@ -343,7 +345,7 @@ class Fig:
 # =====================================================================
 # MAE 组统一外圈
 # =====================================================================
-DATE = '2026-11-06'
+DATE = '2026-11-08'
 P['dim'] = ('#a3acb9', '#f1f3f6')       # 本单元不用：灰
 P['focal'] = ('#334155', '#f5f9ff')     # 本单元展开框
 DIMTXT = '#98a2b3'
@@ -353,14 +355,13 @@ D = '7,4'
 PEERS = {
     'cif':   (520, 100, 280, 70, 'CIF', 'PIN 首个违规', 'ctlu'),
     'lic':   (860, 100, 300, 70, 'LIC', '指令入口 · 完成通知 · 直连口', 'ctlu'),
-    'ctl':   (1220, 100, 280, 70, '命令与标量网', 'hub 控制道 · 64 bit', 'ctrl'),
+    'ctl':   (1220, 100, 280, 70, '命令网', 'hub 控制道 · 64 bit', 'ctrl'),
     'ddr':   (20, 330, 250, 80, 'DDR 控制器 P0', '256 bit 独占专线', 'ext'),
     'noc':   (20, 500, 250, 90, 'SoC 片上互联', 'HSRAM P2 · DDR P2 · FMC 主端', 'ext'),
     'dma':   (20, 690, 250, 80, '系统 DMA / FMC 从端', 'PIN 的写入方', 'ext'),
-    'l2':    (560, 975, 420, 75, '中央 L2', 'NI 写口 · NI 返回读口 · 写入握手', 'mem'),
-    'idn':   (1060, 975, 500, 75, '四核 IDN 接收桥（NWB）', '每核 4 条 8 B 链路', 'mem'),
-    'hubup': (1660, 330, 240, 90, 'C2H 去 MAE_CRU 的分支', '四核 C2H 各 1 × 32 B', 'hub'),
-    'hubdn': (1660, 560, 240, 90, 'H2C 道', 'MAE_CRU 输出作第二源', 'hub'),
+    'l2':    (560, 975, 420, 75, '中央 L2', 'NI 写口 32 B · NI 读口 4 × 32 B · 写入握手', 'mem'),
+    'idn':   (1060, 975, 500, 75, 'HUB_IDN（入站分发网）', '一路 32 B → 按核集合分发 → 四核 NWB', 'hub'),
+    'hubdn': (1660, 560, 240, 90, 'H2C 道', '道旁引擎给 L2 读地址', 'hub'),
 }
 GROUP = (300, 200, 1330, 740)           # MAE 组框
 
@@ -384,7 +385,7 @@ def dimblock(s, x, y, w, h, title, sub='本单元不用', size=16, subsize=12):
 def frame(name, title, sub, uses, focal_title, focal_rect, ftx=None):
     s = Fig(name, title, sub)
     gx, gy, gw, gh = GROUP
-    s.group(gx, gy, gw, gh, 'MAE 组 · 六单元（全芯片一组）', 'chip', 16, dash='none', sw=2.4, fill='#fbfcfe')
+    s.group(gx, gy, gw, gh, 'MAE 组 · 五单元（全芯片一组）', 'chip', 16, dash='none', sw=2.4, fill='#fbfcfe')
     for k, (x, y, w, h, t, st, kind) in PEERS.items():
         if k in uses:
             s.block(x, y, w, h, t, st, kind, 16, 12)
@@ -392,7 +393,7 @@ def frame(name, title, sub, uses, focal_title, focal_rect, ftx=None):
             dimblock(s, x, y, w, h, t)
     fx, fy, fw, fh = focal_rect
     s.group(fx, fy, fw, fh, focal_title, 'focal', 16, tx=ftx, dash='10,5', sw=2.2, fill=P['focal'][1])
-    s.legend(20, 800, [('inter', '数据：握手写流 / SRAM 口', 'solid'), ('ctrl', '命令与标量网 / 控制', D),
+    s.legend(20, 800, [('inter', '数据：握手写流 / SRAM 口', 'solid'), ('ctrl', '命令网 / 控制', D),
                        ('axi', '对外 AXI（M0 / M1 / PIN）', 'solid'), ('dim', '灰框 = 本单元不用', 'box')],
              cols=1, colw=232, size=13, rowh=27)
     return s
@@ -414,9 +415,8 @@ def fig_ni_ext():
     # ---- 同组单元 ----
     member(s, 1390, 330, 140, 100, 'MAE_ENG', '读写请求')
     member(s, 1390, 470, 220, 360, 'NI_INT', '读返回分路\nNI-L2C 写客户 / 返回车道\nNI 控制道')
-    member(s, 600, 850, 200, 65, 'MAE_IDN', '', lit=False)
-    member(s, 830, 850, 200, 65, 'MAE_DSU', '', lit=False)
-    member(s, 1060, 850, 200, 65, 'MAE_CRU', '', lit=False)
+    member(s, 600, 850, 200, 65, 'MAE_DSU', '', lit=False)
+    member(s, 830, 850, 200, 65, 'MAE_CRU', '', lit=False)
     # ---- 内部 ----
     s.block(600, 260, 350, 75, 'PIN 地址换算 · 区间检查', 'A − A_PIN · 外设输入区（头文件参数，流片定死）\n区外 / FIXED / WRAP → 整笔 SLVERR · 记首个违规', 'ctlu', 15, 12, shadow=False)
     s.block(600, 355, 190, 80, 'M0 主口', 'AXI4 主 · 256 bit\n读 / 写在飞各 32 笔', 'ext', 16, 12, shadow=False)
@@ -467,7 +467,7 @@ def fig_ni_ext():
     s.tag(1320, 685, 'PIN 存储字 32 B', 'inter', 12)
     s.line([(1390, 760), (1235, 760)], 'ctrl', 2.2, dash=D)
     s.tag(1320, 745, 'B 响应放行', 'ctrl', 12)
-    # NI_INT → 命令与标量网：主口错误经 NI 控制道转报 LIC
+    # NI_INT → 命令网：主口错误经 NI 控制道转报 LIC
     s.line([(1580, 470), (1580, 188), (1480, 188), (1480, 170)], 'ctrl', 2.2, dash=D)
     s.tag(1572, 300, '主口错误转报', 'ctrl', 12, 'end')
     return s.save()
@@ -478,28 +478,27 @@ def fig_ni_ext():
 # =====================================================================
 def fig_ni_int():
     s = frame('FIG-MAE_NI_INT-ARCH.svg', 'FIG-MAE_NI_INT-ARCH  NI_INT：引擎控制入口、读返回分路、NI-L2C、NI 控制道口',
-              '不收指令，只收搬运引擎解码后的控制；读返回按读请求记录分到六个目的口；NI 进出 L2 只经 NI-L2C（写客户五源）；不算地址、不设入站缓冲、不报完成',
-              {'lic', 'ctl', 'l2'}, 'NI_INT（本单元）', (590, 225, 672, 690), ftx=604)
+              '不收指令，只收搬运引擎解码后的控制；读返回按读请求记录分到五个目的口；IDN 出口一路 32 B 交 HUB_IDN；NI 进出 L2 只经 NI-L2C（NI 读口 4 × 32 B、写口 32 B）',
+              {'lic', 'ctl', 'l2', 'idn'}, 'NI_INT（本单元）', (590, 225, 672, 690), ftx=604)
     # ---- 同组单元 ----
     member(s, 320, 240, 210, 100, 'MAE_ENG', '搬运引擎')
     member(s, 320, 380, 170, 440, 'NI_EXT', 'M0 / M1 / PIN\n协议端')
     member(s, 1400, 395, 210, 205, 'MAE_DSU', '数据整形')
     member(s, 1400, 625, 210, 175, 'MAE_CRU', '数据合并')
-    member(s, 1400, 825, 210, 85, 'MAE_IDN', '入站分发网')
     # ---- 内部 ----
     s.block(680, 260, 220, 90, '引擎控制入口', '读请求记录 · 通路选择\n长度转发内容（不是指令）', 'ctlu', 15, 12, shadow=False)
     s.block(960, 260, 290, 90, 'NI 控制道口', '64 bit 通用链路块\n长度转发 · 主口错误转报', 'ctrl', 15, 12, shadow=False)
-    s.block(620, 400, 630, 95, '读返回分路（六个目的口）',
+    s.block(620, 400, 630, 95, '读返回分路（五个目的口）',
             'M0 / M1 读返回 32 B，按读请求记录 (去向, 目的地址) 分路，不设入站缓冲\n'
-            '→ MAE_IDN · MAE_DSU · MAE_CRU · NI-L2C 写客户 · LIC 直连口 · NI_EXT 写通道', 'hub', 16, 12, shadow=False)
+            '→ IDN 出口 · MAE_DSU · NI-L2C 写客户 · LIC 直连口 · NI_EXT 写通道', 'hub', 16, 12, shadow=False)
     s.block(620, 545, 280, 120, 'NI-L2C 写客户', '五源：M0 · M1 · PIN · DSU · CRU\n单位级合并 · 记来源与拍数\nPIN 记各象限项数 · 到齐放行 B', 'hub', 15, 12, shadow=False)
-    s.block(620, 700, 250, 100, 'NI-L2C 返回车道', '读 L2：en · addr，busy 时保持\n按余量发读 · 去 NI_EXT / DSU / CRU', 'hub', 15, 12, shadow=False)
-    s.block(980, 830, 270, 70, '拆拍寄存器 4 × 32 B', '每道一个：32 B → 4 拍 8 B', 'hub', 15, 12, shadow=False)
+    s.block(620, 700, 250, 100, 'NI-L2C 返回车道', 'NI 读口 4 × 32 B（每象限一份）\nbusy 时保持 · 去 NI_EXT / DSU / CRU', 'hub', 15, 12, shadow=False)
+    s.block(980, 830, 270, 70, 'IDN 出口 1 × 32 B', 'NI 分路 / MAE_DSU 择一（引擎定）', 'hub', 15, 12, shadow=False)
     # 内部连线
     s.line([(790, 350), (790, 400)], 'ctlu', 2.0)                         # 指令执行 → 分路：开路
     s.line([(900, 305), (960, 305)], 'ctlu', 2.0)                         # 指令执行 → 控制道：先发长度转发
     s.line([(755, 495), (755, 545)], 'inter', 2.6)                        # 分路 → 写客户（去 L2）
-    s.line([(1150, 495), (1150, 830)], 'inter', 2.6)                      # 分路 → 拆拍（去 IDN）
+    s.line([(1150, 495), (1150, 830)], 'inter', 2.6)                      # 分路 → IDN 出口
     # ---- MAE_ENG ----
     s.line([(530, 280), (680, 280)], 'ctrl', 2.2, dash=D)
     s.tag(605, 266, '解码后的控制', 'ctrl', 12)
@@ -518,7 +517,7 @@ def fig_ni_int():
     s.tag(555, 735, '写出数据 32 B', 'inter', 12)
     s.line([(490, 395), (560, 395), (560, 375), (1000, 375), (1000, 350)], 'ctrl', 2.2, dash=D)
     s.tag(631, 362, '主口错误', 'ctrl', 12)
-    # ---- LIC / 命令与标量网 ----
+    # ---- LIC / 命令网 ----
     s.line([(930, 400), (930, 170)], 'inter', 2.8)
     s.tag(938, 240, 'LIC 直连口 32 B', 'inter', 12, 'start')
     s.line([(1230, 260), (1230, 170)], 'ctrl', 2.2, dash=D)
@@ -526,8 +525,6 @@ def fig_ni_int():
     # ---- MAE_DSU / MAE_CRU ----
     s.line([(1250, 425), (1400, 425)], 'inter', 2.6)
     s.tag(1325, 410, '整形输入 32 B', 'inter', 12)
-    s.line([(1250, 470), (1375, 470), (1375, 690), (1400, 690)], 'inter', 2.6)
-    s.tag(1312, 455, '读路径 32 B', 'inter', 12)
     s.line([(1400, 585), (900, 585)], 'inter', 2.6)
     s.tag(1040, 570, '整形输出 → L2 32 B', 'inter', 12)
     s.line([(1400, 645), (900, 645)], 'inter', 2.6)
@@ -535,10 +532,12 @@ def fig_ni_int():
     s.line([(870, 720), (1335, 720), (1335, 555), (1400, 555)], 'inter', 2.6)
     s.tag(1060, 705, '整形输入 32 B', 'inter', 12)
     s.line([(870, 775), (1400, 775)], 'inter', 2.6)
-    s.tag(1060, 760, '读路径 32 B', 'inter', 12)
-    # ---- MAE_IDN ----
-    s.line([(1250, 865), (1400, 865)], 'inter', 2.8)
-    s.tag(1325, 850, '4 道 × 8 B', 'inter', 12)
+    s.tag(1060, 760, '读四象限 4 × 32 B', 'inter', 12)
+    s.line([(1400, 520), (1290, 520), (1290, 865), (1250, 865)], 'inter', 2.4)   # MAE_DSU 整形输出（去 L1）→ IDN 出口
+    s.tag(1298, 838, '整形 → IDN', 'inter', 11, 'start')
+    # ---- HUB_IDN（组外对端，11-07 V18-HUB-01）----
+    s.line([(1115, 900), (1115, 975)], 'inter', 2.8)
+    s.tag(1123, 958, '32 B → HUB_IDN', 'inter', 12, 'start')
     # ---- 中央 L2 ----
     s.line([(890, 665), (890, 975)], 'inter', 3.0)                        # 写客户 → NI 写口
     s.tag(883, 685, 'NI 写口 32 B', 'inter', 12, 'end')
@@ -547,14 +546,14 @@ def fig_ni_int():
     s.line([(640, 800), (640, 975)], 'inter', 2.4)                        # 返回车道 → L2：读 en / addr
     s.tag(648, 840, '读 en · addr', 'inter', 12, 'start')
     s.line([(800, 975), (800, 800)], 'inter', 3.0)                        # L2 → 返回车道：dout
-    s.tag(793, 880, 'dout 32 B', 'inter', 12, 'end')
+    s.tag(793, 880, 'dout 4 × 32 B', 'inter', 12, 'end')
     return s.save()
 
 
 # =====================================================================
 # FIG-MAE_IDN-ARCH
 # =====================================================================
-def fig_idn():
+def _retired_fig_idn():
     s = frame('FIG-MAE_IDN-ARCH.svg', 'FIG-MAE_IDN-ARCH  MAE_IDN：两源合并、分叉点、交叉与 16 条链路',
               '两源 = NI_INT 读返回分路 / MAE_DSU 输出（MAE_CRU 不经 IDN）；每条道接一个核集合（随单位），多播各核独立取走；每核 4 条 8 B 链路，合计 32 B/拍',
               {'idn'}, 'MAE_IDN（本单元）', (740, 325, 870, 590), ftx=754)
@@ -609,24 +608,24 @@ def fig_idn():
 # FIG-MAE_DSU-ARCH
 # =====================================================================
 def fig_dsu():
-    # 11-06 晚（用户）：四种整形是同一条数据通路上的模式，不画成四个模块；只有子段暂存是要求存在的存储
-    s = frame('FIG-MAE_DSU-ARCH.svg', 'FIG-MAE_DSU-ARCH  MAE_DSU：两个入口、子段暂存、一条整形数据通路、两个出口',
-              '输入 DDR / L2 原形（都经 NI_INT），输出 L1（经 MAE_IDN）/ L2（经 NI-L2C 写客户），无片外出口；整形模式与参数、两侧地址都由搬运引擎给出；与 MAE_CRU 并列、无往来',
-              set(), 'MAE_DSU（本单元）', (620, 320, 710, 595), ftx=634)
+    # 11-06 晚（用户）：四种整形是同一条数据通路上的模式，不画成四个模块；只有一份暂存是要求存在的存储
+    # 11-08（V18-MAE-35）：半字合并 → 按字重排（攒 n 行、2 × 128 B ping-pong 起）；暂存由按字重排与转置共用；控制只来自 MAE_ENG
+    s = frame('FIG-MAE_DSU-ARCH.svg', 'FIG-MAE_DSU-ARCH  MAE_DSU：两个入口、一份暂存、一条整形数据通路、两个出口',
+              '输入 DDR / L2 原形（都经 NI_INT），输出 L1（经 HUB_IDN）/ L2（经 NI-L2C 写客户），无片外出口；整形模式、几何、两侧地址与停发全部由 MAE_ENG 搬运引擎给出；与 MAE_CRU 并列、无往来',
+              {'idn'}, 'MAE_DSU（本单元）', (620, 320, 710, 595), ftx=634)
     # ---- 同组单元 ----
-    member(s, 900, 235, 300, 75, 'MAE_ENG', '搬运引擎：模式与参数 · 逐拍 addr')
+    member(s, 900, 235, 300, 75, 'MAE_ENG', '搬运引擎：模式 · 几何 · 逐拍 addr（唯一控制源）')
     member(s, 330, 235, 200, 75, 'NI_EXT', '', lit=False)
     member(s, 320, 380, 160, 460, 'NI_INT', '读返回分路\nNI-L2C 返回车道\nNI-L2C 写客户')
-    member(s, 1460, 570, 150, 120, 'MAE_IDN', '去核 L1')
     member(s, 1460, 760, 150, 100, 'MAE_CRU', '与 DSU 并列', lit=False)
     # ---- 内部 ----
     s.block(640, 400, 180, 80, 'DDR 原形入口', '32 B · addr · be', 'hub', 15, 12, shadow=False)
     s.block(640, 540, 180, 80, 'L2 原形入口', '32 B · addr · be', 'hub', 15, 12, shadow=False)
     s.block(640, 720, 180, 90, '出口 → NI-L2C', '去 L2 · 32 B\n三种模式的输出都可', 'hub', 15, 12, shadow=False)
-    s.block(872, 400, 266, 100, '子段暂存', '转置时攒齐一个子段\n容量 = 子段长硬限 L_DSU【设计者定】', 'comp', 15, 12, shadow=False)
+    s.block(872, 400, 266, 100, '暂存（一份，共用）', '按字重排攒 n 行：≥ 2 × 128 B ping-pong\n转置攒一个子段：容量【设计者定】', 'comp', 15, 12, shadow=False)
     s.block(872, 540, 266, 340, '整形数据通路（一条）',
-            '整形模式三选一（指令给）：\n半字合并：只改落地地址\n转置：子段攒齐后整块转置\n两平面合并：hi 4 字 + lo 4 字\n= 128 B 记录，尺度行另落 S 类\n\n随半字合并 / 转置：\n块尺度 e_max · Δ_m 与旁带行\n先 hi 后 lo，lo 用 hi 的尺度', 'comp', 15, 12, shadow=False)
-    s.block(1190, 560, 130, 140, '出口 → L1', '经 MAE_IDN\n4 道 × 8 B\n含旁带行 · 全码记录', 'hub', 15, 12, shadow=False)
+            '整形模式三选一（搬运引擎给）：\n按字重排：攒 n 行 → 各核整字\n转置：标准 / 列深度优先 → Wᵀ 列字\n两平面合并：hi 4 字 + lo 4 字\n= 128 B 记录，尺度行另落 S 类\n\n随转置：\n块尺度 e_max · Δ_m 与旁带行\n先 hi 后 lo，lo 用 hi 的尺度', 'comp', 15, 12, shadow=False)
+    s.block(1190, 560, 130, 140, '出口 → L1', '经 HUB_IDN · 32 B\n整字 + 核集合\n含旁带行 · 全码记录', 'hub', 15, 12, shadow=False)
     # 内部连线
     s.line([(820, 440), (872, 440)], 'inter', 2.6)
     s.line([(820, 580), (872, 580)], 'inter', 2.6)
@@ -640,12 +639,12 @@ def fig_dsu():
     s.tag(560, 565, '整形输入 32 B', 'inter', 12)
     s.line([(640, 765), (480, 765)], 'inter', 2.8)
     s.tag(560, 750, '整形输出 32 B', 'inter', 12)
-    # ---- MAE_IDN ----
-    s.line([(1320, 630), (1460, 630)], 'inter', 2.8)
-    s.tag(1390, 615, '4 道 × 8 B', 'inter', 12)
+    # ---- HUB_IDN（组外对端）----
+    s.line([(1255, 700), (1255, 975)], 'inter', 2.8)
+    s.tag(1263, 958, '32 B → HUB_IDN', 'inter', 12, 'start')
     # ---- MAE_ENG ----
     s.line([(1005, 310), (1005, 400)], 'ctrl', 2.2, dash=D)
-    s.tag(1013, 365, '整形模式 · 参数 · 停发', 'ctrl', 12, 'start')
+    s.tag(1013, 365, '整形模式 · 几何 · 停发', 'ctrl', 12, 'start')
     s.line([(1180, 310), (1180, 530), (1255, 530), (1255, 560)], 'inter', 2.2)
     s.tag(1188, 385, '逐拍 addr · be', 'inter', 12, 'start')
     return s.save()
@@ -657,13 +656,12 @@ def fig_eng():
     # 11-06 晚（用户）：框只画真实存在 / 共用的硬件；引擎执行一条指令的步骤不进图，写在正文 §7.1 的专项说明
     s = frame('FIG-MAE_ENG-ARCH.svg', 'FIG-MAE_ENG-ARCH  MAE_ENG：一种搬运引擎 × N，共用指令入口与 M0 / M1 请求仲裁',
               '只有搬运指令；每个引擎执行一条指令（地址生成、发出、运算级、比对、通知都是引擎自己做的事，见正文 §7.1）；引擎之外只有共用的指令入口与请求仲裁',
-              {'lic', 'ctl', 'l2', 'hubdn'}, 'MAE_ENG（本单元）', (560, 225, 790, 690), ftx=574)
+              {'lic', 'ctl', 'l2', 'hubdn', 'idn'}, 'MAE_ENG（本单元）', (560, 225, 790, 690), ftx=574)
     # ---- 同组单元 ----
     member(s, 320, 410, 150, 110, 'NI_EXT', 'M0 / M1 协议端')
     member(s, 320, 600, 150, 150, 'NI_INT', '分路 · NI-L2C\nNI 控制道')
-    member(s, 1460, 300, 160, 70, 'MAE_IDN', '入站分发网')
-    member(s, 1460, 390, 160, 70, 'MAE_DSU', '数据整形')
-    member(s, 1460, 480, 160, 80, 'MAE_CRU', '数据合并')
+    member(s, 1460, 390, 160, 70, 'MAE_DSU', '收模式 · addr')
+    member(s, 1460, 480, 160, 80, 'MAE_CRU', '收参数 · 回完成')
     # ---- 共用：指令入口、请求仲裁 ----
     s.block(600, 280, 210, 100, '指令入口（两份）', '当前 / 下一 · ping-pong\nLIC 可连续下发多条\n各引擎从这里取指令', 'ctlu', 15, 12, shadow=False)
     s.block(600, 430, 210, 90, 'M0 / M1 请求仲裁', '各引擎共用两个 AXI 口\n优先级 + 老化', 'ctlu', 15, 12, shadow=False)
@@ -681,7 +679,7 @@ def fig_eng():
     s.tag(908, 205, '搬运指令 · 指令标号', 'ctrl', 12, 'start')
     s.line([(1140, 340), (1140, 170)], 'ctrl', 2.2, dash=D)
     s.tag(1148, 228, '完成通知 · 标号', 'ctrl', 12, 'start')
-    # ---- 命令与标量网 ----
+    # ---- 命令网 ----
     s.line([(1300, 170), (1300, 250), (1220, 250), (1220, 340)], 'ctrl', 2.2, dash=D, head='both')
     s.tag(1308, 205, '远端指令 · 长度转发 / 发出报告', 'ctrl', 12, 'start')
     # ---- NI_EXT ----
@@ -692,68 +690,52 @@ def fig_eng():
     # ---- NI_INT ----
     s.line([(900, 400), (845, 400), (845, 700), (470, 700)], 'inter', 2.6)
     s.tag(660, 686, '控制 · 逐拍 addr / be · 读请求记录', 'inter', 12)
-    # ---- IDN / DSU / CRU ----
-    s.line([(1260, 335), (1460, 335)], 'ctrl', 2.0, dash=D)
-    s.tag(1405, 321, '核集合 · 单位', 'ctrl', 11)
+    # ---- HUB_IDN（组外对端）/ DSU / CRU ----
+    s.line([(1260, 335), (1415, 335), (1415, 975)], 'ctrl', 2.0, dash=D, head='both')
+    s.tag(1423, 870, '核集合（随字）/ 握手', 'ctrl', 11, 'start')
     s.line([(1260, 425), (1460, 425)], 'inter', 2.2)
-    s.tag(1405, 411, '模式 · addr', 'inter', 11)
     s.line([(1260, 505), (1460, 505)], 'inter', 2.2, head='both')
-    s.tag(1405, 491, '参数 / 完成', 'inter', 11)
     # ---- 中央 L2：写入握手（按发令号，经 NI_INT 转交）----
     s.line([(940, 975), (940, 620)], 'ctrl', 2.2, dash=D)
     s.tag(948, 870, 'L2 写入握手（按 src）', 'ctrl', 12, 'start')
     # ---- H2C 道：道旁引擎 ----
     s.line([(1260, 520), (1380, 520), (1380, 800), (1780, 800), (1780, 650)], 'inter', 2.4)
-    s.tag(1580, 785, 'H2C：L2 象限读 en · addr / 目的 addr · be / 核掩码', 'inter', 12)
+    s.tag(1430, 785, 'H2C：读 en · addr / 目的 addr · be / 核掩码', 'inter', 12, 'start')
     return s.save()
 
 # =====================================================================
 # FIG-MAE_CRU-ARCH（11-06 深夜，正文 MAE_CRU.md §2）
 # =====================================================================
 def fig_cru():
-    # 用户 11-06：CRU 内地址由指令给出、32 B / 地址、SRAM 支持紧密数据；读路径算一份；不经 MAE_IDN
-    s = frame('FIG-MAE_CRU-ARCH.svg', 'FIG-MAE_CRU-ARCH  MAE_CRU：三类输入写进 CRU 存储，按地址到齐即合并，三类出口',
-              '输入 = 四核 C2H 分支 / 读路径（DDR · L2，算一份）/ 标量（命令与标量网）；按 CRU 内地址计到达份数；输出 = H2C 道（任一道）/ NI-L2C（L2 · 经 M1 到共享内存）/ 标量回 CCU；地址与停发由 MAE_ENG 统一控制',
-              {'ctl', 'hubup', 'hubdn'}, 'MAE_CRU（本单元）', (600, 340, 940, 580), ftx=760)
+    # 11-07 晚（V18-CRU-07 / MAE-32）：CRU 只经 NI_INT 进出 L2——NI 读口一拍读四个象限同址（4 × 32 B）、合并、经 NI-L2C 写回 L2；
+    # 撤 C2H 入口、CRU 存储 SRAM、按地址计数、H2C 出口、命令网端点。CRU 不与 MAE 组外直接相连，外圈全灰
+    s = frame('FIG-MAE_CRU-ARCH.svg', 'FIG-MAE_CRU-ARCH  MAE_CRU：从 L2 读四份、合并、写回 L2',
+              '输入 = NI 读口一拍读出的四个象限同址存储字（4 × 32 B，按象限掩码取份）；三种合并；输出 = 32 B 经 NI-L2C 写回 L2；由 MAE 收齐参与核的发出报告后启动；地址与停发由 MAE_ENG 控制',
+              set(), 'MAE_CRU（本单元）', (600, 340, 940, 580), ftx=760)
     # ---- 同组单元 ----
     member(s, 700, 235, 380, 75, 'MAE_ENG', '合并参数 · 两侧逐拍 addr · 收合并完成')
-    member(s, 330, 235, 200, 75, 'NI_EXT', '经 NI_INT（M1）', lit=False)
-    member(s, 545, 235, 140, 75, 'MAE_DSU', '与 CRU 并列', lit=False)
-    member(s, 1300, 235, 150, 75, 'MAE_IDN', 'CRU 不经 IDN', lit=False)
-    member(s, 320, 420, 200, 470, 'NI_INT', '读返回分路（读路径）\n\nNI-L2C 写客户\n→ L2 · → NI_EXT（M1）')
+    member(s, 330, 235, 200, 75, 'NI_EXT', '', lit=False)
+    member(s, 1300, 235, 220, 75, 'MAE_DSU', '与 CRU 并列', lit=False)
+    member(s, 320, 420, 200, 470, 'NI_INT', 'NI-L2C 返回车道\n（NI 读口 4 × 32 B）\n\nNI-L2C 写客户\n（NI 写口 32 B）')
     # ---- 内部 ----
-    s.block(1300, 470, 200, 110, 'C2H 入口 × 4', '每核 1 × 32 B\n入口 FIFO 组织【设计者定】', 'hub', 15, 12, shadow=False)
-    s.block(700, 470, 540, 110, 'CRU 存储（SRAM）', '32 B / 地址 · 字节写使能（紧密数据）\n每个地址记到达份数 · 地址由指令给出', 'mem', 16, 12, shadow=False)
-    s.block(700, 640, 540, 130, '合并（到齐即做）', '部分和归约：BF16 逐元素求和（标准加法树）\n标量合并：求和 / 取最大 / (m, l) 对合并\n读集合并：按位取并 · 并行 lane 数【设计者定】', 'comp', 16, 12, shadow=False)
-    s.block(700, 820, 540, 70, '出口', '去 H2C 道 · 去 NI-L2C · 标量去命令与标量网', 'hub', 15, 12, shadow=False)
-    s.line([(1300, 525), (1240, 525)], 'inter', 2.6)                     # 入口 → 存储
-    s.line([(970, 580), (970, 640)], 'inter', 2.6)                       # 存储 → 合并
-    s.line([(970, 770), (970, 820)], 'inter', 2.6)                       # 合并 → 出口
-    # ---- 四核 C2H 去 MAE_CRU 的分支 ----
-    s.line([(1660, 375), (1400, 375), (1400, 470)], 'inter', 2.8)
-    s.tag(1530, 360, '四核 × 32 B', 'inter', 12)
-    s.line([(1470, 470), (1470, 400), (1660, 400)], 'ctrl', 2.0, dash=D)
-    s.tag(1565, 415, '写入握手 → 发数据核', 'ctrl', 11)
-    # ---- 读路径（NI_INT）----
-    s.line([(520, 525), (700, 525)], 'inter', 2.8)
-    s.tag(610, 510, '读路径 · 算一份', 'inter', 12)
-    # ---- 出口 → NI-L2C ----
-    s.line([(700, 855), (520, 855)], 'inter', 2.8)
-    s.tag(610, 840, '去 L2 / M1', 'inter', 12)
-    # ---- 出口 → H2C 道 ----
-    s.line([(1240, 855), (1580, 855), (1580, 605), (1660, 605)], 'inter', 2.8)
-    s.tag(1440, 840, '去 H2C 道（任一道）', 'inter', 12)
-    # ---- 命令与标量网：标量入、合并值出（独立端点）----
-    s.line([(1230, 170), (1230, 470)], 'ctrl', 2.2, dash=D, head='both')
-    s.tag(1238, 400, '标量入 · 合并值出', 'ctrl', 12, 'start')
+    s.block(700, 440, 540, 110, '四份对齐（按象限掩码取份）', '一拍 4 × 32 B：四个象限的同一象限内地址各一份\n掩码外的象限不计入 · 份数 > 4 时另读 L2 其他地址累加【设计者定】', 'hub', 16, 12, shadow=False)
+    s.block(700, 610, 540, 130, '合并（三种形态，加法次序按象限固定）', '部分和归约：BF16 逐元素求和（标准加法树）\n标量合并：求和 / 取最大 / (m, l) 对合并（FP32）\n读集合并：按位取并 · 并行 lane 数【设计者定】', 'comp', 16, 12, shadow=False)
+    s.block(700, 800, 540, 70, '出口', '每拍 32 B（BF16 / FP32 / 位图）· 目的 addr 由引擎给 · 只写 L2', 'hub', 15, 12, shadow=False)
+    s.line([(970, 550), (970, 610)], 'inter', 2.6)
+    s.line([(970, 740), (970, 800)], 'inter', 2.6)
+    # ---- NI_INT ----
+    s.line([(520, 495), (700, 495)], 'inter', 3.0)
+    s.tag(610, 478, '4 × 32 B', 'inter', 12)
+    s.line([(700, 835), (520, 835)], 'inter', 2.8)
+    s.tag(610, 818, '32 B → L2', 'inter', 12)
     # ---- MAE_ENG ----
-    s.line([(680, 310), (680, 705), (700, 705)], 'ctrl', 2.2, dash=D, head='both')
-    s.tag(688, 420, '参数 · addr / 完成', 'ctrl', 12, 'start')
+    s.line([(680, 310), (680, 675), (700, 675)], 'ctrl', 2.2, dash=D, head='both')
+    s.tag(688, 400, '参数 · addr / 完成', 'ctrl', 12, 'start')
     return s.save()
 
 
 if __name__ == '__main__':
     bad = 0
-    for f in (fig_ni_ext, fig_ni_int, fig_idn, fig_dsu, fig_eng, fig_cru):
+    for f in (fig_ni_ext, fig_ni_int, fig_dsu, fig_eng, fig_cru):
         bad += len(f())
     sys.exit(1 if bad else 0)

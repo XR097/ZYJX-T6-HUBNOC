@@ -185,5 +185,5 @@
 <rect x="830" y="500" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="907.0" y="515.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">16 B（be 只选 16 B）</tspan></text>
 <text xml:space="preserve" x="30" y="552" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">行尾 16 B 用 be 标出；两端有效字节都是 288 B</tspan></text>
-<text xml:space="preserve" x="1476" y="598" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-06</tspan></text>
+<text xml:space="preserve" x="1476" y="598" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
 </svg>

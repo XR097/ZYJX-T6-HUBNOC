@@ -2,25 +2,44 @@
 
 > 由 `_build/build_figure_registry.py` 扫描生成，不要手改；手写说明放各篇的 FIGURE_REGISTRY_<篇>.md。扫描范围：本目录下全部 *.md（图引用）与 _build/*.py（生图函数）。
 
+## DATA_ORGANIZATION.md
+
+| 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
+|---|---|---|---|---|
+| FIG-TP-OBJECT-ALIGN | 1.2 对齐：数据块起点在存储字边界，记录紧挨，段按字节对齐；跨字由存储处理 | `fig_object_align()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-DORG-SEGMENT | 2.1 32 通道段：段尺度 + keep 位图 + 每个保留通道的 F 标志与码，元素位宽是位点属性 | `fig_segment()` | `_build/draw_data_org.py` | ✓ |
+| FIG-TP-FIXED-ITEM | 3 定长项与标量 | `fig_fixed_item()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-DORG-SPLIT-T | 5.2 核间按 T 切分：各核算不同 token，产出留本核 | `fig_split_t()` | `_build/draw_data_org.py` | ✓ |
+| FIG-DORG-SPLIT-M | 5.3 核间按 M 切分：各核算不同输出通道，四象限各一个数据块 | `fig_split_m()` | `_build/draw_data_org.py` | ✓ |
+| FIG-DORG-SPLIT-K | 5.4 核间按 K 切分：各核算部分和，同址异象限，MAE_CRU 归约 | `fig_split_k()` | `_build/draw_data_org.py` | ✓ |
+| FIG-TP-WINDOW-GATHER | 5.7 权重驻留位点的产出：每个窗口一个数据块，MAE 按长度表聚集 | `fig_window_gather()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-DORG-DDR-STD | 6.1 权重标准布局：一拍一个 $k$ 行 × 4 个列组，尺度与 bias 另成数据块 | `fig_ddr_std()` | `_build/draw_data_org.py` | ✓ |
+| FIG-DORG-DDR-COL | 6.2 权重列深度优先布局：一拍一列 64 个连续 $k$，尺度另成数据块 | `fig_ddr_col()` | `_build/draw_data_org.py` | ✓ |
+| FIG-DORG-DDR-ACT | 6.3 激活值、残差与 K / V 在 DDR | `fig_ddr_act()` | `_build/draw_data_org.py` | ✓ |
+
 ## DATA_TRANSFER_PROTOCOL.md
 
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
-| FIG-TP-ARCH-LINKS | 1 协议分层与覆盖范围 | `fig_links()` | `_build/draw_tp_arch.py` | ✓ |
-| FIG-TP-ADDR-MAP | 2.2 逻辑地址 = 堆位 + 类位 + 字节号 | `fig_addr_map()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-ADDR-MAP | 2.2 地址 = 24 bit 段内字节位置；堆、类、象限由段选单独给出 | `fig_addr_map()` | `_build/draw_transfer_protocol.py` | ✓ |
 | FIG-TP-ADDR-ACCUM | 2.4.2 核间：C2H 由本核 CCU 逐拍给出，H2C / IDN / NI 由 MAE 搬运引擎逐拍给出 | `fig_addr_accum()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-COMPACT | 2.5 对齐使用与紧密访存 | `draw()` | `_build/draw_compact.py` | ✓ |
-| FIG-TP-ARCH-INCORE | 3 核内协议：RRAM | `fig_incore()` | `_build/draw_tp_arch.py` | ✓ |
-| FIG-TP-INCORE-TIMING | 3.3 读：固定 1 拍，无 ready，无 busy | `fig_timing()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-STALL-CHAIN | 4 核内握手：相邻级 stall | `fig_stall_chain()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-ARCH-INTERCORE | 5 核间协议：带地址的握手写流 | `fig_intercore()` | `_build/draw_tp_arch.py` | ✓ |
-| FIG-TP-STREAM-BEAT | 5.4 逐拍地址由该链路的发令方生成：C2H 归本核 CCU，其余归 MAE 搬运引擎 | `fig_stream_beat()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-LENGTH-REPORT | 7.3 变长对象：按离线上限分槽存储，CCU 发送，写进 L2 后发出报告 | `fig_length_report()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-ARCH-CTRL | 8 命令与标量网协议：64 bit 握手消息流 | `fig_ctrl()` | `_build/draw_tp_arch.py` | ✓ |
-| FIG-TP-CTRL-MSG | 8.6 消息骨架 | `fig_ctrl_msg()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-OBJECT-ALIGN | 9.1 对齐使用：每条记录占整数个存储字 | `fig_object_align()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-TOKEN-SLOT | 9.7 段按 MX 组产生，记录按 token 槽拼接 | `fig_token_slot()` | `_build/draw_transfer_protocol.py` | ✓ |
-| FIG-TP-SLOT-COUNT | 9.8 token 位置 | `fig_slot_count()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-COMPACT | 2.5 对齐与紧密存放 | `draw()` | `_build/draw_compact.py` | ✓ |
+| FIG-TP-ARCH-INTERCORE | 3 核间协议：带地址的握手写流 | `fig_intercore()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-STREAM-BEAT | 3.4 逐拍地址由该链路的发令方生成：C2H 归本核 CCU，其余归 MAE 搬运引擎 | `fig_stream_beat()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-LENGTH-REPORT | 4.3 变长对象：按实际长度紧挨存放，长度表单独存，CCU 发送，写进 L2 后发出报告，MAE 搬完后转发应写量 | `fig_length_report()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-ARCH-INCORE | 5 核内协议：RRAM | `fig_incore()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-INCORE-TIMING | 5.3 读：固定 1 拍，无 ready，无 busy | `fig_timing()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-STALL-CHAIN | 6 核内握手：相邻级 stall | `fig_stall_chain()` | `_build/draw_transfer_protocol.py` | ✓ |
+| FIG-TP-ARCH-CTRL | 8 命令网协议：64 bit 握手消息流 | `fig_ctrl()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-CTRL-MSG | 8.5 消息骨架 | `fig_ctrl_msg()` | `_build/draw_transfer_protocol.py` | ✓ |
+
+## HUB_IDN.md
+
+| 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
+|---|---|---|---|---|
+| FIG-HUB_IDN-ARCH | 2 数据从哪来、到哪去 | `fig_arch()` | `_build/draw_hub_idn.py` | ✓ |
+| FIG-HUB_IDN-CORE-SET | 4.2 几核共享 M0 带宽：MAE_ENG 把连续存储字轮流排给各核 | `fig_core_set()` | `_build/draw_hub_idn.py` | ✓ |
+| FIG-HUB_IDN-MCAST | 5 多播：分叉点按已取位分叉，各目的核独立取走 | `fig_mcast()` | `_build/draw_hub_idn.py` | ✓ |
 
 ## HUB_NOC.md
 
@@ -36,11 +55,11 @@
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
 | FIG-L1_SRAM-BANKS | 1.2 24 个单端口 bank 分两堆，成对做 ping-pong | `fig_banks()` | `_build/draw_l1_sram.py` | ✓ |
-| FIG-L1_SRAM-PINGPONG | 1.3 一堆只读、一堆只写，由地址的堆位选 | `fig_pingpong()` | `_build/draw_l1_sram.py` | ✓ |
+| FIG-L1_SRAM-PINGPONG | 1.3 一堆只读、一堆只写，由指令的堆选选 | `fig_pingpong()` | `_build/draw_l1_sram.py` | ✓ |
 | FIG-L1_SRAM-ABANK-CFG | 1.6 配置项：A 类 4 bank 或 8 bank | `fig_abank_cfg()` | `_build/draw_l1_sram.py` | ✓ |
 | FIG-L1_SRAM-ARCH | 2 数据从哪来、到哪去 | `fig_l1_arch()` | `_build/draw_l1_arch.py` | ✓ |
 | FIG-L1_SRAM-RING | 3.3 核内与 C2H 地址由 CCU 给出，落地地址由 MAE 搬运引擎逐拍给出，L1 不做取模 | `fig_ring()` | `_build/draw_l1_sram.py` | ✓ |
-| FIG-L1_SRAM-COMPACT-A | 3.4a 紧密访存：A 类支持任意字节起点，W / S 类与 MXU 供数除外 | `draw()` | `_build/draw_compact.py` | ✓ |
+| FIG-L1_SRAM-COMPACT-A | 3.4a 任意字节起点的访问：A 类的读写口自己处理，W / S 类除外 | `draw()` | `_build/draw_compact.py` | ✓ |
 | FIG-L1_SRAM-MAP-W | 4.2 W 类占 8 个 bank：行字区一段落同一深度，列字区一个存储字 = 一列 64 个连续 $k$ | `fig_map_w()` | `_build/draw_l1_sram.py` | ✓ |
 | FIG-L1_SRAM-MAP-W-HALF | 4.3 两来源时一段落 4 个 bank 的相邻两个深度 | `fig_map_w_half()` | `_build/draw_l1_sram.py` | ✓ |
 | FIG-L1_SRAM-MAP-A | 4.4 A 类：相邻存储字轮流落 bank | `fig_map_a()` | `_build/draw_l1_sram.py` | ✓ |
@@ -55,7 +74,7 @@
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
 | FIG-L2_SRAM-ARCH | 2 数据从哪来、到哪去 | `fig_arch()` | `_build/draw_l2_arch.py` | ✓ |
-| FIG-L2_SRAM-OBJ-ALIGN | 3.4 对齐使用（默认）：每条记录占整数个存储字 | `fig_obj_align()` | `_build/draw_l2_sram.py` | ✓ |
+| FIG-L2_SRAM-OBJ-ALIGN | 3.4 片上数据的排法：③ 档记录紧挨、对象起点对齐、长度表单独存 | `fig_obj_align()` | `_build/draw_l2_sram.py` | ✓ |
 | FIG-L2_SRAM-MAP-HEAP | 4.2 地址 [h][q][j] 落在哪个 bank、哪个深度 | `fig_map_heap()` | `_build/draw_l2_sram.py` | ✓ |
 
 ## L3PU_EXTERNAL_INFORMATION.md
@@ -69,17 +88,18 @@
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
 | FIG-MAE_CRU-ARCH | 2 数据从哪来、到哪去 | `fig_cru()` | `_build/draw_mae_arch.py` | ✓ |
-| FIG-MAE_CRU-SUM | 3.1 部分和归约：BF16 逐元素求和，标准加法树，次序按参与方固定 | `fig_sum()` | `_build/draw_mae_cru.py` | ✓ |
+| FIG-MAE_CRU-SUM | 3.1 逐元素相加（归约）：解码后逐元素求和，标准加法树，次序按象限固定 | `fig_sum()` | `_build/draw_mae_cru.py` | ✓ |
+| FIG-MAE_CRU-RESID | 3.1a 逐元素相加（残差加）：归约结果与 L2 里的残差相加，一次编码写回残差流 | `fig_resid()` | `_build/draw_mae_cru.py` | ✓ |
 | FIG-MAE_CRU-READSET | 3.3 读集合并：按位取并 | `fig_readset()` | `_build/draw_mae_cru.py` | ✓ |
-| FIG-MAE_CRU-PINGPONG | 4.3 CRU 内地址由编译链做 ping-pong | `fig_pingpong()` | `_build/draw_mae_cru.py` | ✓ |
 
 ## MAE_DSU.md
 
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
 | FIG-MAE_DSU-ARCH | 2 数据从哪来、到哪去 | `fig_dsu()` | `_build/draw_mae_arch.py` | ✓ |
-| FIG-MAE_DSU-SPLICE | 4.1 半字合并：标准布局 → $W^{\mathsf T}$ 列字，地址级完成 | `fig_splice()` | `_build/draw_mae_dsu.py` | ✓ |
-| FIG-MAE_DSU-TRANSPOSE | 4.2 转置：列深度优先布局 → $W^{\mathsf T}$ 列字，攒齐一个子段整块转置 | `fig_transpose()` | `_build/draw_mae_dsu.py` | ✓ |
+| FIG-MAE_DSU-REGROUP | 4.1 按字重排：攒 $n$ 行，把一拍里分属几个核的粒子重排成各核的整字 | `fig_regroup()` | `_build/draw_mae_dsu.py` | ✓ |
+| FIG-MAE_DSU-SPLICE | 4.2 转置：两种 DDR 布局的前向权重 → $W^{\mathsf T}$ 列字块 | `fig_splice()` | `_build/draw_mae_dsu.py` | ✓ |
+| FIG-MAE_DSU-TRANSPOSE | 4.2 转置：两种 DDR 布局的前向权重 → $W^{\mathsf T}$ 列字块 | `fig_transpose()` | `_build/draw_mae_dsu.py` | ✓ |
 | FIG-MAE_DSU-TWOPLANE | 4.3 两平面合并：DDR 两处的 hi 字与 lo 字 → 同一记录相邻地址 | `fig_twoplane()` | `_build/draw_mae_dsu.py` | ✓ |
 | FIG-MAE_DSU-SIDEBAND | 5.1 块尺度：$e_{\max}$ 与 $\Delta_m$，整数运算无损 | `fig_sideband()` | `_build/draw_mae_dsu.py` | ✓ |
 
@@ -93,14 +113,6 @@
 | FIG-MAE_ENG-LIST | 5.3 列表驱动生成器：外层循环换成列表项 | `fig_list()` | `_build/draw_mae_eng.py` | ✓ |
 | FIG-MAE_ENG-KHI-GATHER | 5.4 驻留 / 重读只改变 gather 项字节数 | `fig_khi()` | `_build/draw_mae_eng.py` | ✓ |
 | FIG-MAE_ENG-QSPLICE | 5.9 象限并存的数据：读时四道并行合并，写 L2 时按象限拆分 | `fig_qsplice()` | `_build/draw_mae_eng.py` | ✓ |
-
-## MAE_IDN.md
-
-| 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
-|---|---|---|---|---|
-| FIG-MAE_IDN-ARCH | 2 数据从哪来、到哪去 | `fig_idn()` | `_build/draw_mae_arch.py` | ✓ |
-| FIG-MAE_IDN-LANE-SPLIT | 4.4 分配只在单位边界切换 | `fig_lane_split()` | `_build/draw_mae_idn.py` | ✓ |
-| FIG-MAE_IDN-MCAST | 5 多播：交叉的分叉点按已取位分叉，各目的核独立取走 | `fig_mcast()` | `_build/draw_mae_idn.py` | ✓ |
 
 ## MAE_INTEGRATION.md
 
@@ -122,6 +134,15 @@
 | 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
 |---|---|---|---|---|
 | FIG-MAE_NI_INT-ARCH | 2 数据从哪来、到哪去 | `fig_ni_int()` | `_build/draw_mae_arch.py` | ✓ |
+
+## ONCHIP_DATAPATH_ARCH.md
+
+| 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |
+|---|---|---|---|---|
+| FIG-TP-ARCH-INTERCORE | 4 核间链路 | `fig_intercore()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-ARCH-INCORE | 3 核内口：收到 L1 读写口与集成输出端口这一级 | `fig_incore()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-ARCH-CTRL | 5 命令网拓扑 | `fig_ctrl()` | `_build/draw_tp_arch.py` | ✓ |
+| FIG-TP-ARCH-LINKS | 1 全芯片拓扑与三种总线 | `fig_links()` | `_build/draw_tp_arch.py` | ✓ |
 
 ## VNU_LOSS.md
 

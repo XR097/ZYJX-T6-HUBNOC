@@ -5,10 +5,10 @@
 用户 11-05："对于所有的 VNU 的顶层架构图，我都建议规范下 VNU 外部接口的配置，不要有的有上行，有的没有"；
 "我希望画出全部对端，只是把不需要的标灰"。规则：
 - 框外只画 VNU 组的全部直接对端，五张图位置、大小、标题相同：
-  上方 本核 CCU；左侧 MXU 出口级、MXU FBA 粗分数直达口；下方 VNU 的 RRAM 口（框内）→ L1 的 A 类空间。
+  上方 本核 CCU；左侧 MXU 阵列的 AEB（11-08 起出口级归 NLU，V18-NLU-06）、MXU FBA 粗分数直达口；下方 VNU 的 RRAM 口（框内）→ L1 的 A 类空间。
 - 本单元不用的对端画灰（dim），不连线。
 - 对端之后的去向（CRU、L1 发送侧 → C2H、IDN / H2C 落地）不画，正文 §2 交代。
-- 框内只画与本单元直接往来的同组单元（右列）。
+- 框内只画与本单元直接往来的同组单元（右列）。QNT / SEL / LOSS 从出口级收到的向量 11-08 起画成来自 NLU（出口级子模块）的组内连线。
 原各脚本里的 fig_conn 已改名 _retired_fig_conn，不再调用。
 """
 import sys
@@ -29,8 +29,8 @@ def frame(key, unit_id, unit_title, unit_sub, uses, ccu_down, ccu_up, l1_sub, ex
     """建统一外框。uses ⊆ {'exit', 'fba'}：本单元用到的 MXU 对端；CCU 与 L1 每个单元都用。"""
     f = Figure(key, '', width=W, height=H, out_dir=OUT, max_crossings=2)
     f.container('vnu', 462, 196, 1052, 784, 'VNU 组')
-    f.block('ccu', 714, 28, 308, 126, '本核 CCU', '指令 / 地址推理 / 标量中转', kind='control')
-    f.block('exit', 42, 280, 266, 126, 'MXU 出口级', '推送链（BF16）' if 'exit' in uses else '本单元不用',
+    f.block('ccu', 714, 28, 308, 126, '本核 CCU', '指令 / 地址推理 / 输出去向', kind='control')
+    f.block('exit', 42, 280, 266, 126, 'MXU 阵列 AEB', '4 pod 条目 16 × BF16' if 'exit' in uses else '本单元不用（经 NLU 出口级）',
             kind='compute', dim='exit' not in uses)
     f.block('fba', 42, 476, 266, 126, 'MXU FBA 直达口', '粗分数' if 'fba' in uses else '本单元不用',
             kind='compute', dim='fba' not in uses)
@@ -70,15 +70,15 @@ def save(f):
 
 def fig_nlu():
     _registry = 'FIG-VNU_NLU-CONN.svg'  # 供 build_figure_registry 识别产出
-    f = frame('VNU_NLU-CONN', 'nlu', 'NLU', '逐元素 / 归约与归一化\n二维旋转 / 在线 softmax\n流式累加', {'exit'},
-              '指令 / CCU → 合并值寄存器', 'stall_vnu / 结果寄存器 → CCU', '行状态 / 暂存 / 嵌入行',
-              exit_in='分数 / P×V / q、k / x′', exit_out='夹心归一化缩放值')
+    f = frame('VNU_NLU-CONN', 'nlu', 'NLU（含出口级子模块）', '逐元素 / 归约与归一化\n二维旋转 / 在线 softmax\n流式累加\n出口级：分发 / 残差加 / 停放', {'exit'},
+              '指令 / 参数', 'stall_vnu / AEB ready', '行状态 / 暂存 / 嵌入行 / 残差 / 停放',
+              exit_in='AEB 条目')
     peer(f, 'sel', 266, 98, 'SEL')
     peer(f, 'qnt', 434, 98, 'QNT')
-    peer(f, 'sol', 602, 112, 'SMP / LOSS / OPT', '分时借用元件')
-    f.net('o_sel', 'nlu', 'sel', '评分 / 统计量')
+    peer(f, 'sol', 602, 112, 'SMP / LOSS / OPT', '分时借用元件 / 收出口级分发')
+    f.net('o_sel', 'nlu', 'sel', '评分 / logit 流')
     f.net('i_sel', 'sel', 'nlu', '录取位图')
-    f.net('o_qnt', 'nlu', 'qnt', '待量化向量')
+    f.net('o_qnt', 'nlu', 'qnt', '待量化 / x′ / 投影结果')
     f.net('i_qnt', 'qnt', 'nlu', '量化结果')
     f.net('b_sol', 'sol', 'nlu', '分时借用')
     save(f)
@@ -86,13 +86,12 @@ def fig_nlu():
 
 def fig_qnt():
     _registry = 'FIG-VNU_QNT-CONN.svg'  # 供 build_figure_registry 识别产出
-    f = frame('VNU_QNT-CONN', 'qnt', 'QNT', '按组量化编码 / 两平面\n按判决位压紧\n记录组装 / 解码', {'exit'},
-              '指令 / CCU → 合并值寄存器', 'keep / F / stall / 结果寄存器 → CCU', '记录 / 卸载 / 装载表',
-              exit_in='投影结果 / x′ / v / 梯度')
-    peer(f, 'nlu', 266, 98, 'NLU')
+    f = frame('VNU_QNT-CONN', 'qnt', 'QNT', '按组量化编码 / 两平面\n按判决位压紧\n记录组装 / 解码', set(),
+              '指令 / 参数', 'keep / F / stall', '记录 / 卸载 / 装载表')
+    peer(f, 'nlu', 266, 98, 'NLU（含出口级）')
     peer(f, 'sel', 434, 98, 'SEL')
     peer(f, 'loss', 602, 98, 'LOSS')
-    f.net('i_nlu', 'nlu', 'qnt', '待量化向量')
+    f.net('i_nlu', 'nlu', 'qnt', '待量化 / x′ / v / 梯度')
     f.net('o_nlu', 'qnt', 'nlu', '量化结果 / 解码 K')
     f.net('o_sel', 'qnt', 'sel', '激活通道幅值')
     f.net('i_sel', 'sel', 'qnt', '判决位')
@@ -102,14 +101,14 @@ def fig_qnt():
 
 def fig_sel():
     _registry = 'FIG-VNU_SEL-CONN.svg'  # 供 build_figure_registry 识别产出
-    f = frame('VNU_SEL-CONN', 'sel', 'SEL', '比较与排序\n阈值 / 相对阈值\n流式 TOPK / 封顶', {'exit', 'fba'},
+    f = frame('VNU_SEL-CONN', 'sel', 'SEL', '比较与排序\n阈值 / 相对阈值\n流式 TOPK / 封顶', {'fba'},
               '模式 / 参数 / 屏蔽位 / 档号', '判决位 / 计数 / 最大类号 / stall_vnu', '名次缓冲 / 暂存 / 阈值套 / 上行对象',
-              exit_in='长流评分', fba_in='粗分数')
-    peer(f, 'nlu', 266, 84, 'NLU')
+              fba_in='粗分数')
+    peer(f, 'nlu', 266, 84, 'NLU（含出口级）')
     peer(f, 'qnt', 406, 98, 'QNT')
     peer(f, 'smp', 560, 70, 'SMP')
     peer(f, 'loss', 672, 70, 'LOSS')
-    f.net('i_nlu', 'nlu', 'sel', '评分 / 统计量')
+    f.net('i_nlu', 'nlu', 'sel', '评分 / 长流评分')
     f.net('i_qnt', 'qnt', 'sel', '激活通道幅值')
     f.net('o_qnt', 'sel', 'qnt', '判决位')
     f.net('o_rank', 'sel', ['smp', 'loss'], '名次项')
@@ -119,7 +118,7 @@ def fig_sel():
 def fig_opt():
     _registry = 'FIG-VNU_OPT-CONN.svg'  # 供 build_figure_registry 识别产出
     f = frame('VNU_OPT-CONN', 'opt', 'OPT', '一步参数更新\n算法由设计者定', set(),
-              '指令 / CCU → 合并值寄存器', '读完 / 组完成 / 共享量 / stall', '副本 / 状态 / 梯度')
+              '指令 / 参数', '读完 / 组完成 / 共享量 / stall', '副本 / 状态 / 梯度')
     peer(f, 'nlu', 448, 98, 'NLU', '合作通路')
     f.net('b_nlu', 'opt', 'nlu', '借用元件')
     save(f)
@@ -127,17 +126,17 @@ def fig_opt():
 
 def fig_loss():
     _registry = 'FIG-VNU_LOSS-CONN.svg'  # 供 build_figure_registry 识别产出
-    f = frame('VNU_LOSS-CONN', 'loss', 'LOSS', '监督梯度\n截断分布统计', {'exit'},
-              '启用 / 温度 / CCU → 合并值', 'stall_vnu', '监督记录 / 列表 / 学生侧信息',
-              exit_in='logit 流 / z_S')
-    peer(f, 'sel', 266, 112, 'SEL')
-    peer(f, 'smp', 434, 112, 'SMP')
-    peer(f, 'nlu', 574, 56, 'NLU')
-    peer(f, 'qnt', 658, 56, 'QNT')
+    f = frame('VNU_LOSS-CONN', 'loss', 'LOSS', '监督梯度\n截断分布统计', set(),
+              '启用 / 温度', 'stall_vnu', '监督记录 / 列表 / 学生侧信息 / 合并值')
+    peer(f, 'sel', 266, 98, 'SEL')
+    peer(f, 'smp', 392, 98, 'SMP')
+    peer(f, 'nlu', 518, 98, 'NLU（含出口级）')
+    peer(f, 'qnt', 644, 56, 'QNT')
     f.net('i_sel', 'sel', 'loss', '名次项')
     f.net('o_sel', 'loss', 'sel', '释放通知', kind='ctrl')
     f.net('i_smp', 'smp', 'loss', '截断分布')
     f.net('o_smp', 'loss', 'smp', 'log-prob')
+    f.net('i_nlu', 'nlu', 'loss', 'logit 流 / z_S')
     f.net('b_nlu', 'loss', 'nlu', '借用 exp / ln')
     f.net('o_qnt', 'loss', 'qnt', 'dz（BF16）')
     save(f)

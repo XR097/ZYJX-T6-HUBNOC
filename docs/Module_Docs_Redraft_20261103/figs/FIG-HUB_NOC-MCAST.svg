@@ -165,5 +165,5 @@
 <text xml:space="preserve" x="30" y="518" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">分叉点不停，核 0 不等</tspan></text>
 <text xml:space="preserve" x="210" y="518" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">：核 0 拍 1–6 写完；核 2 停的两拍由它的分支接住（占用最多 3），拍 1、4–8 写完</tspan></text>
 <text xml:space="preserve" x="30" y="550" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">对照：核 2 停 4 拍、单位 8 拍 → 核 2 分支占满 4，分叉点停收 2 拍，核 0 的 k = 6、7 晚 2 拍写进；余量 = 该核分支容量</tspan></text>
-<text xml:space="preserve" x="1476" y="588" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-06</tspan></text>
+<text xml:space="preserve" x="1476" y="588" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
 </svg>

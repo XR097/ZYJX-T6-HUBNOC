@@ -1,5 +1,5 @@
 """多播分叉点逐拍模型（V18-TP-53）。Owner: WangYizhao · 2026-11-06
-协议篇 FIG-TP-STREAM-BEAT、HUB_NOC 篇 FIG-HUB_NOC-MCAST、MAE_IDN 篇 FIG-MAE_IDN-MCAST 共用。
+协议篇 FIG-TP-STREAM-BEAT、HUB_NOC 篇 FIG-HUB_NOC-MCAST、HUB_IDN 篇 FIG-HUB_IDN-MCAST 共用。
 
 模型（每拍按拍初状态算，ready 都是寄存器输出）：
   分叉点 = 一级通用链路块（存 1 拍）+ 每目的核 1 位已取标志，不另配存储。

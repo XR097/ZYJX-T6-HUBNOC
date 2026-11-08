@@ -1,6 +1,6 @@
 """L1 SRAM 需求篇（11-04 重写稿，物理 bank 分区 + 硬化 ping-pong）的图。Owner: WangYizhao · 2026-11-04（第二版，按用户审图意见重画）
 2026-11-05 第三版：按片上数据传输协议篇定稿同步（地址 = [堆][类][行号]、撤分配表与角色位、RRAM、接收桥 / 发送桥、
-命令与标量网、32 B 最小写、记录级对齐）。FIG-L1_SRAM-PARTITION 退役（_retired_ 前缀，不再生成）。
+命令网、32 B 最小写、记录级对齐）。FIG-L1_SRAM-PARTITION 退役（_retired_ 前缀，不再生成）。
 同日第二轮（S14–S20）：32 B 单位改称存储字 / 字号；FIG-L1_SRAM-CONN 退役（由 _build/draw_l1_arch.py 的 FIG-L1_SRAM-ARCH 取代）；
 新增 FIG-L1_SRAM-ABANK-CFG（A 类 4 / 8 bank 配置）。
 2026-11-05 晚（V18-L1-09 / L1-10，任务书 _build/L1_COLWORD_FIGURE_BRIEF_20261105.md）：列字区改为"一个存储字 = 一列 64 个连续 k"
@@ -16,7 +16,7 @@ FIG-L1_SRAM-COLARRIVE 退役（NWB 配对暂存撤销；函数 _retired_fig_cola
   FIG-L1_SRAM-RING         环形回绕只在核内、由 CCU 做：基址 + (k mod L)，L1 只收字号（MAE 搬运不用环，V18-MAE-17）
   FIG-L1_SRAM-MAP-W        列字区（OAS）：一个存储字 = 一列 64 个连续 k（两段）；16 列 × 2 段对落 8 个 bank × 4 个深度，bank b 装列 2b、2b+1
   FIG-L1_SRAM-MAP-W-HALF   行字区（IAS）只占 W0：一段落 4 个 bank × 2 个深度
-  FIG-L1_SRAM-MAP-A        A 类线性映射：记录级 32 B 对齐（对象头占一个存储字，每条记录占整数个存储字、尾部补 0），轮流落 bank 8–11
+  FIG-L1_SRAM-MAP-A        A 类线性映射：记录按实际长度紧挨（11-07 V18-TP-58），轮流落 bank 8–11，长度表单独存
   FIG-L1_SRAM-LANE-PICK    稀疏取列：一个 pass 每 bank ≤ 2 列，lane 2b / 2b+1 = bank b 的第一 / 第二列，按掩码进 4 个 pod
   FIG-L1_SRAM-TWO-SRC      两来源：W0 / W1 两条总线，pod 槽在 lane s 与 s⊕8 间静态二选一
   FIG-L1_SRAM-COLREAD-1SRC 读口重组器逐拍（单来源 8 bank）：拍 0–5，稳态一段一拍
@@ -101,32 +101,38 @@ for s in range(2):
 
 # ---------------- A 类线性映射（正文 §4.4）：行 j → bank 列表第 (j mod n) 项、深度 ⌊j / n⌋ ----------------
 A_BANKS = [8, 9, 10, 11]                          # 未改配 W1 时 A 类的 bank 列表
-HDR = 8                                           # 对象头 8 B（示意）
 REC_LEN = [70, 40, 100]                           # 三个 token 的记录长度（字节）
-# 11-05 用户再定：记录级 32 B 对齐——对象头单独占整行，每条记录从整行起、占 ⌈n/32⌉ 行、尾部补 0
-ROWSEG = {0: [('头', 0, HDR - 1, HDR), ('填 0', 0, UNIT - HDR - 1, UNIT - HDR)]}   # 行 j → [(名, 记录内起, 止, 字节)]
-FIRST_ROW, row = {}, 1
-for t, n in enumerate(REC_LEN):
-    FIRST_ROW[t] = row
-    nr = -(-n // UNIT)
-    for k in range(nr):
-        a, z = k * UNIT, min(n, (k + 1) * UNIT) - 1
-        ROWSEG[row + k] = [(f't{t}', a, z, z - a + 1)]
-    pad = nr * UNIT - n
-    if pad:
-        ROWSEG[row + nr - 1].append(('填 0', 0, pad - 1, pad))
-    row += nr
-A_ROWS = row
-assert FIRST_ROW == {0: 1, 1: 4, 2: 6} and A_ROWS == 10          # 首行号 1、4、6，共 10 行
-assert [ROWSEG[r][-1][3] for r in (3, 5, 9)] == [26, 24, 28]       # 各记录尾部补 0 的字节数
+# 11-07（V18-TP-58）：记录按实际长度紧挨，长度表单独存；11-05 的"对象头 + 每条记录占整字"退役
+REC_START = [sum(REC_LEN[:t]) for t in range(len(REC_LEN))]   # 字节起点 = 前几项之和
+OBJ_BYTES = sum(REC_LEN)
+A_ROWS = -(-OBJ_BYTES // UNIT)
+LT_ROW = 16                                       # 长度表所在字（编译链另给）
+ROWSEG = {}                                       # 字 j → [(名, 记录内起, 止, 字节)]
+for j in range(A_ROWS):
+    segs = []
+    for t, (a, n) in enumerate(zip(REC_START, REC_LEN)):
+        lo, hi = max(a, j * UNIT), min(a + n, (j + 1) * UNIT)
+        if lo < hi:
+            segs.append((f't{t}', lo - a, hi - a - 1, hi - lo))
+    used = sum(x[3] for x in segs)
+    if used < UNIT:
+        segs.append(('空', 0, UNIT - used - 1, UNIT - used))
+    ROWSEG[j] = segs
+assert REC_START == [0, 70, 110] and OBJ_BYTES == 210 and A_ROWS == 7
+assert ROWSEG[2] == [('t0', 64, 69, 6), ('t1', 0, 25, 26)] and ROWSEG[6][-1] == ('空', 0, 13, 14)   # 一个字可含两条记录；末字空 14 B
 assert all(sum(x[3] for x in ROWSEG[j]) == UNIT for j in range(A_ROWS))
-assert all(len({x[0] for x in ROWSEG[j]} - {'填 0'}) == 1 for j in range(A_ROWS))   # 每行只属一条记录或对象头
+RD_T = 1                                          # 例：读 token 1
+RD_WORDS = (REC_START[RD_T] // UNIT, (REC_START[RD_T] + REC_LEN[RD_T] - 1) // UNIT)
+RD_SHIFT = REC_START[RD_T] % UNIT
+assert RD_WORDS == (2, 3) and RD_SHIFT == 6
 MAPA = {}
 for j in range(A_ROWS):
     key = (A_BANKS[j % len(A_BANKS)], j // len(A_BANKS))
     assert key not in MAPA
     MAPA[key] = j
-assert MAPA[(10, 0)] == 2 and MAPA[(10, 1)] == 6 and MAPA[(9, 2)] == 9 and (10, 2) not in MAPA
+assert MAPA[(10, 0)] == 2 and MAPA[(10, 1)] == 6 and (11, 1) not in MAPA
+LT_KEY = (A_BANKS[LT_ROW % 4], LT_ROW // 4)
+assert LT_KEY == (8, 4)
 
 # ---------------- 环形回绕由核内 CCU / 核间 MAE 搬运引擎做（正文 §3.3） ----------------
 RING_BASE, RING_L, RING_K = 20, 6, range(4, 9)    # 环占 A 类行 20–25；本次写对象的第 4–8 行
@@ -348,19 +354,19 @@ def _retired_fig_conn():   # 11-05 第二轮退役，由 draw_l1_arch.py 的 FIG
     f.container('inter', 14, 196, 336, 924, '核间数据网')
     f.container('l1g', 420, 196, 910, 924, 'L1 组')
     f.container('intra', 1400, 196, 406, 924, '核内 RRAM 口')
-    f.block('mae', 462, 28, 308, 98, 'MAE', '命令与标量网（经 hub 控制道）', kind='control')
+    f.block('mae', 462, 28, 308, 98, 'MAE', '命令网（经 hub 控制道）', kind='control')
     f.block('ccu', 980, 28, 308, 98, '本核 CCU', 'en / wea / addr，dout 去向', kind='control')
     f.block('c2h', 42, 266, 266, 112, 'C2H 口前合并', '→ C2H 分流，32 B/拍\nAEB 直达口优先', kind='external')
-    f.block('idn', 42, 504, 266, 112, 'IDN（NI_INT 道 i）', '8 B/拍 + addr', kind='external')
+    f.block('idn', 42, 504, 266, 112, 'IDN（HUB_IDN）', '32 B/拍 + addr', kind='external')
     f.block('h2c', 42, 770, 266, 112, 'H2C（H2C 道）', '4 道 × 32 B + addr', kind='external')
     f.block('tx', 462, 252, 640, 98, 'L1 命令单元 + 发送侧（发送桥）',
             '收发送命令、报完成、单位计数；发送桥 FIFO，addr = 目的 L2 地址', kind='function')
-    f.block('nwb', 462, 504, 280, 112, 'NWB（IDN 接收桥）', '攒整行 / 分拍写入', kind='function')
+    f.block('nwb', 462, 504, 280, 112, 'NWB（IDN 接收桥）', '整字直写', kind='function')
     f.block('ldp', 462, 770, 280, 112, 'LDP × 4（H2C 接收桥）', 'ready 恒高，写地址 = addr', kind='function')
     f.block('scale', 1008, 980, 280, 98, '尺度 SRAM（S 类）', '两堆 / E8M0 / 旁带 / bias', kind='memory')
-    f.block('banks', 1008, 440, 280, 420, 'bank 两堆', '24 × 32 B × D\nW 类：bank 0–7\nA 类：bank 8–11\n堆由地址堆位选', kind='memory')
+    f.block('banks', 1008, 440, 280, 420, 'bank 两堆', '24 × 32 B × D\nW 类：bank 0–7\nA 类：bank 8–11\n堆由段选的堆选选', kind='memory')
     f.block('pods', 1442, 826, 322, 252, '4 个 pod 的 WWB', '16 条 lane\n按掩码锁存', kind='compute')
-    f.block('act', 1442, 420, 322, 252, '激活类口的客户', 'pod 激活记录缓冲\nNLU / QNT / 出口级\nSEL 等（L1 外选择）', kind='external')
+    f.block('act', 1442, 420, 322, 252, '激活类口的客户', 'pod 激活记录缓冲\nNLU（含出口级）/ QNT\nSEL 等（L1 外选择）', kind='external')
     f.net('n_mae', 'mae', 'tx', '发送命令', kind='ctrl')
     f.net('n_done', 'tx', 'mae', '完成', kind='ctrl')
     f.net('n_ccu', 'ccu', 'banks', 'en / wea / addr', kind='ctrl')
@@ -400,7 +406,7 @@ def fig_pingpong():
     for i in range(2):                               # 阶段边界：地址堆位翻转（L1 无角色状态）
         xb = x0 + (i + 1) * colw - 10
         s.line([(xb, 52), (xb, 60 + 2 * rowh - 20)], color=RED, sw=1.8, marker=None, dash='6,4')
-        s.red(xb, 60 + 2 * rowh, '切换地址堆位', 14, 'middle')
+        s.red(xb, 60 + 2 * rowh, '翻转堆选', 14, 'middle')
     yb = 60 + 2 * rowh + 50                          # 同一拍内的放大
     s.rich(x0 - 20, yb + 40, '阶段 1 内某一拍', 16, 'end')
     s.cell(x0, yb, 200, 80, '堆 0 bank 3：读', fill=C_KEEP, size=16)
@@ -495,11 +501,11 @@ def fig_map_w_half():
 TFILL = [C_LO, C_KEEP, C_LEFT]
 
 
-SEGFILL = {'头': C_SIDE, 't0': C_LO, 't1': C_KEEP, 't2': C_LEFT, '填 0': C_OFF}
+SEGFILL = {'头': C_SIDE, 't0': C_LO, 't1': C_KEEP, 't2': C_LEFT, '填 0': C_OFF, '空': C_OFF}
 
 
 def fig_map_a():
-    s = SvgF5(1420, 360)
+    s = SvgF5(1420, 400)
     x0, cw, ch, rh = 120, 320, 60, 96
     for i, b in enumerate(A_BANKS):
         s.rich(x0 + i * cw + (cw - 12) / 2, 34, f'bank {b}（激活类口 {b - 8}）', 15, 'middle', GREY, 600)
@@ -515,11 +521,14 @@ def fig_map_a():
                 continue
             s.rich(xx, y - 8, f'字 {j}', 13, 'start', NAVY, 700)
             px = xx
-            for name, a, z, nbytes in ROWSEG[j]:          # 一行 32 B 按字节比例切段
+            for name, a, z, nbytes in ROWSEG[j]:          # 一个存储字 32 B 按字节比例切段，可含两条记录
                 w = (cw - 12) * nbytes / UNIT
-                txt = name if name in ('头', '填 0') or w < 60 else f'{name} {a}–{z}'
+                txt = name if name == '空' or w < 60 else f'{name} {a}–{z}'
                 s.cell(px, y, w, ch, txt, fill=SEGFILL[name], size=12 if w > 60 else 11)
                 px += w
+    yb = 70 + nd * rh + 6
+    s.rich(x0, yb, f'记录 {REC_LEN} B 紧挨：起点字节 {REC_START}，共 {OBJ_BYTES} B = {A_ROWS} 个存储字（末字空 {UNIT - OBJ_BYTES % UNIT} B，be 不选）；长度表 {REC_LEN} 由 CCU 写在字 {LT_ROW}（bank {LT_KEY[0]}、深度 {LT_KEY[1]}）', 13, 'start', INK, 500)
+    s.rich(x0, yb + 24, f'读 token {RD_T}：字节 {REC_START[RD_T]} 起 {REC_LEN[RD_T]} B → 字 {RD_WORDS[0]}、{RD_WORDS[1]} 两次 1 拍读（bank {A_BANKS[RD_WORDS[0] % 4]}、{A_BANKS[RD_WORDS[1] % 4]}），激活类读口出口按 {RD_SHIFT} 移位', 13, 'start', INK, 500)
     s.save('FIG-L1_SRAM-MAP-A.svg')
 
 

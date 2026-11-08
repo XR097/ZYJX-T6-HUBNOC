@@ -1,8 +1,9 @@
 """HUB_NOC 篇的四张图。Owner: WangYizhao · 2026-11-06
 用法（在 Module_Docs_Redraft_20261103 目录下）：python -X utf8 -I _build/draw_hub_noc.py
 输出（figs/）：
-  FIG-HUB_NOC-ARCH-DATA  PPT 式架构图（数据）：H2C 道 0–3（入口二选一 MUX → 多播分叉点）、C2H 分流 × 4；对端 L2、MAE 组、四核；跨框数据线 D1–D6
-  FIG-HUB_NOC-ARCH-CTRL  PPT 式架构图（命令，含地址与使能，不细分）：同外框与对端；C1–C7
+  FIG-HUB_NOC-ARCH-DATA  PPT 式架构图（数据）：H2C 道 0–3（L2 读出 → 多播分叉点）、C2H 通路 × 4（直通 L2WP）；对端 L2、MAE_ENG、四核；数据线 D1 / D2 / D4 / D5
+  FIG-HUB_NOC-ARCH-CTRL  PPT 式架构图（命令，含地址与使能，不细分）：同外框与对端；C1 / C4 / C5 / C7
+  11-07 晚（V18-CRU-07、TP-55 / 56）：撤 MUX、C2H 去 MAE_CRU 的分支、D3 / D6 / C2 / C3 / C6，编号不重排；MAE_CRU 不再画（只经 NI 进出 L2）
   FIG-HUB_NOC-MCAST      数值小例：H2C 道 0 一个 6 拍单位多播到核 0、核 2，分叉点已取位与各核分支占用（模型 mcast_fork_sim.py）
   FIG-HUB_NOC-ACK        数值小例：两条指令交替用 H2C 道 0，四核 LDP 回的写入握手按 src 归并
 架构图复用 draw_tp_arch.py 的 Fig 类与自检（只 import，不改它）；数值图用 svgkit_num.Svg，数值由脚本算出并断言。
@@ -17,7 +18,7 @@ import draw_tp_arch as T                                   # noqa: E402
 from draw_tp_arch import Fig, P                            # noqa: E402
 from svgkit_num import Svg, C_HI, C_LO, C_KEEP, C_OFF, C_SIDE, C_LEFT  # noqa: E402
 
-DATE = '2026-11-06'
+DATE = '2026-11-07'
 T.DATE = DATE
 D = '7,4'
 
@@ -25,16 +26,14 @@ D = '7,4'
 X0 = [50 + 420 * n for n in range(4)]          # 第 n 列（象限 n / H2C 道 n / C2H 分流 n / 核 n）左边
 W_COL = 400
 L2_Y, L2_H = 140, 80                           # 象限块
-MUX_Y, MUX_H = 330, 50
 BUF_Y, BUF_H = 560, 70                         # 分叉点块（与 C2H 分流同一行）
 SPL_Y, SPL_H = 560, 70                         # C2H 分流块
 CORE_Y, CORE_H = 900, 240                      # 11-06 深夜：四核下移 120，给 D2 横线留 12 px 间距
 LDP_Y, LDP_H = 940, 64
 L1_Y = CORE_Y + 130
 ENG = (1745, 292, 145, 118)
-CRU = (1745, 440, 145, 180)
 LIC = (1745, 910, 145, 70)
-HCTL = (55, 500, 190, 50)                      # hub 控制道块
+HCTL = (55, 500, 160, 50)                      # hub 控制道块
 C6_Y, C5_Y, C7_Y = 700, 775, 845
 D3_Y, CRUBUS_Y, C1_Y = 455, 652, 305         # D3 / C2 总线、去 MAE_CRU 总线、C1 总线（与块边留足距离）                # 命令图三条总线（拉开间距）
 
@@ -52,36 +51,32 @@ def frame(s, data):
     s.group(40, 110, 1680, 124, '中央 L2 SRAM（象限读口带 busy · L2WP 每核一条）', 'mem', 15)
     for n, x in enumerate(X0):
         s.block(x, L2_Y, W_COL, L2_H, f'象限 {n}', f'读口 → H2C 道 {n} · L2WP {n} 写入（只来自核 {n}）', 'mem', 16, 12, shadow=False)
-    s.group(30, 260, 1690, 610, 'HUB NoC', 'hub', 17, tx=210)
+    s.group(30, 260, 1690, 610, 'HUB 组 · HUB_NOC', 'hub', 15, tx=455)
     for n, x in enumerate(X0):
-        s.block(x + 30, MUX_Y, 200, MUX_H, f'MUX {n}', 'L2 读出 / MAE_CRU 输出', 'hub', 14, 11, shadow=False)
         s.block(x + 30, BUF_Y, 200, BUF_H, f'分叉点 {n}', '每核 1 位已取 · 不另配存储\n位置与级数由后端定', 'hub', 14, 11, shadow=False)
-        s.block(x + 250, SPL_Y, 140, SPL_H, f'C2H 分流 {n}', '按通路选择', 'hub', 14, 11, shadow=False)
-    s.block(*HCTL, 'hub 控制道', '本图不用' if data else '⇄ LIC · ENG · CRU · 四核 CCU', 'ext' if data else 'ctrl', 14, 11, shadow=False)
-    T.mae_frame(s, [(1732, 262), (1905, 262), (1905, 632), (1732, 632)], (1742, 272), title='MAE 组', size=14)
+        s.block(x + 250, SPL_Y, 140, SPL_H, f'C2H 通路 {n}', '直通 L2WP {n}'.format(n=n), 'hub', 14, 11, shadow=False)
+    s.block(*HCTL, 'hub 控制道', '本图不用' if data else '命令网转发', 'ext' if data else 'ctrl', 14, 11, shadow=False)
+    T.mae_frame(s, [(1732, 262), (1905, 262), (1905, 430), (1732, 430)], (1742, 272), title='MAE 组', size=14)
     s.block(*ENG, 'MAE_ENG', '搬运引擎（可在道旁）' if not data else '本图无数据线', 'ctlu' if not data else 'ext', 15, 11, shadow=False)
-    s.block(*CRU, 'MAE_CRU', '合并 · BF16 直出\n按条目计到达份数', 'comp', 15, 11, shadow=False)
     s.block(*LIC, 'LIC', '本图不用' if data else '位点指令 · 事件', 'ext' if data else 'ctlu', 15, 11, shadow=False)
     for n, x in enumerate(X0):
         box = (x, CORE_Y, x + W_COL, CORE_Y + CORE_H)
         s.group(x, CORE_Y, W_COL, CORE_H, '', 'core', strip=False, dash='none', sw=2.4, fill=P['core'][1])
         s.text(x + 180, CORE_Y + 18, f'计算核 {n}', 15, 'start', P['core'][0], 700, box=box)
         s.block(x + 20, LDP_Y, 210, LDP_H, 'LDP × 4', 'H2C 道 0–3 落地', 'inter', 14, 11, shadow=False)
-        s.block(x + 250, LDP_Y, 140, LDP_H, '发送桥', 'CCU 的 C2H 通道', 'inter', 14, 11, shadow=False)
+        s.block(x + 250, LDP_Y, 140, LDP_H, '集成输出端口', 'CCU 选核内来源', 'inter', 14, 11, shadow=False)
         s.block(x + 20, L1_Y, 370, 60, 'L1 SRAM', '写集合器 · 发送侧（核内 RRAM）', 'mem', 14, 11, shadow=False)
         s.line([(x + 125, LDP_Y + LDP_H), (x + 125, L1_Y)], 'incore', 2.2)
         s.line([(x + 320, L1_Y), (x + 320, LDP_Y + LDP_H)], 'incore', 2.2)
 
 
 def fig_data():
-    s = Fig('FIG-HUB_NOC-ARCH-DATA.svg', 'FIG-HUB_NOC-ARCH-DATA  HUB NoC：数据通路（D1–D6）',
-            'H2C 道 n 只读象限 n、入口二选一 MUX（选择由 MAE 给）、分叉点按已取位分叉、各核独立取走；C2H 分流按本核 CCU 的通路选择去 L2WP n 或 MAE_CRU；HUB 不算地址、不仲裁', h=1250)
+    s = Fig('FIG-HUB_NOC-ARCH-DATA.svg', 'FIG-HUB_NOC-ARCH-DATA  HUB NoC：数据通路（D1 / D2 / D4 / D5）',
+            'H2C 道 n 只读象限 n（唯一源）、分叉点按已取位分叉、各核独立取走；C2H 每核一路，核集成输出端口直通 L2WP n；HUB 不算地址、不仲裁；MAE_CRU 只经 NI 进出 L2，不连 HUB', h=1250)
     frame(s, True)
     for n, x in enumerate(X0):
-        # D1 象限 n 读出 → MUX n
-        s.line([(x + 100, L2_Y + L2_H), (x + 100, MUX_Y)], 'inter', 2.8)
-        # MUX → 分叉点（x + 215，避开 hub 控制道块）
-        s.line([(x + 215, MUX_Y + MUX_H), (x + 215, BUF_Y)], 'inter', 2.6)
+        # D1 象限 n 读出 → 分叉点 n（H2C 道只有 L2 一个源）
+        s.line([(x + 215, L2_Y + L2_H), (x + 215, BUF_Y)], 'inter', 2.8)
         # D2 分叉点 n 直接引出四路 → 四核 LDP 的第 n 个落地口（分叉在分叉点块里，线上不再打点）
         for c in range(4):
             xt = X0[c] + 50 + 40 * n                     # 核 c 的第 n 个落地口
@@ -91,26 +86,15 @@ def fig_data():
                 ex = x + 70 + 40 * c                     # 出口错开各核落地口的竖线
                 yl = D2_LEVEL[(n, c)]
                 s.line([(ex, BUF_Y + BUF_H), (ex, yl), (xt, yl), (xt, LDP_Y)], 'inter', 2.2)
-        # D4 发送桥 → C2H 分流 n
+        # D4 集成输出端口 → C2H 通路 n
         s.line([(x + 320, LDP_Y), (x + 320, SPL_Y + SPL_H)], 'inter', 2.6)
-        # D5 C2H 分流 n → L2WP n（象限 n）
+        # D5 C2H 通路 n → L2WP n（象限 n）
         s.line([(x + 320, SPL_Y), (x + 320, L2_Y + L2_H)], 'inter', 2.6)
-        # D6 C2H 分流 n → MAE_CRU（总线 y 645）
-        s.line([(x + 360, SPL_Y + SPL_H), (x + 360, CRUBUS_Y)], 'inter', 2.2, head=None, net='cru')
-        s.dot(x + 360, CRUBUS_Y)
-    s.line([(X0[0] + 360, CRUBUS_Y), (1712, CRUBUS_Y), (1712, 600), (CRU[0], 600)], 'inter', 2.4, net='cru')
-    # D3 MAE_CRU → 四个 MUX（总线 y 395，向上进 MUX 底）
-    s.line([(CRU[0], D3_Y), (X0[0] + 70, D3_Y)], 'inter', 2.4, head=None, net='crumux')
-    for n, x in enumerate(X0):
-        s.line([(x + 70, D3_Y), (x + 70, MUX_Y + MUX_H)], 'inter', 2.2, net='crumux')
-        s.dot(x + 70, D3_Y)
     # 标签
-    s.tag(X0[3] + 108, 247, 'D1 读象限 32 B · busy', 'inter', 12, 'start')
+    s.tag(X0[3] + 207, 300, 'D1 读象限 32 B · busy', 'inter', 12, 'end')
     s.tag(X0[3] + 312, 520, 'D5 → L2WP n', 'inter', 12, 'end')
     s.tag(X0[3] + 312, 885, 'D4 C2H 32 B', 'inter', 12, 'end')
     s.tag(X0[0] + 190, 885, 'D2 H2C 四路', 'inter', 12, 'start')
-    s.tag(1636, 668, 'D6 → MAE_CRU', 'inter', 12, 'start')
-    s.tag(X0[3] + 80, 420, 'D3 CRU 输出', 'inter', 12, 'start')
     s.legend(30, 1162, [('inter', '核间数据链路 32 B/拍', 'solid'), ('incore', '核内 RRAM', 'solid'),
                         ('ext', '灰框 = 本图不用', 'box'), ('inter', '实心点 = 分支 · 跳线 = 不相连', 'dot')],
              cols=4, colw=250, size=13, rowh=26)
@@ -118,50 +102,35 @@ def fig_data():
 
 
 def fig_ctrl():
-    s = Fig('FIG-HUB_NOC-ARCH-CTRL.svg', 'FIG-HUB_NOC-ARCH-CTRL  HUB NoC：命令类连线（C1–C7，地址与使能不细分）',
-            '每拍地址、核掩码、源顺序与通路选择都由发令方给；写入握手沿原链路反向回发令方；hub 控制道只转发命令与标量网消息', h=1250)
+    s = Fig('FIG-HUB_NOC-ARCH-CTRL.svg', 'FIG-HUB_NOC-ARCH-CTRL  HUB NoC：命令类连线（C1 / C4 / C5 / C7，地址与使能不细分）',
+            '每拍地址与核掩码由发令方给、随 HUB 通路传送；写入握手沿原链路反向回发令方；hub 控制道只转发命令网消息（标量不走命令网）', h=1250)
     frame(s, False)
-    # C1 MAE 搬运引擎 → H2C 道：L2 读 en / addr（向上进象限读口）、目的 addr / be、核掩码（向下进 MUX）
+    # C1 MAE 搬运引擎 → H2C 道：L2 读 en / addr（向上进象限读口）、目的 addr / be、核掩码（向下进分叉点）
     s.line([(ENG[0], C1_Y), (X0[0] + 140, C1_Y)], 'ctrl', 2.2, dash=D, head=None, net='c1')
     for x in X0:
         s.line([(x + 140, C1_Y), (x + 140, L2_Y + L2_H)], 'ctrl', 2.0, dash=D, net='c1')
-        s.line([(x + 180, C1_Y), (x + 180, MUX_Y)], 'ctrl', 2.0, dash=D, net='c1')
+        s.line([(x + 180, C1_Y), (x + 180, BUF_Y)], 'ctrl', 2.0, dash=D, net='c1')
         s.dot(x + 140, C1_Y, 'ctrl'); s.dot(x + 180, C1_Y, 'ctrl')
-    # C2 MAE → MUX：下一个单位的源顺序（向上进 MUX 底）
-    s.line([(ENG[0], 398), (1712, 398), (1712, D3_Y), (X0[0] + 70, D3_Y)], 'ctrl', 2.2, dash=D, head=None, net='c2')
-    for x in X0:
-        s.line([(x + 70, D3_Y), (x + 70, MUX_Y + MUX_H)], 'ctrl', 2.0, dash=D, net='c2')
-        s.dot(x + 70, D3_Y, 'ctrl')
     for n, x in enumerate(X0):
-        # C3 本核 CCU 的 C2H 通道 → C2H 分流：通路选择
-        s.line([(x + 350, LDP_Y), (x + 350, SPL_Y + SPL_H)], 'ctrl', 2.0, dash=D)
         # C4 L2 象限 n → 核 n CCU 的写入握手（沿 C2H 反向）
         s.line([(x + 300, L2_Y + L2_H), (x + 300, 545), (x + 396, 545), (x + 396, LDP_Y + 32), (x + 390, LDP_Y + 32)], 'ctrl', 2.0, dash=D)
         # C5 各核 LDP 写入握手 → 握手总线 y 700
         s.line([(x + 110, LDP_Y), (x + 110, C5_Y)], 'ctrl', 2.0, dash=D, head=None, net='c5')
         s.dot(x + 110, C5_Y, 'ctrl')
-        # C6 MAE_CRU → 核 n CCU 的写入握手（沿 C2H 去 MAE_CRU 的分支反向）
-        s.line([(x + 370, C6_Y), (x + 370, LDP_Y)], 'ctrl', 2.0, dash=D, net='c6')
-        s.dot(x + 370, C6_Y, 'ctrl')
         # C7 控制道 → 各核 CCU
         s.line([(x + 240, C7_Y), (x + 240, CORE_Y)], 'ctrl', 2.0, dash=D, head='both', net='c7')
         s.dot(x + 240, C7_Y, 'ctrl')
     s.line([(X0[0] + 110, C5_Y), (1735, C5_Y), (1735, 425), (1800, 425), (1800, ENG[1] + ENG[3])], 'ctrl', 2.2, dash=D, net='c5')
-    s.line([(CRU[0], 600), (1716, 600), (1716, C6_Y), (X0[0] + 370, C6_Y)], 'ctrl', 2.2, dash=D, head=None, net='c6')
-    # C7 hub 控制道 ⇄ 四核 CCU、MAE_ENG、MAE_CRU、LIC；L2 → 控制道（致命错误）
+    # C7 hub 控制道 ⇄ 四核 CCU、MAE_ENG、LIC；L2 → 控制道（致命错误）
     s.line([(70, HCTL[1] + HCTL[3]), (70, C7_Y), (1898, C7_Y)], 'ctrl', 2.2, dash=D, head=None, net='c7')
     s.line([(1898, C7_Y), (1898, 345), (ENG[0] + ENG[2], 345)], 'ctrl', 2.2, dash=D, head='both', net='c7')
-    s.line([(1840, C7_Y), (1840, CRU[1] + CRU[3])], 'ctrl', 2.0, dash=D, head='both', net='c7')
     s.line([(1790, C7_Y), (1790, LIC[1])], 'ctrl', 2.0, dash=D, head='both', net='c7')
-    s.dot(1840, C7_Y, 'ctrl'); s.dot(1790, C7_Y, 'ctrl')
+    s.dot(1790, C7_Y, 'ctrl')
     s.line([(60, L2_Y + L2_H), (60, HCTL[1])], 'ctrl', 2.0, dash=D)
     # 标签
     s.tag(X0[3] + 194, 289, 'C1 地址·核掩码', 'ctrl', 12, 'start')
-    s.tag(X0[3] + 80, 420, 'C2 源顺序', 'ctrl', 12, 'start')
-    s.tag(X0[2] + 342, 790, 'C3 通路选择', 'ctrl', 12, 'end')
     s.tag(X0[1] + 306, 515, 'C4 L2 写入握手', 'ctrl', 12, 'start')
     s.tag(170, C5_Y - 14, 'C5 LDP 写入握手 · 道汇总后交引擎', 'ctrl', 12, 'start')
-    s.tag(1500, C6_Y - 14, 'C6 CRU 写入握手 → 核 n', 'ctrl', 12)
     s.tag(600, C7_Y - 14, 'C7 控制道', 'ctrl', 12, 'start')
     s.tag(68, 290, 'L2 致命错误', 'ctrl', 11, 'start')
     s.legend(30, 1162, [('ctrl', '命令类（含地址、使能、写入握手）', D), ('incore', '核内 RRAM', 'solid'),

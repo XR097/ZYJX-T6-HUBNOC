@@ -33,3 +33,6 @@ python -X utf8 -I _build/draw_mae_arch.py
 | `FIG-MAE_NI_INT-CONN.svg` | `draw_mae_conn.py` / `_retired_fig_ni_int()`（已改名、不在 `__main__` 调用） | 2026-11-06 晚：用户"CONN 图可以退役"，MAE 组单元篇改用协议篇 PPT 式架构图（任务书 `MAE_CRU_MERGE_BRIEF_20261106.md` §1 规则 11）；由 `FIG-MAE_NI_INT-ARCH` 取代 | `figs/_retired_20261106/` |
 
 - 11-06 晚起，MAE 组单元篇的架构图都在 `draw_mae_arch.py` 里加函数；外圈（六单元 + 组外对端位置）四张图相同，本单元不用的对端与同组单元画灰框；只画与本单元直接相连的线，线上只标名与位宽，图说在 `MAE_ARCH_CAPTIONS_20261106.md`。
+- **11-07（V18-HUB-01）IDN 归 HUB 组**：`draw_mae_arch.py` 的 MAE 组外圈改为五单元（标题"MAE 组 · 五单元"），下方对端 `PEERS['idn']` 由"四核 IDN 接收桥"改为"HUB_IDN（入站分发网）"；同组单元里删去 MAE_IDN 小框；`fig_idn()` 改名 `_retired_fig_idn()`，HUB_IDN 的架构图移到 `draw_hub_idn.py` / `fig_arch()`。 本图：拆拍寄存器 → HUB_IDN 改为 x = 1115 下行（`uses` 加 `idn`），分路框副标题去向改"→ HUB_IDN"。自检 0 项。
+- **11-07 晚**：拆拍寄存器块改为"IDN 出口 1 × 32 B"，加 MAE_DSU 整形输出 → IDN 出口（x = 1290），撤读返回分路 → MAE_CRU；返回车道副标题改为 NI 读口 4 × 32 B。
+- **11-08 晚（V18-HUB-04）**：`draw_mae_arch.py` 的 HUB_IDN 对端副标题改为"一路 32 B → 按核集合分发 → 四核 NWB"（撤"拆分"）；文件头注释的 NI_INT 内容"拆拍寄存器"改为"IDN 出口（一路 32 B）"。本图布局不变，自检 0 项。`draw_mae_conn.py` 退役函数里 NI_INT-CONN 的 IDN 标签同步（不出图）。

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="660" viewBox="0 0 1300 660">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">M0 → L1 一条搬运指令：IDN 道分配 {2, 2}（道 0、1 → 核 0，道 2、3 → 核 1），每核 64 B = 2 个存储字</tspan></text>
+<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">M0 → L1 一条搬运指令：两核均分（字 0、2 → 核 0，字 1、3 → 核 1），每核 64 B = 2 个存储字</tspan></text>
 <text xml:space="preserve" x="30" y="66" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">源：DDR 字节地址 0x40000 起连续 128 B；目的：两核 L1 A 类 [堆 1][A][字节 1024] 起各 2 个存储字；拍号只示意先后，功能与时延无关</tspan></text>
-<text xml:space="preserve" x="30" y="104" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">① MAE_ENG 的搬运引擎发 4 笔 32 B 读请求，每笔记下（去向, 目的逻辑地址）</tspan></text>
+<text xml:space="preserve" x="30" y="104" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">① MAE_ENG 的搬运引擎发 4 笔 32 B 读请求，每笔记下（去向, 目的逻辑地址），连续的字轮流排给两核</tspan></text>
 <rect x="30" y="120" width="64" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="62.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">请求</tspan></text>
 <rect x="100" y="120" width="154" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
@@ -10,7 +10,7 @@
 <rect x="260" y="120" width="164" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="342.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">NI_EXT 返回</tspan></text>
 <rect x="430" y="120" width="194" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="527.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">去向（MAE_IDN 道）</tspan></text>
+<text xml:space="preserve" x="527.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核集合</tspan></text>
 <rect x="630" y="120" width="254" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="757.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">目的</tspan></text>
 <rect x="30" y="154" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
@@ -20,29 +20,29 @@
 <rect x="260" y="154" width="164" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="342.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 B（第 0 拍）</tspan></text>
 <rect x="430" y="154" width="194" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="527.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 0</tspan></text>
+<text xml:space="preserve" x="527.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 0}</tspan></text>
 <rect x="630" y="154" width="254" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="757.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · [1][A][1024]</tspan></text>
-<rect x="30" y="188" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="30" y="188" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="62.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">#1</tspan></text>
-<rect x="100" y="188" width="154" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="100" y="188" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="177.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0x40020</tspan></text>
-<rect x="260" y="188" width="164" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="260" y="188" width="164" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="342.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 B（第 1 拍）</tspan></text>
-<rect x="430" y="188" width="194" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="527.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 1</tspan></text>
-<rect x="630" y="188" width="254" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="757.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · [1][A][1056]</tspan></text>
-<rect x="30" y="222" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="430" y="188" width="194" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="527.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 1}</tspan></text>
+<rect x="630" y="188" width="254" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="757.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · [1][A][1024]</tspan></text>
+<rect x="30" y="222" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="62.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">#2</tspan></text>
-<rect x="100" y="222" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="100" y="222" width="154" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="177.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0x40040</tspan></text>
-<rect x="260" y="222" width="164" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<rect x="260" y="222" width="164" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="342.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 B（第 2 拍）</tspan></text>
-<rect x="430" y="222" width="194" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="527.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 2</tspan></text>
-<rect x="630" y="222" width="254" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="757.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · [1][A][1024]</tspan></text>
+<rect x="430" y="222" width="194" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="527.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 0}</tspan></text>
+<rect x="630" y="222" width="254" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="757.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · [1][A][1056]</tspan></text>
 <rect x="30" y="256" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="62.0" y="271.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">#3</tspan></text>
 <rect x="100" y="256" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
@@ -50,87 +50,67 @@
 <rect x="260" y="256" width="164" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="342.0" y="271.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 B（第 3 拍）</tspan></text>
 <rect x="430" y="256" width="194" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="527.0" y="271.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 3</tspan></text>
+<text xml:space="preserve" x="527.0" y="271.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 1}</tspan></text>
 <rect x="630" y="256" width="254" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="757.0" y="271.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · [1][A][1056]</tspan></text>
-<text xml:space="preserve" x="30" y="320" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">② NI_INT 拆拍寄存器把每个 32 B 拆成 4 × 8 B，交 MAE_IDN 道 i；每拍带自己的 addr，be = 8 位全 1</tspan></text>
+<text xml:space="preserve" x="30" y="320" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">② NI_INT 的 IDN 出口交 HUB_IDN 一路 32 B 与随字的核集合；HUB_IDN 把这一拍整字送到该核的 32 B IDN 链路</tspan></text>
 <rect x="30" y="336" width="64" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="62.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道</tspan></text>
-<rect x="100" y="336" width="84" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">目的核</tspan></text>
-<rect x="190" y="336" width="144" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 1 拍 addr</tspan></text>
-<rect x="340" y="336" width="144" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 2 拍 addr</tspan></text>
-<rect x="490" y="336" width="144" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="562.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 3 拍 addr</tspan></text>
-<rect x="640" y="336" width="144" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="712.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">第 4 拍 addr</tspan></text>
-<rect x="790" y="336" width="234" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 攒满一个存储字</tspan></text>
+<text xml:space="preserve" x="62.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">拍</tspan></text>
+<rect x="100" y="336" width="114" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="157.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核集合</tspan></text>
+<rect x="220" y="336" width="214" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="327.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">该核 IDN 链路 addr</tspan></text>
+<rect x="440" y="336" width="154" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="517.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">be</tspan></text>
+<rect x="600" y="336" width="324" height="30" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="762.0" y="351.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 一拍整字写入</tspan></text>
 <rect x="30" y="370" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="62.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 0</tspan></text>
-<rect x="100" y="370" width="84" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0</tspan></text>
-<rect x="190" y="370" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1024</tspan></text>
-<rect x="340" y="370" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1032</tspan></text>
-<rect x="490" y="370" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="562.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1040</tspan></text>
-<rect x="640" y="370" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="712.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1048</tspan></text>
-<rect x="790" y="370" width="234" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">写 1024–1055 → 写计数 +1</tspan></text>
-<rect x="30" y="404" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="62.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 1</tspan></text>
-<rect x="100" y="404" width="84" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0</tspan></text>
-<rect x="190" y="404" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1056</tspan></text>
-<rect x="340" y="404" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1064</tspan></text>
-<rect x="490" y="404" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="562.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1072</tspan></text>
-<rect x="640" y="404" width="144" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="712.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1080</tspan></text>
-<rect x="790" y="404" width="234" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">写 1056–1087 → 写计数 +1</tspan></text>
-<rect x="30" y="438" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="62.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 2</tspan></text>
-<rect x="100" y="438" width="84" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1</tspan></text>
-<rect x="190" y="438" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1024</tspan></text>
-<rect x="340" y="438" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1032</tspan></text>
-<rect x="490" y="438" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="562.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1040</tspan></text>
-<rect x="640" y="438" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="712.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1048</tspan></text>
-<rect x="790" y="438" width="234" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">写 1024–1055 → 写计数 +1</tspan></text>
+<text xml:space="preserve" x="62.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="100" y="370" width="114" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="157.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 0}</tspan></text>
+<rect x="220" y="370" width="214" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="327.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1024</tspan></text>
+<rect x="440" y="370" width="154" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="517.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 位全 1</tspan></text>
+<rect x="600" y="370" width="324" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="762.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 写 1024–1055 → 写计数 +1</tspan></text>
+<rect x="30" y="404" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="62.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="100" y="404" width="114" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="157.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 1}</tspan></text>
+<rect x="220" y="404" width="214" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="327.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1024</tspan></text>
+<rect x="440" y="404" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="517.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 位全 1</tspan></text>
+<rect x="600" y="404" width="324" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="762.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 写 1024–1055 → 写计数 +1</tspan></text>
+<rect x="30" y="438" width="64" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="62.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="100" y="438" width="114" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="157.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 0}</tspan></text>
+<rect x="220" y="438" width="214" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="327.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1056</tspan></text>
+<rect x="440" y="438" width="154" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="517.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 位全 1</tspan></text>
+<rect x="600" y="438" width="324" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="762.0" y="453.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 写 1056–1087 → 写计数 +1</tspan></text>
 <rect x="30" y="472" width="64" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="62.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">道 3</tspan></text>
-<rect x="100" y="472" width="84" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1</tspan></text>
-<rect x="190" y="472" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1056</tspan></text>
-<rect x="340" y="472" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1064</tspan></text>
-<rect x="490" y="472" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="562.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1072</tspan></text>
-<rect x="640" y="472" width="144" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="712.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1080</tspan></text>
-<rect x="790" y="472" width="234" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">写 1056–1087 → 写计数 +1</tspan></text>
-<text xml:space="preserve" x="30" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">③ 各核 NWB 每条入链路攒满 4 拍即整字写进 L1；CCU 比对写计数与应写量</tspan></text>
+<text xml:space="preserve" x="62.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="100" y="472" width="114" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="157.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">{核 1}</tspan></text>
+<rect x="220" y="472" width="214" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="327.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1056</tspan></text>
+<rect x="440" y="472" width="154" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="517.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 位全 1</tspan></text>
+<rect x="600" y="472" width="324" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="762.0" y="487.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 写 1056–1087 → 写计数 +1</tspan></text>
+<text xml:space="preserve" x="30" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">③ 各核 NWB 一拍整字写入，按字地址写进 L1；引擎数写入握手</tspan></text>
 <rect x="30" y="552" width="420" height="34" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="240.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0：入链路 0、1 各写 1 个存储字 → 合计 2 = 应写量 2</tspan></text>
+<text xml:space="preserve" x="240.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0：字 0、2 各写 1 个存储字 → 合计 2 = 应写量 2</tspan></text>
 <rect x="470" y="552" width="420" height="34" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="680.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1：入链路 0、1 各写 1 个存储字 → 合计 2 = 应写量 2</tspan></text>
+<text xml:space="preserve" x="680.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1：字 1、3 各写 1 个存储字 → 合计 2 = 应写量 2</tspan></text>
 <rect x="910" y="552" width="300" height="34" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1060.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节守恒：4 × 32 B = 16 × 8 B = 128 B</tspan></text>
-<text xml:space="preserve" x="30" y="610" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">一个存储字由同一条道送全</tspan></text>
-<text xml:space="preserve" x="1276" y="648" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-06</tspan></text>
+<text xml:space="preserve" x="1060.0" y="569.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节守恒：4 × 32 B = 128 B</tspan></text>
+<text xml:space="preserve" x="30" y="610" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">一个存储字一拍送到，每拍到达整字</tspan></text>
+<text xml:space="preserve" x="1276" y="648" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-08</tspan></text>
 </svg>

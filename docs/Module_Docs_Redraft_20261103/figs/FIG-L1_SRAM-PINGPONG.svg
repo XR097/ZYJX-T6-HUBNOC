@@ -18,9 +18,9 @@
 <rect x="960" y="180" width="360" height="90" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="1140.0" y="225.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">NWB 写窗口 3</tspan></text>
 <path d="M570.0,52.0 L570.0,280.0" stroke="#b42318" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="570" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">切换地址堆位</tspan></text>
+<text xml:space="preserve" x="570" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">翻转堆选</tspan></text>
 <path d="M950.0,52.0 L950.0,280.0" stroke="#b42318" stroke-width="1.8" fill="none" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="950" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">切换地址堆位</tspan></text>
+<text xml:space="preserve" x="950" y="300" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">翻转堆选</tspan></text>
 <text xml:space="preserve" x="180" y="390" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 1 内某一拍</tspan></text>
 <rect x="200" y="350" width="200" height="80" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="300.0" y="390.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">堆 0 bank 3：读</tspan></text>

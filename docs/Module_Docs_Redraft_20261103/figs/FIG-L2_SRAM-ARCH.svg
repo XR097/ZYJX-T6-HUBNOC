@@ -130,7 +130,7 @@
 <rect x="43.9" y="501.0" width="232.2" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
 <text x="50.9" y="512.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">L2WP 4 条 × 32 B（核 q → 象限 q）</text>
 <text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-L2_SRAM-ARCH  L2 SRAM：4 象限 × 两堆、每象限写集合器、象限读口与 busy</text>
-<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">2 MiB · 32 个单端口 bank × 32 B（一个存储字）· 每象限 8 bank = 堆 0（4 个）+ 堆 1（4 个）· 地址 [堆 1][象限 2][字节号 21]，以字节计</text>
+<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">2 MiB · 32 个单端口 bank × 32 B（一个存储字）· 每象限 8 bank = 堆 0（4 个）+ 堆 1（4 个）· 地址 24 bit（段内字节）+ 段选（堆选 1 · 象限选 2）</text>
 <text x="44.0" y="115.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">地址 [堆 h][象限 q][字节号 a]，存储字 j = ⌊a / 32⌋ → bank 8q + 4h + (j mod 4)，深度 ⌊j / 4⌋；写带字节写使能，默认整字写</text>
 <text x="44.0" y="137.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">核 q 的 L2WP 只写象限 q；NI 写可写任一象限（单位不跨象限，可按象限掩码广播）；每象限 2 条入口 FIFO → 写集合器 → 4 道，先后为头文件参数</text>
 <text x="44.0" y="159.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">接收桥 ready = 本来源入口 FIFO 未满（通用链路块）；读口撞 bank 拉 busy、重发；每写进一项沿来源链路反向回写入握手，由发令方计数</text>
@@ -261,7 +261,7 @@
 <text x="240.0" y="1036.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">发令方数满应写量 = 写入完成</text>
 <text x="640.0" y="1010.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#334155">L2 致命错误上报</text>
 <text x="640.0" y="1028.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">超出堆容量 · 读 / 写地址象限不符</text>
-<text x="1040.0" y="1010.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0369a1">hub 控制道（命令与标量网）</text>
+<text x="1040.0" y="1010.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0369a1">hub 控制道（命令网）</text>
 <text x="1040.0" y="1028.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">→ LIC → CIF → M55：致命错误</text>
 <text x="1530.0" y="1010.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#475569">NI 返回读口</text>
 <text x="1530.0" y="1028.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">→ NI_INT → DDR / M1 · addr ← NI · busy</text>

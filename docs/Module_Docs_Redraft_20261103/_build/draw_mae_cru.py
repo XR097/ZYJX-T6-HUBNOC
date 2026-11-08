@@ -1,39 +1,42 @@
-"""MAE_CRU 篇的数值小例。Owner: WangYizhao · 2026-11-07
+"""MAE_CRU 篇的数值小例（第二版：经 L2 合并，V18-CRU-07）。Owner: WangYizhao · 2026-11-07
 用法（在 Module_Docs_Redraft_20261103 目录下）：python -X utf8 -I _build/draw_mae_cru.py
 输出（figs/）：
-  FIG-MAE_CRU-SUM       部分和归约：参与核 {0, 1, 2} 按 2 → 0 → 1 到达同一 CRU 内地址，第 3 份到达时按参与方固定次序相加
-  FIG-MAE_CRU-READSET   读集合并：两个 CRU 内地址的读集交错到达，各自到齐后按位取并
-  FIG-MAE_CRU-PINGPONG  CRU 内地址的 ping-pong：tile 0 用 A 区（地址 0–1）、tile 1 用 B 区（地址 2–3）、tile 2 回到 A 区
+  FIG-MAE_CRU-SUM       部分和归约：核 0、1、2 各把部分和写进本核象限的同一象限内地址 A；MAE 经 NI 读口一拍读出四个象限，
+                        按象限掩码 0111 取三份，按象限次序 (q0 + q1) + q2 相加，写回 L2
+  FIG-MAE_CRU-READSET   读集合并：两条合并指令（象限掩码 0111、0101）各读一拍、按位取并、写回 L2
+  FIG-MAE_CRU-RESID     残差加（11-08，V18-CRU-08）：指令 1 归约写 BF16，指令 2 读归约结果 + 残差 MXFP6（码 × 2^-1）相加、
+                        按 QNT 规则编码成 MXFP6（尺度 2^1，4.75 → 5 RNE）写回 L2 残差流；末行按 keep 1011 压缩
 架构图 FIG-MAE_CRU-ARCH 在 draw_mae_arch.py（MAE 组统一外圈）。数值由脚本算出并断言。
-依据：V18-MAE-30、V18-CRU-02…05、用户 11-06 深夜"一个基础的 ping-pong 设计"。
+11-07 晚：第一版的"按 CRU 内地址计到达份数"三张图退役——SUM / READSET 改画四象限同址读出，PINGPONG 退役（ping-pong 改在 L2 地址里，
+不再有 CRU 存储）；旧函数加 _retired_ 前缀。
 """
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from svgkit_num import Svg, C_HI, C_LO, C_KEEP, C_OFF, C_SIDE, C_LEFT  # noqa: E402
+from svgkit_num import Svg, C_HI, C_LO, C_KEEP, C_OFF, C_SIDE, C_LEFT, C_ACC  # noqa: E402
 
-DATE = '2026-11-07'
+DATE = '2026-11-08'
+A_SRC = 4096                     # 四个象限里同一象限内字节地址（示例）
+A_DST = 8192                     # 结果写回的 L2 地址（示例，象限 0）
 
 # =====================================================================
-# SUM：部分和归约
+# SUM：部分和归约（四象限同址读出）
 # =====================================================================
-S_PART = {0: [1.5, -2.0, 0.25, 3.0], 1: [0.5, 1.0, -0.75, 2.0], 2: [-1.0, 0.5, 0.5, 4.0]}   # 一个地址 4 元素（实际 16）
-S_ORDER = [2, 0, 1]                                  # 到达先后
-S_NEED = len(S_PART)                                 # 应到份数 = 参与核数
-S_SUM = [(S_PART[0][i] + S_PART[1][i]) + S_PART[2][i] for i in range(4)]   # 按参与方固定次序相加
+S_PART = {0: [1.5, -2.0, 0.25, 3.0], 1: [0.5, 1.0, -0.75, 2.0], 2: [-1.0, 0.5, 0.5, 4.0],
+          3: [7.0, 7.0, 7.0, 7.0]}                    # 象限 3 的同址字属别的对象（核 3 不参与），不计入
+S_MASK = [1, 1, 1, 0]                                 # 象限掩码 0111（象限 0、1、2 参与）
+S_SUM = [(S_PART[0][i] + S_PART[1][i]) + S_PART[2][i] for i in range(4)]   # 按象限次序相加
 assert S_SUM == [1.0, -0.5, 0.0, 9.0]
-# 换任意到达先后，结果都按参与方次序算，故相同
-for order in ([0, 1, 2], [1, 2, 0], [2, 1, 0]):
-    assert [(S_PART[0][i] + S_PART[1][i]) + S_PART[2][i] for i in range(4)] == S_SUM
+assert all(S_SUM[i] != S_SUM[i] + S_PART[3][i] for i in range(4))           # 掩码外的份若被计入，结果会不同
 
 
 def fig_sum():
-    s = Svg(1300, 470)
-    s.rich(30, 34, '部分和归约：参与核 {0, 1, 2}，同一 CRU 内地址 e，到达先后 2 → 0 → 1；应到份数 3', 17)
-    s.note(30, 66, '一个地址 32 B = 16 个 BF16（图中只画 4 个）；第 3 份到达时合并，加法次序按参与方固定 (核 0 + 核 1) + 核 2，不随到达先后', 15)
-    cols = [('拍', 70), ('到达', 140), ('元素 0', 120), ('元素 1', 120), ('元素 2', 120), ('元素 3', 120), ('地址 e 已到份数', 170), ('动作', 230)]
+    s = Svg(1340, 420)
+    s.rich(30, 34, f'部分和归约：核 0、1、2 各把部分和写进本核象限的同一象限内地址 {A_SRC}；MAE 一拍读四个象限，按掩码 0111 取三份', 17)
+    s.note(30, 66, '一个存储字 32 B = 16 个 BF16（图中只画 4 个）；加法次序按象限固定 (象限 0 + 象限 1) + 象限 2，与各核写进 L2 的先后无关', 15)
+    cols = [('NI 读口这一拍', 200), ('写入方', 110), ('掩码', 80), ('元素 0', 120), ('元素 1', 120), ('元素 2', 120), ('元素 3', 120), ('处理', 300)]
     x0, y0, rh = 30, 92, 42
     xs, x = [], x0
     for name, w in cols:
@@ -41,35 +44,35 @@ def fig_sum():
         s.cell(x, y0, w - 6, rh - 4, name, fill=C_SIDE, size=14)
         x += w
     rows = []
-    for t, c in enumerate(S_ORDER):
-        n = t + 1
-        rows.append([str(t), f'核 {c} 的部分和'] + [f'{v:g}' for v in S_PART[c]] + [f'{n} / {S_NEED}', '到齐 → 合并' if n == S_NEED else '写入，等其余份'])
-    rows.append([str(len(S_ORDER)), '结果（BF16）'] + [f'{v:g}' for v in S_SUM] + ['—', '经出口送往目的（地址由引擎给）'])
+    for q in range(4):
+        rows.append([f'象限 {q} · 字节 {A_SRC}', f'核 {q}', str(S_MASK[q])] + [f'{v:g}' for v in S_PART[q]] +
+                    ['参与合并' if S_MASK[q] else '不参与（同址是别的对象）'])
+    rows.append([f'写回 L2 · 字节 {A_DST}', 'MAE_CRU', '—'] + [f'{v:g}' for v in S_SUM] + ['BF16 直出，经 NI-L2C → NI 写口'])
     for i, vals in enumerate(rows):
         y = y0 + (i + 1) * rh
         last = i == len(rows) - 1
         for j, (xx, (_, w), v) in enumerate(zip(xs, cols, vals)):
             f = 'white'
-            if last and 2 <= j <= 5:
+            if last and 3 <= j <= 6:
                 f = C_KEEP
-            elif j == 6 and v.startswith(f'{S_NEED} /'):
-                f = C_LEFT
-            elif 2 <= j <= 5:
-                f = C_LO
+            elif not last and 3 <= j <= 6:
+                f = C_LO if S_MASK[i] else C_OFF
+            elif j == 2 and not last:
+                f = C_LEFT if S_MASK[i] else 'white'
             s.cell(xx, y, w - 6, rh - 4, v, fill=f, size=13)
     yb = y0 + (len(rows) + 1) * rh + 24
-    s.red(30, yb, '到齐才合并，与到达先后无关', 15)
-    s.note(260, yb, '：换成任何到达先后，结果都是 1、−0.5、0、9（脚本断言）', 15)
+    s.red(30, yb, '一拍读四份，一拍出一个字', 15)
+    s.note(250, yb, '：四个象限同址同拍读出（NI 读口 4 × 32 B），相加后写回 32 B；启动前 MAE 已收齐核 0、1、2 的发出报告', 15)
     s.save('FIG-MAE_CRU-SUM.svg', DATE)
 
 
 # =====================================================================
-# READSET：读集合并
+# READSET：读集合并（两条指令，象限掩码不同）
 # =====================================================================
-R_BITS = {(0, 0): '10010000', (1, 0): '00010010', (2, 0): '01000000',   # (核, 地址)：读集（8 bit，实际一个地址 256 bit）
-          (0, 1): '00100001', (2, 1): '00000101'}
-R_NEED = {0: 3, 1: 2}                                # 地址 0：核 {0, 1, 2}；地址 1：核 {0, 2}
-R_ORDER = [(1, 0), (0, 1), (0, 0), (2, 1), (2, 0)]   # 到达先后（核, 地址），两个地址交错
+R_BITS = {(0, 0): '10010000', (1, 0): '00010010', (2, 0): '01000000', (3, 0): '11111111',
+          (0, 1): '00100001', (1, 1): '11110000', (2, 1): '00000101', (3, 1): '00001111'}   # (象限, 指令)
+R_MASK = {0: [1, 1, 1, 0], 1: [1, 0, 1, 0]}        # 指令 0：掩码 0111；指令 1：掩码 0101
+R_SRC = {0: 1024, 1: 1056}                           # 两条指令各读的象限内地址
 
 
 def _or(bits):
@@ -79,113 +82,115 @@ def _or(bits):
     return format(v, '08b')
 
 
-R_TL = []
-_got = {0: [], 1: []}
-for t, (c, a) in enumerate(R_ORDER):
-    _got[a].append(R_BITS[(c, a)])
-    done = len(_got[a]) == R_NEED[a]
-    R_TL.append((t, c, a, R_BITS[(c, a)], len(_got[a]), _or(_got[a]) if done else None))
-R_RES = {a: _or([R_BITS[k] for k in R_BITS if k[1] == a]) for a in (0, 1)}
+R_RES = {k: _or([R_BITS[(q, k)] for q in range(4) if R_MASK[k][q]]) for k in (0, 1)}
 assert R_RES == {0: '11010010', 1: '00100101'}
-assert [x[5] for x in R_TL] == [None, None, None, '00100101', '11010010']
+assert _or([R_BITS[(q, 0)] for q in range(4)]) != R_RES[0]          # 掩码外的份不能并进来
 
 
 def fig_readset():
-    s = Svg(1300, 440)
-    s.rich(30, 34, '读集合并：地址 0 由核 {0, 1, 2} 合并、地址 1 由核 {0, 2} 合并，两地址的拍交错到达', 17)
-    s.note(30, 66, '1 位 = 一个 key（或区块、列）要不要读；图中 8 bit，实际一个地址 256 bit，更长的读集占连续几个地址；各地址到齐后按位取并', 15)
-    cols = [('拍', 70), ('到达', 160), ('写到地址', 120), ('读集', 170), ('该地址已到份数', 180), ('到齐后的并集', 200), ('动作', 230)]
+    s = Svg(1340, 470)
+    s.rich(30, 34, '读集合并：指令 0（掩码 0111，共享前缀段）与指令 1（掩码 0101，某行私有段）各读一拍四个象限，按位取并', 17)
+    s.note(30, 66, '1 位 = 一个 key（或区块、列）要不要读；图中 8 bit，实际一个存储字 256 bit，更长的读集占连续几个字；结果写回 L2，由 MAE 当列表读用', 15)
+    cols = [('指令', 90), ('读的地址', 150), ('象限 0', 140), ('象限 1', 140), ('象限 2', 140), ('象限 3', 140), ('掩码', 90), ('并集（写回 L2）', 200)]
     x0, y0, rh = 30, 92, 42
     xs, x = [], x0
     for name, w in cols:
         xs.append(x)
         s.cell(x, y0, w - 6, rh - 4, name, fill=C_SIDE, size=14)
         x += w
-    for i, (t, c, a, bits, n, res) in enumerate(R_TL):
+    for i, k in enumerate((0, 1)):
         y = y0 + (i + 1) * rh
-        vals = [str(t), f'核 {c}', f'地址 {a}', bits, f'{n} / {R_NEED[a]}', res or '—', '到齐 → 取并、送出' if res else '写入']
-        fills = ['white', 'white', C_HI if a == 0 else C_LO, 'white', C_LEFT if res else 'white', C_KEEP if res else 'white', 'white']
+        mask = ''.join(str(b) for b in reversed(R_MASK[k]))
+        vals = [f'指令 {k}', f'字节 {R_SRC[k]}'] + [R_BITS[(q, k)] for q in range(4)] + [mask, R_RES[k]]
+        fills = ['white', 'white'] + [(C_HI if k == 0 else C_LO) if R_MASK[k][q] else C_OFF for q in range(4)] + ['white', C_KEEP]
         for xx, (_, w), v, f in zip(xs, cols, vals, fills):
             s.cell(xx, y, w - 6, rh - 4, v, fill=f, size=13)
-    yb = y0 + (len(R_TL) + 1) * rh + 24
-    s.red(30, yb, '两个地址各计各的份数', 15)
-    s.note(230, yb, f'：地址 1 在拍 3 先到齐（{R_RES[1]}），地址 0 在拍 4 到齐（{R_RES[0]}）；参与核不同的两组可同时在收', 15)
+    yb = y0 + 3 * rh + 24
+    s.red(30, yb, '掩码外的象限不并入', 15)
+    s.note(210, yb, f'：指令 0 并集 {R_RES[0]}、指令 1 并集 {R_RES[1]}；灰格是同址上别的对象。掩码写为象限 3→0', 15)
+    s.note(30, yb + 34, '参与核不同的两组用两条指令、两个地址；两条指令可先后执行，ping-pong 由编译链在 L2 地址里安排', 15)
     s.save('FIG-MAE_CRU-READSET.svg', DATE)
 
 
 # =====================================================================
-# PINGPONG：CRU 内地址的 ping-pong
+# RESID：残差加（11-08，V18-CRU-08）——指令 1 归约（BF16 写 L2），指令 2 读归约结果 + 残差（MXFP6）相加、一次编码
 # =====================================================================
-P_ADDR = {0: (0, 1), 1: (2, 3), 2: (0, 1)}            # tile → 地址（A 区 0–1、B 区 2–3）
-P_NEED = 2                                             # 参与核 {0, 1}
-P_EV = {0: (0, 0, 0), 1: (1, 0, 0), 2: (0, 0, 1), 3: (0, 1, 2), 4: (1, 0, 1), 5: (1, 1, 2),
-        6: (0, 1, 3), 7: (0, 2, 0), 8: (1, 1, 3), 9: (1, 2, 0), 10: (0, 2, 1), 11: (1, 2, 1)}   # 拍 → (核, tile, 地址)
-P_NT = 13
+A_RES = 20480                    # 残差流对象里这 4 个通道的 L2 地址（示例）
+A_OUT = 12288                    # 残差加结果写回 L2 残差流的地址（示例）
+RES_SCALE_EXP = -1               # 残差这一组的 E8M0 尺度指数：2^-1
+RES_CODE = [1.5, -3.0, 4.0, 1.0] # 残差的 E2M3 码（都能精确表示）
+RES_VAL = [c * 2.0 ** RES_SCALE_EXP for c in RES_CODE]
+assert RES_VAL == [0.75, -1.5, 2.0, 0.5]
+X2 = [S_SUM[i] + RES_VAL[i] for i in range(4)]      # x'' = Y + x'（宽格式里相加）
+assert X2 == [1.75, -2.0, 2.0, 9.5]
+KEEP = [1, 0, 1, 1]                                 # 按列表压缩时的 keep 位图（通道 1 丢）
 
 
-def pp_sim():
-    cnt = {a: (None, 0) for a in range(4)}            # 地址 → (当前 tile, 已到份数)
-    outq, done_out, rows, reported = [], {t: set() for t in P_ADDR}, [], []
-    for t in range(P_NT):
-        arr, merged, out, rep = P_EV.get(t), None, None, None
-        if outq:                                       # 每拍送出一个已合并的地址（上一拍合并的）
-            a, tile = outq.pop(0)
-            out = (a, tile)
-            cnt[a] = (None, 0)                         # 送出后该地址可再用
-            done_out[tile].add(a)
-            if done_out[tile] == set(P_ADDR[tile]):
-                rep = tile
-                reported.append(tile)
-        if arr:
-            c, tile, a = arr
-            cur, n = cnt[a]
-            assert cur in (None, tile), (t, a)         # 断言：上一 tile 的结果送出前，新 tile 的数据不写进该地址
-            cnt[a] = (tile, n + 1)
-            if n + 1 == P_NEED:
-                merged = (a, tile)
-                outq.append((a, tile))
-        rows.append((t, arr, {a: cnt[a] for a in range(4)}, merged, out, rep))
-    return rows, reported
+def e2m3_round(v):
+    """E2M3（偏置 1，最大 7.5，次正规步长 0.125）RNE 量化；返回可表示的值。"""
+    import math
+    a = abs(v)
+    if a >= 7.5:
+        return math.copysign(7.5, v)
+    e = 0 if a < 1.0 else min(2, int(math.floor(math.log2(a))))
+    step = 2.0 ** (e - 3)                            # 该二进制区间的码步长：[1,2) 0.125、[2,4) 0.25、[4,8) 0.5；次正规 0.125
+    q = a / step
+    lo = math.floor(q)
+    frac = q - lo
+    if frac > 0.5 or (frac == 0.5 and lo % 2 == 1):
+        lo += 1
+    return math.copysign(lo * step, v)
 
 
-PP, PP_REP = pp_sim()
-assert PP_REP == [0, 1, 2]                             # 每个 tile 各报一次完成，按 0、1、2
-assert [r[3] for r in PP if r[3]] == [(0, 0), (1, 0), (2, 1), (3, 1), (0, 2), (1, 2)]
-assert min(t for t, e in P_EV.items() if e[1] == 2) > max(r[0] for r in PP if r[4] and r[4][1] == 0)   # A 区结果全部送出后 tile 2 才写进 A 区
-assert [r[0] for r in PP if r[5] is not None] == [5, 9, 12]
+import math as _m
+OUT_SCALE_EXP = int(_m.floor(_m.log2(max(abs(v) for v in X2)))) - 2       # 组尺度：floor(log2 amax) − E2M3 的最大指数 2
+assert OUT_SCALE_EXP == 1
+OUT_CODE_RAW = [v / 2.0 ** OUT_SCALE_EXP for v in X2]                     # 0.875, −1, 1, 4.75
+OUT_CODE = [e2m3_round(c) for c in OUT_CODE_RAW]
+assert OUT_CODE_RAW == [0.875, -1.0, 1.0, 4.75] and OUT_CODE == [0.875, -1.0, 1.0, 5.0]   # 4.75 在 [4,8) 步长 0.5，RNE 舍到 5
+OUT_VAL = [c * 2.0 ** OUT_SCALE_EXP for c in OUT_CODE]
+assert OUT_VAL == [1.75, -2.0, 2.0, 10.0]
+COMPACT = [OUT_CODE[i] for i in range(4) if KEEP[i]]
+assert len(COMPACT) == 3
 
 
-def fig_pingpong():
-    s = Svg(1500, 760)
-    s.rich(30, 34, 'CRU 内地址的 ping-pong：tile 0 用 A 区（地址 0–1），tile 1 用 B 区（地址 2–3），tile 2 回到 A 区；参与核 {0, 1}', 17)
-    s.note(30, 66, '分区与轮换都写在地址里（编译链给），硬件只按地址计到达份数；到齐即合并，下一拍送出，送出后该地址才可被下一个 tile 用', 15)
-    cols = [('拍', 60), ('到达（核 · tile · 地址）', 230), ('地址 0（A）', 140), ('地址 1（A）', 140), ('地址 2（B）', 140), ('地址 3（B）', 140),
-            ('合并', 150), ('送出', 150), ('报完成', 120)]
-    x0, y0, rh = 30, 92, 40
+def fig_resid():
+    s = Svg(1340, 560)
+    s.rich(30, 34, '残差加：指令 1 归约（BF16 写 L2），指令 2 读归约结果与残差（MXFP6）相加、一次编码写回 L2 残差流', 17)
+    s.note(30, 66, f'一段实际 32 个通道、一行 d_hidden 个通道，图中只画 4 个；残差尺度 2^{RES_SCALE_EXP}，输出尺度 2^{OUT_SCALE_EXP}（组内最大幅值 9.5 ≥ E2M3 最大 7.5，尺度取 2 的幂 floor）', 15)
+    cols = [('指令 · 步骤', 230), ('编码 · 地址', 230), ('元素 0', 120), ('元素 1', 120), ('元素 2', 120), ('元素 3', 120), ('说明', 370)]
+    x0, y0, rh = 30, 92, 42
     xs, x = [], x0
     for name, w in cols:
         xs.append(x)
-        s.cell(x, y0, w - 6, rh - 4, name, fill=C_HI if 'A）' in name else (C_LO if 'B）' in name else C_SIDE), size=13)
+        s.cell(x, y0, w - 6, rh - 4, name, fill=C_SIDE, size=14)
         x += w
-    for i, (t, arr, cnt, merged, out, rep) in enumerate(PP):
+    rows = [
+        ('指令 1 · 归约', f'BF16 · 写 L2 字节 {A_DST}', [f'{v:g}' for v in S_SUM], C_KEEP, '三份同址相加（同 FIG-MAE_CRU-SUM）'),
+        ('指令 2 · 读归约结果', f'BF16 · 读 L2 字节 {A_DST}', [f'{v:g}' for v in S_SUM], C_LO, 'MAE 引擎给地址，NI 读口读一个象限'),
+        ('指令 2 · 读残差码', f'E2M3 码 · 读 L2 字节 {A_RES}', [f'{v:g}' for v in RES_CODE], C_HI, f'同一 token 同 4 个通道；组尺度 E8M0 = 2^{RES_SCALE_EXP}'),
+        ('指令 2 · 残差还原', '码 × 尺度（精确）', [f'{v:g}' for v in RES_VAL], C_HI, '解码在宽格式里无损'),
+        ('指令 2 · 相加', 'x″ = Y + x′', [f'{v:g}' for v in X2], C_ACC, '宽格式相加，这里 4 个和都精确'),
+        ('指令 2 · 编码', f'E2M3 码 · 尺度 2^{OUT_SCALE_EXP}', [f'{v:g}' for v in OUT_CODE], C_KEEP, '4.75 → 5（[4, 8) 步长 0.5，RNE）；其余精确'),
+        ('指令 2 · 写回', f'MXFP6 稠密 · 写 L2 字节 {A_OUT}', [f'{v:g}' for v in OUT_VAL], C_KEEP, '还原值；只在这一步舍入一次'),
+        ('（可选）按列表压缩', f'keep {"".join(map(str, KEEP))} · 同址', [f'{OUT_CODE[i]:g}' if KEEP[i] else '—' for i in range(4)], C_LEFT,
+         '只写保留通道的码 + 位图 + 尺度；字节数交引擎写长度表'),
+    ]
+    for i, (a, b, vals, fill, c) in enumerate(rows):
         y = y0 + (i + 1) * rh
-        vals = [str(t), '—' if not arr else f'核 {arr[0]} · tile {arr[1]} · 地址 {arr[2]}']
-        fills = ['white', 'white']
-        for a in range(4):
-            tile, n = cnt[a]
-            vals.append('—' if tile is None else f'tile {tile} · {n}/{P_NEED}')
-            fills.append(C_LEFT if (merged and merged[0] == a) else ('white' if tile is None else (C_HI if a < 2 else C_LO)))
-        vals += ['—' if not merged else f'地址 {merged[0]}', '—' if not out else f'地址 {out[0]}（tile {out[1]}）', '—' if rep is None else f'tile {rep}']
-        fills += [C_LEFT if merged else 'white', C_KEEP if out else 'white', C_KEEP if rep is not None else 'white']
-        for xx, (_, w), v, f in zip(xs, cols, vals, fills):
-            s.cell(xx, y, w - 6, rh - 4, v, fill=f, size=12)
-    yb = y0 + (P_NT + 1) * rh + 24
-    s.red(30, yb, 'A 区收 tile 2 时 B 区还在收 tile 1', 15)
-    s.note(330, yb, '：A 区的 tile 0 结果在拍 5 全部送出，tile 2 在拍 7 才写进 A 区；tile 0、1、2 分别在拍 5、9、12 报完成', 15)
-    s.save('FIG-MAE_CRU-PINGPONG.svg', DATE)
+        cells = [a, b] + vals + [c]
+        for j, (xx, (_, w), v) in enumerate(zip(xs, cols, cells)):
+            f = fill if 2 <= j <= 5 else 'white'
+            if 2 <= j <= 5 and v == '—':
+                f = C_OFF
+            s.cell(xx, y, w - 6, rh - 4, v, fill=f, size=13)
+    yb = y0 + (len(rows) + 1) * rh + 24
+    s.red(30, yb, '残差只加一次，编码只在末了一次', 15)
+    s.note(350, yb, '：各核部分和不含残差；归约结果 BF16 是允许的中间暂存；两条指令由 LIC 先后下发，分块时放在一个 Fusion-L3PU 段里循环', 15)
+    s.save('FIG-MAE_CRU-RESID.svg', DATE)
 
 
 if __name__ == '__main__':
     fig_sum()
     fig_readset()
-    fig_pingpong()
+    fig_resid()

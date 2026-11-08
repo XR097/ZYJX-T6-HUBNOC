@@ -46,7 +46,7 @@ python -X utf8 -I _build/draw_compact.py
 | `figs/FIG-L1_SRAM-RING.svg` | `fig_ring()` | §3.3 | 环占 A 类字 20–25（L = 6），写对象第 4–8 字；断言字号 [24, 25, 20, 21, 22]；11-05 夜起算地址方标"核内 CCU / 核间 MAE 通道"（图例为落地写；11-06 起 C2H 也由 CCU 算地址，正文 §3.3 已注，图未改） | `RING_BASE`、`RING_L`、`RING_K` |
 | `figs/FIG-L1_SRAM-MAP-W.svg` | `fig_map_w()` | §4.2 | 列字区一字一列 64 个连续 $k$，bank $b$ 装列 $2b$、$2b+1$；断言 16 列 × 2 段对落 8 bank × 4 深度 | `wcol_phys()`、`MAPW` |
 | `figs/FIG-L1_SRAM-MAP-W-HALF.svg` | `fig_map_w_half()` | §4.3 | 行字区只占 W0：一段落 4 bank × 2 深度 | `w_phys()`、`MAPH` |
-| `figs/FIG-L1_SRAM-MAP-A.svg` | `fig_map_a()` | §4.4 | 对象头 8 B + 记录 70 / 40 / 100 B，首字号 1、4、6，共 10 字，轮流落 bank 8–11 | `HDR`、`REC_LEN`、`FIRST_ROW`、`MAPA` |
+| `figs/FIG-L1_SRAM-MAP-A.svg` | `fig_map_a()` | §4.4 | 11-07 改：记录 70 / 40 / 100 B 紧挨（起点 0 / 70 / 110，共 210 B = 7 字，末字空 14 B），轮流落 bank 8–11；长度表在字 16（bank 8 深度 4）；读 token 1 = 字 2、3 按 6 移位；断言 ROWSEG[2] 含两条记录 | `REC_LEN`、`REC_START`、`A_ROWS`、`LT_ROW`、`ROWSEG`、`MAPA`、`RD_WORDS / RD_SHIFT` |
 | `figs/FIG-L1_SRAM-LANE-PICK.svg` | `fig_lane_pick()` | §6.1 | 一个 pass 每 bank ≤ 2 列，按掩码进 4 个 pod；$m_{17}$ 顺延 | `POD_NEED`、`PASS_COLS`、`BEAT0` |
 | `figs/FIG-L1_SRAM-COLREAD-1SRC.svg` | `fig_colread_1src()` | §6.1a | 单来源读口重组器逐拍，稳态一段一拍、每 bank ≤ 96 B | `colread_sim()`、`RG_CAP` |
 | `figs/FIG-L1_SRAM-COLREAD-2SRC.svg` | `fig_colread_2src()` | §6.1a | 两来源（来源 A）逐拍，半段交出、起步气泡、峰值 128 B/bank | 同上 |
@@ -75,3 +75,6 @@ python -X utf8 -I _build/draw_compact.py
 - 每次改完都跑脚本、渲染、用 Read 看 PNG。
 
 > 11-06 深夜第三次（V18-TP-51 / NAME-04）：撤 dest 后重跑相关生图脚本，图上"dest = CRU 分支"改为"去 MAE_CRU 的分支"，C2H 分流改为"按 CCU 的通路选择"，信号框不再列 dest，远端引擎的短消息改名"执行完成"；自检均 0 问题。
+- **11-07（V18-HUB-01）**：`draw_l1_arch.py` 的 IDN 链路标签改"IDN 链路 0–3（HUB_IDN）"，布局不变。
+- **11-08（V18-NLU-06 / TP-60）**：`draw_l1_arch.py` 核内写者框"QNT · NLU（含出口级）"、激活类读口客户框"NLU（含出口级，读旧值）· QNT"；`draw_l1_sram.py` 的激活类口客户框同改。MAP-A 的长度表字说明不含位宽，正文 §4.4 改为每项 24 bit（16 bit 长度 + 8 bit tokmax）。只改字，布局与断言不变。
+- **11-08 晚（V18-HUB-04）**：`draw_l1_arch.py` 的 NWB 框改"IDN 接收桥 · 1 条 32 B 链路 / 入口 FIFO + skid / ready = FIFO 未满"，左侧 IDN 输入由 4 条线改为 1 条（y = 530），标签改"IDN 链路 · 32 B（HUB_IDN）"；`draw_l1_sram.py` 退役函数 `_retired_fig_conn` 的 IDN 块改"IDN（HUB_IDN）· 32 B/拍 + addr"、NWB 块改"整字直写"（不出图）。

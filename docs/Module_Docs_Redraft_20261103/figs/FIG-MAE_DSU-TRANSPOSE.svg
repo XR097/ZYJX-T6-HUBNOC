@@ -75,7 +75,7 @@
 <rect x="910" y="180" width="70" height="32" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
 <text xml:space="preserve" x="945.0" y="196.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">W[3,3]</tspan></text>
 <path d="M460.0,136.0 L580.0,136.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="520.0" y="126.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">攒齐后整块转置</tspan></text>
+<text xml:space="preserve" x="520.0" y="126.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">转置（实现不规定）</tspan></text>
 <text xml:space="preserve" x="170" y="240" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">Wᵀ[m, 32s+j] = W[32s+j, m]：只改位置，码不变</tspan></text>
 <text xml:space="preserve" x="170" y="264" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">实际一个子段 = 32 列 × L_DSU 个 k，每 32 个 k 出一块（32 个列字 + 旁带行 = 544 B）</tspan></text>
 </svg>

@@ -14,7 +14,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from svgkit_num import Svg, NAVY, INK, GREY, C_HI, C_LO, C_KEEP, C_OFF, C_SIDE, C_W  # noqa: E402
 
-DATE = '2026-11-06'
+DATE = '2026-11-07'
 WORD = 32
 
 # ---------------- ARITH：两级嵌套 ----------------
@@ -149,57 +149,50 @@ def fig_khi():
     s.save('FIG-MAE_ENG-KHI-GATHER.svg', DATE)
 
 
-# ---------------- QSPLICE：同址异象限，四道并行读时合并（V18-TP-48 / MAE-28） ----------------
-Q_T, Q_SEGW, Q_SRC = 4, 2, 4096        # token 数、每段存储字数（L2 段槽）、四个象限共同的象限内起始字节
-Q_DSTEP, Q_FULL = 3, 12                # L1：道 q 的目的偏移 = q × 3 个存储字（错开 bank），整条记录槽 12 个存储字
-Q_ABANK = [8, 9, 10, 11]               # L1 A 类 4 bank 配置的 bank 列表（字号 j → 第 j mod 4 项）
+# ---------------- QSPLICE：按 m 切分的四象限对象各按长度表取，四道落 L1 四个区域（11-07 V18-MAE-33；旧同址版见 _retired_） ----------------
+Q_T = 4
+Q_LEN = [[50, 38, 61, 44], [47, 52, 40, 58], [55, 36, 49, 60], [42, 57, 39, 53]]   # [象限][token] 片长（B）
+Q_SRC = 4096                              # 各象限对象起点（象限内字节；本例四象限相同，不要求相同）
+Q_REGION_GOOD = [0, 33, 66, 99]           # 消费核 L1 四个区域的基址（字号），模 4 = 0, 1, 2, 3
+Q_REGION_BAD = [0, 32, 64, 96]            # 反例：模 4 都是 0
+Q_ABANK = [8, 9, 10, 11]                  # L1 A 类 4 bank 配置的 bank 列表（字号 j → 第 j mod 4 项）
+Q_START = [[sum(r[:t]) for t in range(Q_T)] for r in Q_LEN]        # 各片相对起点 = 表中前几项之和
 
 
-def qsplice_beats(dstep):
-    rows = []                          # 每拍一行：[(源象限内字节, 目的字号, bank)] × 4 道
-    for t in range(Q_T):
-        for w in range(Q_SEGW):
-            row = []
-            for q in range(4):
-                a = Q_SRC + t * Q_SEGW * WORD + w * WORD
-                j = t * Q_FULL + q * dstep + w
-                row.append((a, j, Q_ABANK[j % 4]))
-            rows.append(row)
-    return rows
+def first_beat_banks(regions):
+    return [Q_ABANK[j % 4] for j in regions]
 
 
-QS = qsplice_beats(Q_DSTEP)
-assert len(QS) == Q_T * Q_SEGW == 8
-assert all(len({a for a, _, _ in r}) == 1 for r in QS)            # 同址异象限：四道源地址只差象限位
-assert all(len({b for _, _, b in r}) == 4 for r in QS)            # 错开后四道同拍落 4 个不同 bank
-assert QS[0] == [(4096, 0, 8), (4096, 3, 11), (4096, 6, 10), (4096, 9, 9)]
-assert QS[7][0] == (4096 + 7 * WORD, 37, 9)
-QS_BAD = qsplice_beats(Q_SEGW)                                     # 反例：L1 段步长 = 段槽 2 个存储字
-assert all(r[0][2] == r[2][2] and r[1][2] == r[3][2] for r in QS_BAD)   # 道 0 / 2、道 1 / 3 每拍撞 bank
-assert Q_FULL == 4 * Q_DSTEP and Q_DSTEP % 4 in (1, 3)
+assert len(set(first_beat_banks(Q_REGION_GOOD))) == 4              # 基址模 4 互不相同 → 四道首拍落 4 个 bank
+assert len(set(first_beat_banks(Q_REGION_BAD))) == 1               # 反例：都落 bank 8
+assert Q_START[0] == [0, 50, 88, 149] and sum(Q_LEN[0]) == 193
+Q_TOK1 = [(q, Q_REGION_GOOD[q] * WORD + Q_START[q][1], Q_LEN[q][1]) for q in range(4)]   # token 1 的四段在 L1 的字节起点与长度
+assert Q_TOK1 == [(0, 50, 38), (1, 1103, 52), (2, 2167, 36), (3, 3210, 57)]
 
 
 def fig_qsplice():
     s = Svg(1500, 600)
-    s.rich(30, 34, f'四道并行读时合并：{Q_T} 个 token、每段 {Q_SEGW} 个存储字；四个象限的段都从象限内字节 {Q_SRC} 起（同址异象限）', 17)
-    s.note(30, 66, f'道 q 读象限 q：源 = [象限 q][{Q_SRC} + t × 64 + w × 32]；目的 = L1 A 类字 t × {Q_FULL} + q × {Q_DSTEP} + w（q × {Q_DSTEP} 错开 bank）；核掩码 1111 多播', 15)
-    cols = [('拍', 70)] + [(f'道 {q}：象限 {q} → L1', 330) for q in range(4)]
+    s.rich(30, 34, f'四道并行读：{Q_T} 个 token、核间按 m 切分；象限 q 的对象各带长度表，道 q 按表顺序取、写 L1 第 q 个区域', 17)
+    s.note(30, 66, f'四个区域基址取字 {Q_REGION_GOOD}（模 4 互不相同）→ 四道首拍落 bank {first_beat_banks(Q_REGION_GOOD)}；反例 {Q_REGION_BAD} → 都落 bank {first_beat_banks(Q_REGION_BAD)[0]}', 15)
+    cols = [('道 / 象限', 110), ('对象起点（象限内字节）', 230), ('长度表 [tok0, tok1, tok2, tok3]', 330), ('各片相对起点', 300), ('区域基址（字）', 180), ('首拍 bank', 150)]
     x0, y0, rh = 30, 92, 40
     xs, x = [], x0
     for name, w in cols:
         xs.append(x)
-        s.cell(x, y0, w - 6, rh - 4, name, fill=C_SIDE, size=14)
+        s.cell(x, y0, w - 6, rh - 4, name, fill=C_SIDE, size=13)
         x += w
-    for i, row in enumerate(QS):
-        y = y0 + (i + 1) * rh
-        t = i // Q_SEGW
-        s.cell(xs[0], y, cols[0][1] - 6, rh - 4, f'{i}（t{t}）', fill='white', size=13)
-        for q, (a, j, b) in enumerate(row):
-            s.cell(xs[q + 1], y, cols[q + 1][1] - 6, rh - 4, f'字节 {a} → 字 {j} · bank {b}',
-                   fill=C_HI if t % 2 else C_LO, size=13)
-    s.note(30, y0 + 9 * rh + 22, f'每拍四道的源地址相同（只差象限位），四道落 4 个不同 bank；token t 的四段在 L1 拼成字 {Q_FULL}t … {Q_FULL}t + {Q_FULL - 1} 的一条记录（每段后留 1 个空字）', 14)
-    s.note(30, y0 + 9 * rh + 50, f'反例：目的偏移步长取段槽 {Q_SEGW} 个存储字时，道 0 与道 2、道 1 与道 3 每拍落同一 bank，落地降到 64 B/拍', 14)
-    s.red(30, y0 + 9 * rh + 82, '读时合并只是地址几何；错开 bank 由编译链保证', 15)
+    for q in range(4):
+        y = y0 + (q + 1) * rh
+        vals = [f'道 {q} / 象限 {q}', f'{Q_SRC}', f'{Q_LEN[q]}', f'{Q_START[q]}', f'{Q_REGION_GOOD[q]}（模 4 = {Q_REGION_GOOD[q] % 4}）', f'bank {Q_ABANK[Q_REGION_GOOD[q] % 4]}']
+        for c, v in enumerate(vals):
+            s.cell(xs[c], y, cols[c][1] - 6, rh - 4, v, fill=C_HI if q % 2 else C_LO, size=13)
+    y = y0 + 6 * rh
+    s.rich(30, y, 'token 1 的记录 = 四个区域里各一片（pod 按 k 顺序接着解，CCU 依次给四段地址）', 15)
+    for q, (_, a, n) in enumerate(Q_TOK1):
+        s.cell(30 + q * 360, y + 20, 350, 36, f'区域 {q}：L1 字节 {a} 起 {n} B', fill=C_KEEP, size=13)
+    s.note(30, y + 84, f'反例：区域基址 {Q_REGION_BAD} 模 4 相同，四道每拍落同一 bank，A 类写集合口每拍只能写一项、落地降到 32 B/拍', 14)
+    s.note(30, y + 110, '之后各道各自推进（片长不同、进度不同），偶发撞 bank 由 LDP 入口 FIFO 吸收；MAE_CRU 的定长份仍同址异象限、四道源地址相同只差象限选', 14)
+    s.red(30, y + 150, '四道各走各的对象与长度表，互不耦合；区域基址错开 bank 由编译链保证', 15)
     s.save('FIG-MAE_ENG-QSPLICE.svg', DATE)
 
 

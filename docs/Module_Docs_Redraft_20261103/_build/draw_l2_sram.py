@@ -5,13 +5,13 @@
   FIG-L2_SRAM-MAP-HEAP   一个象限内两堆的行落到哪个 bank、哪个深度（缩小例；11-05 取代 MAP-REGION）
   FIG-L2_SRAM-MAP-RING   环形回绕由 MAE 搬运引擎做：第 k 个存储字地址 = 基址 + (k mod L)，L2 只按每拍地址落字
                          （11-05 夜 V18-TP-27：原"发地址方"改为 MAE 搬运引擎）
-  FIG-L2_SRAM-OBJ-ALIGN  记录级对齐：对象头与每条记录各从整行起、占 ceil(n/32) 行、各自补 0（11-05 取代 UNIT-ALIGN；同日由对象级改为记录级）
+  FIG-L2_SRAM-OBJ-ALIGN  ③ 档记录紧挨存放、长度表单独存（11-07 V18-TP-58；11-05 的记录级对齐版退役）
 11-05 退役：FIG-L2_SRAM-MAP-REGION（区表）、FIG-L2_SRAM-UNIT-ALIGN（单位补到 8 B 字），原 SVG 移到 figs/_retired_20261105/。
 脚本断言：
   MAP-HEAP：地址 [堆 h][象限 q][行 j] → bank = 8q + 4h + (j mod 4)，深度 = j div 4；
             同一堆内各对象互不重叠；堆 0 与堆 1 的 bank 不相交，同拍写堆 1 第 t 行、读堆 0 第 t 行不撞 bank。
   MAP-RING：MAE 搬运引擎算的 5 拍行号 = 基址 + (k mod L)；各拍落点与换算式一致；L2 侧不取模。
-  OBJ-ALIGN：对象头与每条记录各从整行起、占 ceil(n/32) 行；各自尾部补 0 字节数 = 行数 × 32 − n；
+  OBJ-ALIGN：记录 17 / 40 / 32 B 从字节 0 起紧挨（起点 0 / 17 / 57），攒满 32 B 写一字、末字带 be；长度表另存；
              任何一行只属于一段（无跨行、无行内偏移）；按（首行号, 长度）读回与写入逐字节相同；每次写都是 32 B 整行。
 """
 import sys
@@ -21,7 +21,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from figkit3 import Figure  # noqa: E402
 from fig_f5_post import finalize, SvgF5  # noqa: E402
-from svgkit_num import GREY, NAVY, C_OFF  # noqa: E402
+from svgkit_num import GREY, NAVY, INK, C_OFF, C_SIDE  # noqa: E402
 
 OUT = HERE.parent
 ROW = 32                           # 一行 32 B
@@ -67,35 +67,33 @@ for b in range(RING_N):
     RING.append((b, k, j, *phys(RING_H, RING_Q, j)))
 assert [j for _, _, j, _, _ in RING] == [14, 15, 4, 5, 6]
 
-# 记录级对齐（用户 11-05 再定）：对象头 8 B + 三条记录 17 B、40 B、32 B，各自从整行起、尾部补 0
-PIECES = [('对象头', 8), ('记录 0', 17), ('记录 1', 40), ('记录 2', 32)]
-piece_start, r = [], 0
-for _, n in PIECES:
-    piece_start.append(r)
-    r += -(-n // ROW)                                    # 占 ceil(n / 32) 行
-NROWS_O = r
+# 11-07（V18-TP-58）：③ 档记录紧挨、长度表单独存；三条记录 17 B、40 B、32 B 从字节 0 起（11-05 的对象头 + 整字对齐退役）
+PIECES = [('记录 0', 17), ('记录 1', 40), ('记录 2', 32)]
+piece_start = [sum(n for _, n in PIECES[:i]) for i in range(len(PIECES))]   # 字节起点 = 前几项之和
+OBJ_BYTES_O = sum(n for _, n in PIECES)
+NROWS_O = -(-OBJ_BYTES_O // ROW)
+LT_ROW_O = 8                                             # 长度表所在字（编译链另给）
 mem = bytearray(NROWS_O * ROW)
-owner = [None] * NROWS_O
 payload = []
+acc_buf = b''
+written_rows = 0
 for i, (_, n) in enumerate(PIECES):
-    data = bytes((i * 71 + b * 3 + 1) % 255 + 1 for b in range(n))         # 非 0，便于区分填充
+    data = bytes((i * 71 + b * 3 + 1) % 255 + 1 for b in range(n))         # 非 0，便于区分空位
     payload.append(data)
-    nrow = -(-n // ROW)
-    buf = data + bytes(nrow * ROW - n)                                      # 尾部补 0 到行边界
-    for k in range(nrow):                                                   # 攒整行再写
-        row = buf[k * ROW:(k + 1) * ROW]
-        assert len(row) == ROW
-        rr = piece_start[i] + k
-        assert owner[rr] is None                                            # 一行只属于一段
-        owner[rr] = i
-        mem[rr * ROW:(rr + 1) * ROW] = row
-assert all(o is not None for o in owner)
-for i, (_, n) in enumerate(PIECES):                                         # 按首行号与长度读回，无行内偏移
-    s0 = piece_start[i] * ROW
+    acc_buf += data                                                         # 攒字寄存器：跨记录连着攒
+    while len(acc_buf) >= ROW:                                              # 攒满 32 B 才写一个存储字
+        mem[written_rows * ROW:(written_rows + 1) * ROW] = acc_buf[:ROW]
+        acc_buf = acc_buf[ROW:]
+        written_rows += 1
+TAIL_O = len(acc_buf)                                                       # 对象末字带 be 写出
+if acc_buf:
+    mem[written_rows * ROW:written_rows * ROW + TAIL_O] = acc_buf
+    written_rows += 1
+assert written_rows == NROWS_O
+for i, (_, n) in enumerate(PIECES):                                         # 按长度表定位读回（跨字由读口出口移位）
+    s0 = piece_start[i]
     assert bytes(mem[s0:s0 + n]) == payload[i]
-    nrow = -(-n // ROW)
-    assert bytes(mem[s0 + n:s0 + nrow * ROW]) == bytes(nrow * ROW - n)
-assert piece_start == [0, 1, 2, 4] and NROWS_O == 5
+assert piece_start == [0, 17, 57] and OBJ_BYTES_O == 89 and NROWS_O == 3 and TAIL_O == 25
 
 # ---------------- 图 1（11-05 退役，由 draw_l2_arch.py 的 FIG-L2_SRAM-ARCH 取代）----------------
 def _retired_fig_conn():
@@ -105,7 +103,7 @@ def _retired_fig_conn():
     f.block('l2', 546, 154, 308, 546, 'L2 SRAM', '2 MiB · 32 bank × 32 B\n4 象限 × 2 堆 × 4 bank\n两写口为接收桥', kind='memory')
     f.block('hubdn', 1050, 154, 308, 224, 'H2C 道 0–3', '道 n 发读地址\n读出 → 四核第 n 道', kind='external')
     f.block('nir', 1050, 434, 308, 112, 'NI_INT 返回读', '→ DDR / M1 共享内存', kind='external')
-    f.block('lic', 1050, 602, 308, 98, 'LIC', '经命令与标量网', kind='control')
+    f.block('lic', 1050, 602, 308, 98, 'LIC', '经命令网', kind='control')
     f.net('w1', 'hubup', 'l2', 'L2WP 写 · addr')
     f.net('w2', 'niw', 'l2', 'NI 写 · addr')
     for q in range(4):
@@ -166,25 +164,31 @@ def _retired_fig_map_ring():   # 11-06 晚退役：L2 里的对象不按环形�
     s.save('FIG-L2_SRAM-MAP-RING.svg')
 
 
-# ---------------- 图 4：记录级对齐，每条记录占整数行 ----------------
+# ---------------- 图 4：③ 档记录紧挨存放，长度表单独存（11-07 V18-TP-58） ----------------
 def fig_obj_align():
     px = 24                                              # 每字节 24 px
     x0, y0, rh = 110, 56, 60
-    s = SvgF5(x0 + ROW * px + 40, y0 + NROWS_O * rh + 30)
+    s = SvgF5(x0 + ROW * px + 40, y0 + (NROWS_O + 1) * rh + 60)
     for bb in (0, 8, 16, 24):
         s.rich(x0 + bb * px, 32, f'{bb} B', 13, 'start', GREY, 600)
-    colors = ['#f3d9ef', '#fde3c4', '#d6e6f7', '#dcefd2']
+    colors = ['#fde3c4', '#d6e6f7', '#dcefd2']
     for rr in range(NROWS_O):
         s.rich(x0 - 16, y0 + rr * rh + 22, f'字 {rr}', 15, 'end')
     for i, (name, n) in enumerate(PIECES):
-        for k in range(-(-n // ROW)):
-            rr = piece_start[i] + k
-            ln = min(ROW, n - k * ROW)
-            s.cell(x0, y0 + rr * rh, ln * px - 4, 44, f'{name}（共 {n} B）' if k == 0 else f'{name} 续（{ln} B）',
-                   fill=colors[i], size=13, color='#1f2937')
-            if ln < ROW:
-                s.cell(x0 + ln * px, y0 + rr * rh, (ROW - ln) * px - 4, 44, f'补 0（{ROW - ln} B）',
-                       fill=C_OFF, size=13, color=GREY)
+        a = piece_start[i]
+        b = a
+        while b < a + n:                                 # 一条记录可能跨字：按字切段画
+            rr, off = b // ROW, b % ROW
+            ln = min(ROW - off, a + n - b)
+            txt = f'{name}（{n} B）' if b == a else f'续 {ln} B'
+            s.cell(x0 + off * px, y0 + rr * rh, ln * px - 4, 44, txt, fill=colors[i], size=12, color='#1f2937')
+            b += ln
+    s.cell(x0 + TAIL_O * px, y0 + (NROWS_O - 1) * rh, (ROW - TAIL_O) * px - 4, 44, f'空 {ROW - TAIL_O} B', fill=C_OFF, size=12, color=GREY)
+    yy = y0 + NROWS_O * rh + 16
+    s.rich(x0 - 16, yy + 22, f'字 {LT_ROW_O}', 15, 'end')
+    s.cell(x0, yy, 6 * px - 4, 44, '长度表 [17, 40, 32]', fill=C_SIDE, size=12, color='#1f2937')
+    s.cell(x0 + 6 * px, yy, (ROW - 6) * px - 4, 44, '3 × 24 bit（16 bit 长度 + 8 bit tokmax）；编译链另给地址，由 CCU 写', fill='white', size=12, color=GREY)
+    s.rich(x0, yy + 66, f'起点 {piece_start}（前几项之和）；读记录 1 = 字节 17 起 40 B，覆盖字 0、1，读口出口按 17 移位；末字 {TAIL_O} B 带 be 写出', 13, 'start', INK, 500)
     s.save('FIG-L2_SRAM-OBJ-ALIGN.svg')
 
 def md():

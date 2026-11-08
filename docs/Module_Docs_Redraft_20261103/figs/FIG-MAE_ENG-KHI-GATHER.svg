@@ -41,5 +41,5 @@
 <text xml:space="preserve" x="1270.0" y="322.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">全码记录 192–255：lo 4 个存储字</tspan></text>
 <text xml:space="preserve" x="780" y="400" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">每 key 一条 128 B 记录，平面分开；E8M0 尺度另段落 S 类</tspan></text>
 <text xml:space="preserve" x="30" y="490" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">MAE 只看项字节数、段数与运算字段，不知道是哪种模式</tspan></text>
-<text xml:space="preserve" x="1476" y="508" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-06</tspan></text>
+<text xml:space="preserve" x="1476" y="508" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
 </svg>

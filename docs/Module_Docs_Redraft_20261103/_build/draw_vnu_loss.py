@@ -1,7 +1,7 @@
 """VNU 损失单元（LOSS）需求篇（11-04 重写稿）的三张图。Owner: WangYizhao · 2026-11-04
 用法（在 Module_Docs_Redraft_20261103 目录下）：python -X utf8 -I _build/draw_vnu_loss.py
 输出（figs/）：
-  FIG-VNU_LOSS-CONN     对外连接：VNU 组框内的 SEL / SMP / NLU / QNT，经组对外的出口级、CRU（命令与标量网）、CCU、RRAM 口、L1 发送侧
+  FIG-VNU_LOSS-CONN     对外连接：VNU 组框内的 SEL / SMP / NLU / QNT，经组对外的出口级、CRU（命令网）、CCU、RRAM 口、L1 发送侧
   FIG-VNU_LOSS-ORDER    参与词号列表：两组候选合并、去重、升序；dz 与列表同序压紧，IGE 按同一列表取列
   FIG-VNU_LOSS-LOGPROB  截断分布 log-prob：K_top = 4、T = 1，减最大值、exp、求和、ln
 脚本断言：列表与 log-prob 的数值由本脚本按正文规则算出。
@@ -51,9 +51,9 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f.block('ccu', 588, 28, 308, 126, '本核 CCU', '指令', kind='control')
     f.block('exit', 42, 322, 266, 98, 'MXU 出口级', '', kind='compute')
     # 11-05 晚第二轮：写 L1 = 向 A 类写集合器里本单元的入口 FIFO 写、wr_stall 回本单元
-    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；与 CRU 的部分量与合并值走命令与标量网；上行由 L1 发送侧发出
-    # 11-05 第三轮（V18-TP-21）：交 CRU 的部分量与合并值经 CCU 中转，LOSS 在命令与标量网上无端口；CRU 只与 CCU 相连
-    f.block('cru', 42, 28, 266, 126, 'CRU', '命令与标量网（FP32）', kind='external')
+    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；与 CRU 的部分量与合并值走命令网；上行由 L1 发送侧发出
+    # 11-05 第三轮（V18-TP-21）：交 CRU 的部分量与合并值经 CCU 中转，LOSS 在命令网上无端口；CRU 只与 CCU 相连
+    f.block('cru', 42, 28, 266, 126, 'CRU', '命令网（FP32）', kind='external')
     f.block('loss', 588, 294, 308, 434, 'LOSS', '监督梯度\n截断分布统计', kind='function')
     f.block('sel', 1062, 238, 252, 112, 'SEL', '', kind='function')
     f.block('smp', 1062, 392, 252, 112, 'SMP', '', kind='function')
@@ -62,7 +62,7 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f.block('l1p', 588, 840, 308, 84, 'VNU 的 RRAM 口', '激活类读口 / 写集合器 FIFO', kind='external')
     f.block('l1', 588, 1064, 308, 84, 'L1 的 A 类空间', '', kind='memory')
     f.block('c2h', 1008, 1064, 336, 84, 'L1 发送侧', 'MAE 发送命令 → C2H', kind='external')
-    f.net('c_cmd', 'ccu', 'loss', '启用 / 温度 / CCU → 合并值寄存器', kind='ctrl')
+    f.net('c_cmd', 'ccu', 'loss', '启用 / 温度', kind='ctrl')
     f.net('o_ccu', 'loss', 'ccu', 'stall_vnu', kind='ctrl')
     f.net('i_exit', 'exit', 'loss', 'logit 流 / z_S')
     # 11-05 用户定：LOSS 不设结果寄存器（梯度范数平方部分和由 NLU 累加），CCU → CRU 的部分量线撤

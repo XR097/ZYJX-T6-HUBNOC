@@ -9,8 +9,10 @@ MAE 组 = MAE_ENG、NI_EXT、NI_INT、MAE_IDN、MAE_DSU（用户 11-05 夜，V18
 组外直接对端（各篇位置、大小、标题相同）：
   上方：命令与标量网（hub 控制道：搬运指令、事件、错误、长度转发）、LIC（MAE 指令入口）、CIF（PIN 窗口常量表 · 首错）
   左侧：DDR 控制器 P0、SoC 片上互联总线（HSRAM P2 · DDR P2 · FMC 主端）、系统 DMA / FMC 从端
-  下方：中央 L2（NI 写口 / NI 返回读口）、四核 IDN 接收桥（每核 4 × 8 B 链路，NWB）
+  下方：中央 L2（NI 写口 / NI 返回读口）、四核 IDN 接收桥（每核 1 条 32 B 链路，NWB；11-08 晚 V18-HUB-04 起）
 本单元不用的对端画灰（dim），不连线；对端之后的去向不画。
+2026-11-08 晚（V18-HUB-04）：本文件全部生图函数已退役、不出图；只把外框对端与 NI_INT-CONN 的 IDN 标签改为每核 1 条 32 B，
+  _retired_fig_idn（MAE_IDN-CONN）保留 11-06 原文、不改。
 """
 import sys
 from pathlib import Path
@@ -44,7 +46,7 @@ PEERS = {
     'noc': (28, 500, 252, 120, 'SoC 片上互联总线', 'HSRAM P2 · DDR P2 · FMC 主端', 'external'),
     'dma': (28, 670, 252, 110, '系统 DMA / FMC 从端', 'PIN 的写入方', 'external'),
     'l2': (600, 940, 300, 100, '中央 L2', 'NI 写口 / NI 返回读口', 'memory'),
-    'idn': (1060, 940, 380, 100, '四核 IDN 接收桥（每核 4 条）', 'NWB', 'memory'),
+    'idn': (1060, 940, 380, 100, '四核 IDN 接收桥（每核 1 条 32 B）', 'NWB', 'memory'),
 }
 
 
@@ -115,13 +117,13 @@ def _retired_fig_ni_int():
         ('ext', 'NI_EXT', 'M0 / M1 / PIN 协议端', True),
         ('wsu', 'MAE_DSU', '数据整形', True),
         ('eng', 'MAE_ENG', '搬运指令', True),
-        ('idn_u', 'MAE_IDN', '4 道 → 四核', True),
+        ('idn_u', 'MAE_IDN', '按核集合 → 四核', True),
     ], slots=MEMBER_SLOTS_WIDE)
     # 组内
     f.net('c_cmd', 'eng', 'nii', '搬运指令', kind='ctrl')
     f.net('i_rd', 'ext', 'nii', '读返回 / PIN 存储字')
     f.net('o_wr', 'nii', 'ext', '写出数据')
-    f.net('o_idn', 'nii', 'idn_u', '4 道数据 + addr')
+    f.net('o_idn', 'nii', 'idn_u', '32 B + addr + 核集合')
     f.net('o_wsu', 'nii', 'wsu', '整形输入')
     f.net('i_wsu', 'wsu', 'nii', '整形输出')
     # 组外
@@ -151,7 +153,7 @@ def _retired_fig_idn():
 
 def _retired_fig_dsu():
     _registry = 'FIG-MAE_DSU-CONN.svg'  # 供 build_figure_registry 识别产出
-    f = frame('MAE_DSU-CONN', 'dsuu', 'MAE_DSU', '四种整形模式\n半字合并 · 转置\n块尺度与旁带\n两平面合并\n两源 DDR · L2\n两宿 L1 · L2',
+    f = frame('MAE_DSU-CONN', 'dsuu', 'MAE_DSU', '四种整形模式\n按字重排 · 转置\n块尺度与旁带\n两平面合并\n两源 DDR · L2\n两宿 L1 · L2',
               set())
     members(f, [
         ('nii', 'NI_INT', '分路 · NI-L2C', True),

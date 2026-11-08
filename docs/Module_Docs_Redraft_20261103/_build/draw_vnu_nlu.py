@@ -2,7 +2,7 @@
 用法（在 Module_Docs_Redraft_20261103 目录下）：python -X utf8 -I _build/draw_vnu_nlu.py [--md]
 输出（figs/）：
   FIG-VNU_NLU-CONN            对外连接：VNU 组框内 NLU 与 SEL、QNT、SMP / LOSS / OPT；框外 MXU 出口级、本核 CCU、
-                              IDN（落地 L1）、CRU（命令与标量网）；L1 经 VNU 的 RRAM 口（11-05 同步传输协议篇）
+                              IDN（落地 L1）、CRU（命令网）；L1 经 VNU 的 RRAM 口（11-05 同步传输协议篇）
   FIG-VNU_NLU-NORM-SPLIT      2 个核各持 4 个通道的 RMSNorm：部分和 → 合并 → 回送 → 各自缩放
   FIG-VNU_NLU-ONLINE-SOFTMAX  1 个查询行、2 个更新组（每组 4 个 key，到达组 2 个 key）：m_run、p~、α、l、O
   FIG-VNU_NLU-STREAM-SUM      6 个 key、区块长 4、2 个通道：逐通道 sum / min / max 的流式状态与区块输出
@@ -179,12 +179,12 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f = Figure('VNU_NLU-CONN', '', width=1582, height=1218, out_dir=OUT, max_crossings=2)
     f.container('vnu', 462, 196, 994, 784, 'VNU 组')
     # 11-05 晚第二轮：写 L1 = 向 A 类写集合器里本单元的入口 FIFO 写、wr_stall 回本单元
-    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；IDN 落地 L1 后读入；与 CRU 的标量走命令与标量网；撤 ULB 与"VNU 上行口"
+    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；IDN 落地 L1 后读入；与 CRU 的标量走命令网；撤 ULB 与"VNU 上行口"
     f.block('ccu', 714, 28, 308, 126, '本核 CCU', '指令 / 参数表 / 地址推理', kind='control')
     f.block('exit', 42, 280, 266, 126, 'MXU 出口级', '', kind='compute')
     f.block('idn', 42, 1064, 266, 84, 'IDN', '经 NWB 落地 L1', kind='external')
-    # 11-05 第三轮（V18-TP-21）：交 CRU 的标量经 CCU 中转，NLU 在命令与标量网上无端口；CRU 只与 CCU 相连
-    f.block('cru', 42, 28, 266, 126, 'CRU', '命令与标量网（FP32）', kind='external')
+    # 11-05 第三轮（V18-TP-21）：交 CRU 的标量经 CCU 中转，NLU 在命令网上无端口；CRU 只与 CCU 相连
+    f.block('cru', 42, 28, 266, 126, 'CRU', '命令网（FP32）', kind='external')
     # 11-05 夜：GDN 状态更新暂不写入 NLU（留给 MXU / NLU / CCU 设计者），连接图保持五种运算形态
     f.block('nlu', 714, 266, 308, 462, 'NLU', '逐元素 / 归约与归一化\n二维旋转 / 在线 softmax\n流式累加', kind='function')
     f.block('sel', 1162, 266, 266, 98, 'SEL', '', kind='function')
@@ -192,8 +192,8 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f.block('sol', 1162, 602, 266, 112, 'SMP / LOSS / OPT', '分时借用元件', kind='function')
     f.block('l1p', 714, 840, 308, 84, 'VNU 的 RRAM 口', '激活类读口 / 写集合器 FIFO', kind='external')
     f.block('l1', 714, 1064, 308, 84, 'L1 的 A 类空间', '行状态 / 暂存 / 嵌入行', kind='memory')
-    f.net('c_cmd', 'ccu', 'nlu', '指令 / CCU → 合并值寄存器', kind='ctrl')
-    f.net('o_ccu', 'nlu', 'ccu', 'stall_vnu / 结果寄存器 → CCU', kind='ctrl')
+    f.net('c_cmd', 'ccu', 'nlu', '指令 / 参数', kind='ctrl')
+    f.net('o_ccu', 'nlu', 'ccu', 'stall_vnu', kind='ctrl')
     f.net('o_cru', 'ccu', 'cru', '部分值', kind='ctrl')
     f.net('i_cru', 'cru', 'ccu', '合并值', kind='ctrl')
     f.net('i_exit', 'exit', 'nlu', '分数 / P×V / q、k / x′')

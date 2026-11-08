@@ -42,10 +42,7 @@
 <path d="M20.0,415.0 L90.0,415.0" stroke="#1d4ed8" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
 <path d="M20.0,435.0 L90.0,435.0" stroke="#1d4ed8" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
 <path d="M90.0,448.0 L20.0,448.0" stroke="#b91c1c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="6,4" marker-end="url(#m_stall)"/>
-<path d="M20.0,505.0 L90.0,505.0" stroke="#1d4ed8" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
-<path d="M20.0,520.0 L90.0,520.0" stroke="#1d4ed8" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
-<path d="M20.0,535.0 L90.0,535.0" stroke="#1d4ed8" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
-<path d="M20.0,550.0 L90.0,550.0" stroke="#1d4ed8" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
+<path d="M20.0,530.0 L90.0,530.0" stroke="#1d4ed8" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_inter)"/>
 <path d="M90.0,578.0 L20.0,578.0" stroke="#b91c1c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="6,4" marker-end="url(#m_stall)"/>
 <path d="M300.0,390.0 L400.0,390.0" stroke="#0f766e" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_incore)"/>
 <path d="M300.0,520.0 L314.0,520.0 A6.0,6.0 0 0 1 326.0,520.0 L354.0,520.0 A6.0,6.0 0 0 1 366.0,520.0 L400.0,520.0" stroke="#0f766e" stroke-width="2.6" fill="none" stroke-linejoin="round" marker-end="url(#m_incore)"/>
@@ -76,8 +73,8 @@
 <text x="132.7" y="334.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">H2C 链路 0–3（hub）</text>
 <rect x="32.0" y="459.5" width="45.9" height="21" rx="5" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.1"/>
 <text x="39.0" y="470.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b91c1c">ready</text>
-<rect x="111.8" y="465.0" width="166.4" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
-<text x="118.8" y="476.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">IDN 链路 0–3（MAE_IDN）</text>
+<rect x="101.4" y="465.0" width="187.3" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
+<text x="108.4" y="476.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">IDN 链路 · 32 B（HUB_IDN）</text>
 <rect x="32.0" y="589.5" width="45.9" height="21" rx="5" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.1"/>
 <text x="39.0" y="600.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b91c1c">ready</text>
 <rect x="1254.3" y="371.0" width="161.4" height="22" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.1"/>
@@ -97,13 +94,13 @@
 <rect x="1788.0" y="519.0" width="77.8" height="22" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.1"/>
 <text x="1795.0" y="530.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">CCU 逐拍给</text>
 <text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-L1_SRAM-ARCH  L1 SRAM：两堆、写集合器、读口与核间桥</text>
-<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">青：RRAM 道（每道一个 bank）· 蓝：核间握手写流 ·橙：命令与标量网 · 红虚线：stall_tx / wr_stall / ready · 图示某一阶段：堆 0 是写堆、堆 1 是读堆，下一阶段由地址堆位对调</text>
+<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">青：RRAM 道（每道一个 bank）· 蓝：核间握手写流 ·橙：命令网 · 红虚线：stall_tx / wr_stall / ready · 图示某一阶段：堆 0 是写堆、堆 1 是读堆，下一阶段由指令的堆选对调</text>
 <text x="940.0" y="123.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#b45309">本核 CCU</text>
 <text x="940.0" y="144.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">L1 全部读与发送侧读的 en / wea / addr · 排开激活类读口同拍撞 bank</text>
 <text x="940.0" y="162.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">装写集合器优先级表与 A 类配置 · 收 stall_tx 与各写计数</text>
 <text x="940.0" y="180.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">发令 C2H：给发送桥逐拍 addr、给 C2H 分流下通路选择</text>
 <text x="1695.0" y="132.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#b45309">MAE_ENG</text>
-<text x="1695.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">收发出报告（命令与标量网）</text>
+<text x="1695.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">收发出报告（命令网）</text>
 <text x="1695.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">落地链路的 addr 由 MAE 搬运引擎给</text>
 <text x="574.0" y="266.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">L1 SRAM（每核一份，24 个 32 B 单端口 bank + 尺度 SRAM）</text>
 <text x="589.0" y="312.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">堆 0（本阶段：写堆）</text>
@@ -134,11 +131,11 @@
 <text x="195.0" y="414.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">各一条入口 FIFO + skid</text>
 <text x="195.0" y="431.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">ready = FIFO 未满</text>
 <text x="195.0" y="517.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d4ed8">NWB</text>
-<text x="195.0" y="537.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">IDN 接收桥 · 4 条 8 B 链路</text>
-<text x="195.0" y="554.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">各一个攒字寄存器</text>
-<text x="195.0" y="571.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">四拍凑满整字即写</text>
+<text x="195.0" y="537.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">IDN 接收桥 · 1 条 32 B 链路</text>
+<text x="195.0" y="554.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">入口 FIFO + skid</text>
+<text x="195.0" y="571.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">ready = FIFO 未满</text>
 <text x="195.0" y="704.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#6d28d9">核内写者</text>
-<text x="195.0" y="723.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">QNT · 出口级 · NLU</text>
+<text x="195.0" y="723.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">QNT · NLU（含出口级）</text>
 <text x="195.0" y="740.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">SEL / SMP / LOSS / OPT</text>
 <text x="195.0" y="757.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">各一条入口 FIFO</text>
 <text x="195.0" y="774.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">收自己的 wr_stall</text>
@@ -164,7 +161,7 @@
 <text x="1565.0" y="431.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">尺度 / 旁带行同拍到</text>
 <text x="1565.0" y="605.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#6d28d9">激活类读口的客户</text>
 <text x="1565.0" y="625.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">pod 激活记录缓冲</text>
-<text x="1565.0" y="642.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">NLU · QNT · 出口级（旧值）</text>
+<text x="1565.0" y="642.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">NLU（含出口级，读旧值）· QNT</text>
 <text x="1565.0" y="659.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">SEL / SMP / LOSS / OPT</text>
 <text x="1565.0" y="676.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">任一拍每口一个客户</text>
 <text x="1565.0" y="693.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">dout 去向由 CCU 定</text>
@@ -182,11 +179,11 @@
 <text x="44.0" y="1003.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">落地写地址 = addr；各入链路、各写者写计数 → CCU</text>
 <text x="635.0" y="945.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">RRAM 道</text>
 <text x="635.0" y="969.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">核间握手写流</text>
-<text x="635.0" y="993.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">命令与标量网</text>
+<text x="635.0" y="993.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">命令网</text>
 <text x="635.0" y="1017.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">stall / wr_stall / ready</text>
 <text x="894.0" y="943.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d">A 类配置（§1.6）</text>
 <text x="894.0" y="964.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">4 bank：A = bank 8–11，写集合口 4 道</text>
 <text x="894.0" y="985.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">8 bank：W1 归 A，写 8 道，lane 只剩 128 B/拍</text>
 <text x="894.0" y="1006.5" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">两种配置写者接口不变</text>
-<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-05</text>
+<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-08</text>
 </svg>

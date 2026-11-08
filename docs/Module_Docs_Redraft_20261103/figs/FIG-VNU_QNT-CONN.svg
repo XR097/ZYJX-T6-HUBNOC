@@ -5,10 +5,10 @@
 <text x="476.0" y="218" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d">VNU 组</text>
 <rect x="714" y="28" width="308" height="126" rx="5" fill="#e5edf6" stroke="#172b4d" stroke-width="2.6"/>
 <text x="822.0" y="79.10000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">本核 CCU</text>
-<text x="765.0" y="105.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">指令 / 地址推理 / 标量中转</text>
-<rect x="42" y="280" width="266" height="126" rx="5" fill="#fff0d2" stroke="#172b4d" stroke-width="2.6"/>
-<text x="114.0" y="331.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">MXU 出口级</text>
-<text x="112.0" y="357.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">推送链（BF16）</text>
+<text x="765.0" y="105.70000000000002" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">指令 / 地址推理 / 输出去向</text>
+<rect x="42" y="280" width="266" height="126" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="100.5" y="331.09999999999997" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">MXU 阵列 AEB</text>
+<text x="58.5" y="357.69999999999993" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用（经 NLU 出口级）</text>
 <rect x="42" y="476" width="266" height="126" rx="5" fill="#f7f8fa" stroke="#b6bec9" stroke-width="2" stroke-dasharray="7 5"/>
 <text x="90.0" y="527.1" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#9aa4b0">MXU FBA 直达口</text>
 <text x="132.5" y="553.7" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#9aa4b0">本单元不用</text>
@@ -24,7 +24,7 @@
 <text x="797.0" y="1094.1000000000001" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">L1 的 A 类空间</text>
 <text x="790.5" y="1120.7000000000003" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d">记录 / 卸载 / 装载表</text>
 <rect x="1218" y="266" width="266" height="98" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
-<text x="1328.5" y="315.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NLU</text>
+<text x="1265.5" y="315.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">NLU（含出口级）</text>
 <rect x="1218" y="434" width="266" height="98" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
 <text x="1333.0" y="483.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d">SEL</text>
 <rect x="1218" y="602" width="266" height="98" rx="5" fill="#e5f1ec" stroke="#172b4d" stroke-width="2.6"/>
@@ -33,8 +33,6 @@
 <path d="M840.0,254.0 L840,266" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
 <path d="M882,154 L882,266" fill="none" stroke="#466b89" stroke-width="2.3" stroke-dasharray="9 6"/>
 <path d="M882.0,166.0 L882,154" stroke="#466b89" stroke-width="2.3" marker-end="url(#ac)"/>
-<path d="M308,378 L714,378" fill="none" stroke="#1d2530" stroke-width="3"/>
-<path d="M702.0,378.0 L714,378" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
 <path d="M840,728 L840,840" fill="none" stroke="#1d2530" stroke-width="3"/>
 <path d="M840.0,828.0 L840,840" stroke="#1d2530" stroke-width="3" marker-end="url(#ad)"/>
 <path d="M882,728 L882,840" fill="none" stroke="#1d2530" stroke-width="3"/>
@@ -56,17 +54,13 @@
 <circle cx="840" cy="266" r="3" fill="#466b89"/>
 <circle cx="840" cy="154" r="3" fill="#466b89"/>
 <path d="M840,226.8 L818,226.8" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
-<rect x="588.0" y="213.8" width="230" height="26" rx="2" fill="white"/>
-<text x="595.0" y="226.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">指令 / CCU → 合并值寄存器</text>
+<rect x="718.0" y="213.8" width="100" height="26" rx="2" fill="white"/>
+<text x="725.0" y="226.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">指令 / 参数</text>
 <circle cx="882" cy="266" r="3" fill="#466b89"/>
 <circle cx="882" cy="154" r="3" fill="#466b89"/>
 <path d="M882,226.8 L904,226.8" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
-<rect x="904.0" y="213.8" width="300" height="26" rx="2" fill="white"/>
-<text x="911.0" y="226.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">keep / F / stall / 结果寄存器 → CCU</text>
-<circle cx="714" cy="378" r="3" fill="#1d2530"/>
-<circle cx="308" cy="378" r="3" fill="#1d2530"/>
-<rect x="474.4000000000001" y="343.0" width="195" height="26" rx="2" fill="white"/>
-<text x="481.4" y="356.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">投影结果 / x′ / v / 梯度</text>
+<rect x="904.0" y="213.8" width="135" height="26" rx="2" fill="white"/>
+<text x="911.0" y="226.8" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#466b89">keep / F / stall</text>
 <circle cx="840" cy="840" r="3" fill="#1d2530"/>
 <circle cx="840" cy="728" r="3" fill="#1d2530"/>
 <path d="M840,784.0 L818,784.0" stroke="#777" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
@@ -83,8 +77,8 @@
 <circle cx="882" cy="924" r="3" fill="#1d2530"/>
 <circle cx="1022" cy="294" r="3" fill="#1d2530"/>
 <circle cx="1218" cy="294" r="3" fill="#1d2530"/>
-<rect x="1070.5" y="259.0" width="99" height="26" rx="2" fill="white"/>
-<text x="1077.5" y="272.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">待量化向量</text>
+<rect x="1031.0" y="259.0" width="178" height="26" rx="2" fill="white"/>
+<text x="1038.0" y="272.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530">待量化 / x′ / v / 梯度</text>
 <circle cx="1218" cy="336" r="3" fill="#1d2530"/>
 <circle cx="1022" cy="336" r="3" fill="#1d2530"/>
 <rect x="1044.5" y="301.0" width="151" height="26" rx="2" fill="white"/>

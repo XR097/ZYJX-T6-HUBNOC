@@ -3,15 +3,16 @@
 输出（figs/）：
   FIG-L1_SRAM-ARCH   两堆 × (W0 / W1 / A / S)、写集合器（W 类 8 道、A 类 4 / 8 道、S 类 1 道）、来源入口 FIFO、
                      lane 读口 8 道、4 个激活类读口、接收桥 LDP × 4 / NWB、发送侧桥 + AEB 桥合并、
-                     命令与标量网、stall_tx / wr_stall / ready 走向
-2026-11-05 夜（V18-TP-26…34）：核间改称带地址的握手写流；IDN 为 4 条独立 8 B 链路（MAE_IDN），NWB 每链路一个攒字寄存器；
+                     命令网、stall_tx / wr_stall / ready 走向
+2026-11-05 夜（V18-TP-26…34）：核间改称带地址的握手写流；IDN 当时为 4 条独立 8 B 链路（11-08 晚 V18-HUB-04 起：每核一条 32 B 链路，
+                     NWB 与 LDP 相同，一条入口 FIFO + skid、整字直写，撤攒字寄存器）；
                      完成改计数制（撤 L1 向 MAE 报完成）
 2026-11-06（V18-TP-35…38）：C2H 由本核 CCU 发令（发送桥 = CCU 的 C2H 通道，CCU 给逐拍 addr / dest，
                      撤 MAE 的 C2H 发送命令）；CCU → MAE 发出报告；写计数（写进 bank 时加一）交 CCU，撤排空；C2H 口前按单位合并
 依据：DATA_TRANSFER_PROTOCOL.md §1.1、§3.1–3.3、§4、§6；V1.8 V18-TP-17 / 18 / 20、V18-TP-26…34；用户 11-05："这两个模块比较重要，需要更直观的说明"。
 复用 draw_tp_arch.py 的 Fig 类与自检（文字不重叠、不跨框、不压线；连线不穿色块、不共线；交叉自动跳线）。
 取代 draw_l1_sram.py 的 FIG-L1_SRAM-CONN（已退役）。
-2026-11-06（V18-TP-41 / 42）：信号与核内 RRAM 口同名（en / ready / din / be / addr / dest）；撤 last：NWB 四拍凑满整字即写，C2H 单位边界不上链路。
+2026-11-06（V18-TP-41 / 42）：信号与核内 RRAM 口同名（en / ready / din / be / addr / dest）；撤 last：IDN 每拍整字直写（11-08 晚起），C2H 单位边界不上链路。
 """
 import sys
 from pathlib import Path
@@ -24,13 +25,13 @@ D = '6,4'
 
 def fig_l1_arch():
     s = Fig('FIG-L1_SRAM-ARCH.svg', 'FIG-L1_SRAM-ARCH  L1 SRAM：两堆、写集合器、读口与核间桥',
-            '青：RRAM 道（每道一个 bank）· 蓝：核间握手写流 ·橙：命令与标量网 · 红虚线：stall_tx / wr_stall / ready · '
-            '图示某一阶段：堆 0 是写堆、堆 1 是读堆，下一阶段由地址堆位对调')
+            '青：RRAM 道（每道一个 bank）· 蓝：核间握手写流 ·橙：命令网 · 红虚线：stall_tx / wr_stall / ready · '
+            '图示某一阶段：堆 0 是写堆、堆 1 是读堆，下一阶段由指令的堆选对调')
     # ---------------- 上方：CCU、MAE ----------------
     s.block(560, 104, 760, 96, '本核 CCU',
             'L1 全部读与发送侧读的 en / wea / addr · 排开激活类读口同拍撞 bank\n'
             '装写集合器优先级表与 A 类配置 · 收 stall_tx 与各写计数\n发令 C2H：给发送桥逐拍 addr、给 C2H 分流下通路选择', 'ctlu', 20, 13)
-    s.block(1500, 104, 390, 96, 'MAE_ENG', '收发出报告（命令与标量网）\n落地链路的 addr 由 MAE 搬运引擎给', 'ctlu', 19, 13)
+    s.block(1500, 104, 390, 96, 'MAE_ENG', '收发出报告（命令网）\n落地链路的 addr 由 MAE 搬运引擎给', 'ctlu', 19, 13)
     s.line([(1320, 152), (1500, 152)], 'ctrl', 3.0)
     s.tag(1410, 134, '发出报告', 'ctrl', 12)
     # ---------------- 中间：L1 两堆 ----------------
@@ -50,8 +51,8 @@ def fig_l1_arch():
     s.text(1092, 225, 'en · wea · be · addr（每道一组）', 12, 'end', '#0f766e', 700)
     # ---------------- 左侧：来源与写集合口 ----------------
     s.block(90, 350, 210, 110, 'LDP × 4', 'H2C 接收桥 · 4 条链路\n各一条入口 FIFO + skid\nready = FIFO 未满', 'inter', 17, 12)
-    s.block(90, 490, 210, 110, 'NWB', 'IDN 接收桥 · 4 条 8 B 链路\n各一个攒字寄存器\n四拍凑满整字即写', 'inter', 17, 12)
-    s.block(90, 680, 210, 120, '核内写者', 'QNT · 出口级 · NLU\nSEL / SMP / LOSS / OPT\n各一条入口 FIFO\n收自己的 wr_stall', 'comp', 17, 12)
+    s.block(90, 490, 210, 110, 'NWB', 'IDN 接收桥 · 1 条 32 B 链路\n入口 FIFO + skid\nready = FIFO 未满', 'inter', 17, 12)
+    s.block(90, 680, 210, 120, '核内写者', 'QNT · NLU（含出口级）\nSEL / SMP / LOSS / OPT\n各一条入口 FIFO\n收自己的 wr_stall', 'comp', 17, 12)
     s.block(400, 360, 140, 220, 'W 类写集合口', 'NWB 或 H2C 多播\n权重块，按位点\n二选一\n8 道\n道 b ↔ bank b', 'incore', 15, 12)
     s.block(400, 600, 140, 170, 'A 类写集合器', '入口 FIFO ≤ 9 条\n每拍每道按优先级\n选队头落该 bank 者\n4 道 / 8 道\n道 i ↔ 列表第 i 项', 'incore', 15, 12)
     s.block(400, 786, 140, 80, 'S 类写口', 'NWB、LDP 两入\n1 道', 'incore', 15, 12)
@@ -61,9 +62,8 @@ def fig_l1_arch():
     s.tag(195, 334, 'H2C 链路 0–3（hub）', 'inter', 12)
     s.line([(90, 448), (20, 448)], 'stall', 2.2, dash=D)
     s.tag(55, 470, 'ready', 'stall', 11)
-    for y in (505, 520, 535, 550):
-        s.line([(20, y), (90, y)], 'inter', 2.0)
-    s.tag(195, 476, 'IDN 链路 0–3（MAE_IDN）', 'inter', 12)
+    s.line([(20, 530), (90, 530)], 'inter', 2.4)
+    s.tag(195, 476, 'IDN 链路 · 32 B（HUB_IDN）', 'inter', 12)
     s.line([(90, 578), (20, 578)], 'stall', 2.2, dash=D)
     s.tag(55, 600, 'ready', 'stall', 11)
     # 来源 → 集合口
@@ -83,7 +83,7 @@ def fig_l1_arch():
     s.text(462, 300, '优先级表 · A 类配置', 12, 'end', '#0f766e', 700)
     # ---------------- 右侧：读出 ----------------
     s.block(1440, 330, 250, 150, '4 个 pod 的 WWB', '16 条 lane · 按 pod 掩码锁存\n槽 s：lane s / s⊕8 二选一\n尺度 / 旁带行同拍到', 'comp', 17, 12)
-    s.block(1440, 560, 250, 180, '激活类读口的客户', 'pod 激活记录缓冲\nNLU · QNT · 出口级（旧值）\nSEL / SMP / LOSS / OPT\n任一拍每口一个客户\ndout 去向由 CCU 定', 'comp', 17, 12)
+    s.block(1440, 560, 250, 180, '激活类读口的客户', 'pod 激活记录缓冲\nNLU（含出口级，读旧值）· QNT\nSEL / SMP / LOSS / OPT\n任一拍每口一个客户\ndout 去向由 CCU 定', 'comp', 17, 12)
     s.block(1440, 780, 250, 110, '发送侧 + 发送桥', '= CCU 的 C2H 通道\n读 L1 占一个激活类读口时隙\naddr 由 CCU 逐拍给', 'inter', 16, 12)
     s.block(1440, 930, 200, 64, 'AEB 桥', 'K 切分部分和直达口', 'inter', 15, 12)
     s.line([(1231, 400), (1440, 400)], 'incore', 4.0)                                 # W0 → lane
@@ -113,7 +113,7 @@ def fig_l1_arch():
                      '读：读堆无写者；CCU 排开撞 bank；固定 1 拍，无 busy',
                      '落地写地址 = addr；各入链路、各写者写计数 → CCU'], 12, w=500, title='写集合与读出规则')
     s.legend(575, 925, [('incore', 'RRAM 道', 'solid'), ('inter', '核间握手写流', 'solid'),
-                        ('ctrl', '命令与标量网', 'solid'), ('stall', 'stall / wr_stall / ready', '6,4')],
+                        ('ctrl', '命令网', 'solid'), ('stall', 'stall / wr_stall / ready', '6,4')],
              cols=1, colw=270, size=12, rowh=24)
     s.note(880, 925, ['4 bank：A = bank 8–11，写集合口 4 道',
                       '8 bank：W1 归 A，写 8 道，lane 只剩 128 B/拍',

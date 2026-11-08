@@ -38,3 +38,5 @@ python -X utf8 -I _build/draw_mae_ni_ext.py
 | `FIG-MAE_NI_EXT-CONN.svg` | `draw_mae_conn.py` / `_retired_fig_ni_ext()`（已改名、不在 `__main__` 调用） | 2026-11-06 晚：用户"CONN 图可以退役"，MAE 组单元篇改用协议篇 PPT 式架构图（任务书 `MAE_CRU_MERGE_BRIEF_20261106.md` §1 规则 11）；由 `FIG-MAE_NI_EXT-ARCH` 取代 | `figs/_retired_20261106/` |
 
 - 11-06 晚起，MAE 组单元篇的架构图都在 `draw_mae_arch.py` 里加函数；外圈（六单元 + 组外对端位置）四张图相同，本单元不用的对端与同组单元画灰框；只画与本单元直接相连的线，线上只标名与位宽，图说在 `MAE_ARCH_CAPTIONS_20261106.md`。
+- **11-07（V18-HUB-01）IDN 归 HUB 组**：`draw_mae_arch.py` 的 MAE 组外圈改为五单元（标题"MAE 组 · 五单元"），下方对端 `PEERS['idn']` 由"四核 IDN 接收桥"改为"HUB_IDN（入站分发网）"；同组单元里删去 MAE_IDN 小框；`fig_idn()` 改名 `_retired_fig_idn()`，HUB_IDN 的架构图移到 `draw_hub_idn.py` / `fig_arch()`。 本图：底部灰框只剩 MAE_DSU、MAE_CRU。
+- **11-08 晚（V18-HUB-04）**：共用外圈的 HUB_IDN 对端副标题改为"一路 32 B → 按核集合分发 → 四核 NWB"（本图中为灰框）；本图其余不变，自检 0 项。

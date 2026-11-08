@@ -168,12 +168,12 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f = Figure('VNU_QNT-CONN', '', width=1640, height=1218, out_dir=OUT, max_crossings=2)
     f.container('vnu', 462, 196, 1052, 784, 'VNU 组')
     # 11-05 晚第二轮：写 L1 = 向 A 类写集合器里本单元的入口 FIFO 写、wr_stall 回本单元
-    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；装载表经 H2C 落地 L1；amax 走命令与标量网；撤 ULB 与"VNU 上行口"
+    # 11-05 按传输协议篇同步：RRAM 口、stall_vnu；装载表经 H2C 落地 L1；amax 走命令网；撤 ULB 与"VNU 上行口"
     f.block('ccu', 714, 28, 308, 126, '本核 CCU', '指令 / 档号 / CCU_GRP', kind='control')
     f.block('exit', 42, 280, 266, 126, 'MXU 出口级', 'BF16', kind='compute')
     f.block('h2c', 42, 1064, 266, 84, '装载表', '经 H2C 落地 L1', kind='external')
-    # 11-05 第三轮（V18-TP-21）：amax 经 CCU 中转，QNT 在命令与标量网上无端口；CRU 只与 CCU 相连
-    f.block('cru', 42, 28, 266, 126, 'CRU', '命令与标量网（FP32）', kind='external')
+    # 11-05 第三轮（V18-TP-21）：amax 经 CCU 中转，QNT 在命令网上无端口；CRU 只与 CCU 相连
+    f.block('cru', 42, 28, 266, 126, 'CRU', '命令网（FP32）', kind='external')
     f.block('qnt', 714, 266, 308, 462, 'QNT', '按组量化编码 / 两平面\n按判决位压紧\n记录组装 / 解码', kind='function')
     f.block('nlu', 1214, 266, 266, 98, 'NLU', '', kind='function')
     f.block('sel', 1214, 434, 266, 98, 'SEL', '', kind='function')
@@ -181,8 +181,8 @@ def _retired_fig_conn():  # 11-05 起由 draw_vnu_conn.py 统一外框生成，�
     f.block('l1p', 714, 840, 308, 84, 'VNU 的 RRAM 口', '激活类读口 / 写集合器 FIFO', kind='external')
     f.block('l1', 714, 1064, 308, 84, 'L1 的 A 类空间', '记录 / 卸载 / 装载表', kind='memory')
     f.block('ulb', 1230, 1064, 300, 84, 'L1 发送侧', 'MAE 发送命令 → C2H → L2', kind='external')
-    f.net('c_cmd', 'ccu', 'qnt', '指令 / CCU → 合并值寄存器', kind='ctrl')
-    f.net('o_grp', 'qnt', 'ccu', 'keep / F / stall / 结果寄存器 → CCU')
+    f.net('c_cmd', 'ccu', 'qnt', '指令 / 参数', kind='ctrl')
+    f.net('o_grp', 'qnt', 'ccu', 'keep / F / stall')
     f.net('o_cru', 'ccu', 'cru', 'amax 部分值', kind='ctrl')
     f.net('i_cru', 'cru', 'ccu', '共同 amax', kind='ctrl')
     f.net('i_exit', 'exit', 'qnt', '投影结果 / x′ / v / 梯度')

@@ -11,3 +11,6 @@
 再生成：在 `Module_Docs_Redraft_20261103` 下 `python -X utf8 -I _build/draw_mae_integration.py`，再 `F:\QQ_Agent\vendor\napcat-shell\node.exe _build\render.cjs figs _build\preview`，最后 `python -X utf8 _build/build_figure_registry.py .`。
 
 > 11-06 深夜第三次（V18-TP-51 / NAME-04）：撤 dest 后重跑相关生图脚本，图上"dest = CRU 分支"改为"去 MAE_CRU 的分支"，C2H 分流改为"按 CCU 的通路选择"，信号框不再列 dest，远端引擎的短消息改名"执行完成"；自检均 0 问题。
+- **11-07（V18-HUB-01 / 02）**：`draw_mae_integration.py` 的 `UNITS` 删去 `idn`，组框标题"五单元"；数据图 D6 = NI_INT → HUB_IDN（x = 1080 下行）、新增 D10 = MAE_DSU → HUB_IDN（x = 1270 下行），撤组内 NI_INT → IDN、DSU → IDN 两线；命令图新增 C12（引擎 → HUB_IDN：核集合 · 单位 · 源顺序，x = 1370 下行），C10 改为 HUB_IDN 对端 → 引擎（x = 1165 上行）；PATH 图只改"MAE_IDN"字样为"HUB_IDN"。三图自检 0 项。
+- **11-07 晚（V18-HUB-03 / CRU-07 / MAE-32）**：数据图 D6 改为 IDN 出口 32 B、撤 D8 / D9 / D10，DSU → IDN 出口画在组内；D5 改为 NI 读口 4 × 32 B；命令图撤 C4 / C11，C12 改为拆分需求；PATH 图改为 4 拍同一字地址（`LANES` 每道 4 拍都是字地址，断言随之改）。
+- **11-08 晚（V18-HUB-04）**：数据图 HUB_IDN 对端副标题改"IDN 出口 32 B（D6）→ 按核集合 → 四核 NWB"；命令图 C12 标签改"C12 核集合（随字）"、HUB_IDN 对端副标题改"核集合（C12）· 写入握手（C10）"；PATH 图改为每个字一拍上该核的 32 B 链路：`BEAT = 32`、`LANE_CORE` 改 `WORD_CORE = [0, 1, 0, 1]`（字 0、2 → 核 0，字 1、3 → 核 1），`LANES` 改为每拍 (核集合, 字地址, be 位数)，②、③ 两段文字与表头改写，断言改为轮流排核 / 每拍整字 be 全 1 / 字节守恒 4 × 32 B = 128 B。两张架构图自检 0 项。

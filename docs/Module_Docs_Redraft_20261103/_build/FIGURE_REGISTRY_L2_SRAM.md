@@ -29,7 +29,7 @@ python -X utf8 -I _build/draw_l2_sram.py
 | `figs/FIG-L2_SRAM-ARCH.svg` | `draw_l2_arch.py` / `fig_arch()` | §2 | 4 象限 × 两堆（4 + 4 bank）；左侧 C2H 分流（只按 dest 分流、不扇入；核 n 的 C2H → L2WP 第 n 条，4 条 × 32 B，addr 24 bit 由各核 CCU 给）四条竖总线与 NI_INT 写一条竖总线；每象限五条入口 FIFO（核 0–3、NI 写）→ 写集合器（四核轮转、NI 写按 MAE 静态表）→ 两堆 bank；象限读口 q ↔ H2C 道 q（dout、en / addr、busy；多播各核独立取走）；NI 返回读竖总线；下方 L2 写计数（(核 0–3, NI 写) × 4 象限 = 20 个，11-06 V18-L2-03）→ MAE（比对应收量后才发读）、错误出口 → hub 控制道 | `phys(h, q, j)` 与 §4.2 同式，断言 `phys(0,2,5) == (17,1)`；`QY`、`QH`、`X_BUS_C`（四核竖总线）/ `X_BUS_N` / `X_NIR`、`FY`（象限内 5 条 FIFO 中线）为版式常量 |
 | `figs/FIG-L2_SRAM-MAP-HEAP.svg` | `draw_l2_sram.py` / `fig_map_heap()` | §4.2、§4.3 | 象限 0 缩小例：堆 0 放对象 X（字 0–9）、Z（字 12–19），堆 1 放 Y（字 0–7），6 个深度 | `OBJS`；断言对象不重叠、两堆 bank 不相交、同拍写堆 1 读堆 0 不撞 bank、§6.5 冲突例落点 |
 | ~~`figs/FIG-L2_SRAM-MAP-RING.svg`~~ **11-06 晚退役**（移至 `figs/_retired_20261106/`，函数改 `_retired_fig_map_ring()`；L2 里的对象不按环形使用，V18-MAE-17） | `draw_l2_sram.py` / `_retired_fig_map_ring()` | §3.3（已改写，无图） | 环形回绕由 MAE 通道做：象限 1 堆 0，基址字 4、环长 12，5 拍从 k = 10 起 → 字 14、15、4、5、6 | `RING_Q, RING_H, RING_BASE, RING_L, RING_K0, RING_N = 1, 0, 4, 12, 10, 5`；断言字号序列；改常量要同步 §3.3 表 |
-| `figs/FIG-L2_SRAM-OBJ-ALIGN.svg` | `draw_l2_sram.py` / `fig_obj_align()` | §3.4 | 对象头 8 B + 记录 17 / 40 / 32 B，各从整字起、尾部补 0，共 5 个存储字 | `PIECES`；断言起始字 `[0,1,2,4]`、补 0 字节数、逐字节读回相同 |
+| `figs/FIG-L2_SRAM-OBJ-ALIGN.svg` | `draw_l2_sram.py` / `fig_obj_align()` | §3.4 | 11-07 改：记录 17 / 40 / 32 B 从字节 0 起紧挨（起点 0 / 17 / 57，共 89 B = 3 字，末字 25 B 带 be），长度表在字 8（11-08 起表项 24 bit = 16 bit 长度 + 8 bit tokmax，V18-TP-60，只改格内文字）；攒字寄存器跨记录连着攒 | `PIECES`、`piece_start`、`NROWS_O`、`TAIL_O`、`LT_ROW_O`；断言起点 `[0,17,57]`、末字 25 B、按起点读回逐字节相同 |
 
 ## 退役
 
