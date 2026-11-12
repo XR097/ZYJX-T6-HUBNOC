@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="380" viewBox="0 0 1260 380">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="28" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#1d2530"><tspan dy="0.0">通道片 P = 64（G = 32）：两组各保留 20、12 个，共 32 个码；F 序号 [5, 37]</tspan></text>
+<text xml:space="preserve" x="544.0" y="72" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 A 类</tspan></text>
+<text xml:space="preserve" x="1128.0" y="72" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 S 类</tspan></text>
+<path d="M1028.0,62.0 L1028.0,312.0" stroke="#172b4d" stroke-width="1.5" fill="none" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="280.0" y="114" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">元数据项（项宽 32 B）</tspan></text>
+<text xml:space="preserve" x="464.0" y="114" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">F 列表</tspan></text>
+<text xml:space="preserve" x="728.0" y="114" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">码块</tspan></text>
+<text xml:space="preserve" x="1128.0" y="114" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">E8M0 项</tspan></text>
+<text xml:space="preserve" x="186" y="158" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 6（E2M3）</tspan></text>
+<rect x="200" y="140" width="60.0" height="36" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="230.0" y="158.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">12 B</tspan></text>
+<rect x="260.0" y="140" width="100.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="310.0" y="158.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">补齐</tspan></text>
+<rect x="384.0" y="140" width="20.0" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<rect x="404.0" y="140" width="140.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="474.0" y="158.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">4 B → 32 B</tspan></text>
+<rect x="568.0" y="140" width="120.0" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="628.0" y="158.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 24 B</tspan></text>
+<rect x="688.0" y="140" width="40.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="738.0" y="158" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">码块片长 32 B</tspan></text>
+<rect x="1048.0" y="140" width="10.0" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.5"/>
+<rect x="1058.0" y="140" width="150.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="1133.0" y="158.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">2 B，末字补 0</tspan></text>
+<text xml:space="preserve" x="186" y="222" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 8（E4M3）</tspan></text>
+<rect x="200" y="204" width="60.0" height="36" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="230.0" y="222.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">12 B</tspan></text>
+<rect x="260.0" y="204" width="100.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="310.0" y="222.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">补齐</tspan></text>
+<rect x="384.0" y="204" width="20.0" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<rect x="404.0" y="204" width="140.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="474.0" y="222.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">4 B → 32 B</tspan></text>
+<rect x="568.0" y="204" width="160.0" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="648.0" y="222.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 32 B</tspan></text>
+<text xml:space="preserve" x="738.0" y="222" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">码块片长 32 B</tspan></text>
+<rect x="1048.0" y="204" width="10.0" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.5"/>
+<rect x="1058.0" y="204" width="150.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="1133.0" y="222.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">2 B，末字补 0</tspan></text>
+<text xml:space="preserve" x="186" y="286" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">w = 16（BF16/FP16）</tspan></text>
+<rect x="200" y="268" width="60.0" height="36" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="230.0" y="286.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">12 B</tspan></text>
+<rect x="260.0" y="268" width="100.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="310.0" y="286.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">补齐</tspan></text>
+<rect x="384.0" y="268" width="20.0" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<rect x="404.0" y="268" width="140.0" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="474.0" y="286.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">4 B → 32 B</tspan></text>
+<rect x="568.0" y="268" width="320.0" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="728.0" y="286.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 64 B</tspan></text>
+<text xml:space="preserve" x="898.0" y="286" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">码块片长 64 B</tspan></text>
+<rect x="1048.0" y="268" width="160.0" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="1128.0" y="286.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">无</tspan></text>
+<text xml:space="preserve" x="30" y="344" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">四部分各自从新的存储字开始、片尾补到 32 B</tspan></text>
+<rect x="560" y="335" width="28" height="18" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="596" y="344" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">补齐</tspan></text>
+</svg>

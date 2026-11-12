@@ -4,7 +4,7 @@
 
 This repository is currently a specification package:
 
-- `docs/specs/` contains the current November 8, 2026 Markdown specifications and referenced SVG figures.
+- `docs/specs/` contains the current V1.8 (November 11, 2026) Markdown specifications and referenced SVG figures. `*_STAGING.md` files are design inputs, not contracts.
 - `docs/specs/ONCHIP_DATAPATH_ARCH.md` is the authority for port counts, widths, and directions; `DATA_TRANSFER_PROTOCOL.md` defines address, ready, and write-acknowledgment semantics.
 - `docs/specs/HUB_NOC.md` defines the L2-side H2C/C2H links and control fabric; `HUB_IDN.md` defines the NI-side 32-byte multicast distributor.
 - `docs/specs/MAE_CRU.md` defines L2-to-L2 reduction within MAE, replacing the retired standalone RHUB architecture.
@@ -39,4 +39,4 @@ Use concise imperative subjects with a scope, such as `docs: clarify HUB-UP writ
 
 ## Architecture and Change Discipline
 
-Treat the current `docs/specs/` Markdown as the source baseline and `docs/hub_spec/` as derived analysis. Follow the architecture port table, protocol rules, and module contracts together; record inconsistencies in `docs/reviews/open_issues_current.md`. Do not silently change bandwidth, handshake semantics, sideband widths, or ownership boundaries. HUB only transports data/control, forks multicast, and returns acknowledgments; MAE_ENG/CCU count completion, MAE_CRU performs reduction through L2, and LIC schedules dependencies.
+Treat the current `docs/specs/` Markdown as the V1.8 source baseline and `docs/hub_spec/` as derived analysis. Follow the architecture port table, protocol rules, and module contracts together; record inconsistencies in `docs/reviews/open_issues_current.md`. Do not silently change bandwidth, handshake semantics, sideband widths, or ownership boundaries. HUB only transports data/control, forks multicast, and returns acknowledgments; MAE_ENG/CCU count completion, MAE_CRU performs reduction through L2, and LIC schedules dependencies.

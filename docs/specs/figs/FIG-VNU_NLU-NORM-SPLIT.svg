@@ -1,98 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="560" viewBox="0 0 1140 560">
+<svg xmlns="http://www.w3.org/2000/svg" width="1162" height="654" viewBox="0 0 1162 654">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="445.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0（通道 0–3）</tspan></text>
-<text xml:space="preserve" x="881.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1（通道 4–7）</tspan></text>
-<text xml:space="preserve" x="295.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 0</tspan></text>
-<text xml:space="preserve" x="395.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 1</tspan></text>
-<text xml:space="preserve" x="495.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 2</tspan></text>
-<text xml:space="preserve" x="595.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 3</tspan></text>
-<text xml:space="preserve" x="731.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 4</tspan></text>
-<text xml:space="preserve" x="831.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 5</tspan></text>
-<text xml:space="preserve" x="931.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 6</tspan></text>
-<text xml:space="preserve" x="1031.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#8a94a6"><tspan dy="0.0">通道 7</tspan></text>
-<text xml:space="preserve" x="234" y="97.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">x</tspan></text>
-<rect x="250" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="295.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="350" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="395.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">−2</tspan></text>
-<rect x="450" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="495.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
-<rect x="550" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="595.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="686" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="731.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="786" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="831.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="886" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="931.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">−2</tspan></text>
-<rect x="986" y="76" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1031.0" y="97.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<text xml:space="preserve" x="234" y="155.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">x</tspan><tspan dy="-5.7" font-size="10">2</tspan></text>
-<rect x="250" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="295.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="350" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="395.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="450" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="495.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
-<rect x="550" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="595.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="686" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="731.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="786" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="831.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="886" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="931.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="986" y="134" width="90" height="42" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1031.0" y="155.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<text xml:space="preserve" x="234" y="213.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">各核部分和 Σx</tspan><tspan dy="-5.7" font-size="10">2</tspan></text>
-<rect x="250" y="192" width="390" height="42" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="445.0" y="213.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0：14</tspan></text>
-<rect x="686" y="192" width="390" height="42" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="881.0" y="213.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1：16</tspan></text>
-<text xml:space="preserve" x="234" y="289.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">CRU 合并</tspan></text>
-<rect x="250" y="268" width="826" height="42" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="663.0" y="289.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">14 + 16 = 30</tspan></text>
-<path d="M445.0,234.0 L445.0,266.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
-<path d="M881.0,234.0 L881.0,266.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="234" y="365.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">回送两核</tspan></text>
-<rect x="250" y="344" width="826" height="42" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="663.0" y="365.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">r = rsqrt(30 / 8 + 0.25) = 0.5</tspan></text>
-<path d="M663.0,310.0 L663.0,342.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
-<path d="M445.0,386.0 L445.0,414.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
-<path d="M881.0,386.0 L881.0,414.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="234" y="437.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">γ</tspan></text>
-<rect x="250" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="295.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="350" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="395.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
-<rect x="450" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="495.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="550" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="595.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="686" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="731.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="786" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="831.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="886" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="931.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
-<rect x="986" y="416" width="90" height="42" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1031.0" y="437.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<text xml:space="preserve" x="234" y="495.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">y = x · r · γ</tspan></text>
-<rect x="250" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="295.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
-<rect x="350" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="395.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">−0.5</tspan></text>
-<rect x="450" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="495.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
-<rect x="550" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="595.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="686" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="731.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="786" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="831.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="886" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="931.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">−0.5</tspan></text>
-<rect x="986" y="474" width="90" height="42" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1031.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<text xml:space="preserve" x="663.0" y="401" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">回送到齐后才缩放</tspan></text>
+<text xml:space="preserve" x="473.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0（通道 0–3）</tspan></text>
+<text xml:space="preserve" x="929.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1（通道 4–7）</tspan></text>
+<text xml:space="preserve" x="317.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 0</tspan></text>
+<text xml:space="preserve" x="421.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 1</tspan></text>
+<text xml:space="preserve" x="525.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 2</tspan></text>
+<text xml:space="preserve" x="629.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 3</tspan></text>
+<text xml:space="preserve" x="773.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 4</tspan></text>
+<text xml:space="preserve" x="877.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 5</tspan></text>
+<text xml:space="preserve" x="981.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 6</tspan></text>
+<text xml:space="preserve" x="1085.0" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">通道 7</tspan></text>
+<text xml:space="preserve" x="254" y="107.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">x</tspan></text>
+<rect x="270" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="317.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="374" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="421.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">−2</tspan></text>
+<rect x="478" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="525.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="582" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="629.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="726" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="773.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="830" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="877.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="934" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="981.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">−2</tspan></text>
+<rect x="1038" y="84" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1085.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="254" y="169.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">x</tspan><tspan dy="-7.6" font-size="14">2</tspan></text>
+<rect x="270" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="317.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="374" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="421.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="478" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="525.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
+<rect x="582" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="629.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="726" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="773.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="830" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="877.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="934" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="981.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="1038" y="146" width="94" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1085.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<text xml:space="preserve" x="254" y="231.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">部分和 Σx</tspan><tspan dy="-7.6" font-size="14">2</tspan></text>
+<rect x="270" y="208" width="406" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="473.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0：14</tspan></text>
+<rect x="726" y="208" width="406" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="929.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1：16</tspan></text>
+<text xml:space="preserve" x="254" y="317.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">MAE_CRU 合并</tspan></text>
+<rect x="270" y="294" width="862" height="46" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="701.0" y="317.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">14 + 16 = 30</tspan></text>
+<path d="M473.0,254.0 L473.0,292.0" stroke="#1d2530" stroke-width="2" fill="none" marker-end="url(#ad)"/>
+<path d="M929.0,254.0 L929.0,292.0" stroke="#1d2530" stroke-width="2" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="254" y="403.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">回送两核</tspan></text>
+<rect x="270" y="380" width="862" height="46" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="701.0" y="403.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">r = rsqrt(30 / 8 + 0.25) = 0.5</tspan></text>
+<path d="M701.0,340.0 L701.0,378.0" stroke="#1d2530" stroke-width="2" fill="none" marker-end="url(#ad)"/>
+<path d="M473.0,426.0 L473.0,468.0" stroke="#1d2530" stroke-width="2" fill="none" marker-end="url(#ad)"/>
+<path d="M929.0,426.0 L929.0,468.0" stroke="#1d2530" stroke-width="2" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="254" y="493.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">γ</tspan></text>
+<rect x="270" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="317.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="374" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="421.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="478" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="525.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="582" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="629.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="726" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="773.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="830" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="877.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="934" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="981.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="1038" y="470" width="94" height="46" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1085.0" y="493.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="254" y="555.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">y = x · r · γ</tspan></text>
+<rect x="270" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="317.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="374" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="421.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">−0.5</tspan></text>
+<rect x="478" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="525.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="582" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="629.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="726" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="773.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="830" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="877.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="934" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="981.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">−0.5</tspan></text>
+<rect x="1038" y="532" width="94" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1085.0" y="555.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="701.0" y="448" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#b42318"><tspan dy="0.0">回送到齐后才缩放</tspan></text>
+<rect x="70" y="608" width="30" height="22" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="110" y="619" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">本核计算</tspan></text>
+<rect x="218" y="608" width="30" height="22" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="258" y="619" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">跨核合并与回送</tspan></text>
+<rect x="420" y="608" width="30" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="460" y="619" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">缩放结果</tspan></text>
 </svg>

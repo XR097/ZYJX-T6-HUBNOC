@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="610" viewBox="0 0 1310 610">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="395.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 1</tspan></text>
+<text xml:space="preserve" x="645.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 2</tspan></text>
+<text xml:space="preserve" x="895.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 3</tspan></text>
+<text xml:space="preserve" x="1145.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">阶段 4</tspan></text>
+<text xml:space="preserve" x="20" y="141" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">寄存器堆 A</tspan></text>
+<text xml:space="preserve" x="268" y="75.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 0 驻留位 0</tspan></text>
+<text xml:space="preserve" x="268" y="119.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 0 驻留位 1</tspan></text>
+<text xml:space="preserve" x="268" y="163.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 1 驻留位 0</tspan></text>
+<text xml:space="preserve" x="268" y="207.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 1 驻留位 1</tspan></text>
+<text xml:space="preserve" x="20" y="353" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">寄存器堆 B</tspan></text>
+<text xml:space="preserve" x="268" y="287.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 0 驻留位 0</tspan></text>
+<text xml:space="preserve" x="268" y="331.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 0 驻留位 1</tspan></text>
+<text xml:space="preserve" x="268" y="375.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 1 驻留位 0</tspan></text>
+<text xml:space="preserve" x="268" y="419.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">pod 1 驻留位 1</tspan></text>
+<rect x="280" y="56" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="395.0" y="75.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 0–15</tspan></text>
+<rect x="280" y="100" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="395.0" y="119.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 0–15</tspan></text>
+<rect x="280" y="144" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="395.0" y="163.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 0–15</tspan></text>
+<rect x="280" y="188" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="395.0" y="207.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<rect x="280" y="268" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="280" y="312" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="280" y="356" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="280" y="400" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text xml:space="preserve" x="395.0" y="462" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">写入：第 1 轮</tspan></text>
+<text xml:space="preserve" x="395.0" y="490" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">EPI 处理：无</tspan></text>
+<rect x="530" y="56" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="75.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 0–15</tspan></text>
+<rect x="530" y="100" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="119.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 0–15</tspan></text>
+<rect x="530" y="144" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="163.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 0–15</tspan></text>
+<rect x="530" y="188" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="207.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<rect x="530" y="268" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="287.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 16–31</tspan></text>
+<rect x="530" y="312" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="331.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 16–31</tspan></text>
+<rect x="530" y="356" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="375.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 16–31</tspan></text>
+<rect x="530" y="400" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="645.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<text xml:space="preserve" x="645.0" y="462" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">写入：第 2 轮</tspan></text>
+<text xml:space="preserve" x="645.0" y="490" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">EPI 处理：第 1 轮</tspan></text>
+<rect x="780" y="56" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="75.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 32–47</tspan></text>
+<rect x="780" y="100" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="119.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 32–47</tspan></text>
+<rect x="780" y="144" width="230" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="163.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 32–47</tspan></text>
+<rect x="780" y="188" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="207.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<rect x="780" y="268" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="287.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 16–31</tspan></text>
+<rect x="780" y="312" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="331.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 16–31</tspan></text>
+<rect x="780" y="356" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="375.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 16–31</tspan></text>
+<rect x="780" y="400" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="895.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<text xml:space="preserve" x="895.0" y="462" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">写入：第 3 轮</tspan></text>
+<text xml:space="preserve" x="895.0" y="490" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">EPI 处理：第 2 轮</tspan></text>
+<rect x="1030" y="56" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1145.0" y="75.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 0 / ch 32–47</tspan></text>
+<rect x="1030" y="100" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1145.0" y="119.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 1 / ch 32–47</tspan></text>
+<rect x="1030" y="144" width="230" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1145.0" y="163.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">token 2 / ch 32–47</tspan></text>
+<rect x="1030" y="188" width="230" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1145.0" y="207.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位（不给地址）</tspan></text>
+<rect x="1030" y="268" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="1030" y="312" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="1030" y="356" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="1030" y="400" width="230" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text xml:space="preserve" x="1145.0" y="462" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">写入：无</tspan></text>
+<text xml:space="preserve" x="1145.0" y="490" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">EPI 处理：第 3 轮</tspan></text>
+<rect x="280" y="524" width="34" height="24" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="324" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">本阶段写入</tspan></text>
+<rect x="444" y="524" width="34" height="24" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="488" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">本阶段 EPI 处理</tspan></text>
+<rect x="653" y="524" width="34" height="24" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="697" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空驻留位</tspan></text>
+<rect x="801" y="524" width="34" height="24" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text xml:space="preserve" x="845" y="536" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空堆</tspan></text>
+<text xml:space="preserve" x="280" y="580" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#b42318"><tspan dy="0.0">第 1 轮 ch 0–15 等第 2 轮 ch 16–31 凑满 MX 组（G = 32）</tspan></text>
+</svg>

@@ -1,170 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="510" viewBox="0 0 1500 510">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-OBJECT-ALIGN  ③ 档对象：4 条记录紧挨存放，长度表单独存（对象起点在存储字边界）</tspan></text>
-<text xml:space="preserve" x="30" y="62" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">记录 [22, 30, 18, 10] B 从字节 64 起紧挨，起点 [64, 86, 116, 134]，占存储字 2–4（末字只用 16 B）；长度表 [22, 30, 18, 10] × 24 bit = 12 B 在字节 256</tspan></text>
-<text xml:space="preserve" x="138" y="131.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 2</tspan></text>
-<rect x="150.0" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="184.375" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="218.75" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="253.125" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="287.5" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="321.875" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="356.25" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="390.625" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="425.0" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="459.375" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="493.75" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="528.125" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="562.5" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="596.875" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="631.25" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="665.625" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="700.0" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="734.375" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="768.75" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="803.125" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="837.5" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="871.875" y="110" width="34.375" height="42" rx="2" fill="#fde3c4" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="906.25" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="940.625" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="975.0" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1009.375" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1043.75" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1078.125" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1112.5" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1146.875" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1181.25" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1215.625" y="110" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<text xml:space="preserve" x="153.0" y="131.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d2530"><tspan dy="0.0">记录 0（22 B）</tspan></text>
-<text xml:space="preserve" x="909.25" y="131.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d2530"><tspan dy="0.0">记录 1（30 B）</tspan></text>
-<text xml:space="preserve" x="138" y="173.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 3</tspan></text>
-<rect x="150.0" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="184.375" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="218.75" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="253.125" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="287.5" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="321.875" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="356.25" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="390.625" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="425.0" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="459.375" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="493.75" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="528.125" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="562.5" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="596.875" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="631.25" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="665.625" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="700.0" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="734.375" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="768.75" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="803.125" y="152" width="34.375" height="42" rx="2" fill="#d6e6f7" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="837.5" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="871.875" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="906.25" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="940.625" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="975.0" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1009.375" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1043.75" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1078.125" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1112.5" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1146.875" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1181.25" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="1215.625" y="152" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<text xml:space="preserve" x="840.5" y="173.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d2530"><tspan dy="0.0">记录 2（18 B）</tspan></text>
-<text xml:space="preserve" x="138" y="215.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 4</tspan></text>
-<rect x="150.0" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="184.375" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="218.75" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="253.125" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="287.5" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="321.875" y="194" width="34.375" height="42" rx="2" fill="#dcefd2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="356.25" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="390.625" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="425.0" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="459.375" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="493.75" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="528.125" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="562.5" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="596.875" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="631.25" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="665.625" y="194" width="34.375" height="42" rx="2" fill="#f3d9ef" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="700.0" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="734.375" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="768.75" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="803.125" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="837.5" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="871.875" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="906.25" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="940.625" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="975.0" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1009.375" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1043.75" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1078.125" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1112.5" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1146.875" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1181.25" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1215.625" y="194" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<text xml:space="preserve" x="359.25" y="215.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d2530"><tspan dy="0.0">记录 3（10 B）</tspan></text>
-<text xml:space="preserve" x="704.0" y="215.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b42318"><tspan dy="0.0">空 16 B（be 不选）</tspan></text>
-<text xml:space="preserve" x="138" y="287.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 8</tspan></text>
-<rect x="150.0" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="184.375" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="218.75" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="253.125" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="287.5" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="321.875" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="356.25" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="390.625" y="266" width="34.375" height="42" rx="2" fill="#fff0d2" stroke="#8a94a6" stroke-width="0.6"/>
-<rect x="425.0" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="459.375" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="493.75" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="528.125" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="562.5" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="596.875" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="631.25" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="665.625" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="700.0" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="734.375" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="768.75" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="803.125" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="837.5" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="871.875" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="906.25" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="940.625" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="975.0" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1009.375" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1043.75" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1078.125" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1112.5" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1146.875" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1181.25" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<rect x="1215.625" y="266" width="34.375" height="42" rx="2" fill="white" stroke="#8a94a6" stroke-width="0.6" stroke-dasharray="3,2"/>
-<text xml:space="preserve" x="153" y="287.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#1d2530"><tspan dy="0.0">长度表 [22, 30, 18, 10]（4 × 24 bit = 12 B：16 bit 长度 + 8 bit tokmax，由 CCU 写、编译链另给地址）</tspan></text>
-<text xml:space="preserve" x="30" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">记录</tspan></text>
-<text xml:space="preserve" x="150" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">长度 B</tspan></text>
-<text xml:space="preserve" x="280" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">起点字节 = 对象起点 + 前几项之和</tspan></text>
-<text xml:space="preserve" x="640" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">覆盖字</tspan></text>
-<text xml:space="preserve" x="780" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">读法</tspan></text>
-<text xml:space="preserve" x="30" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">记录 0</tspan></text>
-<text xml:space="preserve" x="150" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">22</tspan></text>
-<text xml:space="preserve" x="280" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">64</tspan></text>
-<text xml:space="preserve" x="640" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<text xml:space="preserve" x="780" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">从字 2 读到字 2，读口出口按 0 移位</tspan></text>
-<text xml:space="preserve" x="30" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">记录 1</tspan></text>
-<text xml:space="preserve" x="150" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">30</tspan></text>
-<text xml:space="preserve" x="280" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">86</tspan></text>
-<text xml:space="preserve" x="640" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">2–3</tspan></text>
-<text xml:space="preserve" x="780" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">从字 2 读到字 3，读口出口按 22 移位</tspan></text>
-<text xml:space="preserve" x="30" y="430" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">记录 2</tspan></text>
-<text xml:space="preserve" x="150" y="430" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">18</tspan></text>
-<text xml:space="preserve" x="280" y="430" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">116</tspan></text>
-<text xml:space="preserve" x="640" y="430" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">3–4</tspan></text>
-<text xml:space="preserve" x="780" y="430" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">从字 3 读到字 4，读口出口按 20 移位</tspan></text>
-<text xml:space="preserve" x="30" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">记录 3</tspan></text>
-<text xml:space="preserve" x="150" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">10</tspan></text>
-<text xml:space="preserve" x="280" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">134</tspan></text>
-<text xml:space="preserve" x="640" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<text xml:space="preserve" x="780" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">从字 4 读到字 4，读口出口按 6 移位</tspan></text>
-<text xml:space="preserve" x="30" y="565" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">写：攒满 32 B 才写一字、跨记录连着攒，末字带 be；读记录 2：字 3、4 两次 1 拍读，出口按 20 移位；没有补 0，没有头</tspan></text>
-<text xml:space="preserve" x="1476" y="588" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-08</tspan></text>
+<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-OBJECT-ALIGN  码块：4 个 token 各一片，每片的码从新的存储字起</tspan></text>
+<text xml:space="preserve" x="30" y="74" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">码 22 / 30 / 18 / 10 B，从字节 64 起；各片码块片长 32 B，记在各自元数据项的首字里（A 类）</tspan></text>
+<text xml:space="preserve" x="245.625" y="132" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="495.625" y="132" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">8</tspan></text>
+<text xml:space="preserve" x="745.625" y="132" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">16</tspan></text>
+<text xml:space="preserve" x="995.625" y="132" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">24</tspan></text>
+<text xml:space="preserve" x="1214.375" y="132" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">31</tspan></text>
+<text xml:space="preserve" x="216" y="132" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">字内字节</tspan></text>
+<text xml:space="preserve" x="216" y="176.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 2（64–95）</tspan></text>
+<rect x="230.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="261.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="292.5" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="323.75" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="355.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="386.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="417.5" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="448.75" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="480.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="511.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="542.5" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="573.75" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="605.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="636.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="667.5" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="698.75" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="730.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="761.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="792.5" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="823.75" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="855.0" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="886.25" y="150" width="31.25" height="52" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.0"/>
+<rect x="917.5" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="948.75" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="980.0" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1011.25" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1042.5" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1073.75" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1105.0" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1136.25" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1167.5" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1198.75" y="150" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="230" y="150" width="1000.0" height="52" rx="2" fill="none" stroke="#172b4d" stroke-width="2.0"/>
+<rect x="236" y="158" width="160" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="316.0" y="176.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">片 0 · 22 B</tspan></text>
+<text xml:space="preserve" x="1244.0" y="176.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">空 10 B（be 不选）</tspan></text>
+<text xml:space="preserve" x="216" y="228.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 3（96–127）</tspan></text>
+<rect x="230.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="261.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="292.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="323.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="355.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="386.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="417.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="448.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="480.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="511.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="542.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="573.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="605.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="636.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="667.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="698.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="730.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="761.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="792.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="823.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="855.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="886.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="917.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="948.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="980.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1011.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1042.5" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1073.75" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1105.0" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1136.25" y="202" width="31.25" height="52" rx="2" fill="#d6e6f7" stroke="#64748b" stroke-width="1.0"/>
+<rect x="1167.5" y="202" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1198.75" y="202" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="230" y="202" width="1000.0" height="52" rx="2" fill="none" stroke="#172b4d" stroke-width="2.0"/>
+<rect x="236" y="210" width="160" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="316.0" y="228.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">片 1 · 30 B</tspan></text>
+<text xml:space="preserve" x="1244.0" y="228.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">空 2 B（be 不选）</tspan></text>
+<text xml:space="preserve" x="216" y="280.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 4（128–159）</tspan></text>
+<rect x="230.0" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="261.25" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="292.5" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="323.75" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="355.0" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="386.25" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="417.5" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="448.75" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="480.0" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="511.25" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="542.5" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="573.75" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="605.0" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="636.25" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="667.5" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="698.75" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="730.0" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="761.25" y="254" width="31.25" height="52" rx="2" fill="#dcefd2" stroke="#64748b" stroke-width="1.0"/>
+<rect x="792.5" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="823.75" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="855.0" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="886.25" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="917.5" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="948.75" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="980.0" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1011.25" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1042.5" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1073.75" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1105.0" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1136.25" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1167.5" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1198.75" y="254" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="230" y="254" width="1000.0" height="52" rx="2" fill="none" stroke="#172b4d" stroke-width="2.0"/>
+<rect x="236" y="262" width="160" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="316.0" y="280.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">片 2 · 18 B</tspan></text>
+<text xml:space="preserve" x="1244.0" y="280.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">空 14 B（be 不选）</tspan></text>
+<text xml:space="preserve" x="216" y="332.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">字 5（160–191）</tspan></text>
+<rect x="230.0" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="261.25" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="292.5" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="323.75" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="355.0" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="386.25" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="417.5" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="448.75" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="480.0" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="511.25" y="306" width="31.25" height="52" rx="2" fill="#f3d9ef" stroke="#64748b" stroke-width="1.0"/>
+<rect x="542.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="573.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="605.0" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="636.25" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="667.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="698.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="730.0" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="761.25" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="792.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="823.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="855.0" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="886.25" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="917.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="948.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="980.0" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1011.25" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1042.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1073.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1105.0" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1136.25" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1167.5" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="1198.75" y="306" width="31.25" height="52" rx="2" fill="white" stroke="#64748b" stroke-width="1.0" stroke-dasharray="3,2"/>
+<rect x="230" y="306" width="1000.0" height="52" rx="2" fill="none" stroke="#172b4d" stroke-width="2.0"/>
+<rect x="236" y="314" width="160" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="316.0" y="332.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">片 3 · 10 B</tspan></text>
+<text xml:space="preserve" x="1244.0" y="332.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">空 22 B（be 不选）</tspan></text>
+<rect x="226" y="250" width="1008.0" height="60" rx="2" fill="none" stroke="#b42318" stroke-width="3.2"/>
+<text xml:space="preserve" x="30" y="398" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">红框 = 读片 2：起点 64 + 32 + 32 = 128，从字 4 起整字读 1 个字（默认对齐，读时不需要移位）</tspan></text>
+<rect x="30" y="432" width="34" height="24" rx="2" fill="#fde3c4" stroke="#64748b" stroke-width="1.8"/>
+<text xml:space="preserve" x="74" y="444" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">各片的码（颜色 = 片 0–3）</tspan></text>
+<rect x="341.3" y="432" width="34" height="24" rx="2" fill="white" stroke="#64748b" stroke-width="1.8" stroke-dasharray="3,2"/>
+<text xml:space="preserve" x="385.3" y="444" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">片尾补齐的空字节</tspan></text>
+<text xml:space="preserve" x="1476" y="498" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-11</tspan></text>
 </svg>

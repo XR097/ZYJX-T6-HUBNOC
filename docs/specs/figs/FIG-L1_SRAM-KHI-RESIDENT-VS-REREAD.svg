@@ -1,87 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="690" viewBox="0 0 1180 690">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="868" viewBox="0 0 1200 868">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="335.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">时段 0</tspan></text>
-<text xml:space="preserve" x="505.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">时段 1</tspan></text>
-<text xml:space="preserve" x="675.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">时段 2</tspan></text>
-<text xml:space="preserve" x="845.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">时段 3</tspan></text>
-<text xml:space="preserve" x="1015.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">时段 4</tspan></text>
-<text xml:space="preserve" x="236" y="63" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">粗算</tspan></text>
-<rect x="254" y="48" width="162" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="335.0" y="63.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 0 粗算</tspan></text>
-<rect x="424" y="48" width="162" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="505.0" y="63.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 1 粗算</tspan></text>
-<rect x="594" y="48" width="162" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="675.0" y="63.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 2 粗算</tspan></text>
-<rect x="764" y="48" width="162" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="845.0" y="63.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 3 粗算</tspan></text>
-<rect x="934" y="48" width="162" height="30" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="63.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 4 粗算</tspan></text>
-<text xml:space="preserve" x="236" y="101" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">录取 / 精算</tspan></text>
-<rect x="764" y="86" width="162" height="30" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="845.0" y="101.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 录取（64 key）</tspan></text>
-<rect x="934" y="86" width="162" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="101.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 补读 + 精算</tspan></text>
-<text xml:space="preserve" x="250" y="132" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">u0 的 64 个 key 取自 tile 0–3（各 24 / 8 / 12 / 20 个）</tspan></text>
-<text xml:space="preserve" x="1094" y="132" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#172b4d"><tspan dy="0.0">u0 精算完</tspan></text>
-<rect x="20" y="150" width="1140" height="284" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
-<text xml:space="preserve" x="34" y="174" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">驻留模式：K hi 双写，列字留给精算</tspan></text>
-<text xml:space="preserve" x="236" y="205" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">K hi 行字区（粗算）</tspan></text>
-<rect x="254" y="192" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="335.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 行字</tspan></text>
-<rect x="424" y="192" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="505.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 行字</tspan></text>
-<rect x="594" y="192" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="675.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 行字</tspan></text>
-<rect x="764" y="192" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="845.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 行字</tspan></text>
-<rect x="934" y="192" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t4 行字</tspan></text>
-<rect x="254" y="230" width="842" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="262" y="241" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 0 列字</tspan></text>
-<rect x="424" y="256" width="672" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="432" y="267" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 1 列字</tspan></text>
-<rect x="594" y="282" width="502" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="602" y="293" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 2 列字</tspan></text>
-<rect x="764" y="308" width="332" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="772" y="319" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 3 列字</tspan></text>
-<rect x="934" y="334" width="210" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2" stroke-dasharray="5,3"/>
-<text xml:space="preserve" x="1039.0" y="345.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 4 列字（留给后续单位）</tspan></text>
-<text xml:space="preserve" x="1086" y="241" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#b42318"><tspan dy="0.0">留到 u0 精算完</tspan></text>
-<text xml:space="preserve" x="236" y="282" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">K hi 列字区</tspan></text>
-<text xml:space="preserve" x="236" y="302" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">（精算的 hi 道）</tspan></text>
-<text xml:space="preserve" x="236" y="381" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">lo 区（精算的 lo 道）</tspan></text>
-<rect x="934" y="370" width="162" height="22" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="381.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 lo，64 B/key</tspan></text>
-<text xml:space="preserve" x="236" y="408" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">列字区同时占用份数</tspan></text>
-<text xml:space="preserve" x="335.0" y="408" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
-<text xml:space="preserve" x="505.0" y="408" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">2</tspan></text>
-<text xml:space="preserve" x="675.0" y="408" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">3</tspan></text>
-<text xml:space="preserve" x="845.0" y="408" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">4</tspan></text>
-<text xml:space="preserve" x="1015.0" y="408" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">5 = 1 + 4</tspan></text>
-<rect x="20" y="450" width="1140" height="170" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
-<text xml:space="preserve" x="34" y="474" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">重读模式：K hi 只落行字，录取后 hi + lo 同次 gather</tspan></text>
-<text xml:space="preserve" x="236" y="505" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">K hi 行字区（粗算）</tspan></text>
-<rect x="254" y="492" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="335.0" y="505.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 行字</tspan></text>
-<rect x="424" y="492" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="505.0" y="505.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 行字</tspan></text>
-<rect x="594" y="492" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="675.0" y="505.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 行字</tspan></text>
-<rect x="764" y="492" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="845.0" y="505.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 行字</tspan></text>
-<rect x="934" y="492" width="162" height="26" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="505.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">t4 行字</tspan></text>
-<text xml:space="preserve" x="258" y="532" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#b42318"><tspan dy="0.0">粗算完即释放</tspan></text>
-<text xml:space="preserve" x="236" y="559" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">录取 key 全码区</tspan></text>
-<rect x="934" y="548" width="162" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1015.0" y="559.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 全码，128 B/key</tspan></text>
-<text xml:space="preserve" x="236" y="590" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">行字区 + 全码区份数</tspan></text>
-<text xml:space="preserve" x="335.0" y="590" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
-<text xml:space="preserve" x="505.0" y="590" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
-<text xml:space="preserve" x="675.0" y="590" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
-<text xml:space="preserve" x="845.0" y="590" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
-<text xml:space="preserve" x="1015.0" y="590" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">2 = 1 + 1</tspan></text>
-<path d="M1100.0,140.0 L1100.0,620.0" stroke="#8a94a6" stroke-width="1.4" fill="none" stroke-dasharray="5,4"/>
-<text xml:space="preserve" x="30" y="646" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#2f5d8a"><tspan dy="0.0">实际尺寸（head_dim 128；N</tspan><tspan dy="3.5" font-size="10">ct</tspan><tspan dy="-3.5"> = N</tspan><tspan dy="3.5" font-size="10">u</tspan><tspan dy="-3.5"> = 64 为参考值）：hi 列字 64 B/key，一个 tile、一个 kv 头 4 KB；lo 64 B/key</tspan></text>
-<text xml:space="preserve" x="30" y="670" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#2f5d8a"><tspan dy="0.0">全码记录 128 B/key = hi 64 + lo 64（尺度 4 B 落 S 类），一份 = 一个录取单位 8 KB；全码区份数 n</tspan><tspan dy="3.5" font-size="10">fc</tspan><tspan dy="-3.5"> 随流水深度，参考 3</tspan></text>
+<text xml:space="preserve" x="340.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">时段 0</tspan></text>
+<text xml:space="preserve" x="520.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">时段 1</tspan></text>
+<text xml:space="preserve" x="700.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">时段 2</tspan></text>
+<text xml:space="preserve" x="880.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">时段 3</tspan></text>
+<text xml:space="preserve" x="1060.0" y="28" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">时段 4</tspan></text>
+<text xml:space="preserve" x="236" y="64" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">粗算</tspan></text>
+<rect x="254" y="48" width="172" height="32" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="340.0" y="64.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 0 粗算</tspan></text>
+<rect x="434" y="48" width="172" height="32" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="64.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 1 粗算</tspan></text>
+<rect x="614" y="48" width="172" height="32" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="700.0" y="64.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 2 粗算</tspan></text>
+<rect x="794" y="48" width="172" height="32" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="880.0" y="64.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 3 粗算</tspan></text>
+<rect x="974" y="48" width="172" height="32" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="64.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 4 粗算</tspan></text>
+<text xml:space="preserve" x="236" y="104" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">录取 / 精算</tspan></text>
+<rect x="794" y="88" width="172" height="32" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="880.0" y="104.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 录取（64 key）</tspan></text>
+<rect x="974" y="88" width="172" height="32" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="104.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 补读 + 精算</tspan></text>
+<text xml:space="preserve" x="250" y="140" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 的 64 个 key 取自 tile 0–3（各 24 / 8 / 12 / 20 个）</tspan></text>
+<text xml:space="preserve" x="1142" y="140" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">u0 精算完</tspan></text>
+<rect x="20" y="160" width="1160" height="368" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="34" y="184" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">驻留模式：粗算用过的 K hi 平面留在 L2</tspan></text>
+<text xml:space="preserve" x="1142" y="184" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#b42318"><tspan dy="0.0">留到 u0 精算完</tspan></text>
+<rect x="254" y="206" width="892" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="264" y="219.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 0 的 K hi</tspan></text>
+<rect x="434" y="236" width="712" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="444" y="249.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 1 的 K hi</tspan></text>
+<rect x="614" y="266" width="532" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="624" y="279.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 2 的 K hi</tspan></text>
+<rect x="794" y="296" width="352" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="804" y="309.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#172b4d"><tspan dy="0.0">tile 3 的 K hi</tspan></text>
+<rect x="974" y="326" width="172" height="26" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6,3"/>
+<text xml:space="preserve" x="1060.0" y="339.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">tile 4 的 K hi</tspan></text>
+<text xml:space="preserve" x="236" y="279.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 K hi 平面</tspan></text>
+<text xml:space="preserve" x="236" y="372" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L2 里 K hi 份数</tspan></text>
+<text xml:space="preserve" x="340.0" y="372" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="520.0" y="372" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="700.0" y="372" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">3</tspan></text>
+<text xml:space="preserve" x="880.0" y="372" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">4</tspan></text>
+<text xml:space="preserve" x="1060.0" y="372" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">5 = 1 + 4</tspan></text>
+<text xml:space="preserve" x="250" y="404" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">粗算 K hi：L2 → NI 读口 → MAE_DSU 转置 → IDN</tspan></text>
+<text xml:space="preserve" x="236" y="434" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 K hi 行字区</tspan></text>
+<rect x="254" y="420" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="340.0" y="434.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 行字</tspan></text>
+<rect x="434" y="420" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="434.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 行字</tspan></text>
+<rect x="614" y="420" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="700.0" y="434.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 行字</tspan></text>
+<rect x="794" y="420" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="880.0" y="434.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 行字</tspan></text>
+<rect x="974" y="420" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="434.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t4 行字</tspan></text>
+<text xml:space="preserve" x="236" y="489" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 录取 key 全码区</tspan></text>
+<rect x="974" y="460" width="172" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="474.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 hi 平面 · 按列位</tspan></text>
+<rect x="974" y="490" width="172" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="504.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 lo 平面 · 按列位</tspan></text>
+<text xml:space="preserve" x="960" y="489" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">hi ← L2、lo ← DDR · MAE_DSU 直通 · IDN</tspan></text>
+<rect x="20" y="544" width="1160" height="216" rx="6" fill="white" stroke="#172b4d" stroke-width="2.2"/>
+<text xml:space="preserve" x="34" y="568" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">重读模式：精算时 hi、lo 都从 DDR 取</tspan></text>
+<text xml:space="preserve" x="1142" y="568" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#b42318"><tspan dy="0.0">L1 占用两种相同</tspan></text>
+<text xml:space="preserve" x="250" y="594" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">粗算 K hi：DDR → MAE_DSU 转置 → IDN</tspan></text>
+<text xml:space="preserve" x="236" y="624" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 K hi 行字区</tspan></text>
+<rect x="254" y="610" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="340.0" y="624.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t0 行字</tspan></text>
+<rect x="434" y="610" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="520.0" y="624.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t1 行字</tspan></text>
+<rect x="614" y="610" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="700.0" y="624.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t2 行字</tspan></text>
+<rect x="794" y="610" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="880.0" y="624.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t3 行字</tspan></text>
+<rect x="974" y="610" width="172" height="28" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="624.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">t4 行字</tspan></text>
+<text xml:space="preserve" x="236" y="679" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 录取 key 全码区</tspan></text>
+<rect x="974" y="650" width="172" height="28" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="664.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 hi 平面 · 按列位</tspan></text>
+<rect x="974" y="680" width="172" height="28" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1060.0" y="694.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 lo 平面 · 按列位</tspan></text>
+<text xml:space="preserve" x="960" y="679" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">hi、lo ← DDR · MAE_DSU 直通 · IDN</tspan></text>
+<text xml:space="preserve" x="236" y="730" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 行字区 + 全码区份数</tspan></text>
+<text xml:space="preserve" x="340.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="520.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="700.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="880.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="1060.0" y="730" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">2 = 1 + 1</tspan></text>
+<path d="M1150.0,128.0 L1150.0,760.0" stroke="#172b4d" stroke-width="1.6" fill="none" stroke-dasharray="6,4"/>
+<rect x="30" y="781" width="34" height="22" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="74" y="792" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">粗算 · 行字区字形态</tspan></text>
+<rect x="330" y="781" width="34" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="374" y="792" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">K hi 平面</tspan></text>
+<rect x="630" y="781" width="34" height="22" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="674" y="792" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">K lo 平面</tspan></text>
+<rect x="30" y="815" width="34" height="22" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="74" y="826" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">录取</tspan></text>
+<rect x="330" y="815" width="34" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="374" y="826" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">补读 + 精算</tspan></text>
+<rect x="630" y="815" width="34" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6,3"/>
+<text xml:space="preserve" x="674" y="826" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">留给后续单位</tspan></text>
+<path d="M930.0,792.0 L980.0,792.0" stroke="#172b4d" stroke-width="1.6" fill="none" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="990" y="792" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">u0 精算完</tspan></text>
 </svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="320" viewBox="0 0 1340 320">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="464.0" y="32" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">物理分堆 0（向量部分 · 参考 1 KB）</tspan></text>
+<text xml:space="preserve" x="804.0" y="32" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">物理分堆 1（向量部分 · 参考 1 KB）</tspan></text>
+<text xml:space="preserve" x="1144.0" y="32" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">物理分堆 2（向量部分 · 参考 1 KB）</tspan></text>
+<text xml:space="preserve" x="284" y="86.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">线性位点（含残差加）</tspan></text>
+<rect x="300" y="56" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="640" y="56" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="980" y="56" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="300" y="56" width="328.0" height="60" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0"/>
+<rect x="300" y="56" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="464.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">EPI 第 n 轮（堆 A） · 1 KB</tspan></text>
+<rect x="640" y="56" width="328.0" height="60" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="0"/>
+<rect x="640" y="56" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="804.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">EPI 第 n+1 轮（堆 B） · 1 KB</tspan></text>
+<rect x="980" y="56" width="328.0" height="60" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="0"/>
+<rect x="980" y="56" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1144.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">QNT 未满 MX 组 · 1 KB</tspan></text>
+<text xml:space="preserve" x="284" y="174.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">LM Head 尾段</tspan></text>
+<rect x="300" y="144" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="640" y="144" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="980" y="144" width="328" height="60" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="300" y="144" width="164.0" height="60" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="0"/>
+<rect x="300" y="144" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="382.0" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5 KB</tspan></text>
+<text xml:space="preserve" x="476.0" y="174.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">SEL 名次缓冲</tspan></text>
+<rect x="640" y="144" width="98.39999999999999" height="60" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="0"/>
+<rect x="640" y="144" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="689.2" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.3 KB</tspan></text>
+<text xml:space="preserve" x="750.4" y="174.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">SMP 取项 / 比对暂存</tspan></text>
+<rect x="980" y="144" width="98.39999999999999" height="60" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="0"/>
+<rect x="980" y="144" width="328" height="60" rx="2" fill="none" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1029.2" y="174.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.3 KB</tspan></text>
+<text xml:space="preserve" x="1090.4" y="174.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">LOSS 截断分布</tspan></text>
+<text xml:space="preserve" x="300" y="242" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">参考容量 = max(3 KB, 1.1 KB) = 3 KB</tspan></text>
+<rect x="300" y="276" width="32" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="342" y="287" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">EPI 两轮 ping-pong（可选做法）</tspan></text>
+<rect x="629.2" y="276" width="32" height="22" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="671.2" y="287" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">QNT 暂存</tspan></text>
+<rect x="774.4000000000001" y="276" width="32" height="22" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="816.4000000000001" y="287" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">LM Head 尾段暂存</tspan></text>
+<rect x="986.8000000000001" y="276" width="32" height="22" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1028.8000000000002" y="287" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">空闲</tspan></text>
+<text xml:space="preserve" x="1316" y="308" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-11</tspan></text>
+</svg>

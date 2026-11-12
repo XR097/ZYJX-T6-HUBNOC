@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
+<defs><filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.20"/></filter><marker id="m_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#1d4ed8"/></marker><marker id="s_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#1d4ed8"/></marker><marker id="m_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#c2410c"/></marker><marker id="s_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#c2410c"/></marker><marker id="m_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#4b5563"/></marker><marker id="s_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#4b5563"/></marker><marker id="m_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b91c1c"/></marker><marker id="s_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b91c1c"/></marker><marker id="m_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker><marker id="m_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b45309"/></marker><marker id="s_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b45309"/></marker><marker id="m_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#475569"/></marker><marker id="s_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#475569"/></marker><marker id="m_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0369a1"/></marker><marker id="s_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0369a1"/></marker><marker id="m_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#172b4d"/></marker><marker id="s_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#172b4d"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="0" y="0" width="1600" height="92" fill="#172b4d"/>
+<rect x="798" y="208" width="164" height="226" fill="none" stroke="#b91c1c" stroke-width="2" stroke-dasharray="7,5"/>
+<rect x="140" y="220" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="220" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="220" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="220" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="220" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="220" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="220" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="220" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="260" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="260" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="260" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="260" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="260" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="260" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="260" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="260" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="300" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="300" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="300" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="300" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="300" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="300" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="300" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="300" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="340" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="340" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="340" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="340" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="340" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="340" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="340" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="340" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="380" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="380" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="380" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="380" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="380" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="380" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="380" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="380" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="420" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="420" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="420" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="420" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="420" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="420" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="420" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="420" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="460" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="460" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="460" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="460" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="460" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="460" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="460" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="460" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="140" y="500" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="186" y="500" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="232" y="500" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="278" y="500" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="324" y="500" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="370" y="500" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="416" y="500" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="462" y="500" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="600" y="220" width="170" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="810" y="220" width="140" height="40" fill="white" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="600" y="274" width="170" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="810" y="274" width="140" height="40" fill="white" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="600" y="328" width="170" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="810" y="328" width="140" height="40" fill="white" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="600" y="382" width="170" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="810" y="382" width="140" height="40" fill="white" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1050" y="262" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="1096" y="262" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="1142" y="262" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="1188" y="262" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1050" y="502" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1096" y="502" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<rect x="1142" y="502" width="46" height="40" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1188" y="502" width="46" height="40" fill="#ccfbf1" stroke="#0f766e" stroke-width="1.6"/>
+<path d="M522.0,300.0 L580.0,300.0" stroke="#172b4d" stroke-width="2.4" fill="none" stroke-linejoin="miter"/>
+<path d="M590,300 L577,294 L577,306 Z" fill="#172b4d"/>
+<path d="M770.0,240.0 L810.0,240.0" stroke="#94a3b8" stroke-width="2.0" fill="none" stroke-linejoin="miter" stroke-dasharray="5,5"/>
+<path d="M770.0,294.0 L810.0,294.0" stroke="#94a3b8" stroke-width="2.0" fill="none" stroke-linejoin="miter" stroke-dasharray="5,5"/>
+<path d="M770.0,348.0 L810.0,348.0" stroke="#94a3b8" stroke-width="2.0" fill="none" stroke-linejoin="miter" stroke-dasharray="5,5"/>
+<path d="M770.0,402.0 L810.0,402.0" stroke="#94a3b8" stroke-width="2.0" fill="none" stroke-linejoin="miter" stroke-dasharray="5,5"/>
+<path d="M974.0,300.0 L1020.0,300.0" stroke="#172b4d" stroke-width="2.4" fill="none" stroke-linejoin="miter"/>
+<path d="M1030,300 L1017,294 L1017,306 Z" fill="#172b4d"/>
+<text x="40.0" y="32.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="28" font-weight="700" fill="white">FIG-MXU-MODE-OUT  输出稀疏：只算被选中的输出通道</text>
+<text x="40.0" y="68.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#cbd5e1">缩小例：归约维 K = 8，输出维 M = 8，一个 pod 两个源 a、b</text>
+<text x="60.0" y="140.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">权重 W：8 个归约位置 × 8 个输出通道</text>
+<text x="163.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=0</text>
+<text x="209.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=1</text>
+<text x="255.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=2</text>
+<text x="301.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=3</text>
+<text x="347.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=4</text>
+<text x="393.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=5</text>
+<text x="439.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=6</text>
+<text x="485.0" y="198.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">m=7</text>
+<text x="128.0" y="241.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=0</text>
+<text x="128.0" y="281.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=1</text>
+<text x="128.0" y="321.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=2</text>
+<text x="128.0" y="361.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=3</text>
+<text x="128.0" y="401.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=4</text>
+<text x="128.0" y="441.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=5</text>
+<text x="128.0" y="481.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=6</text>
+<text x="128.0" y="521.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530">k=7</text>
+<text x="600.0" y="140.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">读集内序号：从列字区读出的列</text>
+<text x="685.0" y="241.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">读集内序号 0</text>
+<text x="880.0" y="241.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">原第 1 列</text>
+<text x="685.0" y="295.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">读集内序号 1</text>
+<text x="880.0" y="295.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">原第 4 列</text>
+<text x="685.0" y="349.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">读集内序号 2</text>
+<text x="880.0" y="349.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">原第 6 列</text>
+<text x="685.0" y="403.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">读集内序号 3</text>
+<text x="880.0" y="403.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">原第 7 列</text>
+<text x="880.0" y="456.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b91c1c">只有 CCU 知道</text>
+<text x="880.0" y="488.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#8a94a6">CCU 把位置交给 VNU 排回</text>
+<text x="1050.0" y="140.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">每个源只算自己选中的列</text>
+<text x="1050.0" y="200.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">源 a 要算的输出通道：1、4、6</text>
+<text x="1050.0" y="240.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">按读集内序号给的列选择位图</text>
+<text x="1073.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">1</text>
+<text x="1119.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">1</text>
+<text x="1165.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">1</text>
+<text x="1211.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">0</text>
+<text x="1073.0" y="318.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">0</text>
+<text x="1119.0" y="318.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">1</text>
+<text x="1165.0" y="318.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">2</text>
+<text x="1211.0" y="318.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">3</text>
+<text x="1050.0" y="360.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#0f766e">条目里的位置：第 0、1、2 个</text>
+<text x="1050.0" y="440.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">源 b 要算的输出通道：4、7</text>
+<text x="1050.0" y="480.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">按读集内序号给的列选择位图</text>
+<text x="1073.0" y="523.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">0</text>
+<text x="1119.0" y="523.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">1</text>
+<text x="1165.0" y="523.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">0</text>
+<text x="1211.0" y="523.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#1d2530">1</text>
+<text x="1073.0" y="558.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">0</text>
+<text x="1119.0" y="558.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">1</text>
+<text x="1165.0" y="558.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">2</text>
+<text x="1211.0" y="558.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">3</text>
+<text x="1050.0" y="600.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#0f766e">条目里的位置：第 1、3 个</text>
+<text x="1576" y="708" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-11</text>
+</svg>

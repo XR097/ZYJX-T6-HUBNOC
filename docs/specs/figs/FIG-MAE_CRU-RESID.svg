@@ -1,134 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="560" viewBox="0 0 1340 560">
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="660" viewBox="0 0 1420 660">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">残差加：指令 1 归约（BF16 写 L2），指令 2 读归约结果与残差（MXFP6）相加、一次编码写回 L2 残差流</tspan></text>
-<text xml:space="preserve" x="30" y="66" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">一段实际 32 个通道、一行 d_hidden 个通道，图中只画 4 个；残差尺度 2^-1，输出尺度 2^1（组内最大幅值 9.5 ≥ E2M3 最大 7.5，尺度取 2 的幂 floor）</tspan></text>
-<rect x="30" y="92" width="224" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 · 步骤</tspan></text>
-<rect x="260" y="92" width="224" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">编码 · 地址</tspan></text>
-<rect x="490" y="92" width="114" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">元素 0</tspan></text>
-<rect x="610" y="92" width="114" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">元素 1</tspan></text>
-<rect x="730" y="92" width="114" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">元素 2</tspan></text>
-<rect x="850" y="92" width="114" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">元素 3</tspan></text>
-<rect x="970" y="92" width="364" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">说明</tspan></text>
-<rect x="30" y="134" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 1 · 归约</tspan></text>
-<rect x="260" y="134" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">BF16 · 写 L2 字节 8192</tspan></text>
-<rect x="490" y="134" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="610" y="134" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-0.5</tspan></text>
-<rect x="730" y="134" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="850" y="134" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
-<rect x="970" y="134" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">三份同址相加（同 FIG-MAE_CRU-SUM）</tspan></text>
-<rect x="30" y="176" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 读归约结果</tspan></text>
-<rect x="260" y="176" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">BF16 · 读 L2 字节 8192</tspan></text>
-<rect x="490" y="176" width="114" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="610" y="176" width="114" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-0.5</tspan></text>
-<rect x="730" y="176" width="114" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="850" y="176" width="114" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
-<rect x="970" y="176" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">MAE 引擎给地址，NI 读口读一个象限</tspan></text>
-<rect x="30" y="218" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 读残差码</tspan></text>
-<rect x="260" y="218" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">E2M3 码 · 读 L2 字节 20480</tspan></text>
-<rect x="490" y="218" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.5</tspan></text>
-<rect x="610" y="218" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-3</tspan></text>
-<rect x="730" y="218" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="850" y="218" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="970" y="218" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="237.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">同一 token 同 4 个通道；组尺度 E8M0 = 2^-1</tspan></text>
-<rect x="30" y="260" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 残差还原</tspan></text>
-<rect x="260" y="260" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">码 × 尺度（精确）</tspan></text>
-<rect x="490" y="260" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.75</tspan></text>
-<rect x="610" y="260" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-1.5</tspan></text>
-<rect x="730" y="260" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="850" y="260" width="114" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
-<rect x="970" y="260" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="279.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">解码在宽格式里无损</tspan></text>
-<rect x="30" y="302" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 相加</tspan></text>
-<rect x="260" y="302" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">x″ = Y + x′</tspan></text>
-<rect x="490" y="302" width="114" height="38" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.75</tspan></text>
-<rect x="610" y="302" width="114" height="38" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-2</tspan></text>
-<rect x="730" y="302" width="114" height="38" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="850" y="302" width="114" height="38" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">9.5</tspan></text>
-<rect x="970" y="302" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">宽格式相加，这里 4 个和都精确</tspan></text>
-<rect x="30" y="344" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 编码</tspan></text>
-<rect x="260" y="344" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">E2M3 码 · 尺度 2^1</tspan></text>
-<rect x="490" y="344" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.875</tspan></text>
-<rect x="610" y="344" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-1</tspan></text>
-<rect x="730" y="344" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="850" y="344" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
-<rect x="970" y="344" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="363.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4.75 → 5（[4, 8) 步长 0.5，RNE）；其余精确</tspan></text>
-<rect x="30" y="386" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2 · 写回</tspan></text>
-<rect x="260" y="386" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">MXFP6 稠密 · 写 L2 字节 12288</tspan></text>
-<rect x="490" y="386" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.75</tspan></text>
-<rect x="610" y="386" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">-2</tspan></text>
-<rect x="730" y="386" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="850" y="386" width="114" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">10</tspan></text>
-<rect x="970" y="386" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">还原值；只在这一步舍入一次</tspan></text>
-<rect x="30" y="428" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="142.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">（可选）按列表压缩</tspan></text>
-<rect x="260" y="428" width="224" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="372.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">keep 1011 · 同址</tspan></text>
-<rect x="490" y="428" width="114" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="547.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.875</tspan></text>
-<rect x="610" y="428" width="114" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="667.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="730" y="428" width="114" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="787.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="850" y="428" width="114" height="38" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="907.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
-<rect x="970" y="428" width="364" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1152.0" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">只写保留通道的码 + 位图 + 尺度；字节数交引擎写长度表</tspan></text>
-<text xml:space="preserve" x="30" y="494" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">残差只加一次，编码只在末了一次</tspan></text>
-<text xml:space="preserve" x="350" y="494" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">：各核部分和不含残差；归约结果 BF16 是允许的中间暂存；两条指令由 LIC 先后下发，分块时放在一个 Fusion-L3PU 段里循环</tspan></text>
-<text xml:space="preserve" x="1316" y="548" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
+<text xml:space="preserve" x="30" y="36" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d"><tspan dy="0.0">残差加：归约结果（BF16）与残差（MXFP6）相加，一次编码写回残差流</tspan></text>
+<text xml:space="preserve" x="648.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">元素 0</tspan></text>
+<text xml:space="preserve" x="760.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">元素 1</tspan></text>
+<text xml:space="preserve" x="872.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">元素 2</tspan></text>
+<text xml:space="preserve" x="984.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">元素 3</tspan></text>
+<rect x="162" y="112" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">归约结果 Y · BF16 · L2 字节 8192</tspan></text>
+<rect x="596" y="112" width="104" height="56" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="708" y="112" width="104" height="56" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-0.5</tspan></text>
+<rect x="820" y="112" width="104" height="56" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="932" y="112" width="104" height="56" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
+<rect x="162" y="180" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="208.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">残差码 · E2M3 · L2 字节 20480</tspan></text>
+<rect x="596" y="180" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="208.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.5</tspan></text>
+<rect x="708" y="180" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="208.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-3</tspan></text>
+<rect x="820" y="180" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="208.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="932" y="180" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="208.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="1056" y="208.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">组尺度 0.5</tspan></text>
+<rect x="162" y="248" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="276.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">残差还原 x′ = 码 × 尺度</tspan></text>
+<rect x="596" y="248" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="276.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.75</tspan></text>
+<rect x="708" y="248" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="276.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-1.5</tspan></text>
+<rect x="820" y="248" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="276.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="932" y="248" width="104" height="56" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="276.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<text xml:space="preserve" x="1056" y="276.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">精确</tspan></text>
+<rect x="162" y="316" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">相加 x″ = Y + x′</tspan></text>
+<rect x="596" y="316" width="104" height="56" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.75</tspan></text>
+<rect x="708" y="316" width="104" height="56" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-2</tspan></text>
+<rect x="820" y="316" width="104" height="56" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="932" y="316" width="104" height="56" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">9.5</tspan></text>
+<text xml:space="preserve" x="1056" y="344.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">宽格式，精确</tspan></text>
+<rect x="162" y="384" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">编码 · E2M3 码</tspan></text>
+<rect x="596" y="384" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.875</tspan></text>
+<rect x="708" y="384" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-1</tspan></text>
+<rect x="820" y="384" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="932" y="384" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="412.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">4.75 → 5</tspan></text>
+<text xml:space="preserve" x="1056" y="412.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">组尺度 2 · RNE</tspan></text>
+<rect x="162" y="452" width="420" height="56" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="372.0" y="480.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">写回 L2 字节 12288 · MXFP6 稠密</tspan></text>
+<rect x="596" y="452" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="648.0" y="480.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1.75</tspan></text>
+<rect x="708" y="452" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="760.0" y="480.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">-2</tspan></text>
+<rect x="820" y="452" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="872.0" y="480.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="932" y="452" width="104" height="56" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="984.0" y="480.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">10</tspan></text>
+<text xml:space="preserve" x="1056" y="480.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">还原值</tspan></text>
+<rect x="30" y="112" width="120" height="56" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="90.0" y="140.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 1</tspan></text>
+<rect x="30" y="180" width="120" height="328" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="90.0" y="344.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 2</tspan></text>
+<text xml:space="preserve" x="30" y="548" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#b42318"><tspan dy="0.0">残差只加一次，编码只在最后一次；输出一律稠密</tspan></text>
+<rect x="30" y="586" width="30" height="24" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="70" y="598" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">归约结果</tspan></text>
+<rect x="192" y="586" width="30" height="24" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="232" y="598" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">残差</tspan></text>
+<rect x="318" y="586" width="30" height="24" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="358" y="598" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">相加结果</tspan></text>
+<rect x="480" y="586" width="30" height="24" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="520" y="598" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">编码与写回</tspan></text>
+<text xml:space="preserve" x="1396" y="648" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-10</tspan></text>
 </svg>

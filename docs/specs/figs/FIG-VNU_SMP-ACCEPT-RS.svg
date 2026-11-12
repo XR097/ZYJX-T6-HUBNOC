@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="500" viewBox="0 0 1150 500">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="359.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">token a</tspan></text>
+<text xml:space="preserve" x="529.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">token b</tspan></text>
+<text xml:space="preserve" x="699.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">token c</tspan></text>
+<text xml:space="preserve" x="869.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">token d</tspan></text>
+<text xml:space="preserve" x="1039.0" y="24" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">token e</tspan></text>
+<text xml:space="preserve" x="264" y="67.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">p</tspan><tspan dy="4.8" font-size="13">T</tspan><tspan dy="-4.8">（父节点）</tspan></text>
+<rect x="280" y="44" width="158" height="46" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="359.0" y="67.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="450" y="44" width="158" height="46" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="529.0" y="67.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.25</tspan></text>
+<rect x="620" y="44" width="158" height="46" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="699.0" y="67.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.125</tspan></text>
+<rect x="790" y="44" width="158" height="46" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="869.0" y="67.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.125</tspan></text>
+<rect x="960" y="44" width="158" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1039.0" y="67.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="264" y="127.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">q</tspan><tspan dy="4.8" font-size="13">D</tspan><tspan dy="-4.8">（该深度 Draft）</tspan></text>
+<rect x="280" y="104" width="158" height="46" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="359.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.25</tspan></text>
+<rect x="450" y="104" width="158" height="46" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="529.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="620" y="104" width="158" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="699.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="790" y="104" width="158" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="869.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="960" y="104" width="158" height="46" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1039.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.25</tspan></text>
+<text xml:space="preserve" x="264" y="187.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">① 试 b，u</tspan><tspan dy="4.8" font-size="13">1</tspan><tspan dy="-4.8"> = 0.75</tspan></text>
+<rect x="450" y="164" width="158" height="46" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="529.0" y="187.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.375 ≥ 0.25 ✗</tspan></text>
+<text xml:space="preserve" x="264" y="247.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">残差（NLU 重归一化）</tspan></text>
+<rect x="280" y="224" width="158" height="46" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="359.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.5</tspan></text>
+<rect x="450" y="224" width="158" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="529.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="620" y="224" width="158" height="46" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="699.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.25</tspan></text>
+<rect x="790" y="224" width="158" height="46" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="869.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.25</tspan></text>
+<rect x="960" y="224" width="158" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1039.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="264" y="307.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">② 试 a，u</tspan><tspan dy="4.8" font-size="13">2</tspan><tspan dy="-4.8"> = 0.5</tspan></text>
+<rect x="280" y="284" width="158" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="359.0" y="307.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0.125 &lt; 0.5 ✓</tspan></text>
+<text xml:space="preserve" x="264" y="367.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">边界：试 e</tspan></text>
+<rect x="960" y="344" width="158" height="46" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1039.0" y="367.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">不在 TOPK ✗</tspan></text>
+<rect x="40" y="415" width="30" height="22" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="80" y="426" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">p</tspan><tspan dy="4.8" font-size="13">T</tspan></text>
+<rect x="144.9" y="415" width="30" height="22" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="184.9" y="426" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">q</tspan><tspan dy="4.8" font-size="13">D</tspan></text>
+<rect x="249.8" y="415" width="30" height="22" rx="2" fill="#f9e3a6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="289.8" y="426" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">残差</tspan></text>
+<rect x="371.8" y="415" width="30" height="22" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="411.8" y="426" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">0（不在集合内）</tspan></text>
+<rect x="40" y="459" width="30" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="80" y="470" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">✓ 接受</tspan></text>
+<rect x="182.9" y="459" width="30" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="222.9" y="470" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">✗ 拒</tspan></text>
+</svg>

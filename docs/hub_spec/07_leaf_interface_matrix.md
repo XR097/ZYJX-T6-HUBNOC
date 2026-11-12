@@ -1,19 +1,20 @@
 # 当前实现分解接口矩阵
 
-以下是 RTL 便于验证和综合的叶级分解，不改变新版正文的模块边界。数据链路遵循通用链路块规则，叶级名字只是实现建议，不新增 CRU 对外口；HUB 不生成地址、不解析载荷、不判断完成。
+这是 RTL 拆分建议，不新增正式接口。模块边界可合并、复制或插级；每个块必须保持 `docs/specs/` 合同中的保序、旁带同拍和计数责任。
 
-| 实现块 | 输入 | 输出 | 关键不变量 |
-|---|---|---|---|
-| `h2c_l2_reader[4]` | MAE `en/addr`、L2 `busy/dout/vld` | 32 B 数据、目的 addr/seg/be/src | busy 保持请求；不生成地址 |
-| `h2c_mcast_fork[4]` | 数据、4-bit 掩码、各核 ready | 四路 H2C | 每目的 1 位已取；不额外配多播存储 |
-| `h2c_ack_merge[4]` | 四路 `valid+src` | MAE/引擎回程 | 不丢、不重、src 归属正确 |
-| `c2h_l2wp_link[4]` | 核集成输出端口、L2WP ready | L2WP 写流 | 核 n 只写象限 n；反压至发送 FIFO，以 stall_tx 门控 CCU |
-| `c2h_ack_return[4]` | L2 写入握手 | 对应 CCU | 只转交本核不带号的 valid 脉冲，无独立 CRU 入口 |
-| `hub_ctrl_fabric` | 64-bit 端点消息 | LIC/MAE/CCU/L2 | 透明转发，端点隔离 |
-| `hub_idn_fork` | MAE IDN 32 B 写流、每字 4-bit 核集合 | 四核 IDN 分支 | 核集合随字旁带；分叉只用已取位和 skid |
-| `idn_ack_merge` | 四路 IDN `valid+src` | MAE_ENG | 多播按目的核数汇总，不阻塞回程 |
-| `cru_l2_reader` | MAE_ENG 地址/象限掩码、NI-L2C 返回数据 | 四象限同址份 | 等参与象限数据到齐后交合并流水 |
-| `cru_merge_pipe` | 解码后的参与份、合并种类/编码 | 32 B 结果、实际字节数 | 支持逐元素、标量、读集合并；加法次序固定 |
-| `cru_l2_writer` | 结果、目的 `addr/seg/be/src` | NI-L2C 写客户、写入握手 | 写回 L2；引擎按握手计数并通知 LIC |
+| 建议块 | 作用 | 不变量 |
+|---|---|---|
+| `h2c_l2_reader[4]` | L2 象限读地址/数据流 | 道 n 只读象限 n；不生成地址；三条流按次序配对 |
+| `h2c_mcast_fork[4]` | 按单位核掩码复制 | 各目的独立取走；不丢、不重；慢核不拖快核 |
+| `h2c_ack_return[4]` | 汇总各核写入握手 | 按（核，`src`）归属；HUB 不做完成判定 |
+| `c2h_l2wp_link[4]` | 核输出直达 L2 | 核 n 只写象限 n；反压可到 `stall_tx` |
+| `hub_ctrl_fabric` | 命令网透明转发 | 每拍带 `addr`；不解析长度/类型；端点负责队列 |
+| `hub_idn_fork` | IDN 按字核集合分叉 | 集合随字旁带；到核链路不带集合 |
+| `idn_ack_return` | IDN 回程转交 | valid + `src`，不丢不重 |
+| `cru_l2_reader` | NI 读口参与象限对齐 | 独立 ready；掩码外不等待；返回先后不影响结果 |
+| `cru_merge_pipe` | 解码和合并 | 编码由指令给；固定象限次序；不新增错误状态 |
+| `cru_l2_writer` | 结果交给 NI-L2C | 写回 L2；写入握手由发令方计数 |
 
-实现块可合并、复制或插级；任何改变都必须保持 `00_requirements_trace.md` 的不变量。已删除的 `h2c_source_mux`、C2H 到 CRU 分流、`cru_arrival_table` 和旧 RHUB 量化块不属于当前设计。
+端口速查：数据 32 B，`be` 32 bit，`addr` 24 bit，`seg` 5 bit，`src` 按正式篇标定；读返回叫 `vld`，写入握手叫 `valid`，后者无 `ready`。
+
+实现拆分不能恢复旧 RHUB、H2C 第二源、C2H→CRU 分流、VC/credit/flit/`last`/`nw8` 或额外 ERROR 状态。

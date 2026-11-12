@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1524" height="300" viewBox="0 0 1524 300">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="194" y="30" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530"><tspan dy="0.0">项序号</tspan></text>
+<text xml:space="preserve" x="230.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="276.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="322.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="368.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<text xml:space="preserve" x="414.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<text xml:space="preserve" x="460.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
+<text xml:space="preserve" x="506.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">6</tspan></text>
+<text xml:space="preserve" x="552.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">7</tspan></text>
+<text xml:space="preserve" x="598.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">8</tspan></text>
+<text xml:space="preserve" x="644.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">9</tspan></text>
+<text xml:space="preserve" x="690.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">10</tspan></text>
+<text xml:space="preserve" x="736.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">11</tspan></text>
+<text xml:space="preserve" x="782.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">12</tspan></text>
+<text xml:space="preserve" x="828.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">13</tspan></text>
+<text xml:space="preserve" x="874.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">14</tspan></text>
+<text xml:space="preserve" x="920.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">15</tspan></text>
+<text xml:space="preserve" x="966.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">16</tspan></text>
+<text xml:space="preserve" x="1012.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">17</tspan></text>
+<text xml:space="preserve" x="1058.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">18</tspan></text>
+<text xml:space="preserve" x="1104.0" y="30" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">19</tspan></text>
+<text xml:space="preserve" x="194" y="72.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530"><tspan dy="0.0">SEL 写出的 TOPK 项</tspan></text>
+<rect x="210" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="256" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="302" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="348" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="394" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="440" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="486" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="532" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="578" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="624" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="670" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="716" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="762" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="808" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="854" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="900" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="946" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="992" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1038" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1084" y="52" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1144" y="72.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">0 / 20 已换：不进运算</tspan></text>
+<text xml:space="preserve" x="194" y="128.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530"><tspan dy="0.0">第 1 批：16 项</tspan></text>
+<rect x="210" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="256" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="302" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="348" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="394" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="440" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="486" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="532" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="578" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="624" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="670" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="716" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="762" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="808" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="854" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="900" y="108" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="946" y="108" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="992" y="108" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1038" y="108" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1084" y="108" width="40" height="40" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1144" y="128.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">16 / 20 已换：不进运算</tspan></text>
+<text xml:space="preserve" x="194" y="184.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#1d2530"><tspan dy="0.0">第 2 批：4 项</tspan></text>
+<rect x="210" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="256" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="302" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="348" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="394" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="440" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="486" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="532" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="578" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="624" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="670" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="716" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="762" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="808" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="854" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="900" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="946" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="992" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1038" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="1084" y="164" width="40" height="40" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1144" y="184.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#b42318"><tspan dy="0.0">20 / 20：全部换完才进运算</tspan></text>
+<rect x="40" y="235" width="30" height="22" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="80" y="246" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">hi 平面算出的 logit</tspan></text>
+<rect x="293.15000000000003" y="235" width="30" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="333.15000000000003" y="246" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="600" fill="#1d2530"><tspan dy="0.0">换成的精确 logit</tspan></text>
+</svg>

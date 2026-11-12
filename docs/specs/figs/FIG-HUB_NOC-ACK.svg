@@ -1,98 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="440" viewBox="0 0 1500 440">
-<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">H2C 道 0：引擎 3 的单位（3 个存储字，多播四核）后接引擎 5 的单位（2 个存储字，多播核 0、核 3）</tspan></text>
-<text xml:space="preserve" x="30" y="66" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">各核按自己的 ready 写进 L1（短时堵住由分支接住、分叉点不停），写进一个存储字就回一个 (valid, src)；道把同一拍四核的握手按 src 归并后交引擎</tspan></text>
-<rect x="30" y="92" width="54" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">拍</tspan></text>
-<rect x="90" y="92" width="124" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0</tspan></text>
-<rect x="220" y="92" width="124" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1</tspan></text>
-<rect x="350" y="92" width="124" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2</tspan></text>
-<rect x="480" y="92" width="124" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 3</tspan></text>
-<rect x="610" y="92" width="144" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">引擎 3 本拍</tspan></text>
-<rect x="760" y="92" width="144" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="110.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">引擎 5 本拍</tspan></text>
-<rect x="30" y="132" width="54" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
-<rect x="90" y="132" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="220" y="132" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="350" y="132" width="124" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="480" y="132" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="610" y="132" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+3</tspan></text>
-<rect x="760" y="132" width="144" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="150.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="30" y="172" width="54" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
-<rect x="90" y="172" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="220" y="172" width="124" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="350" y="172" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="480" y="172" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="610" y="172" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+3</tspan></text>
-<rect x="760" y="172" width="144" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="190.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="30" y="212" width="54" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
-<rect x="90" y="212" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="220" y="212" width="124" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="350" y="212" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="480" y="212" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="610" y="212" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+3</tspan></text>
-<rect x="760" y="212" width="144" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="230.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="30" y="252" width="54" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
-<rect x="90" y="252" width="124" height="36" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 5</tspan></text>
-<rect x="220" y="252" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="350" y="252" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="480" y="252" width="124" height="36" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 5</tspan></text>
-<rect x="610" y="252" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+2</tspan></text>
-<rect x="760" y="252" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+2</tspan></text>
-<rect x="30" y="292" width="54" height="36" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="57.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
-<rect x="90" y="292" width="124" height="36" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="152.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 5</tspan></text>
-<rect x="220" y="292" width="124" height="36" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="282.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 3</tspan></text>
-<rect x="350" y="292" width="124" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="412.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">—</tspan></text>
-<rect x="480" y="292" width="124" height="36" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="542.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">src 5</tspan></text>
-<rect x="610" y="292" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+1</tspan></text>
-<rect x="760" y="292" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="310.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">+2</tspan></text>
-<rect x="30" y="332" width="574" height="36" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="317.0" y="350.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">累计（= 应写量 = 存储字数 × 目的核数）</tspan></text>
-<rect x="610" y="332" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="682.0" y="350.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">12 = 3 × 4</tspan></text>
-<rect x="760" y="332" width="144" height="36" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="832.0" y="350.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">4 = 2 × 2</tspan></text>
-<text xml:space="preserve" x="30" y="390" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">同一拍可出现两个 src</tspan></text>
-<text xml:space="preserve" x="208" y="390" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">：归并成"某 src 本拍 +几"交引擎，或原样转交由引擎挑出自己的，【设计者定】；不丢、不重</tspan></text>
-<text xml:space="preserve" x="1476" y="428" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1000" viewBox="0 0 1920 1000">
+<defs><filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.20"/></filter><marker id="m_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#1d4ed8"/></marker><marker id="s_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#1d4ed8"/></marker><marker id="m_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#c2410c"/></marker><marker id="s_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#c2410c"/></marker><marker id="m_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#4b5563"/></marker><marker id="s_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#4b5563"/></marker><marker id="m_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b91c1c"/></marker><marker id="s_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b91c1c"/></marker><marker id="m_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker><marker id="m_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b45309"/></marker><marker id="s_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b45309"/></marker><marker id="m_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#475569"/></marker><marker id="s_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#475569"/></marker><marker id="m_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0369a1"/></marker><marker id="s_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0369a1"/></marker><marker id="m_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#172b4d"/></marker><marker id="s_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#172b4d"/></marker></defs>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<rect x="0" y="0" width="1920" height="100" fill="#172b4d"/>
+<rect x="30" y="130" width="360" height="600" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M31,164 L31,142 Q31,131 42,131 L378,131 Q389,131 389,142 L389,164 Z" fill="#f0fdfa" stroke="none"/>
+<rect x="440" y="136" width="440" height="594" rx="12" fill="#f5fbff" stroke="#0369a1" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M441,170 L441,148 Q441,137 452,137 L868,137 Q879,137 879,148 L879,170 Z" fill="#e0f2fe" stroke="none"/>
+<path d="M920,118 L1900,118 L1900,750 L920,750 Z" fill="#fffcf2" stroke="#b45309" stroke-width="2.2" stroke-dasharray="9,6"/>
+<rect x="945" y="136" width="420" height="594" rx="12" fill="#fffaf0" stroke="#b45309" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M946,170 L946,148 Q946,137 957,137 L1353,137 Q1364,137 1364,148 L1364,170 Z" fill="#fef3c7" stroke="none"/>
+<rect x="1420" y="768" width="470" height="134" rx="12" fill="#f5fbff" stroke="#0369a1" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M1421,802 L1421,780 Q1421,769 1432,769 L1878,769 Q1889,769 1889,780 L1889,802 Z" fill="#e0f2fe" stroke="none"/>
+<rect x="60" y="190" width="300" height="90" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.2"/>
+<rect x="60" y="322" width="300" height="90" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.2"/>
+<rect x="60" y="454" width="300" height="90" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.2"/>
+<rect x="60" y="586" width="300" height="90" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.2"/>
+<rect x="975" y="190" width="360" height="90" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="975" y="322" width="360" height="90" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="975" y="454" width="360" height="90" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="975" y="586" width="360" height="90" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1480" y="182" width="390" height="156" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1480" y="470" width="300" height="110" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1450" y="818" width="410" height="70" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.2"/>
+<rect x="945" y="818" width="360" height="70" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.2"/>
+<rect x="30" y="920" width="1692" height="52" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
+<path d="M44,946.0 L74,946.0" stroke="#c2410c" stroke-width="3" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M604,946.0 L634,946.0" stroke="#b45309" stroke-width="3" stroke-dasharray="2,5" marker-end="url(#m_ctlu)"/>
+<path d="M1164,946.0 L1194,946.0" stroke="#6d28d9" stroke-width="3" stroke-dasharray="12,4,3,4" marker-end="url(#m_push)"/>
+<path d="M360.0,235.0 L975.0,235.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M360.0,367.0 L975.0,367.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M360.0,499.0 L975.0,499.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M360.0,631.0 L975.0,631.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1365.0,260.0 L1480.0,260.0" stroke="#b45309" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctlu)"/>
+<path d="M1630.0,470.0 L1630.0,338.0" stroke="#b45309" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctlu)"/>
+<path d="M1830.0,338.0 L1830.0,818.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,4,3,4" marker-end="url(#m_push)"/>
+<path d="M1450.0,853.0 L1305.0,853.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,4,3,4" marker-end="url(#m_push)"/>
+<rect x="518.0" y="195.5" width="284.1" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="525.0" y="211.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">核 0 一组 · valid + src</text>
+<rect x="518.0" y="327.5" width="284.1" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="525.0" y="343.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">核 1 一组 · valid + src</text>
+<rect x="518.0" y="459.5" width="284.1" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="525.0" y="475.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">核 2 一组 · valid + src</text>
+<rect x="518.0" y="591.5" width="284.1" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="525.0" y="607.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">核 3 一组 · valid + src</text>
+<rect x="544.6" y="684.5" width="230.7" height="31" rx="5" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.6"/>
+<text x="551.6" y="700.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b91c1c">hub 里不汇总、不归并</text>
+<rect x="996.0" y="689.5" width="318.1" height="31" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="1003.0" y="705.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">一拍至多收 4 个（各核 1 个）</text>
+<rect x="1638.0" y="384.5" width="98.0" height="31" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
+<text x="1645.0" y="400.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">本道数满</text>
+<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="32" font-weight="700" fill="white">FIG-HUB_NOC-ACK  H2C 道 0 的写入握手：四核各一组直达道引擎，按（核, src）计数</text>
+<text x="40.0" y="74.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="500" fill="#cbd5e1">接收桥写进 L1 之后逐拍回 (valid, src) · 只有 valid、没有 ready · hub 里不汇总、不归并</text>
+<text x="44.0" y="148.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0f766e">四核 H2C 接收桥 · 道 0</text>
+<text x="210.0" y="217.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">核 0 接收桥</text>
+<text x="210.0" y="249.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">写进 bank 后回握手</text>
+<text x="210.0" y="349.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">核 1 接收桥</text>
+<text x="210.0" y="381.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">写进 bank 后回握手</text>
+<text x="210.0" y="481.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">核 2 接收桥</text>
+<text x="210.0" y="513.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">写进 bank 后回握手</text>
+<text x="210.0" y="613.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">核 3 接收桥</text>
+<text x="210.0" y="645.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">写进 bank 后回握手</text>
+<text x="454.0" y="154.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0369a1">HUB_NOC · 道 0 回程</text>
+<text x="1480.0" y="150.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">MAE 组 · MAE_ENG</text>
+<text x="959.0" y="154.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">道引擎 0（道 0 的发令方）</text>
+<text x="1155.0" y="217.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">核 0 计数器</text>
+<text x="1155.0" y="249.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">按 src 分别计数</text>
+<text x="1155.0" y="349.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">核 1 计数器</text>
+<text x="1155.0" y="381.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">按 src 分别计数</text>
+<text x="1155.0" y="481.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">核 2 计数器</text>
+<text x="1155.0" y="513.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">按 src 分别计数</text>
+<text x="1155.0" y="613.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">核 3 计数器</text>
+<text x="1155.0" y="645.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">按 src 分别计数</text>
+<text x="1675.0" y="215.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">引擎总控（参考组织）</text>
+<text x="1675.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">每个目的核各自数满</text>
+<text x="1675.0" y="274.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">（合并送时数满该核参与的各道）</text>
+<text x="1675.0" y="301.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">→ 给该核发写完通知</text>
+<text x="1630.0" y="507.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">道引擎 1–3</text>
+<text x="1630.0" y="539.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">各按（核, src）数本道</text>
+<text x="1434.0" y="786.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0369a1">HUB_NOC · 专用信号组</text>
+<text x="1655.0" y="835.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#6d28d9">写完通知（hub 侧）</text>
+<text x="1655.0" y="867.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">每核一组</text>
+<text x="1125.0" y="853.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#0f766e">各目的核 CCU</text>
+<text x="90.0" y="946.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">写入握手（valid + src）</text>
+<text x="650.0" y="946.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">道引擎 → 总控（放法【设计者定】）</text>
+<text x="1210.0" y="946.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">专用信号组：写完通知</text>
+<text x="1896" y="988" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-11</text>
 </svg>

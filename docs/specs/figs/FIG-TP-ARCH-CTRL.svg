@@ -1,225 +1,275 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1310" viewBox="0 0 1920 1310">
 <defs><filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.20"/></filter><marker id="m_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_incore" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#1d4ed8"/></marker><marker id="s_inter" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#1d4ed8"/></marker><marker id="m_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#c2410c"/></marker><marker id="s_ctrl" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#c2410c"/></marker><marker id="m_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#4b5563"/></marker><marker id="s_axi" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#4b5563"/></marker><marker id="m_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b91c1c"/></marker><marker id="s_stall" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b91c1c"/></marker><marker id="m_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_push" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#334155"/></marker><marker id="s_mem" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#334155"/></marker><marker id="m_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#6d28d9"/></marker><marker id="s_comp" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#6d28d9"/></marker><marker id="m_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#b45309"/></marker><marker id="s_ctlu" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#b45309"/></marker><marker id="m_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#475569"/></marker><marker id="s_ext" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#475569"/></marker><marker id="m_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0369a1"/></marker><marker id="s_hub" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0369a1"/></marker><marker id="m_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#0f766e"/></marker><marker id="s_core" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#0f766e"/></marker><marker id="m_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto"><path d="M0,0 L13,5.5 L0,11 Z" fill="#172b4d"/></marker><marker id="s_chip" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="1" refY="5.5" orient="auto"><path d="M13,0 L0,5.5 L13,11 Z" fill="#172b4d"/></marker></defs>
 <rect width="100%" height="100%" fill="#f8fafc"/>
-<rect x="0" y="0" width="1920" height="86" fill="#172b4d"/>
-<path d="M940,190 L1898,190 L1898,442 L940,442 Z" fill="#fffcf2" stroke="#b45309" stroke-width="2.2" stroke-dasharray="9,6"/>
-<rect x="20" y="452" width="1872" height="138" rx="12" fill="white" stroke="#0369a1" stroke-width="2.0" stroke-dasharray="9,6"/>
-<path d="M21,482 L21,464 Q21,453 32,453 L1880,453 Q1891,453 1891,464 L1891,482 Z" fill="#e0f2fe" stroke="none"/>
-<rect x="30" y="660" width="450" height="360" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
-<rect x="42" y="790" width="426" height="220" rx="12" fill="white" stroke="#b45309" stroke-width="1.6" stroke-dasharray="none"/>
-<path d="M43,820 L43,802 Q43,791 54,791 L456,791 Q467,791 467,802 L467,820 Z" fill="#fef3c7" stroke="none"/>
-<rect x="500" y="660" width="450" height="360" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
-<rect x="512" y="790" width="426" height="220" rx="12" fill="white" stroke="#b45309" stroke-width="1.6" stroke-dasharray="none"/>
-<path d="M513,820 L513,802 Q513,791 524,791 L926,791 Q937,791 937,802 L937,820 Z" fill="#fef3c7" stroke="none"/>
-<rect x="970" y="660" width="450" height="360" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
-<rect x="982" y="790" width="426" height="220" rx="12" fill="white" stroke="#b45309" stroke-width="1.6" stroke-dasharray="none"/>
-<path d="M983,820 L983,802 Q983,791 994,791 L1396,791 Q1407,791 1407,802 L1407,820 Z" fill="#fef3c7" stroke="none"/>
-<rect x="1440" y="660" width="450" height="360" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
-<rect x="1452" y="790" width="426" height="220" rx="12" fill="white" stroke="#b45309" stroke-width="1.6" stroke-dasharray="none"/>
-<path d="M1453,820 L1453,802 Q1453,791 1464,791 L1866,791 Q1877,791 1877,802 L1877,820 Z" fill="#fef3c7" stroke="none"/>
-<rect x="30" y="105" width="170" height="60" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="30" y="225" width="170" height="95" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="340" y="200" width="360" height="120" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="960" y="200" width="370" height="120" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="1560" y="200" width="330" height="120" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="230" y="100" width="1050" height="82" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
-<rect x="1300" y="100" width="592" height="42" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
-<path d="M1314,121.0 L1344,121.0" stroke="#c2410c" stroke-width="3" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1604,121.0 L1634,121.0" stroke="#4b5563" stroke-width="3" marker-end="url(#m_axi)"/>
-<rect x="30" y="486" width="1852" height="90" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.2" filter="url(#sh)"/>
-<rect x="42" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="52" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="52" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="52" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="320" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="512" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="522" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="522" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="522" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="790" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="982" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="992" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="992" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="992" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="1260" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="1452" y="700" width="188" height="74" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
-<rect x="1462" y="842" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="1462" y="894" width="240" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="1462" y="946" width="240" height="26" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<rect x="1730" y="842" width="138" height="130" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
-<path d="M70.0,165.0 L70.0,225.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
-<path d="M160.0,225.0 L160.0,165.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
-<path d="M200.0,245.0 L340.0,245.0" stroke="#4b5563" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
-<path d="M340.0,285.0 L200.0,285.0" stroke="#4b5563" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
-<path d="M700.0,240.0 L960.0,240.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M960.0,285.0 L700.0,285.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1330.0,240.0 L1560.0,240.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M420.0,320.0 L420.0,486.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M620.0,486.0 L620.0,320.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1020.0,320.0 L1020.0,486.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1150.0,486.0 L1150.0,320.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M130.0,880.0 L130.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M130.0,932.0 L130.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M130.0,790.0 L130.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M245.0,576.0 L245.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M170.0,826.0 L389.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M170.0,826.0 L170.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M308.0,826.0 L308.0,913.0 L292.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M389.0,826.0 L389.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M265.0,790.0 L265.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M600.0,880.0 L600.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M600.0,932.0 L600.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M600.0,790.0 L600.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M715.0,576.0 L715.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M640.0,826.0 L859.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M640.0,826.0 L640.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M778.0,826.0 L778.0,913.0 L762.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M859.0,826.0 L859.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M735.0,790.0 L735.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1070.0,880.0 L1070.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1070.0,932.0 L1070.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1070.0,790.0 L1070.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1185.0,576.0 L1185.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M1110.0,826.0 L1329.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M1110.0,826.0 L1110.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1248.0,826.0 L1248.0,913.0 L1232.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1329.0,826.0 L1329.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1205.0,790.0 L1205.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1540.0,880.0 L1540.0,894.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1540.0,932.0 L1540.0,946.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1540.0,790.0 L1540.0,774.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
-<path d="M1655.0,576.0 L1655.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M1580.0,826.0 L1799.0,826.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M1580.0,826.0 L1580.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1718.0,826.0 L1718.0,913.0 L1702.0,913.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1799.0,826.0 L1799.0,842.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1675.0,790.0 L1675.0,576.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1890.0,300.0 L1908.0,300.0 L1908.0,1040.0 L430.0,1040.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
-<path d="M430.0,1040.0 L430.0,972.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M900.0,1040.0 L900.0,972.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1370.0,1040.0 L1370.0,972.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<path d="M1840.0,1040.0 L1840.0,972.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
-<circle cx="245" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="308" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="715" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="778" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="1185" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="1248" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="1655" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="1718" cy="826" r="3.5" fill="#c2410c"/>
-<circle cx="900" cy="1040" r="3.5" fill="#c2410c"/>
-<circle cx="1370" cy="1040" r="3.5" fill="#c2410c"/>
-<circle cx="1840" cy="1040" r="3.5" fill="#c2410c"/>
-<rect x="168.0" y="184.0" width="95.6" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
-<text x="175.0" y="195.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">↓ APB　↑ IRQ</text>
-<rect x="206.1" y="252.0" width="127.8" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
-<text x="213.1" y="263.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">门铃 · 指针 · 停止</text>
-<rect x="216.6" y="292.0" width="106.9" height="22" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.1"/>
-<text x="223.6" y="303.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#4b5563">完成 · 致命错误</text>
-<rect x="724.6" y="247.0" width="190.9" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="731.6" y="258.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">搬运指令 + 指令标号（可多条）</text>
-<rect x="753.0" y="292.0" width="134.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="760.0" y="303.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">完成通知（指令标号）</text>
-<rect x="1378.0" y="247.0" width="134.0" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="1385.0" y="258.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">长度转发内容（组内）</text>
-<rect x="219.7" y="384.0" width="192.3" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="226.7" y="395.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">位点指令 / Fusion 段 / GO ↓</text>
-<rect x="628.0" y="419.0" width="120.8" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="635.0" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">事件 / 位点完成 ↑</text>
-<rect x="875.4" y="369.0" width="136.6" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="882.4" y="380.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">H2C 地址 · 核掩码 ↓</text>
-<rect x="1158.0" y="419.0" width="75.9" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="1165.0" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">发出报告 ↑</text>
-<rect x="855.4" y="1049.0" width="489.2" height="22" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.1"/>
-<text x="862.4" y="1060.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">NI 控制道：长度转发（IDN 搬运：段选 · 基址 · 应写量）→ 目的核 CCU 短消息队列</text>
-<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="30" font-weight="700" fill="white">FIG-TP-ARCH-CTRL  命令网：端点、CCU 指令寄存器与消息方向</text>
-<text x="40.0" y="66.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">64 bit 握手消息流（en / ready / data 64 bit，消息长度在首字、无末字标记）；每条链路单向点到点、与数据网同为通用链路块实例；端点不经 L1 / L2 SRAM</text>
-<text x="115.0" y="124.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#475569">M55</text>
-<text x="115.0" y="144.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">SoC</text>
-<text x="115.0" y="253.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b45309">CIF</text>
-<text x="115.0" y="273.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">APB 寄存器 · 邮箱</text>
-<text x="115.0" y="290.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">中断</text>
-<text x="1262.0" y="424.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">MAE 组（五单元）</text>
-<text x="520.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#b45309">LIC</text>
-<text x="520.0" y="252.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">指令 SRAM · 顺序取指 · Fusion 段整段发一次</text>
-<text x="520.0" y="270.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">收各核位点完成 + 数 MAE 完成通知 → 发 GO</text>
-<text x="520.0" y="288.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">屏障超时由 LIC 检测</text>
-<text x="1145.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#b45309">MAE_ENG</text>
-<text x="1145.0" y="252.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">指令入口可预存下一条 · 多条指令同时执行</text>
-<text x="1145.0" y="270.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">收发出报告 · 数写入握手（按 src）</text>
-<text x="1145.0" y="288.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">每条执行完 → 带指令标号通知 LIC</text>
-<text x="1725.0" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#475569">NI 控制道口</text>
-<text x="1725.0" y="251.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">不收指令（V18-MAE-27）</text>
-<text x="1725.0" y="269.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">长度转发内容由搬运引擎给</text>
-<text x="1725.0" y="287.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">经 NI 控制道发往目的核 CCU</text>
-<text x="244.0" y="119.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">指令先于数据：LIC 顺序取指；执行搬运的引擎先让 hub / NI 控制道发长度转发，再启动数据</text>
-<text x="244.0" y="141.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">数据到达而位点指令未装入 = 致命错误（长度转发晚到不算）；发现者经命令网报 LIC，LIC 经 CIF 报 M55；标量不走本网（经 C2H → L2 → MAE_CRU）</text>
-<text x="244.0" y="163.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">CCU：普通指令由 LIC 逐条装"下一条"；Fusion-CCU 整段进段 SRAM、本地按块循环，LIC 不重发；Fusion-L3PU 只在 LIC 执行</text>
-<text x="1360.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">命令网链路（单向）</text>
-<text x="1650.0" y="121.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">APB / 中断 / CIF 口（非命令网）</text>
-<text x="34.0" y="468.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0369a1">hub（全芯片一个；控制道与数据网物理独立）</text>
-<text x="956.0" y="511.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#0369a1">hub 控制道（另含 H2C 道旁搬运引擎，逻辑属 MAE_ENG）</text>
-<text x="956.0" y="531.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">LIC ⇄ 各核 CCU：位点指令 / Fusion 段 / GO 下行，事件 / 位点完成上行（转发）　·　CCU 发出报告 → MAE（转发）</text>
-<text x="956.0" y="549.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530">H2C 道收 MAE_ENG 给的逐拍地址与核掩码（引擎可放在道旁，逻辑属 MAE_ENG）；随 H2C 搬运先发长度转发 → 目的核 CCU　·　hub 不报完成（发令方数写入握手）</text>
-<text x="140.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 0</text>
-<text x="136.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
-<text x="136.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
-<text x="136.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
-<text x="56.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
-<text x="172.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
-<text x="172.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
-<text x="172.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
-<text x="172.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
-<text x="172.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="389.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="389.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="389.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="54.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="54.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
-<text x="610.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 1</text>
-<text x="606.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
-<text x="606.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
-<text x="606.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
-<text x="526.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
-<text x="642.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
-<text x="642.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
-<text x="642.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
-<text x="642.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
-<text x="642.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="859.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="859.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="859.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="524.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="524.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
-<text x="1080.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 2</text>
-<text x="1076.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
-<text x="1076.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
-<text x="1076.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
-<text x="996.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
-<text x="1112.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
-<text x="1112.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
-<text x="1112.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
-<text x="1112.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
-<text x="1112.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="1329.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="1329.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="1329.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="994.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="994.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
-<text x="1550.0" y="678.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f766e">计算核 3</text>
-<text x="1546.0" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">集成输出端口（C2H）</text>
-<text x="1546.0" y="736.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">CCU 选来源：L1 发送侧 / VNU 输出</text>
-<text x="1546.0" y="753.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">给逐拍 L2 addr · 不 ready 停算</text>
-<text x="1466.0" y="806.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#b45309">CCU 端点</text>
-<text x="1582.0" y="851.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">Fusion-CCU 段 SRAM</text>
-<text x="1582.0" y="867.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">≤ 16 字 · 块计数本地循环</text>
-<text x="1582.0" y="903.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">下一条指令寄存器 1,024 bit</text>
-<text x="1582.0" y="919.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="500" fill="#1d2530">LIC 直接装填，或由段 SRAM 搬入</text>
-<text x="1582.0" y="959.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#b45309">当前指令寄存器 1,024 bit</text>
-<text x="1799.0" y="888.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="700" fill="#b45309">短消息 RF 队列</text>
-<text x="1799.0" y="905.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">GO</text>
-<text x="1799.0" y="922.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530">长度转发</text>
-<text x="1464.0" y="984.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="700" fill="#b45309">ready：下一条为空 / 段 SRAM 有空位 / 队列未满</text>
-<text x="1464.0" y="1000.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="700" fill="#c2410c">↑ 位点完成 → LIC · 发出报告 → MAE</text>
-<text x="1896" y="1068" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-08</text>
+<rect x="0" y="0" width="1920" height="100" fill="#172b4d"/>
+<path d="M820,118 L1900,118 L1900,405 L820,405 Z" fill="#fffcf2" stroke="#b45309" stroke-width="2.2" stroke-dasharray="9,6"/>
+<rect x="840" y="132" width="720" height="262" rx="12" fill="#fffaf0" stroke="#b45309" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M841,166 L841,144 Q841,133 852,133 L1548,133 Q1559,133 1559,144 L1559,166 Z" fill="#fef3c7" stroke="none"/>
+<rect x="20" y="500" width="1880" height="218" rx="12" fill="white" stroke="#0369a1" stroke-width="2.0" stroke-dasharray="9,6"/>
+<path d="M21,534 L21,512 Q21,501 32,501 L1888,501 Q1899,501 1899,512 L1899,534 Z" fill="#e0f2fe" stroke="none"/>
+<rect x="30" y="745" width="450" height="350" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
+<rect x="42" y="883" width="426" height="200" rx="12" fill="white" stroke="#b45309" stroke-width="1.8" stroke-dasharray="none"/>
+<path d="M43,917 L43,895 Q43,884 54,884 L456,884 Q467,884 467,895 L467,917 Z" fill="#fef3c7" stroke="none"/>
+<rect x="500" y="745" width="450" height="350" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
+<rect x="512" y="883" width="426" height="200" rx="12" fill="white" stroke="#b45309" stroke-width="1.8" stroke-dasharray="none"/>
+<path d="M513,917 L513,895 Q513,884 524,884 L926,884 Q937,884 937,895 L937,917 Z" fill="#fef3c7" stroke="none"/>
+<rect x="970" y="745" width="450" height="350" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
+<rect x="982" y="883" width="426" height="200" rx="12" fill="white" stroke="#b45309" stroke-width="1.8" stroke-dasharray="none"/>
+<path d="M983,917 L983,895 Q983,884 994,884 L1396,884 Q1407,884 1407,895 L1407,917 Z" fill="#fef3c7" stroke="none"/>
+<rect x="1440" y="745" width="450" height="350" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="none"/>
+<rect x="1452" y="883" width="426" height="200" rx="12" fill="white" stroke="#b45309" stroke-width="1.8" stroke-dasharray="none"/>
+<path d="M1453,917 L1453,895 Q1453,884 1464,884 L1866,884 Q1877,884 1877,895 L1877,917 Z" fill="#fef3c7" stroke="none"/>
+<rect x="30" y="115" width="180" height="75" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="30" y="250" width="180" height="110" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="370" y="230" width="280" height="150" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="40" y="545" width="190" height="72" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.2"/>
+<rect x="860" y="182" width="200" height="58" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="1080" y="182" width="460" height="58" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="1080" y="296" width="100" height="50" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1200" y="296" width="100" height="50" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1320" y="296" width="100" height="50" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1440" y="296" width="100" height="50" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1600" y="150" width="280" height="140" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<rect x="300" y="545" width="220" height="72" rx="10" fill="#ffedd5" stroke="#c2410c" stroke-width="2.2"/>
+<rect x="42" y="793" width="170" height="72" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
+<rect x="52" y="929" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="52" y="983" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="52" y="1037" width="178" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="262" y="923" width="196" height="156" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="512" y="793" width="170" height="72" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
+<rect x="522" y="929" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="522" y="983" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="522" y="1037" width="178" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="732" y="923" width="196" height="156" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="982" y="793" width="170" height="72" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
+<rect x="992" y="929" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="992" y="983" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="992" y="1037" width="178" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1202" y="923" width="196" height="156" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1452" y="793" width="170" height="72" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="2.2"/>
+<rect x="1462" y="929" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1462" y="983" width="178" height="42" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1462" y="1037" width="178" height="38" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="1672" y="923" width="196" height="156" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2.2"/>
+<rect x="30" y="1170" width="1212" height="124" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
+<path d="M44,1196.0 L74,1196.0" stroke="#c2410c" stroke-width="3" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M44,1232.0 L74,1232.0" stroke="#6d28d9" stroke-width="3" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M44,1268.0 L74,1268.0" stroke="#c2410c" stroke-width="3" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M444,1196.0 L474,1196.0" stroke="#4b5563" stroke-width="3" marker-end="url(#m_axi)"/>
+<path d="M444,1232.0 L474,1232.0" stroke="#b45309" stroke-width="1.8" marker-end="url(#m_ctlu)"/>
+<path d="M444,1268.0 L480,1268.0" stroke="#c2410c" stroke-width="2.4"/><path d="M462,1268.0 L462,1278.0" stroke="#c2410c" stroke-width="2.4"/><circle cx="462" cy="1268.0" r="4.5" fill="#c2410c"/>
+<path d="M844,1196.0 L880,1196.0" stroke="#6d28d9" stroke-width="2.4"/><path d="M862,1196.0 L862,1206.0" stroke="#6d28d9" stroke-width="2.4"/><circle cx="862" cy="1196.0" r="4.5" fill="#6d28d9"/>
+<path d="M862,1222.0 L862,1242.0" stroke="#6d28d9" stroke-width="2.4"/><path d="M844,1232.0 L856,1232.0 A6,6 0 0 1 868,1232.0 L880,1232.0" stroke="#6d28d9" stroke-width="2.4" fill="none"/>
+<path d="M844,1268.0 L874,1268.0" stroke="#b91c1c" stroke-width="3" stroke-dasharray="3,3" marker-end="url(#m_stall)"/>
+<rect x="1260" y="1170" width="580" height="46" rx="8" fill="white" stroke="#8a94a6" stroke-width="1.2" filter="url(#sh)"/>
+<path d="M70.0,190.0 L70.0,250.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M150.0,250.0 L150.0,190.0" stroke="#4b5563" stroke-width="2.2" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M210.0,275.0 L370.0,275.0" stroke="#4b5563" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M370.0,330.0 L210.0,330.0" stroke="#4b5563" stroke-width="2.4" fill="none" stroke-linejoin="round" marker-end="url(#m_axi)"/>
+<path d="M210.0,350.0 L370.0,350.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M210.0,258.0 L345.0,258.0 L345.0,212.0 L840.0,212.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M30.0,355.0 L26.0,355.0 L26.0,581.0 L40.0,581.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M135.0,617.0 L135.0,730.0 L246.0,730.0 A6.0,6.0 0 0 1 258.0,730.0 L286.0,730.0 A6.0,6.0 0 0 1 298.0,730.0 L326.0,730.0 A6.0,6.0 0 0 1 338.0,730.0 L366.0,730.0 A6.0,6.0 0 0 1 378.0,730.0 L406.0,730.0 A6.0,6.0 0 0 1 418.0,730.0 L716.0,730.0 A6.0,6.0 0 0 1 728.0,730.0 L756.0,730.0 A6.0,6.0 0 0 1 768.0,730.0 L796.0,730.0 A6.0,6.0 0 0 1 808.0,730.0 L836.0,730.0 A6.0,6.0 0 0 1 848.0,730.0 L876.0,730.0 A6.0,6.0 0 0 1 888.0,730.0 L1186.0,730.0 A6.0,6.0 0 0 1 1198.0,730.0 L1226.0,730.0 A6.0,6.0 0 0 1 1238.0,730.0 L1266.0,730.0 A6.0,6.0 0 0 1 1278.0,730.0 L1306.0,730.0 A6.0,6.0 0 0 1 1318.0,730.0 L1346.0,730.0 A6.0,6.0 0 0 1 1358.0,730.0 L1560.0,730.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3"/>
+<path d="M150.0,730.0 L150.0,745.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M620.0,730.0 L620.0,745.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M1090.0,730.0 L1090.0,745.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M1560.0,730.0 L1560.0,745.0" stroke="#b91c1c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="3,3" marker-end="url(#m_stall)" marker-start="url(#s_stall)"/>
+<path d="M960.0,240.0 L960.0,270.0 L1490.0,270.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5"/>
+<path d="M1130.0,270.0 L1130.0,296.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M1250.0,270.0 L1250.0,296.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M1370.0,270.0 L1370.0,296.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M1490.0,270.0 L1490.0,296.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M1540.0,211.0 L1600.0,211.0" stroke="#c2410c" stroke-width="2.0" fill="none" stroke-linejoin="round" stroke-dasharray="2,5" marker-end="url(#m_ctrl)"/>
+<path d="M650.0,262.0 L840.0,262.0" stroke="#c2410c" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M840.0,330.0 L650.0,330.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M400.0,380.0 L400.0,545.0" stroke="#c2410c" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M540.0,380.0 L540.0,634.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M600.0,656.0 L600.0,380.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M890.0,240.0 L890.0,678.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M930.0,700.0 L930.0,240.0" stroke="#6d28d9" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M140.0,971.0 L140.0,983.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M140.0,1025.0 L140.0,1037.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M127.0,883.0 L127.0,865.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M300.0,581.0 L252.0,581.0 L252.0,1004.0 L230.0,1004.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M252.0,950.0 L230.0,950.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M292.0,634.0 L292.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M332.0,923.0 L332.0,656.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M372.0,678.0 L372.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M412.0,923.0 L412.0,700.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M610.0,971.0 L610.0,983.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M610.0,1025.0 L610.0,1037.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M597.0,883.0 L597.0,865.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M722.0,581.0 L722.0,1004.0 L700.0,1004.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M722.0,950.0 L700.0,950.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M762.0,634.0 L762.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M802.0,923.0 L802.0,656.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M842.0,678.0 L842.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M882.0,923.0 L882.0,700.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M1080.0,971.0 L1080.0,983.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1080.0,1025.0 L1080.0,1037.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1067.0,883.0 L1067.0,865.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1192.0,581.0 L1192.0,1004.0 L1170.0,1004.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1192.0,950.0 L1170.0,950.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1232.0,634.0 L1232.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1272.0,923.0 L1272.0,656.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M1312.0,678.0 L1312.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1352.0,923.0 L1352.0,700.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M1550.0,971.0 L1550.0,983.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1550.0,1025.0 L1550.0,1037.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1537.0,883.0 L1537.0,865.0" stroke="#b45309" stroke-width="2.0" fill="none" stroke-linejoin="round" marker-end="url(#m_ctlu)"/>
+<path d="M1662.0,581.0 L1662.0,1004.0 L1640.0,1004.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1662.0,950.0 L1640.0,950.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4" marker-end="url(#m_ctrl)"/>
+<path d="M1702.0,634.0 L1702.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1742.0,923.0 L1742.0,656.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M1782.0,678.0 L1782.0,923.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1822.0,923.0 L1822.0,700.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M520.0,581.0 L534.0,581.0 A6.0,6.0 0 0 1 546.0,581.0 L594.0,581.0 A6.0,6.0 0 0 1 606.0,581.0 L884.0,581.0 A6.0,6.0 0 0 1 896.0,581.0 L924.0,581.0 A6.0,6.0 0 0 1 936.0,581.0 L1662.0,581.0" stroke="#c2410c" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="7,4"/>
+<path d="M292.0,634.0 L594.0,634.0 A6.0,6.0 0 0 1 606.0,634.0 L716.0,634.0 A6.0,6.0 0 0 1 728.0,634.0 L884.0,634.0 A6.0,6.0 0 0 1 896.0,634.0 L924.0,634.0 A6.0,6.0 0 0 1 936.0,634.0 L1186.0,634.0 A6.0,6.0 0 0 1 1198.0,634.0 L1656.0,634.0 A6.0,6.0 0 0 1 1668.0,634.0 L1702.0,634.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M332.0,656.0 L716.0,656.0 A6.0,6.0 0 0 1 728.0,656.0 L756.0,656.0 A6.0,6.0 0 0 1 768.0,656.0 L884.0,656.0 A6.0,6.0 0 0 1 896.0,656.0 L924.0,656.0 A6.0,6.0 0 0 1 936.0,656.0 L1186.0,656.0 A6.0,6.0 0 0 1 1198.0,656.0 L1226.0,656.0 A6.0,6.0 0 0 1 1238.0,656.0 L1656.0,656.0 A6.0,6.0 0 0 1 1668.0,656.0 L1696.0,656.0 A6.0,6.0 0 0 1 1708.0,656.0 L1742.0,656.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M372.0,678.0 L716.0,678.0 A6.0,6.0 0 0 1 728.0,678.0 L756.0,678.0 A6.0,6.0 0 0 1 768.0,678.0 L796.0,678.0 A6.0,6.0 0 0 1 808.0,678.0 L924.0,678.0 A6.0,6.0 0 0 1 936.0,678.0 L1186.0,678.0 A6.0,6.0 0 0 1 1198.0,678.0 L1226.0,678.0 A6.0,6.0 0 0 1 1238.0,678.0 L1266.0,678.0 A6.0,6.0 0 0 1 1278.0,678.0 L1656.0,678.0 A6.0,6.0 0 0 1 1668.0,678.0 L1696.0,678.0 A6.0,6.0 0 0 1 1708.0,678.0 L1736.0,678.0 A6.0,6.0 0 0 1 1748.0,678.0 L1782.0,678.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M412.0,700.0 L716.0,700.0 A6.0,6.0 0 0 1 728.0,700.0 L756.0,700.0 A6.0,6.0 0 0 1 768.0,700.0 L796.0,700.0 A6.0,6.0 0 0 1 808.0,700.0 L836.0,700.0 A6.0,6.0 0 0 1 848.0,700.0 L1186.0,700.0 A6.0,6.0 0 0 1 1198.0,700.0 L1226.0,700.0 A6.0,6.0 0 0 1 1238.0,700.0 L1266.0,700.0 A6.0,6.0 0 0 1 1278.0,700.0 L1306.0,700.0 A6.0,6.0 0 0 1 1318.0,700.0 L1656.0,700.0 A6.0,6.0 0 0 1 1668.0,700.0 L1696.0,700.0 A6.0,6.0 0 0 1 1708.0,700.0 L1736.0,700.0 A6.0,6.0 0 0 1 1748.0,700.0 L1776.0,700.0 A6.0,6.0 0 0 1 1788.0,700.0 L1822.0,700.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M1880.0,250.0 L1908.0,250.0 L1908.0,1115.0 L440.0,1115.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5"/>
+<path d="M440.0,1115.0 L440.0,1079.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M910.0,1115.0 L910.0,1079.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1380.0,1115.0 L1380.0,1079.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<path d="M1850.0,1115.0 L1850.0,1079.0" stroke="#6d28d9" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-dasharray="12,5,3,5" marker-end="url(#m_push)"/>
+<circle cx="150" cy="730" r="3.5" fill="#b91c1c"/>
+<circle cx="620" cy="730" r="3.5" fill="#b91c1c"/>
+<circle cx="1090" cy="730" r="3.5" fill="#b91c1c"/>
+<circle cx="1130" cy="270" r="3.5" fill="#c2410c"/>
+<circle cx="1250" cy="270" r="3.5" fill="#c2410c"/>
+<circle cx="1370" cy="270" r="3.5" fill="#c2410c"/>
+<circle cx="252" cy="950" r="3.5" fill="#c2410c"/>
+<circle cx="292" cy="634" r="4" fill="#6d28d9"/>
+<circle cx="332" cy="656" r="4" fill="#6d28d9"/>
+<circle cx="372" cy="678" r="4" fill="#6d28d9"/>
+<circle cx="412" cy="700" r="4" fill="#6d28d9"/>
+<circle cx="722" cy="581" r="4" fill="#c2410c"/>
+<circle cx="722" cy="950" r="3.5" fill="#c2410c"/>
+<circle cx="762" cy="634" r="4" fill="#6d28d9"/>
+<circle cx="802" cy="656" r="4" fill="#6d28d9"/>
+<circle cx="842" cy="678" r="4" fill="#6d28d9"/>
+<circle cx="882" cy="700" r="4" fill="#6d28d9"/>
+<circle cx="1192" cy="581" r="4" fill="#c2410c"/>
+<circle cx="1192" cy="950" r="3.5" fill="#c2410c"/>
+<circle cx="1232" cy="634" r="4" fill="#6d28d9"/>
+<circle cx="1272" cy="656" r="4" fill="#6d28d9"/>
+<circle cx="1312" cy="678" r="4" fill="#6d28d9"/>
+<circle cx="1352" cy="700" r="4" fill="#6d28d9"/>
+<circle cx="1662" cy="581" r="4" fill="#c2410c"/>
+<circle cx="1662" cy="950" r="3.5" fill="#c2410c"/>
+<circle cx="1702" cy="634" r="4" fill="#6d28d9"/>
+<circle cx="1742" cy="656" r="4" fill="#6d28d9"/>
+<circle cx="1782" cy="678" r="4" fill="#6d28d9"/>
+<circle cx="1822" cy="700" r="4" fill="#6d28d9"/>
+<circle cx="910" cy="1115" r="4" fill="#6d28d9"/>
+<circle cx="1380" cy="1115" r="4" fill="#6d28d9"/>
+<circle cx="1850" cy="1115" r="4" fill="#6d28d9"/>
+<rect x="158.0" y="204.5" width="172.3" height="31" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.6"/>
+<text x="165.0" y="220.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#4b5563">APB ↓ · IRQ ↑</text>
+<rect x="212.2" y="286.5" width="155.5" height="31" rx="5" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.6"/>
+<text x="219.2" y="302.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#4b5563">寄存器 / 完成</text>
+<rect x="1158.7" y="356.5" width="302.5" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="1165.7" y="372.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">参考组织 · 接口【设计者定】</text>
+<rect x="696.0" y="222.5" width="98.0" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="703.0" y="238.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">搬运指令</text>
+<rect x="677.7" y="338.5" width="134.5" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="684.7" y="354.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">完成通知 ×1</text>
+<rect x="48.3" y="414.5" width="343.7" height="31" rx="5" fill="#ffedd5" stroke="#c2410c" stroke-width="1.6"/>
+<text x="55.3" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#c2410c">位点指令 · Fusion 段 · 配置 ↓</text>
+<rect x="432.7" y="414.5" width="99.3" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="439.7" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">GO ×4 ↓</text>
+<rect x="608.0" y="454.5" width="200.9" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="615.0" y="470.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">位点完成事件 ×4 ↑</text>
+<rect x="623.6" y="414.5" width="258.4" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="630.6" y="430.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">写完通知（hub 侧）×4 ↓</text>
+<rect x="938.0" y="454.5" width="326.9" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="945.0" y="470.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">发出报告 ×4 ↑（分批带流标号）</text>
+<rect x="822.5" y="1127.5" width="555.0" height="31" rx="5" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.6"/>
+<text x="829.5" y="1143.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#6d28d9">写完通知（NI 侧）×4：NI_INT → 各核 CCU，不经 hub</text>
+<text x="40.0" y="36.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="32" font-weight="700" fill="white">FIG-TP-ARCH-CTRL  命令网与专用信号组</text>
+<text x="40.0" y="74.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="500" fill="#cbd5e1">命令网：与数据网同格式、每拍带 addr、只传指令与配置 · 专用信号组：每组 valid + 载荷，经 hub（或 NI）点到点</text>
+<text x="120.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#475569">M55</text>
+<text x="120.0" y="166.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">SoC</text>
+<text x="120.0" y="274.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="26" font-weight="700" fill="#b45309">CIF</text>
+<text x="120.0" y="306.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">APB 寄存器</text>
+<text x="120.0" y="333.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">中断</text>
+<text x="510.0" y="274.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="28" font-weight="700" fill="#b45309">LIC</text>
+<text x="510.0" y="307.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">指令 SRAM · 顺序取指</text>
+<text x="510.0" y="334.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">屏障 → 发 GO</text>
+<text x="135.0" y="563.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b91c1c">停止线</text>
+<text x="135.0" y="594.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">HUB_NOC 直通</text>
+<text x="1614.0" y="380.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">MAE 组</text>
+<text x="854.0" y="150.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">MAE_ENG（MAE 唯一的命令网端点）</text>
+<text x="960.0" y="211.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">引擎总控</text>
+<text x="1310.0" y="211.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#b45309">其余搬运引擎</text>
+<text x="1130.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">道引擎 0</text>
+<text x="1250.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">道引擎 1</text>
+<text x="1370.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">道引擎 2</text>
+<text x="1490.0" y="321.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">道引擎 3</text>
+<text x="1740.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#475569">NI_INT</text>
+<text x="1740.0" y="220.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">NI 侧写完通知</text>
+<text x="1740.0" y="247.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">不在命令网上</text>
+<text x="34.0" y="518.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0369a1">HUB 组 · HUB_NOC</text>
+<text x="410.0" y="563.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#c2410c">hub 控制道</text>
+<text x="410.0" y="595.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">只转发</text>
+<text x="44.0" y="767.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0f766e">计算核 0</text>
+<text x="127.0" y="811.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#334155">集成输出端口</text>
+<text x="127.0" y="842.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">C2H</text>
+<text x="56.0" y="901.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">CCU（参考组织）</text>
+<text x="141.0" y="950.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">Fusion 段 SRAM</text>
+<text x="141.0" y="1004.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">下一条指令</text>
+<text x="141.0" y="1056.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">当前指令</text>
+<text x="360.0" y="943.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">专用信号收发</text>
+<text x="360.0" y="973.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：GO</text>
+<text x="360.0" y="1000.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：写完通知 ×2</text>
+<text x="360.0" y="1027.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：位点完成事件</text>
+<text x="360.0" y="1054.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：发出报告</text>
+<text x="514.0" y="767.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0f766e">计算核 1</text>
+<text x="597.0" y="811.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#334155">集成输出端口</text>
+<text x="597.0" y="842.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">C2H</text>
+<text x="526.0" y="901.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">CCU（参考组织）</text>
+<text x="611.0" y="950.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">Fusion 段 SRAM</text>
+<text x="611.0" y="1004.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">下一条指令</text>
+<text x="611.0" y="1056.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">当前指令</text>
+<text x="830.0" y="943.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">专用信号收发</text>
+<text x="830.0" y="973.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：GO</text>
+<text x="830.0" y="1000.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：写完通知 ×2</text>
+<text x="830.0" y="1027.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：位点完成事件</text>
+<text x="830.0" y="1054.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：发出报告</text>
+<text x="984.0" y="767.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0f766e">计算核 2</text>
+<text x="1067.0" y="811.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#334155">集成输出端口</text>
+<text x="1067.0" y="842.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">C2H</text>
+<text x="996.0" y="901.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">CCU（参考组织）</text>
+<text x="1081.0" y="950.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">Fusion 段 SRAM</text>
+<text x="1081.0" y="1004.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">下一条指令</text>
+<text x="1081.0" y="1056.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">当前指令</text>
+<text x="1300.0" y="943.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">专用信号收发</text>
+<text x="1300.0" y="973.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：GO</text>
+<text x="1300.0" y="1000.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：写完通知 ×2</text>
+<text x="1300.0" y="1027.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：位点完成事件</text>
+<text x="1300.0" y="1054.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：发出报告</text>
+<text x="1454.0" y="767.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#0f766e">计算核 3</text>
+<text x="1537.0" y="811.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#334155">集成输出端口</text>
+<text x="1537.0" y="842.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">C2H</text>
+<text x="1466.0" y="901.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">CCU（参考组织）</text>
+<text x="1551.0" y="950.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#b45309">Fusion 段 SRAM</text>
+<text x="1551.0" y="1004.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">下一条指令</text>
+<text x="1551.0" y="1056.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">当前指令</text>
+<text x="1770.0" y="943.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#b45309">专用信号收发</text>
+<text x="1770.0" y="973.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：GO</text>
+<text x="1770.0" y="1000.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">收：写完通知 ×2</text>
+<text x="1770.0" y="1027.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：位点完成事件</text>
+<text x="1770.0" y="1054.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">发：发出报告</text>
+<text x="90.0" y="1196.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">命令网：指令与配置 · 每拍 addr</text>
+<text x="90.0" y="1232.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">专用信号组：valid + 载荷</text>
+<text x="90.0" y="1268.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">组内接口（非命令网）</text>
+<text x="490.0" y="1196.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">APB / 中断</text>
+<text x="490.0" y="1232.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">CCU 内部</text>
+<text x="490.0" y="1268.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">分支 = 每核各一条</text>
+<text x="890.0" y="1196.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">分支 = 每核各一组</text>
+<text x="890.0" y="1232.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">跳线 = 不相连</text>
+<text x="890.0" y="1268.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">停止 / 已停住：CIF 直出，不经命令网</text>
+<text x="1274.0" y="1193.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="500" fill="#1d2530">不在命令网上：L2 · MAE_CRU · VNU · L1 · 接收桥</text>
+<text x="1896" y="1298" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-11</text>
 </svg>

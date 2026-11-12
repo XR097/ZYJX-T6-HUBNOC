@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1410" height="500" viewBox="0 0 1410 500">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="120" y="26" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">紧密存储：VNU 写口向 A 类某一堆连续三批写，按字节首尾相接、不补齐</tspan></text>
+<text xml:space="preserve" x="120" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">0 B</tspan></text>
+<path d="M120.0,74.0 L120.0,310.0" stroke="#7b8794" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+<text xml:space="preserve" x="360" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">8 B</tspan></text>
+<path d="M360.0,74.0 L360.0,310.0" stroke="#7b8794" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+<text xml:space="preserve" x="600" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">16 B</tspan></text>
+<path d="M600.0,74.0 L600.0,310.0" stroke="#7b8794" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+<text xml:space="preserve" x="840" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">24 B</tspan></text>
+<path d="M840.0,74.0 L840.0,310.0" stroke="#7b8794" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+<text xml:space="preserve" x="1080" y="62" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">32 B</tspan></text>
+<path d="M1080.0,74.0 L1080.0,310.0" stroke="#7b8794" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+<text xml:space="preserve" x="106" y="107.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 0</tspan></text>
+<rect x="122" y="84" width="506" height="46" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="375.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 0 0–16</tspan></text>
+<rect x="632" y="84" width="446" height="46" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="855.0" y="107.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 1 17–31</tspan></text>
+<text xml:space="preserve" x="1096" y="107.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">批 0 起点 0、1 起点 17</tspan></text>
+<rect x="1020" y="80" width="60" height="54" rx="2" fill="none" stroke="#b42318" stroke-width="3.2"/>
+<text xml:space="preserve" x="106" y="165.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 1</tspan></text>
+<rect x="122" y="142" width="746" height="46" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="495.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 1 32–56</tspan></text>
+<rect x="872" y="142" width="206" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="975.0" y="165.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 2 57–63</tspan></text>
+<text xml:space="preserve" x="1096" y="165.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">批 2 起点 57</tspan></text>
+<rect x="120" y="138" width="960" height="54" rx="2" fill="none" stroke="#b42318" stroke-width="3.2"/>
+<text xml:space="preserve" x="106" y="223.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 2</tspan></text>
+<rect x="122" y="200" width="956" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="600.0" y="223.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 2 64–95</tspan></text>
+<rect x="120" y="196" width="780" height="54" rx="2" fill="none" stroke="#b42318" stroke-width="3.2"/>
+<text xml:space="preserve" x="106" y="281.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 3</tspan></text>
+<rect x="122" y="258" width="746" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="495.0" y="281.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 2 96–120</tspan></text>
+<rect x="872" y="258" width="206" height="46" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="975.0" y="281.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="500" fill="#1d2530"><tspan dy="0.0">下一批从 121 起</tspan></text>
+<text xml:space="preserve" x="1096" y="281.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#b42318"><tspan dy="0.0">批 2 一次写跨三个字</tspan></text>
+<text xml:space="preserve" x="120" y="344" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">读回（上方红框）：首地址 30、长度 60 B → 输出</tspan></text>
+<rect x="120" y="370" width="405" height="46" rx="2" fill="#fdf1c7" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="322.5" y="393.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 1 · 地址 30–56</tspan></text>
+<rect x="525" y="370" width="495" height="46" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="772.5" y="393.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="600" fill="#1d2530"><tspan dy="0.0">批 2 · 地址 57–89</tspan></text>
+<path d="M120.0,442.0 L120.0,420.0" stroke="#172b4d" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="130" y="446" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">输出第 0 字节 = 地址 30</tspan></text>
+<text xml:space="preserve" x="1034" y="393.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">共 60 B</tspan></text>
+<text x="1394" y="490" text-anchor="end" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6">Owner: WangYizhao · 2026-11-11</text>
+</svg>

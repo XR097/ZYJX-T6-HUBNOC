@@ -1,6 +1,10 @@
 # 当前审查结论
 
-- [module_delta_current.md](module_delta_current.md)：2026-11-08 基线的模块边界、接口、旧结论失效情况与当前验证范围。
-- [open_issues_current.md](open_issues_current.md)：仍需审查、仿真或标定的问题，以及本次关闭的文档清理项。
+本目录只保留一页结论和一份问题台账。正式需求在 `../specs/`；历史报告通过 Git 追溯。
 
-当前台账区分正文已定行为的实现验证与需要澄清的跨篇冲突。旧报告和旧台账通过 Git 追溯，不在工作树保留第二套基线。
+| 文件 | 用途 |
+|---|---|
+| [module_delta_current.md](module_delta_current.md) | V1.8 相对旧 HUB/MAE_CRU 基线的设计变化和当前工作顺序 |
+| [open_issues_current.md](open_issues_current.md) | 进入 RTL/验证前必须关闭的冲突、外部输入和验证门槛 |
+
+先读一页结论，再按台账处理 blocker；验证结果回填台账，不把聊天或提交说明作为唯一记录。

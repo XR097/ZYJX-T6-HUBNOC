@@ -1,57 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="470" viewBox="0 0 1340 470">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="390" viewBox="0 0 1400 390">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" font-weight="700" fill="#172b4d"><tspan dy="0.0">读集合并：指令 0（掩码 0111，共享前缀段）与指令 1（掩码 0101，某行私有段）各读一拍四个象限，按位取并</tspan></text>
-<text xml:space="preserve" x="30" y="66" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">1 位 = 一个 key（或区块、列）要不要读；图中 8 bit，实际一个存储字 256 bit，更长的读集占连续几个字；结果写回 L2，由 MAE 当列表读用</tspan></text>
-<rect x="30" y="92" width="84" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="72.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令</tspan></text>
-<rect x="120" y="92" width="144" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="192.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">读的地址</tspan></text>
-<rect x="270" y="92" width="134" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="337.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">象限 0</tspan></text>
-<rect x="410" y="92" width="134" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="477.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">象限 1</tspan></text>
-<rect x="550" y="92" width="134" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="617.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">象限 2</tspan></text>
-<rect x="690" y="92" width="134" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="757.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">象限 3</tspan></text>
-<rect x="830" y="92" width="84" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="872.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">掩码</tspan></text>
-<rect x="920" y="92" width="194" height="38" rx="2" fill="#fff0d2" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1017.0" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">并集（写回 L2）</tspan></text>
-<rect x="30" y="134" width="84" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="72.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 0</tspan></text>
-<rect x="120" y="134" width="144" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="192.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节 1024</tspan></text>
-<rect x="270" y="134" width="134" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="337.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">10010000</tspan></text>
-<rect x="410" y="134" width="134" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="477.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">00010010</tspan></text>
-<rect x="550" y="134" width="134" height="38" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="617.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">01000000</tspan></text>
-<rect x="690" y="134" width="134" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="757.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">11111111</tspan></text>
-<rect x="830" y="134" width="84" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="872.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0111</tspan></text>
-<rect x="920" y="134" width="194" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1017.0" y="153.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">11010010</tspan></text>
-<rect x="30" y="176" width="84" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="72.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">指令 1</tspan></text>
-<rect x="120" y="176" width="144" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="192.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">字节 1056</tspan></text>
-<rect x="270" y="176" width="134" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="337.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">00100001</tspan></text>
-<rect x="410" y="176" width="134" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="477.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">11110000</tspan></text>
-<rect x="550" y="176" width="134" height="38" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="617.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">00000101</tspan></text>
-<rect x="690" y="176" width="134" height="38" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="757.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">00001111</tspan></text>
-<rect x="830" y="176" width="84" height="38" rx="2" fill="white" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="872.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">0101</tspan></text>
-<rect x="920" y="176" width="194" height="38" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1017.0" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#1d2530"><tspan dy="0.0">00100101</tspan></text>
-<text xml:space="preserve" x="30" y="242" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#b42318"><tspan dy="0.0">掩码外的象限不并入</tspan></text>
-<text xml:space="preserve" x="210" y="242" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">：指令 0 并集 11010010、指令 1 并集 00100101；灰格是同址上别的对象。掩码写为象限 3→0</tspan></text>
-<text xml:space="preserve" x="30" y="276" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">参与核不同的两组用两条指令、两个地址；两条指令可先后执行，ping-pong 由编译链在 L2 地址里安排</tspan></text>
-<text xml:space="preserve" x="1316" y="458" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-07</tspan></text>
+<text xml:space="preserve" x="30" y="36" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d"><tspan dy="0.0">读集合并：两条指令各读一拍四个象限，按掩码取并</tspan></text>
+<text xml:space="preserve" x="148.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">指令 · 掩码（象限 3→0）</tspan></text>
+<text xml:space="preserve" x="356.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 0</tspan></text>
+<text xml:space="preserve" x="516.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 1</tspan></text>
+<text xml:space="preserve" x="676.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 2</tspan></text>
+<text xml:space="preserve" x="836.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">象限 3</tspan></text>
+<text xml:space="preserve" x="1035.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">MAE_CRU</tspan></text>
+<text xml:space="preserve" x="1261.0" y="92" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#172b4d"><tspan dy="0.0">并集 · 写回 L2</tspan></text>
+<rect x="30" y="116" width="236" height="72" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="148.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="148.0" y="138" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">指令 0 · 字节 1024</tspan></text>
+<text xml:space="preserve" x="148.0" y="168" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">掩码 0111</tspan></text>
+<rect x="280" y="116" width="152" height="72" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="356.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">10010000</tspan></text>
+<rect x="440" y="116" width="152" height="72" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="516.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">00010010</tspan></text>
+<rect x="600" y="116" width="152" height="72" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="676.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">01000000</tspan></text>
+<rect x="760" y="116" width="152" height="72" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="836.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">11111111</tspan></text>
+<path d="M914.0,152.0 L958.0,152.0" stroke="#1d2530" stroke-width="2.0" fill="none" marker-end="url(#ad)"/>
+<rect x="960" y="116" width="150" height="72" rx="2" fill="#e8eef7" stroke="#172b4d" stroke-width="2.0"/>
+<text xml:space="preserve" x="1035.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">按位取并</tspan></text>
+<path d="M1112.0,152.0 L1164.0,152.0" stroke="#1d2530" stroke-width="2.0" fill="none" marker-end="url(#ad)"/>
+<rect x="1166" y="116" width="190" height="72" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1261.0" y="152.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">11010010</tspan></text>
+<rect x="30" y="212" width="236" height="72" rx="2" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="148.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"></text>
+<text xml:space="preserve" x="148.0" y="234" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">指令 1 · 字节 1056</tspan></text>
+<text xml:space="preserve" x="148.0" y="264" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#172b4d"><tspan dy="0.0">掩码 0101</tspan></text>
+<rect x="280" y="212" width="152" height="72" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="356.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">00100001</tspan></text>
+<rect x="440" y="212" width="152" height="72" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="516.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">11110000</tspan></text>
+<rect x="600" y="212" width="152" height="72" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="676.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">00000101</tspan></text>
+<rect x="760" y="212" width="152" height="72" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="836.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">00001111</tspan></text>
+<path d="M914.0,248.0 L958.0,248.0" stroke="#1d2530" stroke-width="2.0" fill="none" marker-end="url(#ad)"/>
+<rect x="960" y="212" width="150" height="72" rx="2" fill="#e8eef7" stroke="#172b4d" stroke-width="2.0"/>
+<text xml:space="preserve" x="1035.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">按位取并</tspan></text>
+<path d="M1112.0,248.0 L1164.0,248.0" stroke="#1d2530" stroke-width="2.0" fill="none" marker-end="url(#ad)"/>
+<rect x="1166" y="212" width="190" height="72" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1261.0" y="248.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">00100101</tspan></text>
+<rect x="30" y="328" width="30" height="24" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="70" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">指令 0 参与的份</tspan></text>
+<rect x="282" y="328" width="30" height="24" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="322" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">指令 1 参与的份</tspan></text>
+<rect x="534" y="328" width="30" height="24" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="574" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">掩码外的同址字</tspan></text>
+<rect x="750" y="328" width="30" height="24" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="790" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">并集</tspan></text>
+<text xml:space="preserve" x="1376" y="378" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-10</tspan></text>
 </svg>

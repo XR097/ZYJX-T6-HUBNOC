@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="750" viewBox="0 0 1220 750">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="30" y="26" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">① SEL 出每个源的位图　② 取并得读集</tspan></text>
+<text xml:space="preserve" x="296" y="56" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">候选行</tspan></text>
+<text xml:space="preserve" x="340.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="400.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="460.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">2</tspan></text>
+<text xml:space="preserve" x="520.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">3</tspan></text>
+<text xml:space="preserve" x="580.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">4</tspan></text>
+<text xml:space="preserve" x="640.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">5</tspan></text>
+<text xml:space="preserve" x="700.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">6</tspan></text>
+<text xml:space="preserve" x="760.0" y="56" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">7</tspan></text>
+<text xml:space="preserve" x="296" y="91" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">源 A 的位图</tspan></text>
+<rect x="310" y="76" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="340.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="370" y="76" width="60" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="400.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="430" y="76" width="60" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="460.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="490" y="76" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="520.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="550" y="76" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="580.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="610" y="76" width="60" height="30" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="640.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="670" y="76" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="700.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="730" y="76" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="760.0" y="91.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<text xml:space="preserve" x="296" y="127" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">源 B 的位图</tspan></text>
+<rect x="310" y="112" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="340.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="370" y="112" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="400.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="430" y="112" width="60" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="460.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="490" y="112" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="520.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="550" y="112" width="60" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="580.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="610" y="112" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="640.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="670" y="112" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="700.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="730" y="112" width="60" height="30" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="760.0" y="127.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<text xml:space="preserve" x="296" y="171" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">读集 = A OR B</tspan></text>
+<rect x="310" y="156" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="340.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="370" y="156" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="400.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="430" y="156" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="460.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="490" y="156" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="520.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="550" y="156" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="580.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="610" y="156" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="640.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="670" y="156" width="60" height="30" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="700.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">0</tspan></text>
+<rect x="730" y="156" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="760.0" y="171.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<path d="M310.0,147.0 L790.0,147.0" stroke="#172b4d" stroke-width="1.6" fill="none"/>
+<text xml:space="preserve" x="296" y="204" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">读集次序</tspan></text>
+<text xml:space="preserve" x="400.0" y="204" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">位置 0</tspan></text>
+<text xml:space="preserve" x="460.0" y="204" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">位置 1</tspan></text>
+<text xml:space="preserve" x="580.0" y="204" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">位置 2</tspan></text>
+<text xml:space="preserve" x="640.0" y="204" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">位置 3</tspan></text>
+<text xml:space="preserve" x="760.0" y="204" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">位置 4</tspan></text>
+<text xml:space="preserve" x="820" y="171" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">读集 {1, 2, 4, 5, 7}</tspan></text>
+<text xml:space="preserve" x="30" y="252" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">③ MAE 按读集搬：只搬 5 行，按读集次序落 L1</tspan></text>
+<text xml:space="preserve" x="296" y="293" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">DDR 候选行（8 B）</tspan></text>
+<rect x="310" y="278" width="60" height="30" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="340.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 0</tspan></text>
+<rect x="370" y="278" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="400.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 1</tspan></text>
+<rect x="430" y="278" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="460.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 2</tspan></text>
+<rect x="490" y="278" width="60" height="30" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="520.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 3</tspan></text>
+<rect x="550" y="278" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="580.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 4</tspan></text>
+<rect x="610" y="278" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="640.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 5</tspan></text>
+<rect x="670" y="278" width="60" height="30" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="700.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 6</tspan></text>
+<rect x="730" y="278" width="60" height="30" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="760.0" y="293.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 7</tspan></text>
+<text xml:space="preserve" x="820" y="293" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">灰 = 不搬</tspan></text>
+<path d="M550.0,312.0 L550.0,368.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="564.0" y="340" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">MAE_DSU 排成行字区的存储字</tspan></text>
+<text xml:space="preserve" x="30" y="434" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 W 类行字区</tspan></text>
+<text xml:space="preserve" x="30" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">一个存储字 = 4 行 × 16 列</tspan></text>
+<text xml:space="preserve" x="410.0" y="382" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">第 0 路 · 字 0</tspan></text>
+<rect x="310" y="394" width="200" height="116" rx="4" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="316" y="400" width="188" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="410.0" y="413.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 1（位置 0）</tspan></text>
+<rect x="316" y="426" width="188" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="410.0" y="439.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 2（位置 1）</tspan></text>
+<rect x="316" y="452" width="188" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="410.0" y="465.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 4（位置 2）</tspan></text>
+<rect x="316" y="478" width="188" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="410.0" y="491.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 5（位置 3）</tspan></text>
+<text xml:space="preserve" x="624.0" y="382" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">第 1 路 · 字 1</tspan></text>
+<rect x="524" y="394" width="200" height="116" rx="4" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<rect x="530" y="400" width="188" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="624.0" y="413.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">行 7（位置 4）</tspan></text>
+<rect x="530" y="426" width="188" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="624.0" y="439.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">空（不写）</tspan></text>
+<rect x="530" y="452" width="188" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="624.0" y="465.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">空（不写）</tspan></text>
+<rect x="530" y="478" width="188" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="624.0" y="491.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">空（不写）</tspan></text>
+<text xml:space="preserve" x="838.0" y="382" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">第 2 路</tspan></text>
+<rect x="738" y="394" width="200" height="116" rx="4" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="838.0" y="452.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">本例未用</tspan></text>
+<text xml:space="preserve" x="1052.0" y="382" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">第 3 路</tspan></text>
+<rect x="952" y="394" width="200" height="116" rx="4" fill="white" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="1052.0" y="452.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">本例未用</tspan></text>
+<text xml:space="preserve" x="30" y="540" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">④ W 类权重读口按读集次序读出字 0、字 1，每路带“哪些 pod 收” = {pod 0, pod 1}</tspan></text>
+<text xml:space="preserve" x="30" y="566" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">⑤ 各 pod 的逐源压紧器按本源位图在读集次序里取</tspan></text>
+<path d="M410.0,510.0 L410.0,522.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M624.0,510.0 L624.0,522.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M410.0,522.0 L700.0,522.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M700.0,522.0 L700.0,592.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M170.0,592.0 L700.0,592.0" stroke="#1d2530" stroke-width="1.8" fill="none"/>
+<path d="M170.0,592.0 L170.0,607.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<path d="M464.0,592.0 L464.0,607.0" stroke="#1d2530" stroke-width="1.8" fill="none" marker-end="url(#ad)"/>
+<rect x="30" y="610" width="280" height="82" rx="4" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="44" y="628" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 0 · 源 A</tspan></text>
+<text xml:space="preserve" x="44" y="654" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">取位置 0、1、3</tspan></text>
+<text xml:space="preserve" x="44" y="676" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">= 行 1、2、5</tspan></text>
+<rect x="324" y="610" width="280" height="82" rx="4" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="338" y="628" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 1 · 源 B</tspan></text>
+<text xml:space="preserve" x="338" y="654" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">取位置 1、2、4</tspan></text>
+<text xml:space="preserve" x="338" y="676" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">= 行 2、4、7</tspan></text>
+<rect x="618" y="610" width="280" height="82" rx="4" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="632" y="628" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 2</tspan></text>
+<text xml:space="preserve" x="632" y="654" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">本例无源</tspan></text>
+<rect x="912" y="610" width="280" height="82" rx="4" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="926" y="628" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">pod 3</tspan></text>
+<text xml:space="preserve" x="926" y="654" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">本例无源</tspan></text>
+<rect x="30" y="713" width="28" height="18" rx="2" fill="#f8d3c9" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="66" y="722" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">源 A</tspan></text>
+<rect x="121.4" y="713" width="28" height="18" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="157.4" y="722" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">源 B</tspan></text>
+<rect x="212.8" y="713" width="28" height="18" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="248.8" y="722" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">读集 / 搬运的行</tspan></text>
+<rect x="381.90000000000003" y="713" width="28" height="18" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text xml:space="preserve" x="417.90000000000003" y="722" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#1d2530"><tspan dy="0.0">不搬 / 空</tspan></text>
+</svg>

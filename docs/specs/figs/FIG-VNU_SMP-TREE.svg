@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="482" viewBox="0 0 1120 482">
+<defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text xml:space="preserve" x="140.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">深度 0</tspan></text>
+<text xml:space="preserve" x="420.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">深度 1</tspan></text>
+<text xml:space="preserve" x="420.0" y="60" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">A 0.5 · B 0.3 · C 0.2</tspan></text>
+<text xml:space="preserve" x="700.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">深度 2</tspan></text>
+<text xml:space="preserve" x="700.0" y="60" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">D 0.7 · E 0.2 · F 0.1</tspan></text>
+<text xml:space="preserve" x="980.0" y="26" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">深度 3</tspan></text>
+<text xml:space="preserve" x="980.0" y="60" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">G 0.7 · H 0.2 · I 0.1</tspan></text>
+<text xml:space="preserve" x="30" y="60" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">条件概率</tspan></text>
+<path d="M250.0,219.0 L306.0,129.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<path d="M530.0,129.0 L586.0,129.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<path d="M250.0,219.0 L306.0,239.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<path d="M810.0,129.0 L866.0,129.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<path d="M530.0,239.0 L586.0,239.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)"/>
+<path d="M250.0,219.0 L306.0,349.0" stroke="#1d2530" stroke-width="1.6" fill="none" marker-end="url(#ad)" stroke-dasharray="6 4"/>
+<rect x="30" y="186" width="220" height="66" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="140.0" y="208" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 0 · 根</tspan></text>
+<text xml:space="preserve" x="140.0" y="232" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 1 · 父槽 —</tspan></text>
+<rect x="310" y="96" width="220" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="420.0" y="118" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 1 · A</tspan></text>
+<text xml:space="preserve" x="420.0" y="142" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.5 · 父槽 0</tspan></text>
+<rect x="590" y="96" width="220" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="700.0" y="118" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 2 · AD</tspan></text>
+<text xml:space="preserve" x="700.0" y="142" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.35 · 父槽 1</tspan></text>
+<rect x="310" y="206" width="220" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="420.0" y="228" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 3 · B</tspan></text>
+<text xml:space="preserve" x="420.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.3 · 父槽 0</tspan></text>
+<rect x="870" y="96" width="220" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="980.0" y="118" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 4 · ADG</tspan></text>
+<text xml:space="preserve" x="980.0" y="142" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.245 · 父槽 2</tspan></text>
+<rect x="590" y="206" width="220" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="700.0" y="228" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">槽 5 · BD</tspan></text>
+<text xml:space="preserve" x="700.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.21 · 父槽 3</tspan></text>
+<rect x="310" y="316" width="220" height="66" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text xml:space="preserve" x="420.0" y="338" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">候选 C</tspan></text>
+<text xml:space="preserve" x="420.0" y="362" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="500" fill="#1d2530"><tspan dy="0.0">ŵ = 0.2 · 未入选</tspan></text>
+<text xml:space="preserve" x="30" y="432" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="700" fill="#1d2530"><tspan dy="0.0">N</tspan><tspan dy="4.8" font-size="13">tree</tspan><tspan dy="-4.8"> = 6</tspan></text>
+<rect x="170" y="421" width="30" height="22" rx="2" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="210" y="432" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">根</tspan></text>
+<rect x="273" y="421" width="30" height="22" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="313" y="432" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">入选节点</tspan></text>
+<rect x="433" y="421" width="30" height="22" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text xml:space="preserve" x="473" y="432" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="19" font-weight="600" fill="#1d2530"><tspan dy="0.0">下一个候选（未入选）</tspan></text>
+</svg>

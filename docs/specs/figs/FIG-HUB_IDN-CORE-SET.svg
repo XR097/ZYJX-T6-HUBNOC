@@ -1,114 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1618" height="592" viewBox="0 0 1618 592">
+<svg xmlns="http://www.w3.org/2000/svg" width="1668" height="800" viewBox="0 0 1668 800">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="316" y="30" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="700" fill="#172b4d"><tspan dy="0.0">连续存储字（每拍一个，32 B）</tspan></text>
-<rect x="330" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 0（拍 0）</tspan></text>
-<rect x="486" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 1（拍 1）</tspan></text>
-<rect x="642" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 2（拍 2）</tspan></text>
-<rect x="798" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 3（拍 3）</tspan></text>
-<rect x="954" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 4（拍 4）</tspan></text>
-<rect x="1110" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 5（拍 5）</tspan></text>
-<rect x="1266" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 6（拍 6）</tspan></text>
-<rect x="1422" y="28" width="150" height="26" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="41.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 7（拍 7）</tspan></text>
-<text xml:space="preserve" x="316" y="91.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">单核吃满（核 2）</tspan></text>
-<rect x="330" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2048</tspan></text>
-<rect x="486" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2080</tspan></text>
-<rect x="642" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2112</tspan></text>
-<rect x="798" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2144</tspan></text>
-<rect x="954" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2176</tspan></text>
-<rect x="1110" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2208</tspan></text>
-<rect x="1266" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2240</tspan></text>
-<rect x="1422" y="64" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="86.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2272</tspan></text>
-<text xml:space="preserve" x="330" y="126" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">核 2 平均 32 B/拍（之和 32 B/拍 = M0 上限）</tspan></text>
-<text xml:space="preserve" x="316" y="175.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">双核轮流（核 0、1）</tspan></text>
-<rect x="330" y="148" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4096</tspan></text>
-<rect x="486" y="148" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6144</tspan></text>
-<rect x="642" y="148" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4128</tspan></text>
-<rect x="798" y="148" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6176</tspan></text>
-<rect x="954" y="148" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4160</tspan></text>
-<rect x="1110" y="148" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6208</tspan></text>
-<rect x="1266" y="148" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4192</tspan></text>
-<rect x="1422" y="148" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="170.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6240</tspan></text>
-<text xml:space="preserve" x="330" y="210" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">核 0 平均 16 B/拍；核 1 平均 16 B/拍（之和 32 B/拍 = M0 上限）</tspan></text>
-<text xml:space="preserve" x="316" y="259.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">2 : 1 : 1（核 0 两份）</tspan></text>
-<rect x="330" y="232" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4096</tspan></text>
-<rect x="486" y="232" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4128</tspan></text>
-<rect x="642" y="232" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6144</tspan></text>
-<rect x="798" y="232" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2048</tspan></text>
-<rect x="954" y="232" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4160</tspan></text>
-<rect x="1110" y="232" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4192</tspan></text>
-<rect x="1266" y="232" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6176</tspan></text>
-<rect x="1422" y="232" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="254.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2080</tspan></text>
-<text xml:space="preserve" x="330" y="294" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">核 0 平均 16 B/拍；核 1 平均 8 B/拍；核 2 平均 8 B/拍（之和 32 B/拍 = M0 上限）</tspan></text>
-<text xml:space="preserve" x="316" y="343.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">四核均分</tspan></text>
-<rect x="330" y="316" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4096</tspan></text>
-<rect x="486" y="316" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6144</tspan></text>
-<rect x="642" y="316" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2048</tspan></text>
-<rect x="798" y="316" width="150" height="44" rx="2" fill="#e9d5ff" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 3 · 10240</tspan></text>
-<rect x="954" y="316" width="150" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0 · 4128</tspan></text>
-<rect x="1110" y="316" width="150" height="44" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1 · 6176</tspan></text>
-<rect x="1266" y="316" width="150" height="44" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2 · 2080</tspan></text>
-<rect x="1422" y="316" width="150" height="44" rx="2" fill="#e9d5ff" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="338.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 3 · 10272</tspan></text>
-<text xml:space="preserve" x="330" y="378" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">核 0 平均 8 B/拍；核 1 平均 8 B/拍；核 2 平均 8 B/拍；核 3 平均 8 B/拍（之和 32 B/拍 = M0 上限）</tspan></text>
-<text xml:space="preserve" x="316" y="427.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" fill="#172b4d"><tspan dy="0.0">多播到核 0、2</tspan></text>
-<rect x="330" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="405.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4096/2048</tspan></text>
-<rect x="486" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="561.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4128/2080</tspan></text>
-<rect x="642" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="717.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4160/2112</tspan></text>
-<rect x="798" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="873.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4192/2144</tspan></text>
-<rect x="954" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1029.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4224/2176</tspan></text>
-<rect x="1110" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1185.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4256/2208</tspan></text>
-<rect x="1266" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1341.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4288/2240</tspan></text>
-<rect x="1422" y="400" width="150" height="44" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.2"/>
-<text xml:space="preserve" x="1497.0" y="422.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="11" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0+2 · 4320/2272</tspan></text>
-<text xml:space="preserve" x="330" y="462" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#8a94a6"><tspan dy="0.0">核 0 平均 32 B/拍；核 2 平均 32 B/拍（多播：每核都收全部字）</tspan></text>
-<text xml:space="preserve" x="330" y="494" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">一个字一拍整字到一个核</tspan></text>
-<text xml:space="preserve" x="330" y="520" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">核集合随每个存储字由 MAE_ENG 给出；HUB_IDN 只按它分发，几核共享带宽就是连续的字轮流排给各核</tspan></text>
-<text xml:space="preserve" x="330" y="542" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#172b4d"><tspan dy="0.0">每核一条 32 B 链路：轮到的那一拍收一个整字（be 全 1），没轮到的拍 en = 0；同一核收到的字地址连续递增 32</tspan></text>
-<text xml:space="preserve" x="330" y="564" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="600" fill="#8a94a6"><tspan dy="0.0">格内：目的核 · 该字在目的核 L1 里的字地址（[堆][类] 略）；多播格写两核各自的字地址</tspan></text>
+<text xml:space="preserve" x="30" y="36" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#172b4d"><tspan dy="0.0">连续 8 个存储字（每拍一个）的核集合与目的地址</tspan></text>
+<rect x="310" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="390.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 0（拍 0）</tspan></text>
+<rect x="476" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="556.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 1（拍 1）</tspan></text>
+<rect x="642" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="722.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 2（拍 2）</tspan></text>
+<rect x="808" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="888.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 3（拍 3）</tspan></text>
+<rect x="974" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1054.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 4（拍 4）</tspan></text>
+<rect x="1140" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1220.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 5（拍 5）</tspan></text>
+<rect x="1306" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1386.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 6（拍 6）</tspan></text>
+<rect x="1472" y="76" width="160" height="36" rx="2" fill="#eef0f3" stroke="#172b4d" stroke-width="1.2"/>
+<text xml:space="preserve" x="1552.0" y="94.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">字 7（拍 7）</tspan></text>
+<text xml:space="preserve" x="296" y="153.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">单核吃满（核 2）</tspan></text>
+<rect x="310" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="390.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="390.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2048</tspan></text>
+<rect x="476" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="556.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="556.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2080</tspan></text>
+<rect x="642" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="722.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="722.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2112</tspan></text>
+<rect x="808" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="888.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="888.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2144</tspan></text>
+<rect x="974" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1054.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1054.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2176</tspan></text>
+<rect x="1140" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1220.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1220.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2208</tspan></text>
+<rect x="1306" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1386.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1386.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2240</tspan></text>
+<rect x="1472" y="120" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1552.0" y="140" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1552.0" y="167" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2272</tspan></text>
+<text xml:space="preserve" x="310" y="208" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">平均带宽　核 2：32 B/拍</tspan></text>
+<text xml:space="preserve" x="296" y="265.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">双核轮流（核 0、1）</tspan></text>
+<rect x="310" y="232" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="390.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="390.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4096</tspan></text>
+<rect x="476" y="232" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="556.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="556.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6144</tspan></text>
+<rect x="642" y="232" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="722.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="722.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4128</tspan></text>
+<rect x="808" y="232" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="888.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="888.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6176</tspan></text>
+<rect x="974" y="232" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1054.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="1054.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4160</tspan></text>
+<rect x="1140" y="232" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1220.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="1220.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6208</tspan></text>
+<rect x="1306" y="232" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1386.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="1386.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4192</tspan></text>
+<rect x="1472" y="232" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1552.0" y="252" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="1552.0" y="279" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6240</tspan></text>
+<text xml:space="preserve" x="310" y="320" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">平均带宽　核 0：16 B/拍　核 1：16 B/拍</tspan></text>
+<text xml:space="preserve" x="296" y="377.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">2 : 1 : 1（核 0 两份）</tspan></text>
+<rect x="310" y="344" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="390.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="390.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4096</tspan></text>
+<rect x="476" y="344" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="556.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="556.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4128</tspan></text>
+<rect x="642" y="344" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="722.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="722.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6144</tspan></text>
+<rect x="808" y="344" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="888.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="888.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2048</tspan></text>
+<rect x="974" y="344" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1054.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="1054.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4160</tspan></text>
+<rect x="1140" y="344" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1220.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="1220.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4192</tspan></text>
+<rect x="1306" y="344" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1386.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="1386.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6176</tspan></text>
+<rect x="1472" y="344" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1552.0" y="364" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1552.0" y="391" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2080</tspan></text>
+<text xml:space="preserve" x="310" y="432" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">平均带宽　核 0：16 B/拍　核 1：8 B/拍　核 2：8 B/拍</tspan></text>
+<text xml:space="preserve" x="296" y="489.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">四核均分</tspan></text>
+<rect x="310" y="456" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="390.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="390.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4096</tspan></text>
+<rect x="476" y="456" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="556.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="556.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6144</tspan></text>
+<rect x="642" y="456" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="722.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="722.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2048</tspan></text>
+<rect x="808" y="456" width="160" height="66" rx="2" fill="#e9d5ff" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="888.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 3</tspan></text>
+<text xml:space="preserve" x="888.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">10240</tspan></text>
+<rect x="974" y="456" width="160" height="66" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1054.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0</tspan></text>
+<text xml:space="preserve" x="1054.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4128</tspan></text>
+<rect x="1140" y="456" width="160" height="66" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1220.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 1</tspan></text>
+<text xml:space="preserve" x="1220.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">6176</tspan></text>
+<rect x="1306" y="456" width="160" height="66" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1386.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 2</tspan></text>
+<text xml:space="preserve" x="1386.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">2080</tspan></text>
+<rect x="1472" y="456" width="160" height="66" rx="2" fill="#e9d5ff" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1552.0" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 3</tspan></text>
+<text xml:space="preserve" x="1552.0" y="503" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">10272</tspan></text>
+<text xml:space="preserve" x="310" y="544" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">平均带宽　核 0：8 B/拍　核 1：8 B/拍　核 2：8 B/拍　核 3：8 B/拍</tspan></text>
+<text xml:space="preserve" x="296" y="601.0" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">多播到核 0、2</tspan></text>
+<rect x="310" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="390.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="390.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4096（同址）</tspan></text>
+<rect x="476" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="556.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="556.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4128（同址）</tspan></text>
+<rect x="642" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="722.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="722.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4160（同址）</tspan></text>
+<rect x="808" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="888.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="888.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4192（同址）</tspan></text>
+<rect x="974" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1054.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="1054.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4224（同址）</tspan></text>
+<rect x="1140" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1220.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="1220.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4256（同址）</tspan></text>
+<rect x="1306" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1386.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="1386.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4288（同址）</tspan></text>
+<rect x="1472" y="568" width="160" height="66" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.4"/>
+<text xml:space="preserve" x="1552.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21" font-weight="700" fill="#172b4d"><tspan dy="0.0">核 0+2</tspan></text>
+<text xml:space="preserve" x="1552.0" y="615" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">4320（同址）</tspan></text>
+<text xml:space="preserve" x="310" y="656" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">平均带宽　核 0：32 B/拍　核 2：32 B/拍</tspan></text>
+<rect x="310" y="681" width="40" height="26" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="360" y="694" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 0</tspan></text>
+<rect x="432.0" y="681" width="40" height="26" rx="2" fill="#d3e3f6" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="482.0" y="694" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 1</tspan></text>
+<rect x="554.0" y="681" width="40" height="26" rx="2" fill="#fde8c8" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="604.0" y="694" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 2</tspan></text>
+<rect x="676.0" y="681" width="40" height="26" rx="2" fill="#e9d5ff" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="726.0" y="694" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">核 3</tspan></text>
+<rect x="798.0" y="681" width="40" height="26" rx="2" fill="#e2e8f0" stroke="#172b4d" stroke-width="1.6"/>
+<text xml:space="preserve" x="848.0" y="694" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">多播</tspan></text>
+<text xml:space="preserve" x="310" y="740" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="600" fill="#1d2530"><tspan dy="0.0">格内：目的核 / 目的地址（字节，默认 32 B 对齐；多播一拍一个 addr，各核同址）</tspan></text>
+<text xml:space="preserve" x="1644" y="788" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-10</tspan></text>
 </svg>

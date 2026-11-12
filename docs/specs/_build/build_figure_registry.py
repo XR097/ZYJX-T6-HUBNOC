@@ -9,7 +9,7 @@
   - 列出 figs/ 下实际存在的 SVG；
   - 写 <根目录>/_build/FIGURE_REGISTRY.md：按文档分节，每图一行（图、函数、脚本、所在节）；末尾列"无人引用的图"
     与"被引用但不存在的图"。
-本表只做自动索引；脚本依赖和检查局限见 _build/README.md。默认扫描本脚本所在的 docs/specs。
+手写补充说明（例子常量、断言、改图约定）放各篇自己的 FIGURE_REGISTRY_<篇>.md，本表只做自动索引。
 """
 import re
 import sys
@@ -89,7 +89,7 @@ def build(root: Path):
         for md, head in places:
             by_doc[md].append((fid, head))
     lines = [f'# 图件登记表（自动生成）：{root.name}', '',
-             f'> 由 `_build/build_figure_registry.py` 扫描生成，不要手改；工具说明见 `_build/README.md`。'
+             f'> 由 `_build/build_figure_registry.py` 扫描生成，不要手改；手写说明放各篇的 FIGURE_REGISTRY_<篇>.md。'
              f'扫描范围：本目录下全部 *.md（图引用）与 _build/*.py（生图函数）。', '']
     for md in sorted(by_doc):
         lines += [f'## {md}', '', '| 图 | 所在节 | 生图函数 | 脚本 | SVG 存在 |', '|---|---|---|---|---|']
@@ -117,5 +117,5 @@ def build(root: Path):
 
 
 if __name__ == '__main__':
-    for arg in sys.argv[1:] or [Path(__file__).resolve().parent.parent]:
+    for arg in sys.argv[1:] or ['.']:
         build(Path(arg).resolve())

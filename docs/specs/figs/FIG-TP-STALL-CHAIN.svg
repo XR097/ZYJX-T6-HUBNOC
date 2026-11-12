@@ -1,68 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="740" viewBox="0 0 1560 740">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
 <defs><marker id="ad" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#1d2530"/></marker><marker id="ar" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#b42318"/></marker><marker id="ac" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7Z" fill="#2f5d8a"/></marker></defs><rect width="100%" height="100%" fill="white"/>
-<text xml:space="preserve" x="30" y="30" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-STALL-CHAIN  分级握手：相邻级两两握手（上方短箭头）；CCU 只收它发 en 的两级的 stall（下方车道）；stall_tx 是唯一的全局门控</tspan></text>
-<text xml:space="preserve" x="30" y="62" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="15" font-weight="500" fill="#1d2530"><tspan dy="0.0">数据从左向右推送；红色箭头指向"谁该停"。每个消费者只对它的直接上游握手，不越级；链末端是 L1 写集合器里该写者的 FIFO，将满才拉 wr_stall；CCU 自身不拉 stall</tspan></text>
-<rect x="60" y="170" width="170" height="80" rx="6" fill="#fff0d2" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="145.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">CCU</tspan></text>
-<text xml:space="preserve" x="145.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">发 en / addr</tspan></text>
-<rect x="280" y="170" width="170" height="80" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="365.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 读口</tspan></text>
-<text xml:space="preserve" x="365.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">1 拍返回</tspan></text>
-<path d="M230.0,210.0 L280.0,210.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<rect x="500" y="170" width="170" height="80" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="585.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">MXU 供数</tspan></text>
-<text xml:space="preserve" x="585.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">缓冲 D₁</tspan></text>
-<path d="M450.0,210.0 L500.0,210.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<rect x="720" y="170" width="170" height="80" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="805.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">阵列</tspan></text>
-<text xml:space="preserve" x="805.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">流水 D_arr · AEB</tspan></text>
-<path d="M670.0,210.0 L720.0,210.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<rect x="940" y="170" width="170" height="80" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="1025.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">VNU</tspan></text>
-<text xml:space="preserve" x="1025.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">出口级子模块收 AEB</tspan></text>
-<text xml:space="preserve" x="1025.0" y="238" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">入口缓冲 D₃</tspan></text>
-<path d="M890.0,210.0 L940.0,210.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<rect x="1160" y="170" width="170" height="80" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="1245.0" y="196" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 写集合器</tspan></text>
-<text xml:space="preserve" x="1245.0" y="220" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">写者 FIFO</tspan></text>
-<text xml:space="preserve" x="1245.0" y="238" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">将满 → wr_stall</tspan></text>
-<path d="M1110.0,210.0 L1160.0,210.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="280" y="112" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">↑ 相邻级握手：消费者对直接上游（一级一根，不越级）</tspan></text>
-<path d="M744.0,170.0 L744.0,144.0 L646.0,144.0 L646.0,168.0" stroke="#b42318" stroke-width="2" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="695.0" y="136" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#b42318"><tspan dy="0.0">stall：供数停发列</tspan></text>
-<path d="M964.0,170.0 L964.0,144.0 L866.0,144.0 L866.0,168.0" stroke="#b42318" stroke-width="2" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="915.0" y="136" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#b42318"><tspan dy="0.0">AEB ready 拉低：阵列停出条目</tspan></text>
-<path d="M1184.0,170.0 L1184.0,144.0 L1086.0,144.0 L1086.0,168.0" stroke="#b42318" stroke-width="2" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="1135.0" y="136" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#b42318"><tspan dy="0.0">wr_stall：该写者停写</tspan></text>
-<text xml:space="preserve" x="290" y="270" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">→ 数据 / 请求方向（CCU → L1 是 en / addr，其余是推送）</tspan></text>
-<path d="M536.0,250.0 L536.0,306.0 L169.0,306.0 L169.0,252.0" stroke="#b42318" stroke-width="2" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="185.0" y="295" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#b42318"><tspan dy="0.0">stall_mxu[p]：pod 供数缓冲将满 → CCU 停发该 pod 的 en</tspan></text>
-<path d="M976.0,250.0 L976.0,346.0 L121.0,346.0 L121.0,252.0" stroke="#b42318" stroke-width="2" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
-<text xml:space="preserve" x="137.0" y="335" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="600" fill="#b42318"><tspan dy="0.0">stall_vnu[i]：VNU 读 L1 的入口将满 → CCU 停发该入口的 en</tspan></text>
-<text xml:space="preserve" x="80" y="370" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">↑ 到 CCU 的 stall：只有 CCU 发 en 的两级（供数、VNU 入口），不是越级门控</tspan></text>
-<rect x="280" y="420" width="170" height="80" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="365.0" y="446" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 发送侧</tspan></text>
-<text xml:space="preserve" x="365.0" y="470" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">读 L1（CCU 发 en）</tspan></text>
-<text xml:space="preserve" x="365.0" y="488" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">CCU 逐拍给 L2 addr</tspan></text>
-<path d="M365.0,250.0 L365.0,420.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="373.0" y="390" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">读出 32 B</tspan></text>
-<path d="M450.0,460.0 L940.0,460.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="510" y="450.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">来源 1：L1 发送侧读出</tspan></text>
-<rect x="940" y="420" width="170" height="80" rx="6" fill="#fff0d2" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="1025.0" y="446" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">集成输出端口</tspan></text>
-<text xml:space="preserve" x="1025.0" y="470" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">两源由 CCU 选 · 发送 FIFO</tspan></text>
-<text xml:space="preserve" x="1025.0" y="488" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">深度 − L 将满</tspan></text>
-<path d="M1080.0,250.0 L1080.0,420.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<text xml:space="preserve" x="1088" y="390" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="12" font-weight="500" fill="#1d2530"><tspan dy="0.0">来源 2：VNU 输出（写 L2 时）</tspan></text>
-<rect x="1160" y="420" width="170" height="80" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.6"/>
-<text xml:space="preserve" x="1245.0" y="446" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">C2H → hub → L2</tspan></text>
-<text xml:space="preserve" x="1245.0" y="470" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">核间 ready 只到</tspan></text>
-<text xml:space="preserve" x="1245.0" y="488" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#1d2530"><tspan dy="0.0">左边的发送 FIFO</tspan></text>
-<path d="M1110.0,460.0 L1160.0,460.0" stroke="#1d2530" stroke-width="2.2" fill="none" marker-end="url(#ad)"/>
-<path d="M1025.0,500.0 L1025.0,530.0 L28.0,530.0 L28.0,210.0 L58.0,210.0" stroke="#b42318" stroke-width="3.2" fill="none" marker-end="url(#ar)"/>
-<text xml:space="preserve" x="185.0" y="520" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="600" fill="#b42318"><tspan dy="0.0">stall_tx：发送 FIFO 将满 → 门控 CCU（停发全部 en、停算，等 C2H ready）= 唯一的全局门控</tspan></text>
-<text xml:space="preserve" x="30" y="576" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="16" font-weight="700" fill="#172b4d"><tspan dy="0.0">将满阈值</tspan></text>
-<text xml:space="preserve" x="30" y="604" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">例：某级缓冲深度 8，从它拉 stall 到上游真正停发要 2 拍（CCU 停发 1 拍 + L1 读返回 1 拍），所以在占用到 6 时就拉，留 2 个空位接在途的拍；各级 L 由设计者登记</tspan></text>
-<text xml:space="preserve" x="30" y="630" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="500" fill="#1d2530"><tspan dy="0.0">规则：谁发 en，谁判断"有没有地方放"；发 en 的不是消费者本人时，消费者给发 en 者一根 stall；推送段上消费者只对直接上游握手；核间 ready 不进核，只在发送 FIFO 处变成 stall_tx</tspan></text>
-<text xml:space="preserve" x="1536" y="728" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-08</tspan></text>
+<text xml:space="preserve" x="30" y="34" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="24" font-weight="700" fill="#172b4d"><tspan dy="0.0">FIG-TP-STALL-CHAIN  分级握手：相邻级两两握手，到 CCU 两根 stall，stall_tx 唯一的全局门控</tspan></text>
+<rect x="60" y="190" width="200" height="110" rx="6" fill="#fff0d2" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="160.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">CCU</tspan></text>
+<text xml:space="preserve" x="160.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">发 en / addr</tspan></text>
+<rect x="312" y="190" width="200" height="110" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="412.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">L1 读口</tspan></text>
+<text xml:space="preserve" x="412.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">1 拍返回</tspan></text>
+<text xml:space="preserve" x="412.0" y="278" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">读 MUX 给一个使用者</tspan></text>
+<path d="M260.0,245.0 L310.0,245.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<rect x="564" y="190" width="200" height="110" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="664.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">MXU 供数</tspan></text>
+<text xml:space="preserve" x="664.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">缓冲 D₁</tspan></text>
+<path d="M512.0,245.0 L562.0,245.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<rect x="816" y="190" width="200" height="110" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="916.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">阵列</tspan></text>
+<text xml:space="preserve" x="916.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">流水 · AEB</tspan></text>
+<path d="M764.0,245.0 L814.0,245.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<rect x="1068" y="190" width="200" height="110" rx="6" fill="#e4dcf3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="1168.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">VNU</tspan></text>
+<text xml:space="preserve" x="1168.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">EPI 收 AEB 条目</tspan></text>
+<text xml:space="preserve" x="1168.0" y="278" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">读入口缓冲 D₃</tspan></text>
+<path d="M1016.0,245.0 L1066.0,245.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<rect x="1320" y="190" width="200" height="110" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="1420.0" y="218" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">VNU 写口 FIFO</tspan></text>
+<text xml:space="preserve" x="1420.0" y="250" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">→ 写 MUX → L1 写口</tspan></text>
+<text xml:space="preserve" x="1420.0" y="278" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">（A / W / S 类）</tspan></text>
+<path d="M1268.0,245.0 L1318.0,245.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="312" y="98" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">↑ 相邻级握手：消费者对直接上游，一级一根、不越级</tspan></text>
+<path d="M846.0,190.0 L846.0,156.0 L734.0,156.0 L734.0,188.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="790.0" y="138" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">stall</tspan></text>
+<path d="M1098.0,190.0 L1098.0,156.0 L986.0,156.0 L986.0,188.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="1042.0" y="138" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">AEB ready</tspan></text>
+<path d="M1350.0,190.0 L1350.0,156.0 L1238.0,156.0 L1238.0,188.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="1294.0" y="138" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">wr_stall（没轮到或让读）</tspan></text>
+<path d="M594.0,300.0 L594.0,352.0 L190.0,352.0 L190.0,302.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<path d="M1098.0,300.0 L1098.0,402.0 L130.0,402.0 L130.0,302.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="608" y="352" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">stall_mxu[p] 每 pod 两根：权重 / 激活收不下</tspan></text>
+<text xml:space="preserve" x="428.0" y="384" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">stall_vnu：VNU 读入口将满</tspan></text>
+<rect x="312" y="500" width="200" height="110" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="412.0" y="528" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">发送 FIFO 入口</tspan></text>
+<text xml:space="preserve" x="412.0" y="560" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">读 L1（CCU 发 en）</tspan></text>
+<text xml:space="preserve" x="412.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">CCU 给 L2 addr</tspan></text>
+<path d="M412.0,300.0 L412.0,344.0 A8,8 0 0 1 412.0,360.0 L412.0,394.0 A8,8 0 0 1 412.0,410.0 L412.0,498.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<path d="M512.0,555.0 L1066.0,555.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="542" y="535.0" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">来源 1：L1 读出进发送 FIFO 入口（128 B）</tspan></text>
+<rect x="1068" y="500" width="200" height="110" rx="6" fill="#fff0d2" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="1168.0" y="528" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">集成输出端口</tspan></text>
+<text xml:space="preserve" x="1168.0" y="560" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">发送 FIFO</tspan></text>
+<text xml:space="preserve" x="1168.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">两源由 CCU 选</tspan></text>
+<path d="M1238.0,300.0 L1238.0,498.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="1250" y="456" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">来源 2：VNU 输出口（写 L2 时）</tspan></text>
+<rect x="1320" y="500" width="200" height="110" rx="6" fill="#eef0f3" stroke="#172b4d" stroke-width="1.8"/>
+<text xml:space="preserve" x="1420.0" y="528" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">C2H → L2</tspan></text>
+<text xml:space="preserve" x="1420.0" y="560" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">核间 ready</tspan></text>
+<text xml:space="preserve" x="1420.0" y="588" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">只到发送 FIFO</tspan></text>
+<path d="M1268.0,555.0 L1318.0,555.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<path d="M1168.0,610.0 L1168.0,654.0 L28.0,654.0 L28.0,245.0 L58.0,245.0" stroke="#b42318" stroke-width="3.4" fill="none" marker-end="url(#ar)"/>
+<text xml:space="preserve" x="332" y="634" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">stall_tx：发送 FIFO 将满 → 门控 CCU（停发全部 en、停算）</tspan></text>
+<text xml:space="preserve" x="60" y="714" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="700" fill="#172b4d"><tspan dy="0.0">将满阈值（参考例）：深度 8、在途 L = 2 拍（CCU 停发 1 拍 + L1 读返回 1 拍）</tspan></text>
+<rect x="60" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="90.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">1</tspan></text>
+<rect x="124" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="154.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">2</tspan></text>
+<rect x="188" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="218.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">3</tspan></text>
+<rect x="252" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="282.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">4</tspan></text>
+<rect x="316" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="346.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">5</tspan></text>
+<rect x="380" y="744" width="60" height="44" rx="2" fill="#cfe8c6" stroke="#172b4d" stroke-width="1.5"/>
+<text xml:space="preserve" x="410.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">6</tspan></text>
+<rect x="444" y="744" width="60" height="44" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text xml:space="preserve" x="474.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">7</tspan></text>
+<rect x="508" y="744" width="60" height="44" rx="2" fill="white" stroke="#172b4d" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text xml:space="preserve" x="538.0" y="766.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="600" fill="#1d2530"><tspan dy="0.0">8</tspan></text>
+<path d="M442.0,734.0 L442.0,798.0" stroke="#b42318" stroke-width="3.0" fill="none"/>
+<text xml:space="preserve" x="592" y="766" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="700" fill="#b42318"><tspan dy="0.0">占到 6 就拉 stall，留 2 个空位接在途的拍</tspan></text>
+<path d="M60.0,840.0 L110.0,840.0" stroke="#1d2530" stroke-width="2.4" fill="none" marker-end="url(#ad)"/>
+<text xml:space="preserve" x="122" y="840" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">数据 / 请求方向</tspan></text>
+<path d="M309.7,840.0 L359.7,840.0" stroke="#b42318" stroke-width="2.4" fill="none" marker-end="url(#ar)" stroke-dasharray="6,4"/>
+<text xml:space="preserve" x="371.7" y="840" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">相邻级握手、到 CCU 的 stall</tspan></text>
+<path d="M674.6,840.0 L724.6,840.0" stroke="#b42318" stroke-width="3.4" fill="none" marker-end="url(#ar)"/>
+<text xml:space="preserve" x="736.5999999999999" y="840" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="500" fill="#1d2530"><tspan dy="0.0">stall_tx（唯一的全局门控）</tspan></text>
+<text xml:space="preserve" x="1576" y="888" text-anchor="end" dominant-baseline="central" font-family="Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="500" fill="#8a94a6"><tspan dy="0.0">Owner: WangYizhao · 2026-11-11</tspan></text>
 </svg>
